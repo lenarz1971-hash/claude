@@ -50,7 +50,7 @@ sections:[
   {id:'rule',label:'Decision rule',type:'select',opts:['Simple acceptance (w = 0)','Guarded acceptance, w = U (binary)','Non-binary: pass, conditional pass, conditional fail, fail']}]},
  {type:'grid',id:'m',title:'Results: as found and as left',rows:3,hint:'One row per test point. As found is the reading before any adjustment; as left is after. Leave as left blank when nothing was adjusted; the as-found reading is used. U is the expanded uncertainty at that point (k = 2).',cols:[
   {id:'pt',label:'Test point',w:110},
-  {id:'un',label:'Units',w:60},
+  {id:'un',label:'Units'},
   {id:'nom',label:'Nominal',type:'number'},
   {id:'lo',label:'Low limit',type:'number'},
   {id:'hi',label:'High limit',type:'number'},

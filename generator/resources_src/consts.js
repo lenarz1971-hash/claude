@@ -149,7 +149,13 @@ const TOOL_EX={
  'time-series-moving-average':['cqe','cssbb'],
  'make-buy-analysis':[],
  'supplier-quality-agreement-checklist':[],
- 'supplier-onboarding-checklist':[]
+ 'supplier-onboarding-checklist':[],
+ 'si-metrology-unit-converter':['cqi','cqt'],
+ 'imte-accuracy-specification':['cqi','cqt'],
+ 'tur-tar-guard-band-pfa':['cqt','cqi','cqe'],
+ 'calibration-certificate-label':['cqt','cqi','cqe'],
+ 'rounding-significant-figures':['cqi'],
+ 'calibration-table-interpolation':[]
 };
 /* Tools beyond the Yellow Belt set, in hub order (filled in by build_resources.py from tools_content.GROUPS). */
 const MQ_TOOLS=EXTRA_SLUGS;
