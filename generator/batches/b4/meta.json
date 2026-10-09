@@ -1,0 +1,7 @@
+{"tools":[
+ {"slug":"supplier-selection-matrix","tags":["cqpa","cqe","cmqoe"],"future_tags":["csqp","cmda"],"group_hint":"Supplier quality (new group): selection, qualification, classification, portfolio"},
+ {"slug":"ppap-qualification-plan","tags":["cqpa","cqe"],"future_tags":["csqp"],"group_hint":"Supplier quality (new group)"},
+ {"slug":"supplier-classification-lifecycle","tags":["cqpa","cqe","cmqoe"],"future_tags":["csqp","cmda"],"group_hint":"Supplier quality (new group)"},
+ {"slug":"kraljic-portfolio-matrix","tags":[],"future_tags":["csqp"],"group_hint":"Supplier quality (new group)"}
+],
+"not_built":[]}

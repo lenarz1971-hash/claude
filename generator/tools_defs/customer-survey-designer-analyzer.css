@@ -1,0 +1,13 @@
+.sv-tags{display:flex;flex-wrap:wrap;gap:3px;white-space:normal;min-width:110px;max-width:190px;padding-bottom:6px}
+.sv-tags i{font:600 9.5px var(--mono);font-style:normal;letter-spacing:.04em;background:var(--bg-3);color:var(--ink-2);padding:2px 5px;border-radius:2px}
+.sv-tags i.w{background:#FBEDEB;color:#C0392B}
+.sv-ok{font:600 10px var(--mono);color:var(--ink-3)}
+table.mv{table-layout:auto;margin:6px 0;font-size:14.5px;min-width:100%}
+table.mv th{font:700 9px var(--mono);letter-spacing:.08em;color:var(--ink-3);text-transform:uppercase;padding:0 6px 7px;text-align:center}
+table.mv th:first-child{text-align:left}
+table.mv td{padding:4px 6px;border-bottom:1px solid var(--line);vertical-align:middle;text-align:center}
+table.mv td.mo{text-align:left;color:var(--ink);min-width:150px;padding-right:12px}
+table.mv td.mt{font:700 13px var(--mono);color:var(--navy);white-space:nowrap}
+table.mv tr.sv-all td{background:var(--bg-2);font-weight:700}
+#tool table.tg[data-grid="r"] input[type=number],#tool table.tg[data-grid="np"] input[type=number]{min-width:48px}
+@media print{@page{size:landscape}}

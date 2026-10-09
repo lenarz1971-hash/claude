@@ -1,0 +1,9 @@
+#tool table.al-g{border-collapse:collapse;width:100%;min-width:620px;background:#fff}
+#tool table.al-g th{background:var(--bg-3);border:1px solid var(--line);padding:6px 8px;font:700 8.5px var(--mono);letter-spacing:.1em;color:var(--ink-2);text-transform:uppercase;text-align:left}
+#tool table.al-g td{border:1px solid var(--line);padding:6px 8px;font-size:14px;line-height:1.4;vertical-align:top}
+#tool table.al-g td:first-child{white-space:nowrap;color:var(--navy)}
+#tool table.tg[data-grid="r"] select[data-col^="k"]{min-width:92px}
+#tool table.tg[data-grid="fd"] select{min-width:150px}
+#tool .al-svg svg{min-width:0;max-width:680px}
+@media print{@page{size:landscape}#tool table.al-g{min-width:0}#tool table.al-g td{font-size:10px;padding:3px 5px}}
+@media (max-width:700px){#tool table.al-g{min-width:0}#tool table.al-g thead{display:none}#tool table.al-g,#tool table.al-g tbody,#tool table.al-g tr,#tool table.al-g td{display:block;width:auto}#tool table.al-g tr{border-bottom:1px solid var(--line)}#tool table.al-g td{border:0;padding:3px 8px}#tool table.al-g td:first-child{padding-top:9px}#tool table.al-g td:nth-child(2)::before{content:"Means: ";font-weight:700}#tool table.al-g td:nth-child(3)::before{content:"Look for: ";font-weight:700}#tool table.al-g td:last-child{padding-bottom:9px}}

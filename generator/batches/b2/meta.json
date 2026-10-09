@@ -1,0 +1,12 @@
+{"tools":[
+ {"slug":"affinity-diagram","tags":["cssbb","cqpa","cqe","cmqoe"],"future_tags":["cmda"],"group_hint":"Management and planning tools (new group, with activity-network-critical-path, voc-ctq-tree, project-selection-matrix)"},
+ {"slug":"interrelationship-digraph","tags":["cssbb","cqpa","cqe","cmqoe"],"future_tags":[],"group_hint":"Management and planning tools"},
+ {"slug":"process-decision-program-chart","tags":["cssbb","cqpa","cqe","cmqoe"],"future_tags":[],"group_hint":"Management and planning tools"},
+ {"slug":"matrix-diagram","tags":["cssbb","cqpa","cqe","cmqoe"],"future_tags":[],"group_hint":"Management and planning tools"},
+ {"slug":"force-field-analysis","tags":["cqe","cmqoe"],"future_tags":[],"group_hint":"Team and change tools (next to change-management-plan, stakeholder-analysis), or Management and planning tools"}
+],
+"not_built":[
+ {"item":"Activity network / critical path / PERT (TASKS.md B2 #8)","reason":"Already built in batch 1 as activity-network-critical-path."},
+ {"item":"Tree diagram and prioritization matrix (TASKS.md B2 note)","reason":"Covered by voc-ctq-tree and project-selection-matrix, per TASKS.md."},
+ {"item":"X-, Y- and C-shaped matrices","reason":"Rare in practice; the matrix-diagram tool does L and T, and its page explains the other shapes."}
+]}

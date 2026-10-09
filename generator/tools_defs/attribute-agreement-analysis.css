@@ -1,0 +1,5 @@
+#tool section.aa-sec table.tg input[type=text]{min-width:52px;width:58px}
+#tool section.aa-sec table.tg td:nth-child(2) input,#tool section.aa-sec table.tg td:nth-child(3) input{width:70px}
+table.aa-tab th.aa-h{text-align:left;padding:12px 0 6px;color:var(--navy);border-bottom:1px solid var(--line)}
+table.aa-tab td.aa-na{color:var(--ink-3);font-size:13px;padding-top:9px}
+table.aa-tab td.calc,table.aa-mx td.calc{padding-top:6px}

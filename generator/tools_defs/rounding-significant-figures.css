@@ -1,0 +1,3 @@
+#tool .rs-bad{color:#C0392B;font-weight:700}
+#tool table.tg[data-grid="r"] td.calc b{color:var(--navy);background:#FFF0C2;padding:0 3px}
+#tool table.tg input[data-col="v"]{font:500 13.5px var(--mono);color:var(--navy)}

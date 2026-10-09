@@ -1,0 +1,11 @@
+{"tools":[
+ {"slug":"kanban-sizing-calculator","tags":["gb","cssbb","cqpa","cqe"],"future_tags":["csqp","cmda"],"group_hint":"lean"},
+ {"slug":"five-s-audit-scorecard","tags":["yb","gb","cssbb","cqia","cqpa","cqe"],"future_tags":["csqp","cmda","cct"],"group_hint":"lean"},
+ {"slug":"error-proofing-poka-yoke","tags":["gb","cssbb","cqia","cqpa","cqe"],"future_tags":["csqp","cmda"],"group_hint":"lean"},
+ {"slug":"standardized-work-combination-sheet","tags":["gb","cssbb","cqe"],"future_tags":["csqp","cmda"],"group_hint":"lean"},
+ {"slug":"heijunka-leveling","tags":["cssbb"],"future_tags":[],"group_hint":"lean"},
+ {"slug":"spaghetti-diagram","tags":["cssbb","cqpa"],"future_tags":[],"group_hint":"lean"}
+],
+"not_built":[
+ {"item":"Gemba walk / daily huddle board (TASKS.md B6 #31)","reason":"Not in the b3 assignment from the lead; left for a later batch."}
+]}

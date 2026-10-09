@@ -1,0 +1,7 @@
+#tool .vq-pass,#tool .vq-fail{font:700 10px var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:2px 5px;border-radius:2px}
+#tool .vq-pass{background:#BFE0C9;color:#16273A}
+#tool .vq-fail{background:#E9A39B;color:#16273A}
+#tool .vq-svg svg{min-width:0;max-width:820px}
+#tool table.tg select[data-col="cond"]{min-width:200px}
+#tool table.tg[data-grid="t"] select{min-width:120px}
+@media print{@page{size:landscape}#tool .vq-svg svg{min-width:0}}

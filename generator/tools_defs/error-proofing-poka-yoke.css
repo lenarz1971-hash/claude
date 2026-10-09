@@ -1,0 +1,4 @@
+#tool table.tg[data-grid="d"] select[data-col="ap"]{min-width:300px}
+#tool table.tg[data-grid="d"] select[data-col="fn"]{min-width:210px}
+#tool table.tg[data-grid="d"] input[data-col="st"]{min-width:130px}
+@media print{@page{size:landscape}}

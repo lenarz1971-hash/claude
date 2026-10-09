@@ -1,0 +1,11 @@
+#tool table.tg td.calc .pq-ok{color:var(--green)}
+#tool table.tg td.calc .pq-mid{color:#9C7C1F}
+#tool table.tg td.calc .pq-bad{color:#C0392B}
+#tool table.tg td.calc .pq-x{color:var(--ink-3)}
+#tool table.tg td.calc span{font-size:11.5px;line-height:1.5}
+#tool table.tg[data-grid="e"] td[data-c="lv"]{font-size:15px}
+#tool table.tg[data-grid="e"] select[data-col="req"]{min-width:175px}
+#tool table.tg[data-grid="e"] select[data-col="st"]{min-width:200px}
+#tool table.tg[data-grid="k"] select{min-width:110px}
+.pq-tiles svg{max-width:680px;margin:0 auto}
+@media print{@page{size:landscape}.pq-tiles svg{max-width:560px}}

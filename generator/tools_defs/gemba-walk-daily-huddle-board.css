@@ -1,0 +1,5 @@
+#tool td.calc .bad{color:#C0392B;font-weight:700}
+.gh-p{display:inline-block;font:700 10px var(--mono);letter-spacing:.05em;padding:2px 7px;border-radius:2px;color:#fff}
+.gh-p.g{background:#1F8C55}.gh-p.r{background:#C0392B}
+#tool table.tg[data-grid="k"] input[type=number]{min-width:58px}
+@media print{@page{size:landscape}}

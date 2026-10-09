@@ -106,7 +106,12 @@ const TOOL_EX={
  'activity-network-critical-path':['cssbb','cqpa','cqe','cmqoe'],
  'risk-register-heat-map':['cssbb','cqpa','cqe','cmqoe'],
  'fault-tree-analysis':['cssbb','cqe'],
- 'probability-calculator':['gb','cssbb','cqpa','cqe']
+ 'probability-calculator':['gb','cssbb','cqpa','cqe'],
+ 'affinity-diagram':['cssbb','cqpa','cqe','cmqoe'],
+ 'interrelationship-digraph':['cssbb','cqpa','cqe','cmqoe'],
+ 'process-decision-program-chart':['cssbb','cqpa','cqe','cmqoe'],
+ 'matrix-diagram':['cssbb','cqpa','cqe','cmqoe'],
+ 'force-field-analysis':['cqe','cmqoe']
 };
 /* Tools beyond the Yellow Belt set, in hub order (filled in by build_resources.py from tools_content.GROUPS). */
 const MQ_TOOLS=EXTRA_SLUGS;

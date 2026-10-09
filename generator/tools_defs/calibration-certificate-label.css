@@ -1,0 +1,10 @@
+#tool .cc-P{color:var(--green)}
+#tool .cc-CP{color:#9C7C1F}
+#tool .cc-CF{color:#C0392B}
+#tool .cc-F{color:#C0392B}
+#tool table.tg input[type=number]{min-width:68px;width:68px}
+#tool table.tg[data-grid="m"] td.calc{font-size:12.5px;padding-left:6px;padding-right:6px}
+#tool .cc-lbl{max-width:420px;border:0;background:transparent}
+#tool .cc-lbl svg{min-width:0}
+#tool .cc-stm p{font-size:15px}
+@media print{@page{size:landscape}}

@@ -364,6 +364,7 @@ from tools_content4_g import PAGES4G
 from tools_content4_h import PAGES4H
 from tools_content4_h2 import PAGES4H2
 from tools_content5_a import PAGES5A
+from tools_content6_b2 import PAGES6B2
 ORDER_GB = ["value-stream-map-takt","kano-model","confidence-interval-calculator","attribute-capability","multi-vari-chart",
  "t-test-calculator","chi-square-proportions-test","one-way-anova","full-factorial-doe","smed-setup-reduction"]
 ORDER_QA = ["audit-plan-schedule","process-audit-turtle-diagram","audit-checklist-working-papers","audit-sampling-plan",
@@ -375,8 +376,8 @@ ORDER_IN = ["drawing-title-block-tolerance-reader","gdt-position-tolerance","tol
 ORDER_LN = []
 ORDER_SQ = []
 ORDER_RG = []
-ORDER_PR = ["flowchart-swimlane","activity-network-critical-path","risk-register-heat-map","fault-tree-analysis","probability-calculator"]
-_all = {p["slug"]: p for p in PAGES + PAGES2 + PAGES3A + PAGES3B + PAGES3C + PAGES3D + PAGES4E + PAGES4E2 + PAGES4F + PAGES4F2 + PAGES4F3 + PAGES4G + PAGES4H + PAGES4H2 + PAGES5A}
+ORDER_PR = ["flowchart-swimlane", "activity-network-critical-path", "risk-register-heat-map", "fault-tree-analysis", "probability-calculator", "affinity-diagram", "interrelationship-digraph", "process-decision-program-chart", "matrix-diagram", "force-field-analysis"]
+_all = {p["slug"]: p for p in PAGES + PAGES2 + PAGES3A + PAGES3B + PAGES3C + PAGES3D + PAGES4E + PAGES4E2 + PAGES4F + PAGES4F2 + PAGES4F3 + PAGES4G + PAGES4H + PAGES4H2 + PAGES5A + PAGES6B2}
 _ord = ORDER + ORDER_MQ + ORDER_GB + ORDER_QA + ORDER_IN + ORDER_PR + ORDER_LN + ORDER_SQ + ORDER_RG
 assert sorted(_all) == sorted(_ord), set(_all) ^ set(_ord)
 PAGES_YB = [_all[s] for s in ORDER]

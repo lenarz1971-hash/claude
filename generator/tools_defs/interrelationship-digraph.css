@@ -1,0 +1,2 @@
+#tool table.id-tab td{padding:6px 8px;vertical-align:middle}
+#tool table.id-tab td:nth-child(2){min-width:190px}#tool table.id-tab td:nth-child(6){min-width:160px}

@@ -1,0 +1,7 @@
+.ao-l{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 22px}
+.ao-r{display:grid;grid-template-columns:22px minmax(0,1fr) 116px;gap:8px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line)}
+.ao-r b{font:700 11px var(--mono);color:var(--ink-3)}
+.ao-r span{font:400 14px/1.4 var(--serif);color:var(--ink)}
+.ao-r select{width:100%;padding:5px 6px;font-size:14px}
+@media (max-width:760px){.ao-l{grid-template-columns:1fr}}
+@media print{.ao-l{gap:0 14px}.ao-r{padding:2px 0;grid-template-columns:16px minmax(0,1fr) 70px}.ao-r span{font-size:10.5px}.ao-r .pv{font-size:10.5px;border:0}}
