@@ -79,12 +79,13 @@ update:function(root,api){
  /* chart */
  var svg=root.querySelector('.mb-svg');
  if(has){
-  var capM=n(S.f.capM), xs=[vol>0?vol*1.5:0, be>0?be*1.5:0, capM>0?capM*1.15:0], xm=H.nice(Math.max.apply(null,xs)||1000);
-  var ym=H.nice(Math.max(M.cost(0,xm),M.cost(1,xm),1));
+  var capM=n(S.f.capM), xs=[vol>0?vol*1.5:0, be>0?be*1.5:0, capM>0?capM*1.15:0], xr=Math.max.apply(null,xs)||1000, xst=H.nice(xr/5), xm=Math.ceil(xr/xst-1e-9)*xst;
+  var yr=Math.max(M.cost(0,xm),M.cost(1,xm),1), yst=H.nice(yr/5), ym=Math.ceil(yr/yst-1e-9)*yst;
   var Wd=680, Hh=340, L=78, Rm=20, T=24, B=48, pw=Wd-L-Rm, ph=Hh-T-B, sx=function(v){return L+pw*v/xm;}, sy=function(v){return T+ph*(1-v/ym);};
   function kfmt(v){ return v>=1e6?api.fmt(v/1e6,v%1e6?1:0)+'M':v>=1e3?api.fmt(v/1e3,v%1e3?1:0)+'k':api.fmt(v,0); }
-  var g='<svg viewBox="0 0 '+Wd+' '+Hh+'" role="img" aria-label="Annual cost against annual volume, make and buy"><style>text{font:11px Archivo,sans-serif;fill:#16273A}.ax{font:700 9px \'IBM Plex Mono\',monospace;fill:#4A5D71}.lb{font:700 11.5px Archivo,sans-serif}</style>';
-  for(var i=0;i<=5;i++){ var yv=ym*i/5, xv=xm*i/5; g+='<line x1="'+L+'" x2="'+(L+pw)+'" y1="'+sy(yv)+'" y2="'+sy(yv)+'" stroke="#E3E7EB"/><text class="ax" x="'+(L-8)+'" y="'+(sy(yv)+3)+'" text-anchor="end">$'+kfmt(yv)+'</text><line x1="'+sx(xv)+'" x2="'+sx(xv)+'" y1="'+T+'" y2="'+(T+ph)+'" stroke="#E3E7EB"/><text class="ax" x="'+sx(xv)+'" y="'+(T+ph+15)+'" text-anchor="middle">'+kfmt(xv)+'</text>'; }
+  var g='<svg viewBox="0 0 '+Wd+' '+Hh+'" role="img" aria-label="Annual cost against annual volume, make and buy"><style>text{font:11px Archivo,sans-serif;fill:#16273A}.ax{font:700 9px \'IBM Plex Mono\',monospace;fill:#4A5D71}.lb{font:700 11.5px Archivo,sans-serif;paint-order:stroke;stroke:#fff;stroke-width:3px}</style>';
+  for(var yv=0;yv<=ym+1e-9;yv+=yst) g+='<line x1="'+L+'" x2="'+(L+pw)+'" y1="'+sy(yv)+'" y2="'+sy(yv)+'" stroke="#E3E7EB"/><text class="ax" x="'+(L-8)+'" y="'+(sy(yv)+3)+'" text-anchor="end">$'+kfmt(yv)+'</text>';
+  for(var xv=0;xv<=xm+1e-9;xv+=xst) g+='<line x1="'+sx(xv)+'" x2="'+sx(xv)+'" y1="'+T+'" y2="'+(T+ph)+'" stroke="#E3E7EB"/><text class="ax" x="'+sx(xv)+'" y="'+(T+ph+15)+'" text-anchor="middle">'+kfmt(xv)+'</text>';
   g+='<rect x="'+L+'" y="'+T+'" width="'+pw+'" height="'+ph+'" fill="none" stroke="#B9C0C6"/><text class="ax" x="'+(L+pw/2)+'" y="'+(Hh-8)+'" text-anchor="middle">ANNUAL VOLUME, UNITS</text><text class="ax" transform="translate(13 '+(T+ph/2)+') rotate(-90)" text-anchor="middle">COST PER YEAR</text>';
   if(capM>0&&capM<=xm) g+='<line x1="'+sx(capM)+'" x2="'+sx(capM)+'" y1="'+T+'" y2="'+(T+ph)+'" stroke="#4A5D71" stroke-dasharray="2 4"/><text class="ax" x="'+(sx(capM)-4)+'" y="'+(T+ph-8)+'" text-anchor="end">INTERNAL CAPACITY</text>';
   if(vol>0) g+='<line x1="'+sx(vol)+'" x2="'+sx(vol)+'" y1="'+T+'" y2="'+(T+ph)+'" stroke="#0F3E68" stroke-dasharray="6 4"/><text class="ax" x="'+(sx(vol)+4)+'" y="'+(T+12)+'">PLANNED '+api.fmt(vol,0)+'</text>';
@@ -92,7 +93,7 @@ update:function(root,api){
    g+='<line x1="'+sx(0)+'" y1="'+sy(y0)+'" x2="'+sx(xm)+'" y2="'+sy(y1)+'" stroke="'+c[0]+'" stroke-width="3"/>'; });
   var yl0=sy(M.cost(0,xm)), yl1=sy(M.cost(1,xm)); if(Math.abs(yl0-yl1)<14){ var mid=(yl0+yl1)/2; yl0=mid+(M.cost(0,xm)>=M.cost(1,xm)?-8:8); yl1=mid+(M.cost(1,xm)>M.cost(0,xm)?-8:8); }
   g+='<text class="lb" x="'+(L+pw-6)+'" y="'+(yl0-7)+'" text-anchor="end" style="fill:#0F3E68">MAKE</text><text class="lb" x="'+(L+pw-6)+'" y="'+(yl1+(yl1>yl0?16:-7))+'" text-anchor="end" style="fill:#9C7C1F">BUY</text>';
-  if(be>0&&be<=xm){ var bx=sx(be), by=sy(M.cost(0,be)); g+='<circle cx="'+bx+'" cy="'+by+'" r="6" fill="#C0392B" stroke="#fff" stroke-width="1.5"/><text class="lb" x="'+(bx+(bx>L+pw-170?-10:10))+'" y="'+(by+(by<T+40?18:-10))+'" text-anchor="'+(bx>L+pw-170?'end':'start')+'" style="fill:#C0392B">Break-even '+api.fmt(be,0)+' / yr</text>'; }
+  if(be>0&&be<=xm){ var bx=sx(be), by=sy(M.cost(0,be)); g+='<circle cx="'+bx+'" cy="'+by+'" r="6" fill="#C0392B" stroke="#fff" stroke-width="1.5"/><text class="lb" x="'+(bx+(bx>L+pw-170?-10:8))+'" y="'+(by+(by>T+ph-30?-14:24))+'" text-anchor="'+(bx>L+pw-170?'end':'start')+'" style="fill:#C0392B">Break-even '+api.fmt(be,0)+' / yr</text>'; }
   svg.innerHTML=g+'</svg>';
  } else svg.innerHTML='';
  /* weighted scoring */
@@ -124,7 +125,7 @@ update:function(root,api){
  if(vol>0&&capB>=0&&capB<vol) f.push(['warn','The supplier has committed '+api.fmt(capB,0)+' a year, below the planned '+api.fmt(vol,0)+'.']);
  [['Internal',cpkM],['Supplier',cpkB]].forEach(function(x){ if(!isNaN(x[1])&&x[1]<1.33) f.push(['warn',x[0]+' Cpk is '+api.fmt(x[1],2)+', below the usual 1.33 minimum. Expect inspection and scrap costs above the model unless the process improves.']); });
  if(!isNaN(ppmM)&&!isNaN(ppmB)&&Math.max(ppmM,ppmB)>0&&Math.max(ppmM,ppmB)>=2*Math.max(1,Math.min(ppmM,ppmB))) f.push(['',(ppmM>ppmB?'Internal':'Supplier')+' defect history is '+api.fmt(Math.max(ppmM,ppmB)/Math.max(1,Math.min(ppmM,ppmB)),1)+' times the other side\'s (internal '+api.fmt(ppmM,0)+' ppm, supplier '+api.fmt(ppmB,0)+' ppm). Check that the quality cost rows reflect it.']);
- if(!isNaN(ltM)&&!isNaN(ltB)&&ltB>=2*Math.max(ltM,0.5)) f.push(['','Supplier lead time ('+api.fmt(ltB,0)+' weeks) is much longer than internal ('+api.fmt(ltM,0)+'). Longer lead time means more inventory and slower response to a quality problem.']);
+ if(!isNaN(ltM)&&!isNaN(ltB)&&ltB>=2*Math.max(ltM,0.5)) f.push(['','Supplier lead time ('+api.fmt(ltB,0)+' weeks) is much longer than internal ('+api.fmt(ltM,0)+' weeks). Longer lead time means more inventory and slower response to a quality problem.']);
  if(isNaN(cpkM)&&isNaN(cpkB)&&isNaN(ppmM)&&isNaN(ppmB)) f.push(['','No capability or quality history entered. The CSQP make/buy topic asks for internal and external capability analysis; use capability studies and historical performance.']);
  /* scoring */
  if(SR.length){

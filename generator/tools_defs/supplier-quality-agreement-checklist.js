@@ -85,11 +85,11 @@ update:function(root,api){
    var rows=Math.ceil(list.length/per);
    g+='<text class="gl" x="6" y="'+(y+21)+'">'+gp.toUpperCase()+'</text>';
    list.forEach(function(x,j){ var c=col[x.r.inc||''], xx=112+(j%per)*(tw+gap), yy=y+Math.floor(j/per)*(th+gap), short=String(x.r.el).replace(/\s*\(.*?\)/g,'').split(/[:,]/)[0].trim();
-    var w=short.split(/\s+/), l1='', l2=''; w.forEach(function(t){ if((l1+' '+t).trim().length<=13&&!l2) l1=(l1+' '+t).trim(); else l2=(l2+' '+t).trim(); }); if(l2.length>13) l2=l2.slice(0,12)+'…';
+    var w=short.split(/\s+/), l1='', l2=''; w.forEach(function(t){ if((l1+' '+t).trim().length<=14&&!l2) l1=(l1+' '+t).trim(); else l2=(l2+' '+t).trim(); }); if(l2.length>14) l2=l2.slice(0,13)+'…';
     g+='<rect x="'+xx+'" y="'+yy+'" width="'+tw+'" height="'+th+'" rx="3" fill="'+c[0]+'" stroke="'+c[1]+'" stroke-width="1.6"'+(x.r.inc?'':' stroke-dasharray="3 3"')+'/><text class="c" x="'+(xx+4)+'" y="'+(yy+10)+'">'+(x.i+1)+'</text><text x="'+(xx+tw/2)+'" y="'+(yy+(l2?20:23))+'" text-anchor="middle">'+esc(l1)+'</text>'+(l2?'<text x="'+(xx+tw/2)+'" y="'+(yy+30)+'" text-anchor="middle">'+esc(l2)+'</text>':''); });
    y+=rows*(th+gap)+8; });
   var lx=6, ly=y+12; [['Yes, fully','FULLY'],['Partly','PARTLY'],['No','NO'],['Not applicable','N/A'],['','NOT REVIEWED']].forEach(function(k){ var c=col[k[0]]; g+='<rect x="'+lx+'" y="'+(ly-9)+'" width="11" height="11" fill="'+c[0]+'" stroke="'+c[1]+'" stroke-width="1.6"/><text class="lg" x="'+(lx+15)+'" y="'+ly+'">'+k[1]+'</text>'; lx+=k[1].length*6+34; });
-  root.querySelector('.qa-svg').innerHTML='<svg viewBox="0 0 '+Wd+' '+(ly+8)+'" role="img" aria-label="Coverage of each element"><style>text{font:9.5px Archivo,sans-serif;fill:#16273A}.c{font:700 8px \'IBM Plex Mono\',monospace;fill:#4A5D71}.gl{font:700 9px \'IBM Plex Mono\',monospace;fill:#0F3E68;letter-spacing:.08em}.lg{font:700 8.5px \'IBM Plex Mono\',monospace;fill:#4A5D71}</style>'+g+'</svg>';
+  root.querySelector('.qa-svg').innerHTML='<svg viewBox="0 0 '+Wd+' '+(ly+8)+'" role="img" aria-label="Coverage of each element"><style>text{font:9px Archivo,sans-serif;fill:#16273A}.c{font:700 8px \'IBM Plex Mono\',monospace;fill:#4A5D71}.gl{font:700 9px \'IBM Plex Mono\',monospace;fill:#0F3E68;letter-spacing:.08em}.lg{font:700 8.5px \'IBM Plex Mono\',monospace;fill:#4A5D71}</style>'+g+'</svg>';
  } else root.querySelector('.qa-svg').innerHTML='';
  /* flags */
  if(!E.length) f.push(['warn','No elements listed. Use the button above to start from the standard list.']);

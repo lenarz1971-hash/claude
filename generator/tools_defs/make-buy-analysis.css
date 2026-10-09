@@ -4,3 +4,4 @@
 #tool table.tg[data-grid="s"] select{min-width:180px}
 .mb-svg svg{max-width:760px;margin:0 auto}
 @media print{@page{size:landscape}.mb-svg svg{max-width:600px}}
+#tool table.tg[data-grid="c"] input[data-col="mk"],#tool table.tg[data-grid="c"] input[data-col="by"]{min-width:92px}

@@ -1,0 +1,12 @@
+{"tools":[
+ {"slug":"si-metrology-unit-converter","tags":["cqi","cqt"],"future_tags":["cct"],"group_hint":"calibration and metrology"},
+ {"slug":"imte-accuracy-specification","tags":["cqi","cqt"],"future_tags":["cct"],"group_hint":"calibration and metrology"},
+ {"slug":"tur-tar-guard-band-pfa","tags":["cqt","cqi","cqe"],"future_tags":["cct"],"group_hint":"calibration and metrology"},
+ {"slug":"calibration-certificate-label","tags":["cqt","cqi","cqe"],"future_tags":["cct","cmda"],"group_hint":"calibration and metrology"},
+ {"slug":"rounding-significant-figures","tags":["cqi"],"future_tags":["cct"],"group_hint":"calibration and metrology"},
+ {"slug":"calibration-table-interpolation","tags":[],"future_tags":["cct"],"group_hint":"calibration and metrology"}
+],
+"not_built":[
+ {"item":"TUR / guard band: plain TUR and a single 'subtract U' guard band","reason":"Already in cqt-measurement-uncertainty-budget. The new tur-tar-guard-band-pfa tool takes U as an input and adds TAR, four guard-band methods, a PFA-target solver and PFA/PFR by numerical integration; it links to the budget for U rather than duplicating it."},
+ {"item":"Calibration recall / OOT impact and interval adjustment","reason":"Covered by cqt-calibration-oot-impact and calibration-interval-adjustment; the certificate tool links to both instead of repeating them."}
+]}

@@ -84,7 +84,7 @@ update:function(root,api){
   else if(G.length){ var gopen=G.filter(function(r){return r.st!=='Done';}); f.push(['warn','Not ready for the first production shipment: '+gopen.length+' gate item'+(gopen.length>1?'s':'')+' open: '+gopen.map(function(r){return esc(r.it)+' ('+(r.st||'Not started').toLowerCase()+')';}).join('; ')+'.']); }
   else f.push(['warn','No item is marked as a gate. Decide which items must be done before the first production shipment; at least the quality agreement, the requirements and the first article or PPAP.']);
   if(!isNaN(days)&&!ready){ if(days<0) f.push(['warn','The planned first shipment date has passed and the gate items are not all done.']); else if(days<=14) f.push(['warn','First shipment is '+days+' day'+(days===1?'':'s')+' away with gate items still open.']); }
-  blk.forEach(function(r){ f.push(['warn','Blocked: <b>'+esc(r.it)+'</b>.'+(r.ev?' '+esc(r.ev):' Record what it is waiting for.')]); });
+  blk.forEach(function(r){ f.push(['warn','Blocked: <b>'+esc(r.it)+'</b>.'+(r.ev?' '+esc(r.ev).replace(/([^.!?])$/,'$1.'):' Record what it is waiting for.')]); });
   od.filter(function(r){return r.st!=='Blocked';}).forEach(function(r){ f.push(['warn','Past due ('+esc(r.due)+'): '+esc(r.it)+'.']); });
   var noOwn=R.filter(function(r){return !r.who&&r.st!=='Done';}); if(noOwn.length) f.push(['',noOwn.length+' open item'+(noOwn.length>1?'s have':' has')+' no owner.']);
   function has(re){ return K.some(function(r){return re.test(r.it)&&(r.req||'Required')==='Required';}); }

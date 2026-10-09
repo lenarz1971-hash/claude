@@ -1,0 +1,6 @@
+{"tools":[
+ {"slug":"make-buy-analysis","tags":[],"future_tags":["csqp"],"group_hint":"Supplier quality (group created by b4): strategy and cost"},
+ {"slug":"supplier-quality-agreement-checklist","tags":[],"future_tags":["csqp","cmda"],"group_hint":"Supplier quality (group created by b4)"},
+ {"slug":"supplier-onboarding-checklist","tags":[],"future_tags":["csqp"],"group_hint":"Supplier quality (group created by b4)"}
+],
+"not_built":[]}
