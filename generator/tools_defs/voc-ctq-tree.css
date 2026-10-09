@@ -11,3 +11,12 @@
 .ct-b.drv{background:var(--gold-xl);border-color:var(--gold)}
 .ct-b.ctq{border-left:4px solid var(--green)}
 @media (max-width:700px){.ct-n,.ct-d{grid-template-columns:1fr}}
+.gt-tree{display:grid;gap:12px;margin:6px 0}
+.gt-n{display:grid;gap:10px;align-items:start}
+.gt-cs{display:grid;gap:8px}
+.ct-b.gt0{background:var(--navy);color:#fff;border-color:var(--navy)}
+.ct-b.gt0 span{color:var(--gold)}
+.ct-b.gt1{background:var(--gold-xl);border-color:var(--gold)}
+.ct-b.gt2{background:var(--bg-2)}
+.ct-b.gt3{border-left:4px solid var(--green)}
+@media (max-width:700px){.gt-n{grid-template-columns:1fr!important}.gt-cs{padding-left:12px;border-left:2px solid var(--line)}}

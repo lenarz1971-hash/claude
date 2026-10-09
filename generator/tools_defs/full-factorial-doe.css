@@ -12,3 +12,15 @@ table.df-eff tr.sig td{background:#EEF4EA;font-weight:700}
 .df-eq{margin:8px 0;overflow-wrap:anywhere}
 table.mv th,table.mv td{white-space:nowrap}
 table.mv td.mo{white-space:normal}
+.df-frf{margin-bottom:6px}
+.df-dr{margin:8px 0;overflow-wrap:anywhere}
+table.df-atb td span.ok{color:var(--green);font-weight:600}
+table.df-atb td span.wn{color:#C0392B;font-weight:600}
+table.df-atb td{white-space:normal}
+table.df-eff td.mo2,table.df-atb td.mo2{text-align:left;color:var(--ink-3);font-size:13px;white-space:normal;min-width:140px}
+.df-alnote{color:var(--ink-3);font-size:13px}
+#tool table.df-runs th{white-space:nowrap}
+table.df-atb td:last-child{min-width:190px}
+table.df-atb td.mo{min-width:70px}
+table.df-atb td.mo2{min-width:150px}
+@media (max-width:600px){table.df-atb th{white-space:normal}}

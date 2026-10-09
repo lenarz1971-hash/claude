@@ -225,8 +225,111 @@ def test_cr(pg):
         "d": "3 71.2\n6 70.1\n9 69.8\n12 68.2\n15 67.9\n18 64.1\n21 66.3\n24 65.2\n27 64.4\n30 63.9\n33 63.0\n36 62.2"})
     cr_case(pg, "weak, five pairs, 99%", {"px": "2.5", "cl": "99", "d": "1 3.1\n2 2.2\n3 3.9\n4 2.8\n5 4.4"})
 
+# ================================================================ full-factorial-doe: fractional factorials
+LET = "ABCDEFG"
+def frac_design(k, gens):
+    """independent construction: base factors in standard (Yates) order, generated columns from 'D=ABC' strings"""
+    p = len(gens); kb = k - p; nr = 2 ** kb
+    X = np.array([[1 if (i >> j) & 1 else -1 for j in range(kb)] for i in range(nr)], dtype=float)
+    cols = {LET[j]: X[:, j] for j in range(kb)}
+    for g in gens:
+        lhs, rhs = g.replace(" ", "").split("=")
+        sign = -1.0 if rhs.startswith(("-", "−")) else 1.0
+        cols[lhs] = sign * np.prod([cols[c] for c in rhs.lstrip("-−+")], axis=0)
+    return nr, cols
+def word_col(cols, w): return np.prod([cols[c] for c in w], axis=0)
+
+def ff_case(pg, name, f, y, gens, click_example=False):
+    print("== fractional factorial:", name)
+    if click_example:
+        load(pg, "full-factorial-doe"); pg.click(".df-exfr"); pg.wait_for_timeout(300)
+        st = pg.evaluate("()=>window.TOOL.exFrac"); f, y = st["f"], st["y"]
+    else:
+        load(pg, "full-factorial-doe", {"f": f, "x": {"y": y}})
+    k = int(f["k"]); r = int(f.get("r") or 1); a = float(f.get("a") or 0.05)
+    nr, cols = frac_design(k, gens)
+    words = ["".join(c) for n in range(1, k + 1) for c in itertools.combinations(LET[:k], n)]
+    # brute-force defining relation and resolution: words whose column is constant
+    defin = [w for w in words if abs(abs(word_col(cols, w).sum()) - nr) < 1e-9]
+    res = min(len(w) for w in defin)
+    page_res = pg.locator(".df-alias .stat > div").nth(2).locator("b").inner_text()
+    same(name + " resolution", page_res, ["", "I", "II", "III", "IV", "V", "VI", "VII"][res])
+    # brute-force alias chains: words with identical or opposite columns
+    chains = {}
+    for w in words:
+        c = word_col(cols, w)
+        if abs(abs(c.sum()) - nr) < 1e-9: continue
+        key = tuple(np.abs(c) * 0 + c * (1 if c[0] > 0 else -1))
+        chains.setdefault(key, []).append((w, 1 if c[0] > 0 else -1))
+    want_chains = {}
+    for v in chains.values():
+        rep = min(v, key=lambda t: (len(t[0]), t[0]))
+        want_chains[rep[0]] = sorted((w, s * rep[1]) for w, s in v if w != rep[0])
+    got_chains = {}
+    for rw in table(pg, ".df-atb"):
+        toks = rw[1].replace("−", "-").split()
+        got_chains[toks[0]] = sorted((toks[i + 1], -1 if toks[i] == "-" else 1) for i in range(1, len(toks), 2))
+    same(name + " alias chains (all " + str(len(want_chains)) + ")", got_chains, want_chains)
+    # effects by least squares on the run means (independent of the page's contrast sums)
+    ys = np.array([[float(y[f"{i+1}|{q+1}"]) for q in range(r)] for i in range(nr)])
+    reps = sorted(want_chains, key=lambda w: (len(w), w))
+    Xm = np.column_stack([np.ones(nr)] + [word_col(cols, w) for w in reps])
+    beta = np.linalg.lstsq(Xm, ys.mean(1), rcond=None)[0]
+    rows = {rw[0].split()[0]: rw for rw in table(pg, ".df-eff")}
+    for w, b in zip(reps, beta[1:]):
+        check(f"{name} effect {w}", num(rows[w][2]), 2 * b, 6e-5)
+    if r > 1:   # pure-error t tests: statsmodels OLS on every observation with the saturated model
+        Xa = np.repeat(Xm, r, axis=0); fit = sm.OLS(ys.reshape(-1), Xa).fit()
+        for j, w in enumerate(reps):
+            pv = rows[w][5]
+            if pv.startswith("<"): check(f"{name} p value {w} (< 0.0001)", 1.0 if fit.pvalues[j + 1] < 1e-4 else 0.0, 1.0, 0)
+            else: check(f"{name} p value {w}", num(pv), fit.pvalues[j + 1], 6e-5)
+    else:       # Lenth's pseudo standard error
+        eff = np.abs(2 * beta[1:]); s0 = 1.5 * np.median(eff); pse = 1.5 * np.median(eff[eff < 2.5 * s0])
+        for w, b in zip(reps, beta[1:]):
+            check(f"{name} effect/PSE {w}", num(rows[w][4]), 2 * b / pse, 0.006)
+        crit = stats.t.ppf(1 - a / 2, len(reps) / 3) * pse
+        sig = sorted(w for w, b in zip(reps, beta[1:]) if abs(2 * b) > crit)
+        flag = [t for t in pg.locator(".df-out .flag").all_inner_texts() if t.startswith("Significant") or t.startswith("No effect")][0]
+        got = sorted(re.findall(r"\b([A-G]+)\b", flag.split(":")[1].split(".")[0])) if flag.startswith("Significant") else []
+        same(name + " significant effects (Lenth)", got, sig)
+
+def test_ff(pg):
+    rng = np.random.default_rng(12)
+    def resp(k, gens, r, model):
+        nr, cols = frac_design(k, gens)
+        return {f"{i+1}|{q+1}": f"{model(cols, i) + rng.normal(0, 0.4):.2f}" for i in range(nr) for q in range(r)}
+    ff_case(pg, "worked fractional example, 2^(4-1) IV, 2 replicates", None, None, ["D=ABC"], click_example=True)
+    g = ["D=AB", "E=AC", "F=BC", "G=ABC"]
+    ff_case(pg, "2^(7-4) III, unreplicated", {"k": "7", "fr": "Sixteenth fraction, 2^(k−4)", "r": "1", "a": "0.05"},
+            resp(7, g, 1, lambda c, i: 50 + 6 * c["A"][i] - 4 * c["E"][i] + 0.5 * c["G"][i]), g)
+    g = ["E=ABCD"]
+    ff_case(pg, "2^(5-1) V, unreplicated", {"k": "5", "fr": "Half fraction, 2^(k−1)", "r": "1", "a": "0.1"},
+            resp(5, g, 1, lambda c, i: 10 + 2 * c["A"][i] + 1.5 * c["C"][i] * c["E"][i] - c["D"][i]), g)
+    g = ["E=-ABC", "F=BCD"]
+    ff_case(pg, "2^(6-2) IV, custom generators with a minus sign", {"k": "6", "fr": "Quarter fraction, 2^(k−2)", "gen": "E=-ABC F=BCD", "r": "1"},
+            resp(6, g, 1, lambda c, i: 5 + 1.2 * c["B"][i] + 0.8 * c["E"][i]), g)
+    g = ["C=AB"]
+    ff_case(pg, "2^(3-1) III, 3 replicates", {"k": "3", "fr": "Half fraction, 2^(k−1)", "r": "3"},
+            resp(3, g, 3, lambda c, i: 20 + 3 * c["A"][i] + c["B"][i]), g)
+    g = ["F=ABCD", "G=ABDE"]
+    ff_case(pg, "2^(7-2) IV, 2 replicates", {"k": "7", "fr": "Quarter fraction, 2^(k−2)", "r": "2"},
+            resp(7, g, 2, lambda c, i: 3 * c["A"][i] + 2 * c["A"][i] * c["B"][i] - c["G"][i]), g)
+    # the worked example that existed before b12 (full 2^3, two replicates) must give the same effects
+    print("== full factorial worked example (existing)")
+    load(pg, "full-factorial-doe"); ex = pg.evaluate("()=>window.TOOL.example")
+    nr, cols = frac_design(3, []); ys = np.array([[float(ex["x"]["y"][f"{i+1}|{q+1}"]) for q in range(2)] for i in range(8)])
+    rows = {rw[0].split()[0]: rw for rw in table(pg, ".df-eff")}
+    Xa = np.repeat(np.column_stack([np.ones(8)] + [word_col(cols, w) for w in ["A", "B", "C", "AB", "AC", "BC", "ABC"]]), 2, axis=0)
+    fit = sm.OLS(ys.reshape(-1), Xa).fit()
+    for j, w in enumerate(["A", "B", "C", "AB", "AC", "BC", "ABC"]):
+        check(f"existing effect {w}", num(rows[w][1]), 2 * fit.params[j + 1], 6e-5)
+        pv = rows[w][4]
+        if pv.startswith("<"): check(f"existing p {w} (< 0.0001)", 1.0 if fit.pvalues[j + 1] < 1e-4 else 0.0, 1.0, 0)
+        else: check(f"existing p {w}", num(pv), fit.pvalues[j + 1], 6e-5)
+
 # ================================================================ run
-TESTS = [t for t in [test_de, test_ci, test_cr] if not ONLY or t.__name__ in ONLY]
+TESTS = [t for t in [test_de, test_ci, test_cr, test_ff] if not ONLY or t.__name__ in ONLY]
 with sync_playwright() as p:
     exe = "/opt/pw-browsers/chromium"
     b = p.chromium.launch(executable_path=exe if os.path.exists(exe) else None)
