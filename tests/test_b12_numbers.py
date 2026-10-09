@@ -16,6 +16,7 @@ import statsmodels.api as sm
 from playwright.sync_api import sync_playwright
 
 ROOT = sys.argv[1] if len(sys.argv) > 1 else "out_b12"
+ONLY = sys.argv[2:]
 FAIL = []; NCHK = [0]
 def check(name, got, want, tol, rel=False):
     NCHK[0] += 1
@@ -50,6 +51,8 @@ def load(pg, slug, state=None):
         state = dict(state, v=1, tool=slug); state.setdefault("x", {}); state.setdefault("g", {})
         pg.evaluate("([k,v])=>localStorage.setItem(k,v)", [f"scqg-tool-{slug}", json.dumps(state)])
         pg.reload()
+    else:
+        pg.evaluate("k=>localStorage.removeItem(k)", f"scqg-tool-{slug}"); pg.reload()
     pg.wait_for_timeout(250)
 
 def stats_of(pg, sel):
@@ -121,8 +124,109 @@ def test_de(pg):
             check(f"multinomial {a} variance", num(r[4]), n * p * (1 - p), 1e-4)
             check(f"multinomial {a} marginal P(X<=x)", num(r[5]), stats.binom.cdf(k, n, p), 6e-5)
 
+# ================================================================ confidence-interval-calculator: tolerance and prediction intervals
+def k1_exact(n, P, g):
+    return stats.nct.ppf(g, n - 1, stats.norm.ppf(P) * math.sqrt(n)) / math.sqrt(n)
+def k2_exact(n, P, g):
+    """two-sided normal tolerance factor from Odeh's integral, solved with SciPy quad/brentq
+    (checked once against a 400,000-sample Monte Carlo: n=10, 95/95 gives 3.3934, coverage 0.9499)"""
+    nu = n - 1
+    def r(z): return optimize.brentq(lambda r: stats.norm.cdf(z + r) - stats.norm.cdf(z - r) - P, 0, z + 40, xtol=1e-14)
+    def cov(k): return math.sqrt(2 * n / math.pi) * integrate.quad(lambda z: stats.chi2.sf(nu * r(z) ** 2 / k ** 2, nu) * math.exp(-n * z * z / 2), 0, 12 / math.sqrt(n), epsabs=1e-13, limit=200)[0]
+    return optimize.brentq(lambda k: cov(k) - g, 0.1, 500, xtol=1e-12)
+def k2_howe(n, P, g):
+    nu = n - 1; return math.sqrt(nu * (1 + 1 / n) * stats.norm.ppf((1 + P) / 2) ** 2 / stats.chi2.ppf(1 - g, nu))
+def k1_natrella(n, P, g):
+    zp, zg = stats.norm.ppf(P), stats.norm.ppf(g); a = 1 - zg ** 2 / (2 * (n - 1)); b = zp ** 2 - zg ** 2 / n
+    return (zp + math.sqrt(zp ** 2 - a * b)) / a if a > 0 and zp ** 2 - a * b >= 0 else float("nan")
+
+def ci_case(pg, name, f):
+    print("== tolerance / prediction:", name)
+    load(pg, "confidence-interval-calculator", {"f": f} if f else None)
+    if not f: f = pg.evaluate("()=>window.TOOL.example.f")
+    raw = [float(v) for v in re.split(r"[\s,;]+", f.get("d") or "") if v]
+    if len(raw) >= 2: n, m, s = len(raw), float(np.mean(raw)), float(np.std(raw, ddof=1))
+    else: n, m, s = int(f["n"]), float(f["m"]), float(f["s"])
+    g = float(f.get("cl") or 95) / 100; P = float(f.get("tp") or 99) / 100
+    side = f.get("tside") or "Two-sided"; two = side == "Two-sided"; low = side == "Lower bound only"
+    k = k2_exact(n, P, g) if two else k1_exact(n, P, g); ka = k2_howe(n, P, g) if two else k1_natrella(n, P, g)
+    check(name + " k exact", num(stat(pg, ".ci-tst .stat", "Tolerance factor")), k, 2e-4)
+    check(name + " k approximation", num(stat(pg, ".ci-tst .stat", "k by")), ka, 2e-4)
+    tc = stats.t.ppf(1 - ((1 - g) / 2 if two else 1 - g), n - 1)
+    want = [(m - tc * s / math.sqrt(n), m + tc * s / math.sqrt(n)), (m - tc * s * math.sqrt(1 + 1 / n), m + tc * s * math.sqrt(1 + 1 / n)), (m - k * s, m + k * s)]
+    rows = table(pg, ".ci-ttb")
+    dp = len(rows[0][3].split(".")[1]) if "." in rows[0][3] else len(rows[0][4].split(".")[1])
+    tol = 0.51 * 10 ** -dp + 2.5e-4 * s
+    for (lab, (lo, hi)), r in zip(zip(["CI mean", "PI one value", "TI"], want), rows):
+        if two or low: check(f"{name} {lab} lower", num(r[3]), lo, tol)
+        if two or not low: check(f"{name} {lab} upper", num(r[4]), hi, tol)
+
+def test_ci(pg):
+    ci_case(pg, "worked example (one-sided upper, n = 30, 99% / 95%)", None)
+    ci_case(pg, "two-sided, raw data n = 10, 95% / 95%", {"cl": "95", "tp": "95", "tside": "Two-sided", "d": "10.12 10.07 9.98 10.21 10.04 9.95 10.15 10.09 10.02 10.11"})
+    ci_case(pg, "lower bound, n = 5, 90% / 90%", {"cl": "90", "tp": "90", "tside": "Lower bound only", "n": "5", "m": "48.2", "s": "1.7"})
+    ci_case(pg, "two-sided, n = 200, 99% / 99.9%", {"cl": "99", "tp": "99.9", "tside": "Two-sided", "n": "200", "m": "0.512", "s": "0.0042"})
+    ci_case(pg, "upper bound, n = 2", {"cl": "95", "tp": "95", "tside": "Upper bound only", "n": "2", "m": "3", "s": "0.5"})
+    ci_case(pg, "two-sided, n = 3, 95% / 99%", {"cl": "95", "tp": "99", "tside": "Two-sided", "n": "3", "m": "20", "s": "2"})
+    # the results that existed before b12 (worked example)
+    load(pg, "confidence-interval-calculator")
+    t = stats.t.ppf(0.975, 29); m, s, n = 38.4, 9.6, 30
+    rows = table(pg, ".ci-mtb")
+    check("existing: mean CI lower", num(rows[0][3]), m - t * s / math.sqrt(n), 0.006)
+    check("existing: sigma CI upper", num(rows[2][4]), math.sqrt(29 * s * s / stats.chi2.ppf(0.025, 29)), 0.0006)
+
+# ================================================================ correlation-regression: intervals and residuals
+def cr_case(pg, name, f):
+    print("== correlation / regression:", name)
+    load(pg, "correlation-regression", {"f": f} if f else None)
+    if not f: f = pg.evaluate("()=>window.TOOL.example.f")
+    xy = np.array([[float(v) for v in l.split()] for l in f["d"].strip().split("\n")]); x, y = xy[:, 0], xy[:, 1]; n = len(x)
+    cl = float(f.get("cl") or 95) / 100; a = 1 - cl
+    fit = sm.OLS(y, sm.add_constant(x)).fit()
+    r = np.corrcoef(x, y)[0, 1]; zc = stats.norm.ppf(1 - a / 2)
+    lo, hi = math.tanh(math.atanh(r) - zc / math.sqrt(n - 3)), math.tanh(math.atanh(r) + zc / math.sqrt(n - 3))
+    tiles = dict((lab.upper(), val) for lab, val in stats_of(pg, ".cr-ist .stat"))
+    def tile(start):
+        for k, v in tiles.items():
+            if k.startswith(start.upper()): return v
+        raise KeyError(start)
+    rl, rh = [num(v) for v in tile(f"{round(cl*100,2):g}% interval for ρ").split(" to ")]
+    check(name + " rho CI lower (Fisher z)", rl, lo, 6e-5); check(name + " rho CI upper (Fisher z)", rh, hi, 6e-5)
+    bl, bh = [num(v) for v in tile(f"{round(cl*100,2):g}% interval for the slope").split(" to ")]
+    ci = fit.conf_int(alpha=a)[1]
+    check(name + " slope CI lower", bl, ci[0], 6e-6, rel=True); check(name + " slope CI upper", bh, ci[1], 6e-6, rel=True)
+    pv = tile("p value"); want_p = fit.pvalues[1]
+    if pv.startswith("<"): check(name + " slope p value (< 0.0001)", 1.0 if want_p < 1e-4 else 0.0, 1.0, 0)
+    else: check(name + " slope p value", num(pv), want_p, 6e-5)
+    if f.get("px"):
+        x0 = float(f["px"]); sf = fit.get_prediction(np.array([[1.0, x0]])).summary_frame(alpha=a)
+        cl_, ch_ = [num(v) for v in tile(f"{round(cl*100,2):g}% CI for the mean y").split(" to ")]
+        pl_, ph_ = [num(v) for v in tile(f"{round(cl*100,2):g}% PI for one new y").split(" to ")]
+        check(name + " CI mean y lower", cl_, sf["mean_ci_lower"].iloc[0], 6e-5); check(name + " CI mean y upper", ch_, sf["mean_ci_upper"].iloc[0], 6e-5)
+        check(name + " PI new y lower", pl_, sf["obs_ci_lower"].iloc[0], 6e-5); check(name + " PI new y upper", ph_, sf["obs_ci_upper"].iloc[0], 6e-5)
+    infl = fit.get_influence(); sr = infl.resid_studentized_internal; h = infl.hat_matrix_diag
+    order = np.argsort(fit.resid, kind="stable"); ns = np.empty(n); ns[order] = stats.norm.ppf((np.arange(1, n + 1) - 0.375) / (n + 0.25))
+    rows = table(pg, ".cr-rtb")
+    same(name + " residual rows", len(rows), n)
+    for i, rw in enumerate(rows):
+        check(f"{name} #{i+1} fitted", num(rw[3]), fit.fittedvalues[i], 6e-5)
+        check(f"{name} #{i+1} residual", num(rw[4]), fit.resid[i], 6e-5)
+        check(f"{name} #{i+1} standardized", num(rw[5]), sr[i], 6e-4)
+        check(f"{name} #{i+1} leverage", num(rw[6]), h[i], 6e-4)
+        check(f"{name} #{i+1} normal score", num(rw[7]), ns[i], 6e-4)
+    # existing figures (before b12) still right
+    check(name + " existing r", num(stat(pg, ".cr-st .stat", "Correlation r")), r, 6e-5)
+    check(name + " existing slope", num(stat(pg, ".cr-st .stat", "Slope")), fit.params[1], 6e-6, rel=True)
+    check(name + " existing s", num(stat(pg, ".cr-st .stat", "Standard error")), math.sqrt(fit.scale), 6e-6, rel=True)
+
+def test_cr(pg):
+    cr_case(pg, "worked example", None)
+    cr_case(pg, "negative slope, 90%, outlier", {"xl": "Age, months", "yl": "Hardness", "px": "30", "cl": "90",
+        "d": "3 71.2\n6 70.1\n9 69.8\n12 68.2\n15 67.9\n18 64.1\n21 66.3\n24 65.2\n27 64.4\n30 63.9\n33 63.0\n36 62.2"})
+    cr_case(pg, "weak, five pairs, 99%", {"px": "2.5", "cl": "99", "d": "1 3.1\n2 2.2\n3 3.9\n4 2.8\n5 4.4"})
+
 # ================================================================ run
-TESTS = [test_de]
+TESTS = [t for t in [test_de, test_ci, test_cr] if not ONLY or t.__name__ in ONLY]
 with sync_playwright() as p:
     exe = "/opt/pw-browsers/chromium"
     b = p.chromium.launch(executable_path=exe if os.path.exists(exe) else None)
