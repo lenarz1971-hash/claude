@@ -146,7 +146,10 @@ const TOOL_EX={
  'taguchi-loss-function':['cqpa','cssbb'],
  'variables-sampling-plan':['cqe','cqpa','cqi'],
  'probability-plot-stem-leaf-dot-plot':['cqe','cssbb','cqpa','gb'],
- 'time-series-moving-average':['cqe','cssbb']
+ 'time-series-moving-average':['cqe','cssbb'],
+ 'make-buy-analysis':[],
+ 'supplier-quality-agreement-checklist':[],
+ 'supplier-onboarding-checklist':[]
 };
 /* Tools beyond the Yellow Belt set, in hub order (filled in by build_resources.py from tools_content.GROUPS). */
 const MQ_TOOLS=EXTRA_SLUGS;
