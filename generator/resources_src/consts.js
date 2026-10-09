@@ -111,7 +111,17 @@ const TOOL_EX={
  'interrelationship-digraph':['cssbb','cqpa','cqe','cmqoe'],
  'process-decision-program-chart':['cssbb','cqpa','cqe','cmqoe'],
  'matrix-diagram':['cssbb','cqpa','cqe','cmqoe'],
- 'force-field-analysis':['cqe','cmqoe']
+ 'force-field-analysis':['cqe','cmqoe'],
+ 'kanban-sizing-calculator':['gb','cssbb','cqpa','cqe'],
+ 'five-s-audit-scorecard':['yb','gb','cssbb','cqia','cqpa','cqe'],
+ 'error-proofing-poka-yoke':['gb','cssbb','cqia','cqpa','cqe'],
+ 'standardized-work-combination-sheet':['gb','cssbb','cqe'],
+ 'heijunka-leveling':['cssbb'],
+ 'spaghetti-diagram':['cssbb','cqpa'],
+ 'supplier-selection-matrix':['cqpa','cqe','cmqoe'],
+ 'ppap-qualification-plan':['cqpa','cqe'],
+ 'supplier-classification-lifecycle':['cqpa','cqe','cmqoe'],
+ 'kraljic-portfolio-matrix':[]
 };
 /* Tools beyond the Yellow Belt set, in hub order (filled in by build_resources.py from tools_content.GROUPS). */
 const MQ_TOOLS=EXTRA_SLUGS;
