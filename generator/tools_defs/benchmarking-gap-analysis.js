@@ -57,7 +57,7 @@ update:function(root,api){
   g+='<text class="ax" x="'+X(100)+'" y="14" text-anchor="middle">BENCHMARK</text>';
   ok.forEach(function(o,i){ var y=26+i*RH, a=o.x.ach, lab=o.id+'  '+(o.r.mea||''); lab=lab.length>36?lab.slice(0,35)+'…':lab;
    g+='<text x="'+(L-8)+'" y="'+(y+15)+'" text-anchor="end">'+esc(lab)+'</text>';
-   if(isFinite(a)){ g+='<rect x="'+L+'" y="'+(y+4)+'" width="'+(X(a)-L)+'" height="'+(RH-12)+'" fill="'+(a>=100?'#2E7D4F':a<70?'#C0392B':'#0F3E68')+'"><title>'+esc(o.id)+': '+api.fmt(a,1)+'% of benchmark</title></rect><text class="v" x="'+(X(a)+5)+'" y="'+(y+15)+'">'+api.fmt(a,0)+'%'+(a>MAX?'+':'')+'</text>'; }
+   if(isFinite(a)){ g+='<rect x="'+L+'" y="'+(y+4)+'" width="'+(X(a)-L)+'" height="'+(RH-12)+'" fill="'+(a>=100?'#2E7D4F':a<70?'#C0392B':'#0F3E68')+'"><title>'+esc(o.id)+': '+api.fmt(a,1)+'% of benchmark</title></rect><text class="v" x="'+(Math.max(X(a),isFinite(o.x.tach)?X(o.x.tach)+2:0)+5)+'" y="'+(y+15)+'">'+api.fmt(a,0)+'%'+(a>MAX?'+':'')+'</text>'; }
    if(isFinite(o.x.tach)) g+='<line x1="'+X(o.x.tach)+'" x2="'+X(o.x.tach)+'" y1="'+(y+1)+'" y2="'+(y+RH-5)+'" stroke="#D8B147" stroke-width="3"><title>Target: '+api.fmt(o.x.tach,1)+'% of benchmark</title></line>'; });
   root.querySelector('.bm-svg').innerHTML=g+'</svg>';
  } else root.querySelector('.bm-svg').innerHTML='';
@@ -68,7 +68,7 @@ update:function(root,api){
   if(!r.unit&&r.mea) f.push(['',id+' has no unit. A gap is only meaningful when both sides measure the same thing the same way.']);
   if(!x.ok) return;
   if(n(r.own)===0) f.push(['',id+': your value is zero, so "improve by" cannot be expressed as a percentage.']);
-  if(x.gap<0) f.push(['',id+': you lead the partner by '+api.fmt(-x.gap,2)+' '+esc(r.unit||'')+'. Check the definitions match before claiming it; if they do, protect the practice that gets you there.']);
+  if(x.gap<0) f.push(['',id+': you lead the partner by '+api.fmt(-x.gap,2)+(r.unit==='%'?'':' ')+esc(r.unit||'')+'. Check the definitions match before claiming it; if they do, protect the practice that gets you there.']);
   var t=n(r.tgt);
   if(isFinite(t)&&x.gap>0){ var toward=x.low?t<n(r.own):t>n(r.own); if(!toward) f.push(['warn',id+': the target does not move toward the benchmark.']); else if(x.close>100) f.push(['',id+': the target goes past the benchmark ('+api.fmt(x.close,0)+'% of the gap). Ambitious; say what you will do that the partner does not.']); }
   if(x.gap>0&&!isFinite(t)) f.push(['',id+': no target set yet.']); });

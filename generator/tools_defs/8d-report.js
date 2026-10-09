@@ -9,6 +9,7 @@ sections:[
   {id:'opened',label:'Opened',type:'date'},
   {id:'sym',label:'Symptom as reported',type:'textarea',wide:true},
   {id:'era',label:'Emergency response action (ERA)',type:'textarea',wide:true,hint:'Immediate protection before the team is formed: stop shipment, alert the customer, hold suspect stock.'},
+  {id:'d1',label:'Team formed',type:'date'},
   {id:'dd3',label:'Containment due',type:'date'},
   {id:'dd4',label:'Root cause due',type:'date'},
   {id:'dd8',label:'Closure due',type:'date'},
@@ -80,7 +81,7 @@ update:function(root,api){
  var st=[], dt=[];
  st[0]=F.sym?(F.era||F.need?2:1):0; dt[0]=F.opened||'';
  var hasL=tm.some(function(r){ return r.role==='Team leader'; }), hasC=tm.some(function(r){ return r.role==='Champion'; });
- st[1]=tm.length?(hasL&&hasC&&tm.length>=3?2:1):0; dt[1]='';
+ st[1]=tm.length?(hasL&&hasC&&tm.length>=3&&F.d1?2:1):0; dt[1]=F.d1||'';
  var d2n=['what','why','where','when','who','how','many'].filter(function(k){ return F[k]; }).length;
  st[2]=F.d2&&F.stmt?2:(F.stmt||d2n?1:0); dt[2]=F.d2||'';
  var ctV=ct.length&&ct.every(function(r){ return r.done&&r.ver==='Yes'; });
@@ -149,7 +150,7 @@ update:function(root,api){
  if(F.need&&/^No/.test(F.need)) f.push(['','Marked as not needing a full 8D. Record the correction and its check; if the problem comes back, open the 8D. The <a href="/tools/corrective-action-capa.html">corrective action tool</a> is a lighter format.']);
  root.querySelector('.d8-out').innerHTML=api.flags(f);
 },
-example:{f:{num:'8D-26-017',cust:'Dishwasher assembly customer, plant 2',part:'Hose clamp assembly HC-38',opened:'2026-09-14',
+example:{f:{num:'8D-26-017',cust:'Dishwasher assembly customer, plant 2',part:'Hose clamp assembly HC-38',opened:'2026-09-14',d1:'2026-09-14',
  sym:'Customer line found hose clamps that do not close fully on the dishwasher drain hose: 14 clamps in one week at their assembly station 6.',
  era:'Stopped shipment of HC-38 on 14 Sep. Customer notified the same day; replacement clamps from lot 2637, 100% checked, sent by express.',
  dd3:'2026-09-16',dd4:'2026-09-28',dd8:'2026-11-13',need:'Yes: cause unknown, or recurring, or customer requires it',

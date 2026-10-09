@@ -54,16 +54,18 @@ update:function(root,api){
  if(!ready){ KS.innerHTML=''; SV.innerHTML=''; AV.innerHTML=''; O.innerHTML=api.flags([],P.gi===0?'Enter the target, the tolerance and the loss at the tolerance edge.':'Enter the limit and the loss at that limit.'); TL._runs(root,api,P); return; }
  var kform=P.gi===0?'k = A / &Delta;<sup>2</sup>':P.gi===1?'k = A / &Delta;<sup>2</sup>':'k = A &times; &Delta;<sup>2</sup>';
  var lform=P.gi===0?'L(y) = k(y &minus; T)<sup>2</sup>':P.gi===1?'L(y) = k y<sup>2</sup>':'L(y) = k / y<sup>2</sup>';
- var tiles='<div><b>'+sig(P.k)+'</b><span>'+kform+' ($ per '+(P.gi===2?'unit &middot; '+u+'&sup2;':u+'&sup2;')+')</span></div><div><b>'+lform+'</b><span>Loss per unit</span></div>';
+ var tiles='<div><b>'+sig(P.k)+'</b><span>Loss constant '+kform+'</span></div><div><b>'+$(P.A)+'</b><span>Loss A at the tolerance edge</span></div>';
  if(isFinite(y)&&(P.gi!==2||y!==0)) tiles+='<div><b>'+$(P.L(y))+'</b><span>Loss for one unit at y = '+api.fmt(y,4)+'</span></div>';
  KS.innerHTML=tiles;
  /* loss curve */
  var lo, hi; if(P.gi===0){ lo=P.T-1.6*P.D; hi=P.T+1.6*P.D; } else if(P.gi===1){ lo=0; hi=1.5*P.D; } else { lo=0.45*P.D; hi=2.6*P.D; }
  x.concat(isFinite(y)?[y]:[]).forEach(function(v){ if(P.gi===2&&v<=0) return; if(v<lo) lo=v-(hi-lo)*0.04; if(v>hi) hi=v+(hi-lo)*0.04; });
- var Lmax=1.6*P.A||1, W=800, H=300, L0=64, R0=14, T0=16, B0=H-40, X=function(v){ return L0+(v-lo)/(hi-lo)*(W-L0-R0); }, Y=function(l){ return B0-Math.min(l,Lmax)/Lmax*(B0-T0); };
+ var Lmax=Math.min(4*P.A,Math.max(P.gi===2?0:P.L(lo),P.L(hi),P.gi===2?P.L(lo):0,1.2*P.A))*1.04||1, W=800, H=320, L0=64, R0=14, T0=16, B0=H-60, X=function(v){ return L0+(v-lo)/(hi-lo)*(W-L0-R0); }, Y=function(l){ return B0-Math.min(l,Lmax)/Lmax*(B0-T0); };
  var g='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Quadratic loss function"><style>text{font:11px \'IBM Plex Mono\',monospace;fill:#4A5D71}.l{font:600 11px \'IBM Plex Mono\',monospace}</style><rect x="'+L0+'" y="'+T0+'" width="'+(W-L0-R0)+'" height="'+(B0-T0)+'" fill="#fff" stroke="#DDE1E4"/>';
- for(var i=0;i<=4;i++){ var lv=Lmax*i/4; g+='<line x1="'+L0+'" x2="'+(W-R0)+'" y1="'+Y(lv)+'" y2="'+Y(lv)+'" stroke="#F0F2F4"/><text x="'+(L0-6)+'" y="'+(Y(lv)+4)+'" text-anchor="end">$'+api.fmt(lv,lv<10?1:0)+'</text>'; }
- for(i=0;i<=6;i++){ var xv=lo+(hi-lo)*i/6; g+='<text x="'+X(xv)+'" y="'+(B0+16)+'" text-anchor="'+(i===0?'start':i===6?'end':'middle')+'">'+sig(xv)+'</text>'; }
+ function ticks(a,b,k){ var raw=(b-a)/k, p=Math.pow(10,Math.floor(Math.log(raw)/Math.LN10)), m=raw/p, st=(m<1.5?1:m<3?2:m<7?5:10)*p, t=[], v=Math.ceil(a/st-1e-9)*st; for(;v<=b+st*1e-9;v+=st) t.push(Math.round(v/st)*st); return {t:t,d:Math.max(0,-Math.floor(Math.log(st)/Math.LN10+1e-9))}; }
+ var ty=ticks(0,Lmax,5), tx=ticks(lo,hi,7), i;
+ ty.t.forEach(function(lv){ g+='<line x1="'+L0+'" x2="'+(W-R0)+'" y1="'+Y(lv)+'" y2="'+Y(lv)+'" stroke="#F0F2F4"/><text x="'+(L0-6)+'" y="'+(Y(lv)+4)+'" text-anchor="end">$'+api.fmt(lv,ty.d)+'</text>'; });
+ tx.t.forEach(function(xv){ g+='<line x1="'+X(xv)+'" x2="'+X(xv)+'" y1="'+B0+'" y2="'+(B0+4)+'" stroke="#9AA6B2"/><text x="'+X(xv)+'" y="'+(B0+17)+'" text-anchor="middle">'+api.fmt(xv,tx.d)+'</text>'; });
  /* goalpost (step) loss */
  var gp=P.gi===0?'M'+X(lo)+' '+Y(P.A)+' H'+X(P.T-P.D)+' V'+Y(0)+' H'+X(P.T+P.D)+' V'+Y(P.A)+' H'+X(hi):P.gi===1?'M'+X(lo)+' '+Y(0)+' H'+X(P.D)+' V'+Y(P.A)+' H'+X(hi):'M'+X(lo)+' '+Y(P.A)+' H'+X(P.D)+' V'+Y(0)+' H'+X(hi);
  g+='<path d="'+gp+'" fill="none" stroke="#9AA6B2" stroke-width="2" stroke-dasharray="6 4"/>';
@@ -72,7 +74,7 @@ update:function(root,api){
  if(P.gi===0) g+='<line x1="'+X(P.T)+'" x2="'+X(P.T)+'" y1="'+T0+'" y2="'+B0+'" stroke="#1F8C55" stroke-dasharray="3 3"/><text class="l" x="'+(X(P.T)+4)+'" y="'+(T0+12)+'" style="fill:#1F8C55">T</text>';
  x.forEach(function(v){ if(P.gi===2&&v<=0) return; g+='<circle cx="'+X(v).toFixed(1)+'" cy="'+Y(P.L(v)).toFixed(1)+'" r="3.6" fill="#D8B147" fill-opacity=".85" stroke="#9C7C1F" stroke-width=".8"/>'; });
  if(isFinite(y)&&(P.gi!==2||y>0)) g+='<line x1="'+X(y)+'" x2="'+X(y)+'" y1="'+Y(P.L(y))+'" y2="'+B0+'" stroke="#C0392B" stroke-width="1.5"/><circle cx="'+X(y)+'" cy="'+Y(P.L(y))+'" r="5" fill="#C0392B"/>';
- g+='<text x="'+(W-R0-6)+'" y="'+(T0+14)+'" text-anchor="end" class="l" style="fill:#0F3E68">quadratic loss</text><text x="'+(W-R0-6)+'" y="'+(T0+28)+'" text-anchor="end" class="l" style="fill:#7C8B99">goalpost (in or out of spec)</text>';
+ var ly=H-12; g+='<line x1="'+L0+'" x2="'+(L0+24)+'" y1="'+(ly-4)+'" y2="'+(ly-4)+'" stroke="#0F3E68" stroke-width="2.5"/><text x="'+(L0+30)+'" y="'+ly+'">quadratic loss, '+lform.replace(/<sup>2<\/sup>/g,'&sup2;')+'</text><line x1="'+(L0+300)+'" x2="'+(L0+324)+'" y1="'+(ly-4)+'" y2="'+(ly-4)+'" stroke="#9AA6B2" stroke-width="2" stroke-dasharray="6 4"/><text x="'+(L0+330)+'" y="'+ly+'">goalpost: in or out of spec</text><circle cx="'+(L0+540)+'" cy="'+(ly-4)+'" r="3.6" fill="#D8B147" stroke="#9C7C1F" stroke-width=".8"/><text x="'+(L0+548)+'" y="'+ly+'">your data</text>';
  SV.innerHTML=g+'</svg>';
  /* data */
  if(x.length<2){ AV.innerHTML=''; O.innerHTML=api.flags([],'Enter at least two measurements to see the average loss and the S/N ratio.'); TL._runs(root,api,P); return; }

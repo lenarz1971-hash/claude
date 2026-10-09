@@ -7,5 +7,5 @@
  {"slug":"spaghetti-diagram","tags":["cssbb","cqpa"],"future_tags":[],"group_hint":"lean"}
 ],
 "not_built":[
- {"item":"Gemba walk / daily huddle board (TASKS.md B6 #31)","reason":"Not in the b3 assignment from the lead; left for a later batch."}
+ {"item":"Gemba walk / daily huddle board (TASKS.md B6 #31)","reason":"Not in the b3 assignment; generator/tools_defs/gemba-walk-daily-huddle-board.js exists from another batch."}
 ]}

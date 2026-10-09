@@ -119,7 +119,7 @@ example:{f:{ref:'SA-2026-114',type:'Supplier (second party)',auditee:'Supplier 1
  crit:'Purchase order quality clauses QC-3 to QC-9; drawing PS-40 rev F; ISO 9001:2015 clauses 8.5.1, 8.5.2, 8.7, 7.1.5; supplier\'s control plan CP-40 rev 2.',
  grade:'Major: a requirement not met at all, or a lapse that could ship nonconforming springs. Minor: an isolated lapse with no product at risk. OFI: no requirement broken, but a risk or a better practice.',
  conf:'Photos only with the guide\'s consent. Process parameters and prices stay confidential to purchasing and quality. Copies of records leave the site only for the findings.',
- o1:'Covered',o2:'Covered',o3:'Covered',o4:'Covered',o5:'Covered',o6:'Covered',o7:'Covered',o8:'Covered',o9:'Covered',o10:'Not covered',o11:'Covered',o12:'N/A',
+ o1:'Covered',o2:'Covered',o3:'Covered',o4:'Covered',o5:'Covered',o6:'Covered',o7:'Covered',o8:'Covered',o9:'Covered',o10:'Not covered',o11:'Covered',o12:'Covered',
  c1:'Covered',c2:'Covered',c3:'Not covered',c4:'Covered',c5:'Covered',c6:'Covered',c7:'Covered',c8:'Covered',c9:'Covered',c10:'Covered',
  concl:'The process controls for PS-40 conform in most respects. One major nonconformity (shot peening intensity not verified) means product could ship without the required fatigue life. Last year\'s corrective actions are effective except for gauge calibration recall.',
  rdate:'2026-09-23',cadays:'30',dist:'Supplier quality manager; buyer; auditee general manager'},
