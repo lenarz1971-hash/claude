@@ -53,7 +53,7 @@ update:function(root,api){
  var errs=[]; for(i=w-1;i<N-1;i++) errs.push({e:Math.abs(y[i+1]-trail[i]),p:y[i+1]!==0?Math.abs((y[i+1]-trail[i])/y[i+1]):NaN});
  var mad=errs.length?errs.reduce(function(a,b){ return a+b.e; },0)/errs.length:NaN, mape=errs.length&&errs.every(function(e){ return isFinite(e.p); })?100*errs.reduce(function(a,b){ return a+b.p; },0)/errs.length:NaN;
  var dec=Math.min(4,Math.max.apply(null,P.map(function(p){ var m=String(p.y).split('.')[1]; return m?m.length:0; }))), F=function(v,d){ return isFinite(v)?api.fmt(v,d==null?dec+1:d):''; };
- var tiles=[[N,'Periods'],[(b1>=0?'+':'')+F(b1,dec+2),'Trend slope per period'+(seas?' (deseasonalized)':'')],[F(r2,3),'R&sup2; of the trend line'],[pval<0.001?'&lt; 0.001':F(pval,3),'p-value, slope = 0'],[F(trail[N-1]),'Latest '+w+'-period moving average']];
+ var tiles=[[N,'Periods'],[(b1>=0?'+':'')+F(b1,Math.max(3,dec+2)),'Trend slope per period'+(seas?' (deseasonalized)':'')],[F(r2,3),'R&sup2; of the trend line'],[pval<0.001?'&lt; 0.001':F(pval,3),'p-value, slope = 0'],[F(trail[N-1]),'Latest '+w+'-period moving average']];
  if(seas){ var hiS=Math.max.apply(null,SIx), loS=Math.min.apply(null,SIx); tiles.push([F(hiS,3)+' / '+F(loS,3),'Highest / lowest seasonal index']); }
  if(H) tiles.push([F(fc[0].y,dec),'Forecast, next period']);
  ST.innerHTML=tiles.map(function(c){ return '<div><b>'+c[0]+'</b><span>'+c[1]+'</span></div>'; }).join('');

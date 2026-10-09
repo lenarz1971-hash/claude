@@ -46,8 +46,10 @@ U:{
 },
 PFX:[['Q','quetta',30],['R','ronna',27],['Y','yotta',24],['Z','zetta',21],['E','exa',18],['P','peta',15],['T','tera',12],['G','giga',9],['M','mega',6],['k','kilo',3],['h','hecto',2],['da','deka',1],['','(no prefix)',0],['d','deci',-1],['c','centi',-2],['m','milli',-3],['µ','micro',-6],['n','nano',-9],['p','pico',-12],['f','femto',-15],['a','atto',-18],['z','zepto',-21],['y','yocto',-24],['r','ronto',-27],['q','quecto',-30]],
 h:{
- find:function(sym){ var T=window.TOOL, s=String(sym||'').trim(), hit=null; if(!s) return null;
-  Object.keys(T.U).forEach(function(q){ T.U[q].u.forEach(function(u){ if(!hit&&(u[0]===s||(u[4]&&u[4].indexOf(s)>=0))) hit={q:q,u:u}; }); });
+ /* a symbol can belong to two quantities (ft-lbf is torque or energy); prefer the quantity given */
+ find:function(sym,pq){ var T=window.TOOL, s=String(sym||'').trim(), hit=null; if(!s) return null;
+  var qs=Object.keys(T.U); if(pq&&T.U[pq]) qs=[pq].concat(qs);
+  qs.forEach(function(q){ T.U[q].u.forEach(function(u){ if(!hit&&(u[0]===s||(u[4]&&u[4].indexOf(s)>=0))) hit={q:q,u:u}; }); });
   return hit; },
  unit:function(q,sym){ var L=window.TOOL.U[q]; if(!L) return null; for(var i=0;i<L.u.length;i++) if(L.u[i][0]===sym) return L.u[i]; return null; },
  /* to and from the SI unit; temperature needs the offsets */
@@ -110,7 +112,7 @@ fillUnits:function(el,api){
  S.f.q=q; el.querySelector('.uc-q').value=q; fu.value=S.f.fu; tu.value=S.f.tu;
 },
 wk:function(r,api){
- var T=window.TOOL, h=T.h, v=api.num(r.v), a=h.find(r.f), b=h.find(r.t);
+ var T=window.TOOL, h=T.h, v=api.num(r.v), b0=h.find(r.t), a=h.find(r.f,b0&&b0.q), b=h.find(r.t,a&&a.q);
  if(!r.f&&!r.t&&(r.v===''||r.v==null)) return {ok:false};
  if(r.f&&!a) return {ok:false,msg:'<span class="uc-bad">unknown unit "'+api.esc(r.f)+'"</span>'};
  if(r.t&&!b) return {ok:false,msg:'<span class="uc-bad">unknown unit "'+api.esc(r.t)+'"</span>'};

@@ -4,3 +4,4 @@ table.aa-tab th.aa-h{text-align:left;padding:12px 0 6px;color:var(--navy);border
 table.aa-tab td.aa-na{color:var(--ink-3);font-size:13px;padding-top:9px}
 table.aa-tab td.calc,table.aa-mx td.calc{padding-top:6px}
 table.aa-tab td,table.aa-mx td{vertical-align:middle;padding-top:5px;padding-bottom:5px}
+table.aa-tab td,table.aa-mx td{white-space:nowrap}

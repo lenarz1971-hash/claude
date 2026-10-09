@@ -22,7 +22,7 @@ h:{
   var div=h.pow(p-x.e), q=x.c/div, r=x.c%div, two=r*B(2);
   if(rule===0){ if(two>=div) q+=B(1); } else if(rule===1){ if(two>div||(two===div&&q%B(2)===B(1))) q+=B(1); }
   return {neg:x.neg&&q!==B(0),c:q,e:p}; },
- sig:function(x,n,rule){ if(x.c===this.B(0)) return {neg:false,c:this.B(0),e:x.e,n:n}; var top=this.len(x.c)-1+x.e, p=top-n+1, y=this.at(x,p,rule);
+ sig:function(x,n,rule){ if(x.c===this.B(0)) return {neg:false,c:this.B(0),e:0}; var top=this.len(x.c)-1+x.e, p=top-n+1, y=this.at(x,p,rule);
   if(this.len(y.c)>n){ y={neg:y.neg,c:y.c/this.B(10),e:y.e+1}; } return y; },
  inc:function(x,I,rule){ var B=this.B, m=Math.min(x.e,I.e), X=x.c*this.pow(x.e-m), II=I.c*this.pow(I.e-m); if(II===B(0)) return null;
   var q=X/II, r=X%II, two=r*B(2);

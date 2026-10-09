@@ -76,7 +76,7 @@ update:function(root,api){
  /* picture: limits, acceptance zone for the mean, the sample */
  var lo=Math.min.apply(null,x.concat(hasL?[L]:[]).concat(hasU?[U]:[])), hi=Math.max.apply(null,x.concat(hasL?[L]:[]).concat(hasU?[U]:[]));
  if(!hasL) lo=Math.min(lo,m-4*sd); if(!hasU) hi=Math.max(hi,m+4*sd); var pad=(hi-lo)*0.06||1; lo-=pad; hi+=pad;
- var W2=800, H2=170, l0=20, r0=20, Xs=function(v){ return l0+(v-lo)/(hi-lo)*(W2-l0-r0); }, y0=96;
+ var W2=800, H2=158, l0=20, r0=20, Xs=function(v){ return l0+(v-lo)/(hi-lo)*(W2-l0-r0); }, y0=96;
  var aL=hasL?L+(isFinite(k)?k:0)*sd:lo, aU=hasU?U-(isFinite(k)?k:0)*sd:hi;
  var g2='<svg viewBox="0 0 '+W2+' '+H2+'" role="img" aria-label="Sample against the specification limits"><style>text{font:11px \'IBM Plex Mono\',monospace;fill:#4A5D71}.l{font:700 11px \'IBM Plex Mono\',monospace}</style>';
  if(isFinite(k)&&aU>aL) g2+='<rect x="'+Xs(Math.max(lo,aL))+'" y="'+(y0-46)+'" width="'+(Xs(Math.min(hi,aU))-Xs(Math.max(lo,aL)))+'" height="62" fill="#E7F4EC"/><text x="'+((Xs(Math.max(lo,aL))+Xs(Math.min(hi,aU)))/2)+'" y="'+(y0-32)+'" text-anchor="middle" style="fill:#1F8C55" class="l">x&#772; HERE ACCEPTS</text>';
@@ -85,7 +85,7 @@ update:function(root,api){
  if(isFinite(k)){ if(hasL) g2+='<line x1="'+Xs(aL)+'" x2="'+Xs(aL)+'" y1="'+(y0-46)+'" y2="'+(y0+16)+'" stroke="#1F8C55" stroke-dasharray="4 3"/><text x="'+(Xs(aL)+5)+'" y="'+(y0-14)+'" text-anchor="start" style="fill:#1F8C55">L + k'+(known?'&sigma;':'s')+'</text>';
   if(hasU) g2+='<line x1="'+Xs(aU)+'" x2="'+Xs(aU)+'" y1="'+(y0-46)+'" y2="'+(y0+16)+'" stroke="#1F8C55" stroke-dasharray="4 3"/><text x="'+(Xs(aU)-5)+'" y="'+(y0-14)+'" text-anchor="end" style="fill:#1F8C55">U &minus; k'+(known?'&sigma;':'s')+'</text>'; }
  var stack={}; x.slice().sort(function(a,b){ return a-b; }).forEach(function(v){ var b=Math.round(Xs(v)/7); stack[b]=(stack[b]||0)+1; g2+='<circle cx="'+Xs(v).toFixed(1)+'" cy="'+(y0+10-(stack[b]-1)*8)+'" r="3.6" fill="#0F3E68" fill-opacity=".75"/>'; });
- g2+='<path d="M'+Xs(m)+' '+(y0+18)+' l-7 12 h14 z" fill="'+(ok1||!isFinite(k)?'#D8B147':'#C0392B')+'"/><text class="l" x="'+Xs(m)+'" y="'+(y0+60)+'" text-anchor="middle" style="fill:#0F3E68">x&#772; = '+Number(m.toPrecision(6))+'</text></svg>';
+ g2+='<path d="M'+Xs(m)+' '+(y0+18)+' l-7 12 h14 z" fill="'+(ok1||!isFinite(k)?'#D8B147':'#C0392B')+'"/><text class="l" x="'+Xs(m)+'" y="'+(y0+46)+'" text-anchor="middle" style="fill:#0F3E68">x&#772; = '+Number(m.toPrecision(6))+'</text></svg>';
  SV.innerHTML=g2;
  /* Form 2 */
  var pU=hasU&&N>=3?phat(QU,N,known):NaN, pL=hasL&&N>=3?phat(QL,N,known):NaN, pT=(isFinite(pU)?pU:0)+(isFinite(pL)?pL:0);

@@ -62,10 +62,10 @@ update:function(root,api){
  x.concat(isFinite(y)?[y]:[]).forEach(function(v){ if(P.gi===2&&v<=0) return; if(v<lo) lo=v-(hi-lo)*0.04; if(v>hi) hi=v+(hi-lo)*0.04; });
  var Lmax=Math.min(4*P.A,Math.max(P.gi===2?0:P.L(lo),P.L(hi),P.gi===2?P.L(lo):0,1.2*P.A))*1.04||1, W=800, H=320, L0=64, R0=14, T0=16, B0=H-60, X=function(v){ return L0+(v-lo)/(hi-lo)*(W-L0-R0); }, Y=function(l){ return B0-Math.min(l,Lmax)/Lmax*(B0-T0); };
  var g='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Quadratic loss function"><style>text{font:11px \'IBM Plex Mono\',monospace;fill:#4A5D71}.l{font:600 11px \'IBM Plex Mono\',monospace}</style><rect x="'+L0+'" y="'+T0+'" width="'+(W-L0-R0)+'" height="'+(B0-T0)+'" fill="#fff" stroke="#DDE1E4"/>';
- function ticks(a,b,k){ var raw=(b-a)/k, p=Math.pow(10,Math.floor(Math.log(raw)/Math.LN10)), m=raw/p, st=(m<1.5?1:m<3?2:m<7?5:10)*p, t=[], v=Math.ceil(a/st-1e-9)*st; for(;v<=b+st*1e-9;v+=st) t.push(Math.round(v/st)*st); return {t:t,d:Math.max(0,-Math.floor(Math.log(st)/Math.LN10+1e-9))}; }
+ function ticks(a,b,k){ var raw=(b-a)/k, p=Math.pow(10,Math.floor(Math.log(raw)/Math.LN10)), m=raw/p, st=(m<1.5?1:m<3?2:m<7?5:10)*p, t=[], v=Math.ceil(a/st-1e-9)*st; for(;v<=b+st*1e-9;v+=st) t.push(Math.round(v/st)*st+0); return {t:t,d:Math.max(0,-Math.floor(Math.log(st)/Math.LN10+1e-9))}; }
  var ty=ticks(0,Lmax,5), tx=ticks(lo,hi,7), i;
  ty.t.forEach(function(lv){ g+='<line x1="'+L0+'" x2="'+(W-R0)+'" y1="'+Y(lv)+'" y2="'+Y(lv)+'" stroke="#F0F2F4"/><text x="'+(L0-6)+'" y="'+(Y(lv)+4)+'" text-anchor="end">$'+api.fmt(lv,ty.d)+'</text>'; });
- tx.t.forEach(function(xv){ g+='<line x1="'+X(xv)+'" x2="'+X(xv)+'" y1="'+B0+'" y2="'+(B0+4)+'" stroke="#9AA6B2"/><text x="'+X(xv)+'" y="'+(B0+17)+'" text-anchor="middle">'+api.fmt(xv,tx.d)+'</text>'; });
+ tx.t.forEach(function(xv){ g+='<line x1="'+X(xv)+'" x2="'+X(xv)+'" y1="'+B0+'" y2="'+(B0+4)+'" stroke="#9AA6B2"/><text x="'+X(xv)+'" y="'+(B0+17)+'" text-anchor="'+(X(xv)>W-R0-24?'end':X(xv)<L0+24?'start':'middle')+'">'+api.fmt(xv,tx.d)+'</text>'; });
  /* goalpost (step) loss */
  var gp=P.gi===0?'M'+X(lo)+' '+Y(P.A)+' H'+X(P.T-P.D)+' V'+Y(0)+' H'+X(P.T+P.D)+' V'+Y(P.A)+' H'+X(hi):P.gi===1?'M'+X(lo)+' '+Y(0)+' H'+X(P.D)+' V'+Y(P.A)+' H'+X(hi):'M'+X(lo)+' '+Y(P.A)+' H'+X(P.D)+' V'+Y(0)+' H'+X(hi);
  g+='<path d="'+gp+'" fill="none" stroke="#9AA6B2" stroke-width="2" stroke-dasharray="6 4"/>';
@@ -98,13 +98,14 @@ _runs:function(root,api,P){
  var S=api.state(), R=[], sv=root.querySelector('.tg-sn'), so=root.querySelector('.tg-sno'), f=[];
  S.g.runs.forEach(function(r,i){ var q=window.TOOL._q(r,api); if(q.n&&isFinite(q.sn)) R.push({nm:(r.run||'').trim()||('Run '+(i+1)),q:q}); });
  if(!R.length){ sv.innerHTML=''; so.innerHTML=api.flags([],P.gi===0?'Enter two or more replicates per run.':'Enter replicates for each run.'); return; }
- var best=R.reduce(function(a,b){ return b.q.sn>a.q.sn?b:a; }), mn=Math.min(0,Math.min.apply(null,R.map(function(r){ return r.q.sn; }))), mx=Math.max(0,Math.max.apply(null,R.map(function(r){ return r.q.sn; })));
- if(mx===mn) mx=mn+1;
- var W=800, rh=34, H=R.length*rh+40, L0=200, R0=70, X=function(v){ return L0+(v-mn)/(mx-mn)*(W-L0-R0); };
+ var best=R.reduce(function(a,b){ return b.q.sn>a.q.sn?b:a; }), mn=Math.min.apply(null,R.map(function(r){ return r.q.sn; })), mx=Math.max.apply(null,R.map(function(r){ return r.q.sn; })), pd=Math.max(0.5,(mx-mn)*0.15);
+ mn=Math.floor(mn-pd); mx=Math.ceil(mx+pd);
+ var W=800, rh=34, H=R.length*rh+56, L0=200, R0=70, X=function(v){ return L0+(v-mn)/(mx-mn)*(W-L0-R0); };
  var g='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Signal-to-noise ratio by run"><style>text{font:11px \'IBM Plex Mono\',monospace;fill:#4A5D71}.v{font:600 11px \'IBM Plex Mono\',monospace;fill:#0F3E68}</style>';
  R.forEach(function(r,i){ var y=14+i*rh, a=X(Math.min(0,r.q.sn)), b=X(Math.max(0,r.q.sn)), nm=r.nm.length>26?r.nm.slice(0,25)+'…':r.nm;
-  g+='<text x="'+(L0-8)+'" y="'+(y+15)+'" text-anchor="end">'+api.esc(nm)+'</text><rect x="'+a+'" y="'+y+'" width="'+Math.max(1,b-a)+'" height="'+(rh-12)+'" fill="'+(r===best?'#D8B147':'#0F3E68')+'"/><text class="v" x="'+(r.q.sn>=0?b+6:a-6)+'" y="'+(y+15)+'" text-anchor="'+(r.q.sn>=0?'start':'end')+'">'+api.fmt(r.q.sn,2)+'</text>'; });
- g+='<line x1="'+X(0)+'" x2="'+X(0)+'" y1="8" y2="'+(H-24)+'" stroke="#4A5D71"/><text x="'+((L0+W-R0)/2)+'" y="'+(H-6)+'" text-anchor="middle">S/N ratio, dB ('+api.esc(P.g.toLowerCase())+'; larger is better)</text>';
+  g+='<text x="'+(L0-8)+'" y="'+(y+15)+'" text-anchor="end">'+api.esc(nm)+'</text><line x1="'+L0+'" x2="'+(W-R0)+'" y1="'+(y+11)+'" y2="'+(y+11)+'" stroke="#EEF0F2"/><line x1="'+L0+'" x2="'+X(r.q.sn)+'" y1="'+(y+11)+'" y2="'+(y+11)+'" stroke="'+(r===best?'#D8B147':'#0F3E68')+'" stroke-width="2"/><circle cx="'+X(r.q.sn)+'" cy="'+(y+11)+'" r="7" fill="'+(r===best?'#D8B147':'#0F3E68')+'"/><text class="v" x="'+(X(r.q.sn)+12)+'" y="'+(y+15)+'">'+api.fmt(r.q.sn,2)+'</text>'; });
+ var stp=(mx-mn)<=6?1:(mx-mn)<=15?2:(mx-mn)<=40?5:10; for(var tv=Math.ceil(mn/stp)*stp;tv<=mx;tv+=stp) g+='<line x1="'+X(tv)+'" x2="'+X(tv)+'" y1="'+(H-30)+'" y2="'+(H-26)+'" stroke="#4A5D71"/><text x="'+X(tv)+'" y="'+(H-14)+'" text-anchor="middle">'+tv+'</text>';
+ g+='<line x1="'+L0+'" x2="'+(W-R0)+'" y1="'+(H-30)+'" y2="'+(H-30)+'" stroke="#4A5D71"/><text x="'+(W-R0)+'" y="'+(H-2)+'" text-anchor="end">S/N ratio, dB ('+api.esc(P.g.toLowerCase())+'; larger is better)</text>';
  sv.innerHTML=g+'</svg>';
  var fm=P.gi===0?'S/N = 10 log<sub>10</sub>(&#563;<sup>2</sup>/s<sup>2</sup>)':P.gi===1?'S/N = &minus;10 log<sub>10</sub>(mean of y<sup>2</sup>)':'S/N = &minus;10 log<sub>10</sub>(mean of 1/y<sup>2</sup>)';
  f.push(['ok','Highest S/N: <b>'+api.esc(best.nm)+'</b>, '+api.fmt(best.q.sn,2)+' dB. '+fm+'.']);

@@ -1,0 +1,6 @@
+#tool table.tg td.calc .mb-x{color:var(--ink-3);font-size:12px}
+#tool table.tg[data-grid="c"] select[data-col="beh"]{min-width:150px}
+#tool table.tg[data-grid="c"] select[data-col="rel"]{min-width:210px}
+#tool table.tg[data-grid="s"] select{min-width:180px}
+.mb-svg svg{max-width:760px;margin:0 auto}
+@media print{@page{size:landscape}.mb-svg svg{max-width:600px}}

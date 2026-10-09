@@ -1,0 +1,5 @@
+#tool table.tg[data-grid="e"] select[data-col="crit"]{min-width:120px}
+#tool table.tg[data-grid="e"] select[data-col="inc"]{min-width:140px}
+#tool table.tg[data-grid="a"] select{min-width:175px}
+.qa-svg svg{max-width:780px;margin:0 auto}
+@media print{@page{size:landscape}.qa-svg svg{max-width:600px}}
