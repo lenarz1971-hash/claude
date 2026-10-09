@@ -5,7 +5,7 @@ PAGES6B6 = [
 dict(slug="attribute-agreement-analysis", name="Attribute agreement analysis",
 covers="CSSBB V.C.1, CQE IV.F",
 title="Attribute Agreement Analysis Calculator — Kappa and Percent Agreement | SC Quality Guild",
-desc="Free attribute agreement analysis. Enter pass/fail or graded ratings by appraiser and trial; get percent agreement with exact 95% intervals, Fleiss' and Cohen's kappa.",
+desc="Free attribute agreement analysis. Enter ratings by appraiser and trial; get percent agreement with exact 95% intervals and Fleiss' and Cohen's kappa.",
 h1="Attribute agreement analysis",
 lede="Enter how each appraiser rated each part, trial by trial, and the known standard. Get agreement within each appraiser, against the standard and between appraisers, with exact 95% confidence intervals and kappa, plus the parts that cause the trouble.",
 content="""
@@ -40,7 +40,7 @@ content="""
 dict(slug="taguchi-loss-function", name="Taguchi loss function and S/N ratio",
 covers="CQPA III.F.4, CSSBB IX.C",
 title="Taguchi Loss Function and Signal-to-Noise Ratio Calculator | SC Quality Guild",
-desc="Free Taguchi quality loss function calculator. Find k from the loss at the tolerance edge, the loss per unit and average loss, and S/N ratios for all three goals.",
+desc="Free Taguchi loss function calculator: k from the loss at the tolerance edge, loss per unit, average loss, and S/N ratios for all three goals.",
 h1="Taguchi loss function and signal-to-noise ratio",
 lede="Put a cost on being off target. Enter the tolerance and what a unit costs at its edge; get the loss constant k, the loss for any unit, the average loss of your process split into variation and off-target parts, and signal-to-noise ratios to compare settings.",
 content="""
@@ -74,7 +74,7 @@ content="""
 dict(slug="variables-sampling-plan", name="Variables sampling plan (k-method)",
 covers="CQE IV.C.1, IV.C.2, CQPA III.C.1, III.C.2, CMDA V.C.2",
 title="Variables Sampling Plan Calculator — Z1.9 Style k-Method and Form 2 | SC Quality Guild",
-desc="Free variables acceptance sampling calculator. Enter n and k from your plan, the limits and the sample; get Q, accept or reject, the estimated percent nonconforming and the OC curve.",
+desc="Free variables sampling calculator, Z1.9 style. Enter n, k and the sample; get Q, accept or reject, the Form 2 percent nonconforming and the OC curve.",
 h1="Variables sampling plan: the k-method",
 lede="Enter the sample size and acceptability constant from your plan (for example ANSI/ASQ Z1.9), the specification limits and the measurements. Get the quality index, the accept or reject decision, the Form 2 estimate of percent nonconforming, and the OC curve of the plan.",
 content="""
@@ -105,7 +105,7 @@ content="""
 dict(slug="probability-plot-stem-leaf-dot-plot", name="Dot plot, stem-and-leaf and probability plot",
 covers="CQE VI.A.6, VI.A.7, CSSBB V.D.4, CQPA III.B.5",
 title="Normal Probability Plot, Stem-and-Leaf, Dot Plot and Ogive Maker | SC Quality Guild",
-desc="Free graphical methods tool. Paste one column of data; get a dot plot, a stem-and-leaf display, a normal probability plot with the Anderson-Darling test, and an ogive.",
+desc="Paste one column of data; get a dot plot, a stem-and-leaf display, a normal probability plot with the Anderson-Darling test, and an ogive. Free.",
 h1="Dot plot, stem-and-leaf, probability plot and ogive",
 lede="Paste one column of measurements. Get the dot plot, the stem-and-leaf display with depths, a normal probability plot with the Anderson-Darling test, and a cumulative frequency table with its ogive.",
 content="""
@@ -139,7 +139,7 @@ content="""
 dict(slug="time-series-moving-average", name="Time series: moving average, trend and seasonality",
 covers="CQE VI.E.3, CSSBB V.B.4, CMDA V.C.1",
 title="Moving Average, Trend and Seasonal Index Calculator — Time Series | SC Quality Guild",
-desc="Free time-series tool. Enter values in time order; get trailing or centered moving averages, a least-squares trend, seasonal indices by ratio to moving average, and a forecast.",
+desc="Free time-series tool: trailing or centered moving averages, a least-squares trend, seasonal indices by ratio to moving average, and a forecast.",
 h1="Time series: moving average, trend and seasonal indices",
 lede="Enter a series in time order. Get a trailing or centered moving average, the least-squares trend and whether it is real, seasonal indices by the ratio-to-moving-average method, and a trend-times-season forecast.",
 content="""

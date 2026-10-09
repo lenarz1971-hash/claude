@@ -1,0 +1,12 @@
+{"tools":[
+ {"slug":"attribute-agreement-analysis","tags":["cssbb","cqe","gb"],"future_tags":[],"group_hint":"green-belt (statistics), next to msa-accuracy-precision; or a new Statistics and MSA group. gb tag from general knowledge of the CSSGB BoK (MSA lists percent agreement); no CSSGB text in reference/bok."},
+ {"slug":"taguchi-loss-function","tags":["cqpa","cssbb"],"future_tags":[],"group_hint":"green-belt, next to full-factorial-doe (robust design / DOE). CQPA III.F.4 is explicit; CSSBB IX.C (robust design, tolerance design) is the closest BB item."},
+ {"slug":"variables-sampling-plan","tags":["cqe","cqpa","cqi"],"future_tags":["cmda"],"group_hint":"inspection, next to attribute-inspection-defect-classification (or next to audit-sampling-plan). cqi tag from general knowledge (CQI covers Z1.4/Z1.9); cqt may also apply, not tagged."},
+ {"slug":"probability-plot-stem-leaf-dot-plot","tags":["cqe","cssbb","cqpa","gb"],"future_tags":[],"group_hint":"six-sigma, right after basic-statistics (it is the companion page for the graphs basic-statistics does not draw). gb tag from general knowledge (CSSGB graphical methods include normal probability plots)."},
+ {"slug":"time-series-moving-average","tags":["cqe","cssbb"],"future_tags":["cmda"],"group_hint":"green-belt (statistics), after correlation-regression. CQE VI.E.3 is explicit; the CSSBB tag rests on V.B.4 (seasonality effects) and is weaker."}
+],
+"not_built":[
+ {"item":"Histogram and box plot (part of TASKS.md B1 #3)","reason":"Covered by basic-statistics (histogram); this batch's graphical-methods page links to it rather than duplicating it."},
+ {"item":"Ryan-Joiner test critical values","reason":"The page reports the probability-plot correlation r (the Ryan-Joiner statistic) and the Anderson-Darling test with p-value; RJ critical-value approximations could not be checked against an independent library, so no RJ p-value is given."},
+ {"item":"Z1.9 tables (code letters, n, k, M, MSD)","reason":"Copyrighted; the user enters n, k and M from their plan, as instructed."}
+]}

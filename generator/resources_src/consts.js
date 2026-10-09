@@ -141,7 +141,12 @@ const TOOL_EX={
  'gemba-walk-daily-huddle-board':['cssbb','cqe'],
  'design-review-dfx-checklist':['cqe','cssbb'],
  'kpi-dashboard-builder':['cqe','cssbb','cmqoe'],
- 'audit-opening-closing-meeting':['cqa','cqpa','cqe']
+ 'audit-opening-closing-meeting':['cqa','cqpa','cqe'],
+ 'attribute-agreement-analysis':['cssbb','cqe','gb'],
+ 'taguchi-loss-function':['cqpa','cssbb'],
+ 'variables-sampling-plan':['cqe','cqpa','cqi'],
+ 'probability-plot-stem-leaf-dot-plot':['cqe','cssbb','cqpa','gb'],
+ 'time-series-moving-average':['cqe','cssbb']
 };
 /* Tools beyond the Yellow Belt set, in hub order (filled in by build_resources.py from tools_content.GROUPS). */
 const MQ_TOOLS=EXTRA_SLUGS;

@@ -367,6 +367,7 @@ from tools_content4_g import PAGES4G
 from tools_content4_h import PAGES4H
 from tools_content4_h2 import PAGES4H2
 from tools_content5_a import PAGES5A
+from tools_content6_b6 import PAGES6B6
 from tools_content6_b10 import PAGES6B10
 from tools_content6_b9 import PAGES6B9
 from tools_content6_b8 import PAGES6B8
@@ -374,8 +375,7 @@ from tools_content6_b7 import PAGES6B7
 from tools_content6_b4 import PAGES6B4
 from tools_content6_b3 import PAGES6B3
 from tools_content6_b2 import PAGES6B2
-ORDER_GB = ["value-stream-map-takt","kano-model","confidence-interval-calculator","attribute-capability","multi-vari-chart",
- "t-test-calculator","chi-square-proportions-test","one-way-anova","full-factorial-doe","smed-setup-reduction"]
+ORDER_GB = ["value-stream-map-takt", "kano-model", "confidence-interval-calculator", "attribute-capability", "multi-vari-chart", "t-test-calculator", "chi-square-proportions-test", "one-way-anova", "full-factorial-doe", "smed-setup-reduction", "attribute-agreement-analysis", "taguchi-loss-function", "variables-sampling-plan", "probability-plot-stem-leaf-dot-plot", "time-series-moving-average"]
 ORDER_QA = ["audit-plan-schedule","process-audit-turtle-diagram","audit-checklist-working-papers","audit-sampling-plan",
  "audit-nonconformity-report","audit-car-verification-tracker", "audit-opening-closing-meeting","auditor-competence-evaluation","audit-program-risk-schedule","audit-program-metrics"]
 ORDER_IN = ["drawing-title-block-tolerance-reader","gdt-position-tolerance","tolerance-stack-up","gauge-resolution-10-to-1",
@@ -387,7 +387,7 @@ ORDER_SQ = ["supplier-selection-matrix", "ppap-qualification-plan", "supplier-cl
 ORDER_RG = ["hazard-analysis-risk-control", "iq-oq-pq-validation-protocol", "requirements-traceability-matrix", "alcoa-plus-data-integrity-checklist", "lot-traceability-genealogy", "complaint-reportability-decision-guide", "shelf-life-accelerated-aging", "alert-action-levels"]
 ORDER_PS = ["engineering-change-impact-checklist", "8d-report", "is-is-not-problem-specification", "a3-problem-solving-report", "out-of-control-action-plan", "benchmarking-gap-analysis"]
 ORDER_PR = ["flowchart-swimlane", "activity-network-critical-path", "risk-register-heat-map", "fault-tree-analysis", "probability-calculator", "affinity-diagram", "interrelationship-digraph", "process-decision-program-chart", "matrix-diagram", "force-field-analysis"]
-_all = {p["slug"]: p for p in PAGES + PAGES2 + PAGES3A + PAGES3B + PAGES3C + PAGES3D + PAGES4E + PAGES4E2 + PAGES4F + PAGES4F2 + PAGES4F3 + PAGES4G + PAGES4H + PAGES4H2 + PAGES5A + PAGES6B2 + PAGES6B3 + PAGES6B4 + PAGES6B7 + PAGES6B8 + PAGES6B9 + PAGES6B10}
+_all = {p["slug"]: p for p in PAGES + PAGES2 + PAGES3A + PAGES3B + PAGES3C + PAGES3D + PAGES4E + PAGES4E2 + PAGES4F + PAGES4F2 + PAGES4F3 + PAGES4G + PAGES4H + PAGES4H2 + PAGES5A + PAGES6B2 + PAGES6B3 + PAGES6B4 + PAGES6B7 + PAGES6B8 + PAGES6B9 + PAGES6B10 + PAGES6B6}
 _ord = ORDER + ORDER_MQ + ORDER_GB + ORDER_QA + ORDER_IN + ORDER_PR + ORDER_LN + ORDER_SQ + ORDER_RG + ORDER_PS
 assert sorted(_all) == sorted(_ord), set(_all) ^ set(_ord)
 PAGES_YB = [_all[s] for s in ORDER]
