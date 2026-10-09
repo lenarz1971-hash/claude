@@ -91,14 +91,14 @@ update:function(root,api){
  if(hasStd) panels.push({t:'APPRAISER VS STANDARD',d:A.map(function(x){ return {n:x.nm,p:x.vs/N,c:x.civ}; })});
  if(panels.length){
   var lo=1; panels.forEach(function(P){ P.d.forEach(function(d){ lo=Math.min(lo,d.c[0]); }); }); lo=Math.max(0,Math.floor(lo*10-0.0001)/10);
-  var W=800, H=300, pw=(W-70)/panels.length, T0=34, B0=H-44, Y=function(p){ return B0-(p-lo)/(1-lo)*(B0-T0); };
+  var W=800, H=310, pw=(W-70)/panels.length, T0=34, B0=H-58, Y=function(p){ return B0-(p-lo)/(1-lo)*(B0-T0); };
   var g='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Percent agreement with 95% confidence intervals"><style>text{font:11px \'IBM Plex Mono\',monospace;fill:#4A5D71}.t{font:700 10.5px \'IBM Plex Mono\',monospace;fill:#0F3E68;letter-spacing:.06em}.v{font:600 11px \'IBM Plex Mono\',monospace;fill:#0F3E68}</style>';
   for(var t=lo;t<=1.0001;t+=0.1){ g+='<line x1="60" x2="'+(W-10)+'" y1="'+Y(t)+'" y2="'+Y(t)+'" stroke="#E6E9EC"/><text x="54" y="'+(Y(t)+4)+'" text-anchor="end">'+Math.round(t*100)+'%</text>'; }
   panels.forEach(function(P,pi){ var x0=60+pi*pw, step=pw/(P.d.length+1);
    g+='<text class="t" x="'+(x0+pw/2)+'" y="18" text-anchor="middle">'+P.t+'</text>'+(pi?'<line x1="'+x0+'" x2="'+x0+'" y1="'+T0+'" y2="'+B0+'" stroke="#C6CDD3"/>':'');
-   P.d.forEach(function(d,j){ var X=x0+step*(j+1), nm=String(d.n); if(nm.length>14) nm=nm.slice(0,13)+'…';
+   P.d.forEach(function(d,j){ var X=x0+step*(j+1), wd=String(d.n).split(/\s+/), l1=wd[0], l2=wd.slice(1).join(' '); if(l1.length>14) l1=l1.slice(0,13)+'…'; if(l2.length>14) l2=l2.slice(0,13)+'…';
     g+='<line x1="'+X+'" x2="'+X+'" y1="'+Y(d.c[0])+'" y2="'+Y(d.c[1])+'" stroke="#0F3E68" stroke-width="2"/><line x1="'+(X-8)+'" x2="'+(X+8)+'" y1="'+Y(d.c[0])+'" y2="'+Y(d.c[0])+'" stroke="#0F3E68" stroke-width="2"/><line x1="'+(X-8)+'" x2="'+(X+8)+'" y1="'+Y(d.c[1])+'" y2="'+Y(d.c[1])+'" stroke="#0F3E68" stroke-width="2"/>'+
-     '<circle cx="'+X+'" cy="'+Y(d.p)+'" r="6" fill="#D8B147" stroke="#9C7C1F"/><text class="v" x="'+(X+11)+'" y="'+(Y(d.p)+4)+'">'+api.fmt(100*d.p,1)+'%</text><text x="'+X+'" y="'+(B0+18)+'" text-anchor="middle">'+api.esc(nm)+'</text>'; }); });
+     '<circle cx="'+X+'" cy="'+Y(d.p)+'" r="6" fill="#D8B147" stroke="#9C7C1F"/><text class="v" x="'+(X+11)+'" y="'+(Y(d.p)+4)+'">'+api.fmt(100*d.p,1)+'%</text><text x="'+X+'" y="'+(B0+16)+'" text-anchor="middle">'+api.esc(l1)+'</text>'+(l2?'<text x="'+X+'" y="'+(B0+29)+'" text-anchor="middle">'+api.esc(l2)+'</text>':''); }); });
   g+='<line x1="60" x2="'+(W-10)+'" y1="'+B0+'" y2="'+B0+'" stroke="#C6CDD3"/><text x="'+(W/2)+'" y="'+(H-6)+'" text-anchor="middle">Dot: percent of parts matched &middot; bar: 95% confidence interval</text>';
   SV.innerHTML=g+'</svg>'; } else SV.innerHTML='';
  /* confusion table */
@@ -117,7 +117,7 @@ update:function(root,api){
   'Least repeatable: <b>'+api.esc(rep[0].nm)+'</b>, with mixed ratings on '+rep[0].mixed+' part'+(rep[0].mixed>1?'s':'')+'. An appraiser who cannot repeat their own decision will not agree with anyone else; fix repeatability first.']); }
  var hard=rows.filter(function(o){ var rs=[]; used.forEach(function(a){ rs=rs.concat(o.R[a]); }); return rs.some(function(x){ return hasStd?x!==o.s:x!==rs[0]; }); });
  if(hard.length) f.push(['','Parts where '+(hasStd?'at least one rating missed the standard':'the ratings disagree')+': '+hard.slice(0,15).map(function(o){ return '<b>'+api.esc(o.id)+'</b>'; }).join(', ')+(hard.length>15?' …':'')+'. These sit near the boundary of the criterion. Review them together, then add boundary samples or photographs to the work instruction.']);
- if(multi&&hasStd) f.push([ka>0.75?'ok':ka<0.4?'warn':'','Overall, all '+used.length+' appraisers agreed with the standard and with each other on '+all+' of '+N+' parts ('+pc(all,N)+'), and Cohen&rsquo;s kappa for all ratings against the standard is '+kf(ka)+' ('+judge(ka)+'). The overall figure is always the lowest, because one slip by anyone on a part counts against it.']);
+ if(multi&&hasStd) f.push([ka>0.75&&all/N>=0.9?'ok':ka<0.4||all/N<0.8?'warn':'','Overall, all '+used.length+' appraisers agreed with the standard and with each other on '+all+' of '+N+' parts ('+pc(all,N)+'), and Cohen&rsquo;s kappa for all ratings against the standard is '+kf(ka)+' ('+judge(ka)+'). The overall figure is always the lowest, because one slip by anyone on a part counts against it.']);
  var w95=Math.max.apply(null,A.map(function(x){ var c=hasStd?x.civ:x.ciw; return c[1]-c[0]; }));
  f.push(['','With '+N+' parts the 95% intervals are up to '+api.fmt(100*w95,0)+' points wide. '+(N<30?'Fewer than 30 parts gives intervals too wide to tell a good inspector from a marginal one; 50 parts is common for an important inspection.':'More parts narrow them; the interval halves when the number of parts is about four times larger.')]);
  if(hasStd){ var sc2=counts(rows.map(function(o){ return o.s; })), mn=Math.min.apply(null,sc2.filter(function(c,j){ return rows.some(function(o){ return ci(o.s)===j; }); }));

@@ -8,7 +8,7 @@ h:{
  NAME:{A:'Acceptable',R:'Reduce further',U:'Unacceptable'},
  COL:{A:'#BFE0C9',R:'#F3DC9B',U:'#E9A39B'},
  /* a probability typed as 0.001, 1e-3, 1/1000 or 0.1% */
- p:function(v){ var s=String(v==null?'':v).trim().replace(/,/g,''); if(!s) return NaN; var m=s.match(/^([\d.eE+-]+)\s*\/\s*([\d.eE+-]+)$/); if(m) return Number(m[1])/Number(m[2]); if(/%$/.test(s)) return Number(s.slice(0,-1))/100; return Number(s); },
+ p:function(v){ var s=String(v==null?'':v).trim().replace(',','.'); if(!s) return NaN; var m=s.match(/^([\d.eE+-]+)\s*\/\s*([\d.eE+-]+)$/); if(m) return Number(m[1])/Number(m[2]); if(/%$/.test(s)) return Number(s.slice(0,-1))/100; return Number(s); },
  bounds:function(S){ var d=[1e-3,1e-4,1e-5,1e-6], o=[], self=this; ['b5','b4','b3','b2'].forEach(function(k,i){ var x=self.p(S.f[k]); o.push(isNaN(x)||x<=0?d[i]:x); }); return o; },
  /* probability level 1-5 from P; each bound is the lower edge of its level, inclusive */
  lvl:function(P,b){ if(isNaN(P)) return NaN; var t=1-1e-9; return P>=b[0]*t?5:P>=b[1]*t?4:P>=b[2]*t?3:P>=b[3]*t?2:1; },

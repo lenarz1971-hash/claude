@@ -46,12 +46,12 @@ update:function(root,api){
  var bd=root.querySelector('.gh-board');
  if(K.length){
   var W=760, L=250, cw=78, rh=34, H=K.length*rh+36, days=['MON','TUE','WED','THU','FRI'];
-  var g='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Huddle board"><style>text{font:12px Archivo,sans-serif;fill:#16273A}.ax{font:700 10px \'IBM Plex Mono\',monospace;fill:#4A5D71}.c{font:800 15px Archivo,sans-serif;fill:#fff}.v{font:600 12px \'IBM Plex Mono\',monospace;fill:#fff}.e{font:600 12px \'IBM Plex Mono\',monospace;fill:#7C8B99}</style>';
+  var g='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Huddle board"><style>text{font:12px Archivo,sans-serif;fill:#16273A}.ax{font:700 10px \'IBM Plex Mono\',monospace;fill:#4A5D71}.ghc{font:800 15px Archivo,sans-serif;fill:#fff}.ghv{font:600 12px \'IBM Plex Mono\',monospace;fill:#fff}.ghe{font:600 12px \'IBM Plex Mono\',monospace;fill:#7C8B99}</style>';
   g+='<text class="ax" x="'+(L+10)+'" y="20" text-anchor="middle">TARGET</text>'; days.forEach(function(d,i){ g+='<text class="ax" x="'+(L+60+i*cw+cw/2)+'" y="20" text-anchor="middle">'+d+'</text>'; });
   K.forEach(function(r,j){ var y=28+j*rh, s=T._days(r,api), m=String(r.m); if(m.length>28) m=m.slice(0,27)+'…';
-   g+='<rect x="0" y="'+y+'" width="28" height="'+(rh-4)+'" fill="#0F3E68"/><text class="c" x="14" y="'+(y+21)+'" text-anchor="middle">'+esc((r.cat||'?').charAt(0))+'</text>';
+   g+='<rect x="0" y="'+y+'" width="28" height="'+(rh-4)+'" fill="#0F3E68"/><text class="ghc" x="14" y="'+(y+21)+'" text-anchor="middle">'+esc((r.cat||'?').charAt(0))+'</text>';
    g+='<text x="36" y="'+(y+19)+'">'+esc(m)+'</text><text class="ax" x="'+(L+10)+'" y="'+(y+19)+'" text-anchor="middle">'+(r.dir==='Lower'?'≤ ':'≥ ')+esc(r.t||'—')+'</text>';
-   for(var i=0;i<5;i++){ var x=L+60+i*cw, v=r['d'+(i+1)]; g+='<rect x="'+(x+3)+'" y="'+y+'" width="'+(cw-6)+'" height="'+(rh-4)+'" fill="'+(s[i]==='g'?'#1F8C55':s[i]==='r'?'#C0392B':'#F4F6F8')+'" stroke="#C6CDD3" stroke-width="'+(s[i]?0:1)+'"/>'+(String(v||'').trim()!==''?'<text class="'+(s[i]?'v':'e')+'" x="'+(x+cw/2)+'" y="'+(y+19)+'" text-anchor="middle">'+esc(v)+'</text>':''); } });
+   for(var i=0;i<5;i++){ var x=L+60+i*cw, v=r['d'+(i+1)]; g+='<rect x="'+(x+3)+'" y="'+y+'" width="'+(cw-6)+'" height="'+(rh-4)+'" fill="'+(s[i]==='g'?'#1F8C55':s[i]==='r'?'#C0392B':'#F4F6F8')+'" stroke="#C6CDD3" stroke-width="'+(s[i]?0:1)+'"/>'+(String(v||'').trim()!==''?'<text class="'+(s[i]?'ghv':'ghe')+'" x="'+(x+cw/2)+'" y="'+(y+19)+'" text-anchor="middle">'+esc(v)+'</text>':''); } });
   bd.innerHTML=g+'</svg>'; bd.style.display='';
  } else { bd.innerHTML=''; bd.style.display='none'; }
  /* aging */

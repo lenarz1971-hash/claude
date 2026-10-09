@@ -21,13 +21,14 @@ sections:[
   {id:'red',label:'Red limit',type:'number',tip:'Worse than this is red. Blank: target minus (or plus) the default amber band.'},
   {id:'v',label:'Values, oldest first',w:190},
   {id:'who',label:'Owner',w:100},
-  {id:'act',label:'Actual',calc:function(r,api){ var s=window.TOOL._s(r,api); return s?api.fmt(s.a,2):''; }},
+  {id:'act',label:'Actual',calc:function(r,api){ var s=window.TOOL._s(r,api); return s?window.TOOL._f(s.a):''; }},
   {id:'st',label:'Status',calc:function(r,api){ var s=window.TOOL._s(r,api); return s&&s.st?'<span class="kp-p '+s.st+'">'+{G:'Green',A:'Amber',R:'Red'}[s.st]+'</span>':''; }},
   {id:'tr',label:'Trend',calc:function(r,api){ var s=window.TOOL._s(r,api); return s?{up:'&#9650; improving',down:'&#9660; worsening',flat:'&#9644; flat','':'—'}[s.tr]:''; }}]},
  {type:'custom',id:'dash',title:'Dashboard',hint:'One tile per KPI: the actual, the target and the run of values. The dashed line is the target; the dotted line is the red limit.',html:'<div class="kp-tiles"></div><div class="stat kp-stat"></div>'},
  {type:'custom',id:'los',title:'Line of sight',hint:'Each objective with the measures that track it. An objective with no leading measure can only be watched, not steered; a measure with no objective may not be worth the effort of collecting.',html:'<div class="svgw kp-los"></div>'},
  {type:'custom',id:'chk',title:'What needs attention',html:'<div class="out kp-out"></div>'}
 ],
+_f:function(x){ return isFinite(x)?Number(x).toLocaleString('en-US',{maximumFractionDigits:2}):'—'; },
 _vals:function(r){ return String(r.v||'').split(/[,;\s]+/).filter(function(x){return x!=='';}).map(function(x){return Number(x);}); },
 _s:function(r,api){
  var v=window.TOOL._vals(r).filter(function(x){return isFinite(x);}); if(!v.length||!r.m) return null;
@@ -57,7 +58,7 @@ update:function(root,api){
   if(!isNaN(s.t)) g+='<line x1="'+P+'" x2="'+(W-P)+'" y1="'+Y(s.t)+'" y2="'+Y(s.t)+'" stroke="#1F8C55" stroke-width="1.2" stroke-dasharray="6 4"/>';
   g+='<polyline fill="none" stroke="#0F3E68" stroke-width="2" stroke-linejoin="round" points="'+s.v.map(function(y,i){return X(i).toFixed(1)+','+Y(y).toFixed(1);}).join(' ')+'"/>';
   g+='<circle cx="'+X(s.v.length-1)+'" cy="'+Y(s.a)+'" r="4.5" fill="'+col[s.st]+'" stroke="#fff" stroke-width="1.5"/></svg>';
-  return '<div class="kp-t" style="border-left-color:'+col[s.st]+'"><h4>'+esc(r.m)+'</h4><div class="kp-n"><b>'+api.fmt(s.a,2)+'</b><span>target '+(r.dir==='Lower'?'&le; ':'&ge; ')+(isNaN(s.t)?'—':api.fmt(s.t,2))+'</span></div>'+g+'<div class="kp-f"><span>'+esc(r.ll||'—')+(r.ob?' · '+esc(r.ob):'')+'</span><span>'+{up:'&#9650; improving',down:'&#9660; worsening',flat:'&#9644; flat','':''}[s.tr]+'</span></div></div>'; }).join('');
+  return '<div class="kp-t" style="border-left-color:'+col[s.st]+'"><h4>'+esc(r.m)+'</h4><div class="kp-n"><b>'+window.TOOL._f(s.a)+'</b><span>target '+(r.dir==='Lower'?'&le; ':'&ge; ')+(isNaN(s.t)?'—':window.TOOL._f(s.t))+'</span></div>'+g+'<div class="kp-f"><span>'+esc(r.ll||'—')+(r.ob?' · '+esc(r.ob):'')+'</span><span>'+{up:'&#9650; improving',down:'&#9660; worsening',flat:'&#9644; flat','':''}[s.tr]+'</span></div></div>'; }).join('');
  var cnt={G:0,A:0,R:0}; K.forEach(function(x){ if(x.s&&x.s.st) cnt[x.s.st]++; });
  root.querySelector('.kp-stat').innerHTML=K.length?'<div><b>'+K.length+'</b><span>KPIs</span></div><div><b style="color:#1F8C55">'+cnt.G+'</b><span>Green</span></div><div><b style="color:#9C7C1F">'+cnt.A+'</b><span>Amber</span></div><div><b style="color:#C0392B">'+cnt.R+'</b><span>Red</span></div><div><b>'+K.filter(function(x){return x.r.ll==='Leading';}).length+' : '+K.filter(function(x){return x.r.ll==='Lagging';}).length+'</b><span>Leading : lagging</span></div>':'';
  /* line of sight */

@@ -1,7 +1,7 @@
 
 .a3{border:2px solid var(--navy);background:#fff;margin:8px 0;font-size:14px;line-height:1.4}
 .a3-hd{display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline;background:var(--navy);color:#fff;padding:8px 12px}
-.a3-hd b{font:800 17px var(--disp);letter-spacing:-.01em;flex:1 1 100%}
+.a3-hd b{font:800 17px var(--disp);letter-spacing:-.01em;flex:1 1 100%;color:#fff}
 .a3-hd span{font:600 10px var(--mono);letter-spacing:.06em;text-transform:uppercase;opacity:.9}
 .a3-cols{display:grid;grid-template-columns:1fr 1fr}
 .a3-col{min-width:0}

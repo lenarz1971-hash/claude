@@ -2,7 +2,7 @@
 slug:'iq-oq-pq-validation-protocol',
 h:{
  /* automatic verdict from a numeric result and the limits; inclusive limits */
- auto:function(r){ var n=function(v){ var s=String(v==null?'':v).trim().replace(/,/g,''); return s===''?NaN:Number(s); }, x=n(r.res), lo=n(r.lo), hi=n(r.hi);
+ auto:function(r){ var n=function(v){ var s=String(v==null?'':v).trim().replace(',','.'); return s===''?NaN:Number(s); }, x=n(r.res), lo=n(r.lo), hi=n(r.hi);
   if(isNaN(x)||(isNaN(lo)&&isNaN(hi))) return ''; var e=1e-9*Math.max(1,Math.abs(x));
   return ((isNaN(lo)||x>=lo-e)&&(isNaN(hi)||x<=hi+e))?'Pass':'Fail'; }
 },

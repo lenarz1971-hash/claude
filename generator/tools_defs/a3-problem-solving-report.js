@@ -59,13 +59,13 @@ update:function(root,api){
  /* run chart */
  var ch='';
  if(C.pts.length){
-  var W=520, H=200, L=44, R=12, Tp=14, B=34, vals=C.pts.map(function(x){ return x.v; }).concat([C.tgt,C.base].filter(isFinite)), lo=Math.min.apply(null,vals), hi=Math.max.apply(null,vals); if(hi===lo){ hi+=1; lo-=1; } var pad=(hi-lo)*0.12; lo-=pad; hi+=pad; if(lo<0&&Math.min.apply(null,vals)>=0) lo=0;
+  var W=520, H=200, L=44, R=26, Tp=14, B=34, vals=C.pts.map(function(x){ return x.v; }).concat([C.tgt,C.base].filter(isFinite)), lo=Math.min.apply(null,vals), hi=Math.max.apply(null,vals); if(hi===lo){ hi+=1; lo-=1; } var pad=(hi-lo)*0.12; lo-=pad; hi+=pad; if(lo<0&&Math.min.apply(null,vals)>=0) lo=0;
   var N=C.pts.length, X=function(i){ return L+(N===1?(W-L-R)/2:(W-L-R)*i/(N-1)); }, Y=function(v){ return Tp+(H-Tp-B)*(hi-v)/(hi-lo); };
   ch='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Run chart of the measure"><style>text{font:10px Archivo,sans-serif;fill:#16273A}.ax{font:600 9px \'IBM Plex Mono\',monospace;fill:#4A5D71}</style>';
   for(var k=0;k<=4;k++){ var v=lo+(hi-lo)*k/4, y=Y(v); ch+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y+'" y2="'+y+'" stroke="#E3E8EE"/><text class="ax" x="'+(L-5)+'" y="'+(y+3)+'" text-anchor="end">'+api.fmt(v,Math.abs(hi-lo)<10?1:0)+'</text>'; }
   var ia=C.pts.map(function(x){ return x.ph; }).indexOf('After'); if(ia>0){ var xs=(X(ia-1)+X(ia))/2; ch+='<line x1="'+xs+'" x2="'+xs+'" y1="'+Tp+'" y2="'+(H-B)+'" stroke="#4A5D71" stroke-dasharray="3 3"/><text class="ax" x="'+(xs+4)+'" y="'+(Tp+8)+'">COUNTERMEASURES</text>'; }
-  if(isFinite(C.tgt)) ch+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(C.tgt)+'" y2="'+Y(C.tgt)+'" stroke="#2E7D4F" stroke-width="1.6" stroke-dasharray="6 4"/><text class="ax" x="'+(W-R)+'" y="'+(Y(C.tgt)-4)+'" text-anchor="end" style="fill:#2E7D4F">TARGET '+api.fmt(C.tgt,2)+'</text>';
-  if(isFinite(C.base)) ch+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(C.base)+'" y2="'+Y(C.base)+'" stroke="#C0392B" stroke-width="1.2" stroke-dasharray="2 3"/><text class="ax" x="'+(L+4)+'" y="'+(Y(C.base)-4)+'" style="fill:#C0392B">BASELINE '+api.fmt(C.base,2)+'</text>';
+  if(isFinite(C.tgt)) ch+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(C.tgt)+'" y2="'+Y(C.tgt)+'" stroke="#2E7D4F" stroke-width="1.6" stroke-dasharray="6 4"/><text class="ax" x="'+(L+4)+'" y="'+(Y(C.tgt)+(C.low?12:-4))+'" style="fill:#2E7D4F">TARGET '+api.fmt(C.tgt,2)+'</text>';
+  if(isFinite(C.base)) ch+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(C.base)+'" y2="'+Y(C.base)+'" stroke="#C0392B" stroke-width="1.2" stroke-dasharray="2 3"/><text class="ax" x="'+(L+4)+'" y="'+(Y(C.base)+(C.low?-4:12))+'" style="fill:#C0392B">BASELINE '+api.fmt(C.base,2)+'</text>';
   ch+='<polyline fill="none" stroke="#0F3E68" stroke-width="1.8" points="'+C.pts.map(function(x,i){ return X(i)+','+Y(x.v); }).join(' ')+'"/>';
   var every=Math.ceil(N/12);
   C.pts.forEach(function(x,i){ ch+='<circle cx="'+X(i)+'" cy="'+Y(x.v)+'" r="3.6" fill="'+(x.ph==='After'?'#D8B147':'#0F3E68')+'" stroke="#fff"><title>'+esc(x.p)+': '+x.v+'</title></circle>'; if(i%every===0) ch+='<text class="ax" x="'+X(i)+'" y="'+(H-B+14)+'" text-anchor="middle">'+esc(String(x.p).slice(0,9))+'</text>'; });

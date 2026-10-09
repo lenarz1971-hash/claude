@@ -14,7 +14,7 @@ sections:[
  {type:'custom',id:'ref',title:'The terms',html:'<div class="pillrow"><span>APPROACH: ELIMINATE &gt; PREVENT &gt; DETECT ERROR &gt; DETECT DEFECT &gt; DOWNSTREAM</span><span>CONTROL: STOPS THE PROCESS</span><span>WARNING: SIGNAL ONLY</span></div><div class="pillrow"><span>CONTACT: SHAPE, SIZE, POSITION</span><span>FIXED-VALUE: A SET NUMBER OF PARTS OR MOVES</span><span>MOTION-STEP: STEPS IN THE RIGHT ORDER</span></div>'},
  {type:'grid',id:'d',title:'Errors and devices',rows:3,hint:'One row per error or failure mode, from the PFMEA, a defect Pareto or the line. <b>Severity</b> (1 to 10, as in the FMEA) is optional but drives the checks. Before and after are escapes or defects in the same period, to show the device works. Strength runs from 10 (designed out, stops the process) to 1 (caught downstream, warning only).',cols:[
   {id:'id',label:'ID',w:44},
-  {id:'st',label:'Process step',w:120},
+  {id:'st',label:'Process step',w:130,type:'textarea',rows:1},
   {id:'er',label:'Error or failure mode',w:200,type:'textarea',rows:1},
   {id:'sv',label:'Sev',type:'number',min:1,max:10,tip:'Severity 1-10'},
   {id:'ap',label:'Approach',type:'select',opts:['1 Eliminate: designed out','2 Prevent: the error cannot be made','3 Detect the error before it makes a defect','4 Detect the defect at the station','5 Detect the defect downstream']},

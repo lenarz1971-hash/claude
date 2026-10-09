@@ -17,6 +17,7 @@ h:{
   var Sxx=sxx-sx*sx/n, Sxy=sxy-sx*sy/n, Syy=syy-sy*sy/n; if(!(Sxx>0)) return null; var b=Sxy/Sxx, a=(sy-b*sx)/n, mr=0, mi=0;
   P.forEach(function(p,i){ var r=p[1]-(a+b*p[0]); if(Math.abs(r)>Math.abs(mr)){ mr=r; mi=i; } });
   return {b:b,a:a,r2:Syy>0?Sxy*Sxy/(Sxx*Syy):1,mr:mr,mi:mi}; },
+ ticks:function(a,b){ var r=b-a, st=Math.pow(10,Math.floor(Math.log(r/4)/Math.LN10)), m=r/4/st; st*=m>=5?5:m>=2?2:1; var out=[], v=Math.ceil(a/st)*st, d=Math.max(0,-Math.floor(Math.log(st)/Math.LN10+1e-9)); for(;v<=b+1e-12;v+=st) out.push(Number(v.toFixed(d))); return out; },
  q:function(r,api){ var T=window.TOOL, h=T.h, x=api.num(r.x); if(isNaN(x)) return null; var P=h.pts(api), o=h.at(P,x); if(!o) return null; o.x=x; o.t=h.tv(x,o.y,api.state().f.kind); return o; }
 },
 sections:[
@@ -64,15 +65,14 @@ update:function(root,api){
  var g='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Calibration table with interpolated readings">';
  g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+(H-B)+'" y2="'+(H-B)+'" stroke="#4A5D71"/><line x1="'+L+'" x2="'+L+'" y1="'+Tp+'" y2="'+(H-B)+'" stroke="#4A5D71"/>';
  if(k<2&&y0<0&&y1>0) g+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+Y(0).toFixed(1)+'" y2="'+Y(0).toFixed(1)+'" stroke="#C6CDD3"/>';
- for(i=0;i<=4;i++){ var xv=x0+px+(x1-x0-2*px)*i/4, yv=y0+py+(y1-y0-2*py)*i/4;
-  g+='<text x="'+X(xv).toFixed(1)+'" y="'+(H-B+15)+'" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#4A5D71">'+Number(xv.toPrecision(4))+'</text>';
-  g+='<text x="'+(L-6)+'" y="'+(Y(yv)+4).toFixed(1)+'" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#4A5D71">'+Number(yv.toPrecision(3))+'</text>'; }
+ h.ticks(x0,x1).forEach(function(xv){ g+='<text x="'+X(xv).toFixed(1)+'" y="'+(H-B+15)+'" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#4A5D71">'+xv+'</text><line x1="'+X(xv).toFixed(1)+'" x2="'+X(xv).toFixed(1)+'" y1="'+(H-B)+'" y2="'+(H-B+4)+'" stroke="#4A5D71"/>'; });
+ h.ticks(y0,y1).forEach(function(yv){ g+='<text x="'+(L-6)+'" y="'+(Y(yv)+4).toFixed(1)+'" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" fill="#4A5D71">'+yv+'</text><line x1="'+(L-4)+'" x2="'+L+'" y1="'+Y(yv).toFixed(1)+'" y2="'+Y(yv).toFixed(1)+'" stroke="#4A5D71"/>'; });
  g+='<text x="'+((L+W-R)/2)+'" y="'+(H-6)+'" text-anchor="middle" font-family="Archivo, sans-serif" font-size="11" fill="#4A5D71">Reading'+(un?' ('+un+')':'')+'</text>';
  g+='<line x1="'+X(x0).toFixed(1)+'" y1="'+Y(F.a+F.b*x0).toFixed(1)+'" x2="'+X(x1).toFixed(1)+'" y2="'+Y(F.a+F.b*x1).toFixed(1)+'" stroke="#7C8B99" stroke-width="1.4" stroke-dasharray="6 4"/>';
  g+='<polyline points="'+P.map(function(p){ return X(p[0]).toFixed(1)+','+Y(p[1]).toFixed(1); }).join(' ')+'" fill="none" stroke="#0F3E68" stroke-width="2"/>';
- var e0=h.at(P,x0), e1=h.at(P,x1);
- if(x0<P[0][0]) g+='<line x1="'+X(x0).toFixed(1)+'" y1="'+Y(e0.y).toFixed(1)+'" x2="'+X(P[0][0]).toFixed(1)+'" y2="'+Y(P[0][1]).toFixed(1)+'" stroke="#C0392B" stroke-width="1.6" stroke-dasharray="3 3"/>';
- if(x1>P[P.length-1][0]) g+='<line x1="'+X(P[P.length-1][0]).toFixed(1)+'" y1="'+Y(P[P.length-1][1]).toFixed(1)+'" x2="'+X(x1).toFixed(1)+'" y2="'+Y(e1.y).toFixed(1)+'" stroke="#C0392B" stroke-width="1.6" stroke-dasharray="3 3"/>';
+ var qx=Q.map(function(o){return o.x;}), qlo=Math.min.apply(null,qx.concat([P[0][0]])), qhi=Math.max.apply(null,qx.concat([P[P.length-1][0]])), e0=h.at(P,qlo), e1=h.at(P,qhi);
+ if(qlo<P[0][0]) g+='<line x1="'+X(qlo).toFixed(1)+'" y1="'+Y(e0.y).toFixed(1)+'" x2="'+X(P[0][0]).toFixed(1)+'" y2="'+Y(P[0][1]).toFixed(1)+'" stroke="#C0392B" stroke-width="1.6" stroke-dasharray="3 3"/>';
+ if(qhi>P[P.length-1][0]) g+='<line x1="'+X(P[P.length-1][0]).toFixed(1)+'" y1="'+Y(P[P.length-1][1]).toFixed(1)+'" x2="'+X(qhi).toFixed(1)+'" y2="'+Y(e1.y).toFixed(1)+'" stroke="#C0392B" stroke-width="1.6" stroke-dasharray="3 3"/>';
  P.forEach(function(p){ g+='<circle cx="'+X(p[0]).toFixed(1)+'" cy="'+Y(p[1]).toFixed(1)+'" r="4.5" fill="#fff" stroke="#0F3E68" stroke-width="2"/>'; });
  Q.forEach(function(o){ var cx=X(o.x), cy=Y(o.y), c=(o.how==='below'||o.how==='above')?'#C0392B':'#9C7C1F'; g+='<path d="M'+cx.toFixed(1)+','+(cy-7).toFixed(1)+' l7,7 -7,7 -7,-7z" fill="'+c+'"/>'; });
  g+='</svg>'; sv.innerHTML=g;
