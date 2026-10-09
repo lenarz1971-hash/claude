@@ -328,8 +328,64 @@ def test_ff(pg):
         if pv.startswith("<"): check(f"existing p {w} (< 0.0001)", 1.0 if fit.pvalues[j + 1] < 1e-4 else 0.0, 1.0, 0)
         else: check(f"existing p {w}", num(pv), fit.pvalues[j + 1], 6e-5)
 
+# ================================================================ data-collection-plan: location check sheet
+def dc_case(pg, name, state, circ, nc, nr, types):
+    print("== location check sheet:", name)
+    load(pg, "data-collection-plan", state)
+    st = pg.evaluate("()=>JSON.parse(localStorage.getItem('scqg-tool-data-collection-plan'))") if state is None else dict(state, x=state.get("x", {}))
+    if state is None: st = pg.evaluate("()=>window.TOOL.example")
+    lt = st["x"]["lt"]
+    obs = np.array([sum(lt.get(f"{r}|{c}|{t}", 0) for t in types) for r in range(nr) for c in range(nc)], dtype=float)
+    w = np.array([(2 * r + 1) if circ else 1 for r in range(nr) for c in range(nc)], dtype=float)
+    N = obs.sum(); exp = N * w / w.sum()
+    chi, pv = stats.chisquare(obs, exp)
+    check(name + " total defects", num(stat(pg, ".lc-st .stat", "Defects recorded")), N, 0)
+    for t in types:
+        check(name + " total " + t, num(stat(pg, ".lc-st .stat", t)), sum(v for k, v in lt.items() if k.endswith("|" + t)), 0)
+    flag = [x for x in pg.locator(".lc-out .flag").all_inner_texts() if x.startswith("Chi-square")][0]
+    m = re.search(r"χ² = ([\d.,]+) with (\d+) df, p (?:= (\d\.\d+)|< 0.0001)", flag)
+    check(name + " chi-square", num(m.group(1)), chi, 0.006)
+    check(name + " df", float(m.group(2)), len(obs) - 1, 0)
+    if m.group(3): check(name + " p value", float(m.group(3)), pv, 6e-5)
+    else: check(name + " p value (< 0.0001)", 1.0 if pv < 1e-4 else 0.0, 1.0, 0)
+    labs = {}
+    for rw in table(pg, ".lc-tb"): labs[rw[0]] = rw
+    for i, (r, c) in enumerate((r, c) for r in range(nr) for c in range(nc)):
+        if obs[i] == 0: continue
+        lab = ("R%d·%d" % (r + 1, c + 1) if nr > 1 else str(c + 1)) if circ else "ABCDEFGHIJKL"[c] + str(r + 1)
+        check(f"{name} zone {lab} total", num(labs[lab][len(types) + 1]), obs[i], 0)
+        check(f"{name} zone {lab} expected", num(labs[lab][len(types) + 3]), exp[i], 0.006)
+
+def test_dc(pg):
+    dc_case(pg, "worked example (circle, 12 sectors)", None, True, 12, 1, ["Nick", "Cut", "Twist"])
+    st = {"f": {"lname": "Door panel", "lshape": "Rectangle (rows × columns)", "lc": "6", "lr": "4", "ltypes": "Scratch\nDent\nPaint run"},
+          "x": {"lt": {"0|0|Scratch": 2, "1|4|Dent": 7, "1|5|Dent": 3, "2|4|Scratch": 1, "3|2|Paint run": 2, "1|4|Scratch": 30}}}
+    dc_case(pg, "rectangle 6 x 4", st, False, 6, 4, ["Scratch", "Dent", "Paint run"])
+    rng = np.random.default_rng(3); lt = {}
+    for r in range(3):
+        for c in range(6):
+            for t in ["Pit", "Haze"]:
+                v = int(rng.poisson(3 * (2 * r + 1) / 2 * (1.6 if (c == 2 and t == "Pit") else 1)))
+                if v: lt[f"{r}|{c}|{t}"] = v
+    st = {"f": {"lname": "Wafer", "lshape": "Circle (rings × sectors)", "lc": "6", "lr": "3", "ltypes": "Pit\nHaze"}, "x": {"lt": lt}}
+    dc_case(pg, "circle 3 rings x 6 sectors (area-weighted)", st, True, 6, 3, ["Pit", "Haze"])
+    # clicking: +1 on the active type, right-click -1, and the count survives a reload
+    print("== location check sheet: clicking zones")
+    load(pg, "data-collection-plan", st)
+    pg.click('.lc-ty[data-ty="Haze"]'); pg.wait_for_timeout(100)
+    before = lt.get("1|3|Haze", 0)
+    for _ in range(3): pg.click('.lz[data-z="1|3"]', force=True); pg.wait_for_timeout(60)
+    pg.click('.lz[data-z="1|3"]', button="right", force=True); pg.wait_for_timeout(100)
+    pg.reload(); pg.wait_for_timeout(250)
+    got = pg.evaluate("()=>JSON.parse(localStorage.getItem('scqg-tool-data-collection-plan')).x.lt['1|3|Haze']")
+    check("click +3 then right-click -1, after reload", float(got), before + 2, 0)
+    # the check sheet that existed before b12 is untouched
+    load(pg, "data-collection-plan")
+    tot = pg.locator("table.cs tr.ft td.tt").last.inner_text()
+    check("existing check sheet grand total", num(tot), sum(pg.evaluate("()=>window.TOOL.example").get("x")["t"].values()), 0)
+
 # ================================================================ run
-TESTS = [t for t in [test_de, test_ci, test_cr, test_ff] if not ONLY or t.__name__ in ONLY]
+TESTS = [t for t in [test_de, test_ci, test_cr, test_ff, test_dc] if not ONLY or t.__name__ in ONLY]
 with sync_playwright() as p:
     exe = "/opt/pw-browsers/chromium"
     b = p.chromium.launch(executable_path=exe if os.path.exists(exe) else None)

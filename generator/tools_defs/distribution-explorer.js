@@ -139,7 +139,7 @@ multi:function(root,api){
   var nm=c.nm.length>(C.length>6?8:16)?c.nm.slice(0,C.length>6?7:15)+'…':c.nm; g+='<text class="lb" x="'+(x0+bw/2)+'" y="'+(H-B+18)+'" text-anchor="middle">'+E(nm)+'</text><text x="'+(x0+bw/2)+'" y="'+(H-B+34)+'" text-anchor="middle">p = '+F(c.p,3)+'</text>'; });
  g+='<line x1="'+L+'" x2="'+(W-10)+'" y1="'+(H-B)+'" y2="'+(H-B)+'" stroke="#C6CDD3"/>';
  SV.innerHTML=g+'</svg>';
- f.push(['','P = n! ÷ (x₁!·x₂!·…·x_k!) × p₁^x₁·p₂^x₂·…·p_k^x_k = <b>'+(P>0&&P<1e-4?P.toExponential(4):F(P,6))+'</b>: the probability that '+F(N,0)+' independent trials fall into the categories in exactly these numbers.']);
+ f.push(['','P = n! ÷ (x₁!·x₂!·…·x<sub>k</sub>!) × p₁<sup>x₁</sup>·p₂<sup>x₂</sup>·…·p<sub>k</sub><sup>x<sub>k</sub></sup> = <b>'+(P>0&&P<1e-4?P.toExponential(4):F(P,6))+'</b>: the probability that '+F(N,0)+' independent trials fall into the categories in exactly these numbers.']);
  f.push(['','Each category on its own is binomial with n = '+F(N,0)+' and its own p, so its mean is n·p and its variance n·p(1 − p). The counts are not independent: they must add to n, so one category running high pushes the others down.']);
  f.push(['','<b>Used for:</b> more than two outcomes per trial: grades A, B and scrap; defect types; survey answers. With two categories it is the binomial.']);
  O.innerHTML=api.flags(f);

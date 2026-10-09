@@ -298,9 +298,9 @@ Knowledge. Expect to be asked to tell the two apart, and to distinguish them fro
 containment.</p>
 """),
 
-dict(slug="data-collection-plan", name="Data collection plan and check sheet", covers="CSSYB III.B.1, III.B.2, III.B.3",
+dict(slug="data-collection-plan", name="Data collection plan and check sheet", covers="CSSYB III.B.1, III.B.2, III.B.3, CQE V.A.5, VI.A.3, CQPA II.B, CMDA V.A",
 title="Data Collection Plan and Check Sheet — Free Online Template | SC Quality Guild",
-desc="Free data collection plan template with a clickable check sheet. Operational definitions, data types, sampling and stratification, then tally by category and period and paste the totals into a Pareto.",
+desc="Free data collection plan template with a clickable tally sheet and a location (defect concentration) check sheet. Operational definitions and stratification.",
 h1="Data collection plan and check sheet",
 lede="Plan what to collect, define it so everyone records the same thing, then tally it on a check sheet that totals itself.",
 content="""
@@ -337,10 +337,23 @@ the top, a mark each time something happens. It shows patterns as it fills (all 
 in one row) and it produces counts ready for a Pareto chart. The one here totals itself; print it if you
 would rather collect on paper.</p>
 
-<h2>On the Yellow Belt exam</h2>
+<h2>The location check sheet</h2>
+<p>A tally by category says <i>what</i> went wrong; a location check sheet, also called a defect
+concentration diagram, says <i>where</i>. Draw a simple outline of the item, split into zones (a rectangle in
+rows and columns, or a circle in rings and sectors for round parts), pick a defect type and tap the zone each
+time one is found. Defects that pile up in one place point to a cause at that place: a fixture contact
+point, a sharp edge, a handling spot, one nozzle of a spray head.</p>
+<p>The tool counts by zone and by type, and tests whether the spread could be even with a chi-square
+goodness-of-fit test: each zone's expected count is the total shared out by area (equal zones in a
+rectangle; outer rings of a circle are larger). Treat the p value as approximate when the expected counts
+are below 5.</p>
+
+<h2>On the exam</h2>
 <p>Data collection plans (III.B.1), qualitative and quantitative data (III.B.2) and data collection
-techniques (III.B.3) are all in the 2022 CSSYB Body of Knowledge. Expect to classify data by type and to
-recognize what a data collection plan contains.</p>
+techniques (III.B.3) are all in the 2022 CSSYB Body of Knowledge: expect to classify data by type and to
+recognize what a data collection plan contains. Check sheets are one of the basic quality tools in CQE V.A.5,
+CQPA II.B and CMDA V.A, and tally or check sheets are a data collection method in CQE VI.A.3. Expect to pick
+the check sheet that fits a question: a tally sheet for "how often", a location check sheet for "where".</p>
 """),
 ]
 

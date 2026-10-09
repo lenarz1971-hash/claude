@@ -94,11 +94,11 @@ PAGES4F = [
 {
 'slug': 'full-factorial-doe',
 'name': '2ᵏ full factorial DOE',
-'covers': 'CSSGB V.A.1, V.A.2',
+'covers': 'CSSGB V.A.1, V.A.2, CQE VI.H.3, VI.H.5, CSSBB VII.A.2, VII.A.5',
 'title': 'Full Factorial DOE Calculator — 2^k Effects and Interaction Plots | SC Quality Guild',
-'desc': 'Free 2^k full factorial DOE calculator for two to four factors with replicates: effects, coefficients, p values, Pareto of effects and interaction plots.',
+'desc': 'Free two-level DOE calculator: 2^k full factorials and 2^(k−p) fractional factorials with generators, aliases and resolution, effects, p values and plots.',
 'h1': '2ᵏ full factorial DOE',
-'lede': 'Lay out a two-level full factorial for two to four factors, type the responses and get the effects, coefficients, significance tests, a Pareto of effects and main effects and interaction plots.',
+'lede': 'Lay out a two-level full factorial for two to five factors, or a fractional factorial for up to seven, type the responses and get the alias structure, effects, coefficients, significance tests, a Pareto of effects and main effects and interaction plots.',
 'content': '''
 <h2>The language of designed experiments</h2>
 <ul>
@@ -120,10 +120,25 @@ PAGES4F = [
 <ul>
 <li>Two levels can only fit a straight line. Add center points to detect curvature before predicting between the levels.</li>
 <li>Always run confirmation trials at the chosen settings before changing the process.</li>
-<li>Fractional factorials save runs by confounding (aliasing) higher-order interactions with main effects; a full factorial has no aliasing.</li>
+<li>A full factorial has no aliasing. A fractional factorial saves runs by aliasing effects with each other, as below.</li>
 </ul>
-<h2>On the Green Belt exam</h2>
-<p>Expect DOE vocabulary questions, counting runs (2^k × replicates), computing a main or interaction effect from a small table, and reading main effects and interaction plots.</p>
+<h2>Fractional factorials: generators, aliases and resolution</h2>
+<p>A 2<sup>k−p</sup> design runs 1/2<sup>p</sup> of the full factorial. Write out a full factorial in k − p
+<i>base</i> factors, then set each extra factor from a <b>generator</b>: in a 2<sup>4−1</sup> with D = ABC, D is
+run at the sign of the A×B×C column. Multiplying the generator by D gives the <b>defining relation</b>
+I = ABCD (a letter times itself is I). Multiply any effect by the defining relation to find its
+<b>aliases</b>: A × ABCD = BCD, so the A column also estimates BCD, and AB × ABCD = CD, so AB and CD share a
+column. The experiment estimates the sum of the effects in each alias chain and cannot separate them.</p>
+<p>The <b>resolution</b> is the length of the shortest word in the defining relation. Resolution III: main
+effects are aliased with two-factor interactions (screening many factors). Resolution IV: main effects are
+clear of two-factor interactions, but two-factor interactions are aliased with each other. Resolution V:
+main effects and two-factor interactions are clear of each other. Choose a fraction in section 2: the tool
+uses the standard minimum-aberration generators unless you type your own (a minus sign, as in D = −ABC,
+gives the other half), and lists the defining relation, the resolution and every alias chain. The effects
+table shows the chain behind each estimate, and the checks warn when a significant effect shares its chain
+with another plausible one. The button in section 2 loads a worked 2<sup>4−1</sup> example.</p>
+<h2>On the exam</h2>
+<p>CSSGB: expect DOE vocabulary questions, counting runs (2^k × replicates), computing a main or interaction effect from a small table, and reading main effects and interaction plots. The CQE asks you to apply the design principles, including confounding (VI.H.3), and to construct and analyze full factorials (VI.H.4) and two-level fractional factorials (VI.H.5). The CSSBB covers confounding and resolution (VII.A.2) and how confounding affects the use of fractional factorials (VII.A.5). Expect to find the aliases of an effect from a generator, state a design's resolution, and say why a resolution III design is risky when interactions are likely.</p>
 ''',
 },
 ]

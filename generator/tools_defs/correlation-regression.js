@@ -105,7 +105,7 @@ more:function(root,api,R){
  var ord=rs.slice().sort(function(u,v){return u.e-v.e;}); ord.forEach(function(o,j){ o.ns=ST.zinv((j+1-0.375)/(k+0.25)); });
  var W=640,H=300,L=58,B=44,T=30, g;
  function axes(xa,xb,ya,yb,xl,yl,title){ var Xf=function(v){return L+(v-xa)/(xb-xa)*(W-L-14);}, Yf=function(v){return H-B-(v-ya)/(yb-ya)*(H-B-T);};
-  var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+title+'"><style>text{font:11px \'IBM Plex Mono\',monospace;fill:#7C8B99}.tt{font:600 13px Archivo,sans-serif;fill:#16273A}</style><text class="tt" x="'+L+'" y="18">'+title+'</text><rect x="'+L+'" y="'+T+'" width="'+(W-L-14)+'" height="'+(H-B-T)+'" fill="#fff" stroke="#DDE1E4"/>';
+  var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+title+'"><style>text{font:13px \'IBM Plex Mono\',monospace;fill:#7C8B99}.tt{font:600 16px Archivo,sans-serif;fill:#16273A}</style><text class="tt" x="'+L+'" y="18">'+title+'</text><rect x="'+L+'" y="'+T+'" width="'+(W-L-14)+'" height="'+(H-B-T)+'" fill="#fff" stroke="#DDE1E4"/>';
   for(var i=0;i<=4;i++){ var xv=xa+(xb-xa)*i/4, yv=ya+(yb-ya)*i/4; s+='<text x="'+Xf(xv)+'" y="'+(H-B+15)+'" text-anchor="'+(i===0?'start':i===4?'end':'middle')+'">'+api.fmt(xv,2)+'</text><text x="'+(L-5)+'" y="'+(Yf(yv)+4)+'" text-anchor="end">'+api.fmt(yv,2)+'</text>'; }
   s+='<text x="'+((W+L)/2)+'" y="'+(H-6)+'" text-anchor="middle">'+xl+'</text><text transform="translate(12 '+((H-B+T)/2)+') rotate(-90)" text-anchor="middle">'+yl+'</text>';
   return {s:s,X:Xf,Y:Yf}; }

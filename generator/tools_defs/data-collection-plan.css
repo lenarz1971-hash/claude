@@ -8,3 +8,10 @@ table.cs tr.ft td{border-top:2px solid var(--line);font-weight:700}
 .tal:hover{border-color:var(--navy);background:var(--gold-xl)}
 .tal .marks{font:500 15px var(--mono);color:var(--ink-2);letter-spacing:-.04em}
 .tal b{font:700 12px var(--mono);color:var(--navy)}
+.lc-types{align-items:center;margin:4px 0 8px}
+.lc-types .lc-lab{background:none;font:700 9.5px var(--mono);letter-spacing:.09em;color:var(--ink-3);text-transform:uppercase}
+.lc-ty{font:600 13px var(--disp);border:1px solid var(--line-2);background:#fff;color:var(--ink);border-radius:3px;padding:6px 10px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.lc-ty i{width:10px;height:10px;border-radius:50%;display:inline-block}
+.lc-ty.on{border:2px solid var(--navy);background:var(--gold-xl);font-weight:800}
+.lc-svg svg{max-width:640px;min-width:0;margin:0 auto}
+table.lc-tb td,table.lc-tb th{text-align:center;padding-right:10px;white-space:nowrap}

@@ -193,11 +193,11 @@ cause is real.</p>
 multivoting from nominal group technique, and to recognize when each suits.</p>
 """),
 
-dict(slug="voc-ctq-tree", name="VOC to CTQ tree", covers="CSSYB II.A.1",
+dict(slug="voc-ctq-tree", name="VOC to CTQ tree", covers="CSSYB II.A.1, CQE V.B.2, CSSBB IV.D.2, CQPA II.D.1",
 title="Voice of the Customer to CTQ Tree — Free Online Tool | SC Quality Guild",
-desc="Free VOC to CTQ tree builder. Turn customer comments into needs, drivers and measurable critical-to-quality characteristics with targets, classified with the Kano model.",
+desc="Free VOC to CTQ tree builder and tree diagram maker. Turn customer comments into measurable CTQs with targets, or break any goal into means and tasks.",
 h1="Voice of the customer to CTQ tree",
-lede="From what the customer said, to what they need, to a characteristic you can measure with a target, drawn as a tree and checked for vague CTQs.",
+lede="From what the customer said, to what they need, to a characteristic you can measure with a target, drawn as a tree and checked for vague CTQs. Switch to a generic tree diagram to break any goal into means and tasks.",
 content="""
 <h2>From words to numbers</h2>
 <p>Customers describe what they want in their own words: "it leaks", "you're always late", "it's hard to
@@ -220,9 +220,20 @@ satisfaction the better they are met. <b>Delighters</b> are unexpected, and plea
 <p>Basic needs are the ones customers rarely mention until something goes wrong, so they are
 under-represented in surveys. Delighters become basic over time, as customers get used to them.</p>
 
-<h2>On the Yellow Belt exam</h2>
-<p>Voice of the customer is topic II.A.1 of the 2022 CSSYB Body of Knowledge. Expect to place a customer
-statement on the CTQ tree, and to classify a need with the Kano model.</p>
+<h2>The generic tree diagram</h2>
+<p>A CTQ tree is one kind of <b>tree diagram</b>, one of the seven management and planning tools. Choose
+"Generic tree diagram" at the top to build the general form: a goal on the left, the means of reaching it to
+the right, finer means after that, and finally tasks that someone can actually do, each with an owner and a
+date. Moving right answers "how?"; moving left answers "why?". The checks flag branches that stop short of the
+task level, a means with only one branch under it (ask "how else?"), and tasks with nobody named. The CTQ
+tree and the generic tree are saved together, so switching between them loses nothing.</p>
+
+<h2>On the exam</h2>
+<p>Voice of the customer is topic II.A.1 of the 2022 CSSYB Body of Knowledge: expect to place a customer
+statement on the CTQ tree, and to classify a need with the Kano model. Tree diagrams are among the quality
+management and planning tools in CQE V.B.2, CSSBB IV.D.2 and CQPA II.D.1; expect to pick the tree diagram
+for a "break this goal down into actions" scenario and to tell it apart from the affinity diagram (which
+groups ideas) and the interrelationship digraph (which maps cause and effect).</p>
 """),
 
 dict(slug="project-selection-matrix", name="Project selection matrix", covers="CSSYB II.A.2",
@@ -439,13 +450,13 @@ R&amp;R is III.C.2. Expect to match a described result to accuracy, precision, b
 stability.</p>
 """),
 
-dict(slug="distribution-explorer", name="Distribution explorer", covers="CSSYB IV.E.1",
-title="Probability Distribution Calculator — Normal, Binomial, Poisson | SC Quality Guild",
-desc="Free probability distribution calculator. Normal, binomial, Poisson, uniform and exponential: see the shape, the mean and standard deviation, and the probability above, below or between values.",
+dict(slug="distribution-explorer", name="Distribution explorer", covers="CSSYB IV.E.1, CQE VI.C.1, VI.C.2, CSSBB V.E.2, V.E.3, CQPA III.A.2",
+title="Probability Distribution Calculator — Normal, Binomial, Poisson, Weibull, t, F | SC Quality Guild",
+desc="Free distribution calculator: normal, binomial, Poisson, Weibull, lognormal, hypergeometric, t, chi-square, F and more. Shape, mean, variance, probabilities.",
 h1="Distribution explorer",
-lede="Pick a distribution, set its parameters and see its shape, with the probability of falling above, below or between any values you choose.",
+lede="Pick one of twelve distributions, set its parameters and see its shape, its mean and variance, the probability of falling above, below or between any values you choose, and percentiles such as critical values.",
 content="""
-<h2>Five distributions and when each applies</h2>
+<h2>The basic five and when each applies</h2>
 <ul>
   <li><b>Normal:</b> continuous measurements from a stable process, such as diameters, weights and
   fill volumes. Symmetric, described by its mean and standard deviation. About 68% of values fall within
@@ -472,16 +483,45 @@ how many standard deviations the value is from the mean, the number used with a 
 <p>For whole-number distributions, "at or below 3" includes 3 and "at or above 3" includes 3; the two do not
 add to 1. The tool shows both.</p>
 
-<h2>On the Yellow Belt exam</h2>
-<p>Basic distribution types are topic IV.E.1 of the 2022 CSSYB Body of Knowledge. Expect to choose the
-right distribution for a described situation, and to say how a skewed or bimodal shape changes how the data should be read (a bimodal histogram often means two processes or two populations are mixed).</p>
+<h2>More distributions for life data, small lots and sampling</h2>
+<ul>
+  <li><b>Weibull</b> (shape β, scale η): time or cycles to failure. β below 1 means a falling failure rate
+  (early-life failures), β = 1 is the exponential, β above 1 a rising rate (wear-out). By life η, 63.2% have
+  failed. P(X &gt; x) is the reliability at x.</li>
+  <li><b>Lognormal</b> (μ and σ of ln X): a positive, right-skewed quantity whose logarithm is normal, such as
+  repair times. Its mean is e<sup>μ + σ²/2</sup>, not e<sup>μ</sup>.</li>
+  <li><b>Hypergeometric</b> (lot size N, D defectives in the lot, sample n): defectives in a sample drawn
+  without replacement. When the sample is under about 10% of the lot, the binomial with p = D/N is close
+  enough.</li>
+  <li><b>Multinomial</b>: more than two outcomes per trial (grade A, grade B, scrap). Enter each category's
+  probability and count; the tool gives the probability of exactly those counts, n!/(x₁!…x_k!) × p₁<sup>x₁</sup>…p_k<sup>x_k</sup>.</li>
+</ul>
+
+<h2>The sampling distributions: t, chi-square and F</h2>
+<p>These three describe statistics rather than individual items. <b>Student's t</b> with ν degrees of freedom
+is the mean standardized with s instead of σ; it has heavier tails than the normal and approaches it as ν
+grows. <b>Chi-square</b> with k degrees of freedom is (n − 1)s²/σ² for normal data, and the statistic of the
+goodness-of-fit and contingency-table tests. <b>F</b> with ν₁ and ν₂ degrees of freedom is the ratio of two
+independent variance estimates, used to compare variances and in ANOVA. Enter a lower-tail probability in
+the percentile box to get a critical value: 0.975 with t on 10 df gives 2.228, the value in a t table for a
+two-sided test at α = 0.05.</p>
+
+<h2>On the exam</h2>
+<p>CSSYB IV.E.1 covers the basic distribution types. The CQE asks you to define and distinguish the
+continuous distributions (normal, uniform, exponential, lognormal, Weibull, Student's t and F; VI.C.1) and the
+discrete ones (binomial, Poisson, hypergeometric and multinomial; VI.C.2). The CSSBB asks you to use the
+normal, Poisson, binomial, chi-square, t and F distributions (V.E.2) and to identify the hypergeometric,
+exponential, lognormal and Weibull (V.E.3). CQPA III.A.2 lists normal, binomial, Poisson and Weibull. Expect
+to choose the right distribution for a described situation, look up a critical value, and say how a skewed or
+bimodal shape changes how the data should be read (a bimodal histogram often means two processes or two
+populations are mixed).</p>
 """),
 
-dict(slug="correlation-regression", name="Correlation and regression", covers="CSSYB IV.F.1, IV.F.2",
+dict(slug="correlation-regression", name="Correlation and regression", covers="CSSYB IV.F.1, IV.F.2, CQE VI.E.1, VI.E.2, CSSBB VI.A.1, VI.A.2, CQPA III.F.1",
 title="Correlation and Linear Regression Calculator With Scatter Plot — Free | SC Quality Guild",
-desc="Free correlation and simple linear regression calculator. Paste x and y pairs for a scatter diagram, r, r squared, the fitted line, a significance test and predictions, with the cautions that matter.",
+desc="Free correlation and regression calculator: scatter plot, r and its confidence interval, fitted line, confidence and prediction intervals, residual plots.",
 h1="Correlation and regression",
-lede="Paste pairs of x and y values for a scatter diagram, the correlation coefficient, the fitted line and a prediction, with the cautions that matter.",
+lede="Paste pairs of x and y values for a scatter diagram, the correlation coefficient and its confidence interval, the fitted line, confidence and prediction intervals for y, and residual plots to check the model.",
 content="""
 <h2>Correlation: do they move together?</h2>
 <p>The correlation coefficient, <b>r</b>, measures how closely two variables follow a straight line. It
@@ -507,9 +547,36 @@ explained and 19% is not.</p>
   zero, and one outlier can create or hide a correlation.</li>
 </ul>
 
-<h2>On the Yellow Belt exam</h2>
-<p>Correlation (IV.F.1) and regression (IV.F.2) are in the 2022 CSSYB Body of Knowledge. Expect to read r
-from a description, interpret r², and spot a causation claim the data cannot support.</p>
+<h2>How sure is r? The Fisher z interval</h2>
+<p>The sampling distribution of r is skewed, especially near ±1, so r ± a margin does not work. Fisher's
+transformation z = ½ ln((1 + r)/(1 − r)) is close to normal with standard error 1/√(n − 3). The tool builds the
+interval z ± z<sub>α/2</sub>/√(n − 3) and turns both ends back into r. If the interval for ρ includes 0, the
+data are consistent with no linear relationship. With 14 pairs, even r = 0.98 leaves an interval about
+0.05 wide.</p>
+
+<h2>Confidence interval or prediction interval?</h2>
+<p>At a given x, the <b>confidence interval</b> is for the <i>average</i> y of all items at that x:
+ŷ ± t·s·√(1/n + (x − x̄)²/Sxx). The <b>prediction interval</b> is for <i>one</i> new item:
+ŷ ± t·s·√(1 + 1/n + (x − x̄)²/Sxx). The extra 1 under the root is the item's own scatter around the line, so
+the prediction interval is always wider and does not shrink to zero as n grows. Both are narrowest at x̄ and
+flare toward the ends, as the bands on the scatter diagram show. The tool also gives the interval and the
+t test for the slope, with t on n − 2 degrees of freedom.</p>
+
+<h2>Residual analysis</h2>
+<p>The intervals and tests assume a straight-line relationship with independent, normal errors of constant
+variance. The residuals (y − ŷ) check that. On <b>residuals versus fitted values</b>, a curve means the
+straight line is the wrong model and a funnel means the variance is not constant. On the <b>normal
+probability plot</b>, points near the line support the normal assumption. The table gives each point's
+standardized residual (beyond ±2 is worth a look, beyond ±3 is a likely outlier) and its leverage (how
+far its x is from the rest, so how hard it pulls the line).</p>
+
+<h2>On the exam</h2>
+<p>Correlation (IV.F.1) and regression (IV.F.2) are in the 2022 CSSYB Body of Knowledge: read r from a
+description, interpret r², and spot a causation claim the data cannot support. The CQE adds hypothesis tests
+and prediction with regression (VI.E.1) and the confidence interval for the correlation coefficient
+(VI.E.2). The CSSBB asks for the correlation coefficient and its confidence interval (VI.A.1), and for
+estimation, the uncertainty in the estimate and a residuals analysis to validate the model (VI.A.2). CQPA
+III.F.1 covers how regression and correlation models are used for estimation and prediction.</p>
 """),
 
 dict(slug="kaizen-pdca-planner", name="Kaizen and PDCA planner", covers="CSSYB V.A.1, V.A.2",

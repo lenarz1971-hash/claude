@@ -36,11 +36,11 @@ PAGES4F2 = [
 {
 'slug': 'confidence-interval-calculator',
 'name': 'Confidence interval calculator',
-'covers': 'CSSGB III.B.2, IV.B.1',
+'covers': 'CSSGB III.B.2, IV.B.1, CQE VI.D.1, CSSBB VI.B.4',
 'title': 'Confidence Interval Calculator — Mean, Proportion, Variance, Free | SC Quality Guild',
-'desc': 'Free confidence interval calculator for a mean (t or z), a proportion (Wilson, normal, exact) and a standard deviation (chi-square), plus sample size.',
+'desc': 'Free confidence interval calculator: mean, proportion and standard deviation, sample size, plus normal tolerance intervals (exact k) and prediction intervals.',
 'h1': 'Confidence interval calculator',
-'lede': 'Enter summary statistics or raw data to get confidence intervals for a mean, a standard deviation and a proportion, and the sample size needed for a target margin of error.',
+'lede': 'Enter summary statistics or raw data to get confidence intervals for a mean, a standard deviation and a proportion, the sample size needed for a target margin of error, and tolerance and prediction intervals for individual values.',
 'content': '''
 <h2>What a confidence interval says</h2>
 <p>A point estimate such as x̄ or p̂ is almost never exactly equal to the population value. A confidence interval adds a margin around it: estimate ± critical value × standard error. A 95% confidence level describes the method, not one interval: if you repeated the sampling many times, about 95% of the intervals built this way would contain the true value. It does not mean there is a 95% probability that this particular interval contains it.</p>
@@ -55,8 +55,15 @@ PAGES4F2 = [
 <p>The Wald interval uses p̂ to estimate its own standard error and assumes a symmetric normal shape. Near 0 or 1, or with few items counted, the true sampling distribution is skewed, so Wald intervals are too narrow and can include impossible negative values. A common rule says the normal approximation needs np̂ and n(1 − p̂) of at least 5, or 10 in stricter texts. The Wilson interval keeps close to its stated coverage even when those counts are small.</p>
 <h2>Sample size for a margin</h2>
 <p>For a mean, n = (zσ/E)²; for a proportion, n = z²p(1 − p)/E², with p = 0.5 when nothing is known. Always round up. Halving the margin quadruples n.</p>
-<h2>On the CSSGB exam</h2>
-<p>Expect to compute an interval by hand from n, x̄ and s with a t table, choose between z and t, compute a proportion interval with the normal approximation, and find the sample size for a stated margin. Interpreting the interval correctly is tested as often as the arithmetic.</p>
+<h2>Three intervals that are easy to confuse</h2>
+<ul>
+<li><b>Confidence interval for the mean</b>, x̄ ± t·s/√n: where the process <i>average</i> is. It shrinks toward zero width as n grows.</li>
+<li><b>Prediction interval</b>, x̄ ± t·s·√(1 + 1/n): where the <i>next single value</i> will fall. It never gets narrower than about ±t·s.</li>
+<li><b>Tolerance interval</b>, x̄ ± k·s: where at least a stated share P of <i>all individual values</i> fall, with confidence γ. It has two percentages (for example 95% confidence that 99% of values are covered) and is the one to compare with specification limits.</li>
+</ul>
+<p>The tolerance factor k depends on n, P and γ. The tool computes it exactly under the normal model: the one-sided k from the noncentral t distribution, k = t′<sub>γ; n−1, z<sub>P</sub>√n</sub>/√n, and the two-sided k by numerical integration of Odeh's exact equation. It also shows the hand approximations most texts teach, Howe's two-sided k ≈ z<sub>(1+P)/2</sub>·√((n − 1)(1 + 1/n)/χ²<sub>1−γ; n−1</sub>) and the Natrella one-sided formula, so you can see how close they are. Published tables of exact factors give the same values. Tolerance and prediction intervals depend on the individual values being normal far more than a confidence interval for the mean does; check a normal probability plot first.</p>
+<h2>On the exam</h2>
+<p>CSSGB: expect to compute an interval by hand from n, x̄ and s with a t table, choose between z and t, compute a proportion interval with the normal approximation, and find the sample size for a stated margin. Interpreting the interval correctly is tested as often as the arithmetic. CQE VI.D.1 adds standard error and tolerance intervals, and CSSBB VI.B.4 asks you to distinguish confidence and prediction intervals and to calculate tolerance and confidence intervals: expect to compute x̄ ± k·s with k from a table and to say which interval answers a given question.</p>
 ''',
 },
 {
