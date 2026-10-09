@@ -12,7 +12,7 @@ h:{
  bounds:function(S){ var d=[1e-3,1e-4,1e-5,1e-6], o=[], self=this; ['b5','b4','b3','b2'].forEach(function(k,i){ var x=self.p(S.f[k]); o.push(isNaN(x)||x<=0?d[i]:x); }); return o; },
  /* probability level 1-5 from P; each bound is the lower edge of its level, inclusive */
  lvl:function(P,b){ if(isNaN(P)) return NaN; var t=1-1e-9; return P>=b[0]*t?5:P>=b[1]*t?4:P>=b[2]*t?3:P>=b[3]*t?2:1; },
- sci:function(x){ if(isNaN(x)) return ''; if(x===0) return '0'; if(x>=0.01) return String(Number(x.toPrecision(2))); var e=Math.floor(Math.log10(x)+1e-12), m=x/Math.pow(10,e); if(m>=9.95){ m=1; e++; } return m.toFixed(1)+'&times;10<sup><span class="hz-c">^</span>'+String(e).replace('-','&minus;')+'</sup>'; },
+ sci:function(x){ if(isNaN(x)) return ''; if(x===0) return '0'; if(x>=0.01) return String(Number(x.toPrecision(3))); var e=Math.floor(Math.log10(x)+1e-12), m=x/Math.pow(10,e); if(m>=9.995){ m=1; e++; } var ms=String(Number(m.toFixed(2))); if(ms.indexOf('.')<0) ms+='.0'; return ms+'&times;10<sup><span class="hz-c">^</span>'+String(e).replace('-','&minus;')+'</sup>'; },
  sev:function(v){ var s=Number(String(v==null?'':v).trim()); return (s>=1&&s<=5&&s%1===0)?s:NaN; },
  risk:function(S,P,s){ if(isNaN(P)||isNaN(s)) return ''; return (S.x.m||'')[(P-1)*5+(s-1)]||'A'; },
  row:function(r,S){ var h=this, b=h.bounds(S), p0=h.p(r.p1)*h.p(r.p2), p1=h.p(r.p1b)*h.p(r.p2b), s0=h.sev(r.s), s1=h.sev(r.sb); if(isNaN(s1)&&!isNaN(p1)) s1=s0;

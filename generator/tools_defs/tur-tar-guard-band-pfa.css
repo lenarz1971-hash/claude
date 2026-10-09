@@ -16,3 +16,4 @@ table.mv tfoot td{border-top:2px solid var(--line);font:700 9px var(--mono);colo
 .tg-charts .svgw svg{min-width:0}
 @media (max-width:700px){.tg-charts{grid-template-columns:1fr}}
 @media (max-width:600px){#tool table.mv td.mo{min-width:0}#tool table.mv{font-size:12.5px}#tool table.mv td{padding:5px 4px}#tool table.mv td.mt{white-space:normal}}
+@media (max-width:600px){#tool table.mv.tg-t td:nth-child(3),#tool table.mv.tg-t th:nth-child(3){display:none}.tg-charts .svgw svg{min-width:380px}}

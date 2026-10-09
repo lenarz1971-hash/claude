@@ -1,0 +1,7 @@
+{"tools":[
+ {"slug":"lot-traceability-genealogy","tags":["cqpa","cqe"],"future_tags":["cmda"],"group_hint":"regulated"},
+ {"slug":"complaint-reportability-decision-guide","tags":["cqe"],"future_tags":["cmda"],"group_hint":"regulated"},
+ {"slug":"shelf-life-accelerated-aging","tags":[],"future_tags":["cmda"],"group_hint":"regulated"},
+ {"slug":"alert-action-levels","tags":[],"future_tags":["cmda"],"group_hint":"regulated"}
+],
+"not_built":[]}

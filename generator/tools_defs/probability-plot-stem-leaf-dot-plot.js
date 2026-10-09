@@ -28,17 +28,17 @@ update:function(root,api){
  var ku=n>3&&sd>0?n*(n+1)/((n-1)*(n-2)*(n-3))*m4/Math.pow(sd,4)-3*(n-1)*(n-1)/((n-2)*(n-3)):NaN;
  var med=n%2?s[(n-1)/2]:(s[n/2-1]+s[n/2])/2;
  var W=800, sty='<style>text{font:11px \'IBM Plex Mono\',monospace;fill:#4A5D71}.l{font:600 11px \'IBM Plex Mono\',monospace;fill:#0F3E68}</style>';
- function ticks(a,b,k){ var raw=(b-a)/k, p=Math.pow(10,Math.floor(Math.log(raw)/Math.LN10)), m=raw/p, st=(m<=1?1:m<=2?2:m<=2.5?2.5:m<=5?5:10)*p, t=[], v=Math.ceil(a/st-1e-9)*st; for(;v<=b+st*1e-9;v+=st) t.push(Math.round(v/st)*st); return t; }
+ function ticks(a,b,k){ var raw=(b-a)/k, p=Math.pow(10,Math.floor(Math.log(raw)/Math.LN10)), m=raw/p, st=(m<=1?1:m<=2?2:m<=2.5?2.5:m<=5?5:10)*p, t=[], v=Math.ceil(a/st-1e-9)*st; for(;v<=b+st*1e-9;v+=st) t.push(Math.round(v/st)*st+0); var e=Math.floor(Math.log(st)/Math.LN10+1e-9); t.d=Math.max(0,-e+(Math.abs(st/Math.pow(10,e)-2.5)<1e-9?1:0)); return t; }
  /* ---- dot plot ---- */
  (function(){ var lo=mn-(R||1)*0.04, hi=mx+(R||1)*0.04, L0=30, R0=30, B0=0, X=function(v){ return L0+(v-lo)/(hi-lo)*(W-L0-R0); };
-  var distinct={}; s.forEach(function(v){ distinct[v]=1; }); var nd=Object.keys(distinct).length, bins=70, key=nd<=bins?function(v){ return v; }:function(v){ var b=Math.min(bins-1,Math.floor((v-mn)/((R||1)/bins))); return mn+(b+0.5)*(R||1)/bins; };
+  var r=5.5, bw=(hi-lo)*2*r/(W-L0-R0), key=function(v){ return lo+(Math.floor((v-lo)/bw)+0.5)*bw; };
   var st={}; s.forEach(function(v){ var k=key(v); st[k]=(st[k]||0)+1; }); var top=Math.max.apply(null,Object.keys(st).map(function(k){ return st[k]; }));
-  var r=Math.max(2.5,Math.min(6,90/(2*top+1))), H=Math.max(110,Math.round(top*2.2*r+64)); B0=H-34;
+  if(top>16) r=Math.max(2.5,r*16/top); var H=Math.max(110,Math.round(top*2.2*r+64)); B0=H-34;
   var g='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Dot plot">'+sty;
   Object.keys(st).forEach(function(k){ for(var j=0;j<st[k];j++) g+='<circle cx="'+X(+k).toFixed(1)+'" cy="'+(B0-r-1-j*2.2*r).toFixed(1)+'" r="'+r.toFixed(1)+'" fill="#0F3E68" fill-opacity=".85"/>'; });
   g+='<line x1="'+L0+'" x2="'+(W-R0)+'" y1="'+B0+'" y2="'+B0+'" stroke="#4A5D71"/>';
-  ticks(lo,hi,8).forEach(function(t){ g+='<line x1="'+X(t)+'" x2="'+X(t)+'" y1="'+B0+'" y2="'+(B0+5)+'" stroke="#4A5D71"/><text x="'+X(t)+'" y="'+(B0+19)+'" text-anchor="middle">'+api.fmt(t,4)+'</text>'; });
-  if(nd>bins) g+='<text x="'+(W-R0)+'" y="14" text-anchor="end">each dot is one value, grouped into '+bins+' bins</text>';
+  var tk=ticks(lo,hi,8); tk.forEach(function(t){ g+='<line x1="'+X(t)+'" x2="'+X(t)+'" y1="'+B0+'" y2="'+(B0+5)+'" stroke="#4A5D71"/><text x="'+X(t)+'" y="'+(B0+19)+'" text-anchor="middle">'+api.fmt(t,tk.d)+'</text>'; });
+  g+='<text x="'+(W-R0)+'" y="14" text-anchor="end">each dot is one value; values closer than a dot width are stacked</text>';
   D.innerHTML=g+'</svg>'; })();
  /* ---- stem-and-leaf ---- */
  function build(u,m){ var lines={}, kmin=Infinity, kmax=-Infinity;
@@ -80,14 +80,15 @@ update:function(root,api){
   var H=380, L0=58, R0=16, T0=12, B0=H-44, X=function(v){ return L0+(v-xl)/(xh-xl)*(W-L0-R0); }, Y=function(z){ return B0-(z-zl)/(zh-zl)*(B0-T0); };
   var g='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Normal probability plot">'+sty+'<rect x="'+L0+'" y="'+T0+'" width="'+(W-L0-R0)+'" height="'+(B0-T0)+'" fill="#fff" stroke="#DDE1E4"/>';
   [0.1,1,5,10,20,30,50,70,80,90,95,99,99.9].forEach(function(p){ var z=Pinv(p/100); if(z<zl||z>zh) return; g+='<line x1="'+L0+'" x2="'+(W-R0)+'" y1="'+Y(z)+'" y2="'+Y(z)+'" stroke="#EEF0F2"/><text x="'+(L0-6)+'" y="'+(Y(z)+4)+'" text-anchor="end">'+p+'</text>'; });
-  ticks(xl,xh,8).forEach(function(t){ g+='<line x1="'+X(t)+'" x2="'+X(t)+'" y1="'+T0+'" y2="'+B0+'" stroke="#F4F5F6"/><text x="'+X(t)+'" y="'+(B0+16)+'" text-anchor="middle">'+api.fmt(t,4)+'</text>'; });
-  g+='<line x1="'+X(mean+sd*zl)+'" y1="'+Y(zl)+'" x2="'+X(mean+sd*zh)+'" y2="'+Y(zh)+'" stroke="#D8B147" stroke-width="2.5"/>';
+  var tk2=ticks(xl,xh,8); tk2.forEach(function(t){ g+='<line x1="'+X(t)+'" x2="'+X(t)+'" y1="'+T0+'" y2="'+B0+'" stroke="#F4F5F6"/><text x="'+X(t)+'" y="'+(B0+16)+'" text-anchor="middle">'+api.fmt(t,tk2.d)+'</text>'; });
+  var za=Math.max(zl,(xl-mean)/sd), zb=Math.min(zh,(xh-mean)/sd);
+  g+='<line x1="'+X(mean+sd*za)+'" y1="'+Y(za)+'" x2="'+X(mean+sd*zb)+'" y2="'+Y(zb)+'" stroke="#D8B147" stroke-width="2.5"/>';
   s.forEach(function(v,i){ g+='<circle cx="'+X(v).toFixed(1)+'" cy="'+Y(zs[i]).toFixed(1)+'" r="4" fill="#0F3E68" fill-opacity=".85"/>'; });
   g+='<text x="'+((L0+W-R0)/2)+'" y="'+(H-8)+'" text-anchor="middle">'+api.esc((S.f.label||'value').toUpperCase())+'</text><text transform="translate(14 '+((B0+T0)/2)+') rotate(-90)" text-anchor="middle">PERCENT</text>';
   PP.innerHTML=g+'</svg>';
   f.push([pv<0.05?'warn':'ok','Anderson-Darling A&sup2; = '+A2.toFixed(3)+', p '+(pv<0.005?'&lt; 0.005':'= '+pv.toFixed(3))+'. '+(pv<0.05?'The data depart from a normal distribution at the 5% level. Normal-based capability indices, tolerance intervals and variables sampling plans will be misleading without a transformation or a better-fitting distribution.':'No evidence against normality at the 5% level. That is not proof the data are normal, especially with few values; it means a normal model is not contradicted.')]);
   if(isFinite(sk)&&Math.abs(sk)>=0.5) f.push(['','Skewness '+sk.toFixed(2)+': '+(sk>0?'a long right tail. On the plot the points bend away from the line in an arc, with the largest values far to the right of it.':'a long left tail. On the plot the points bend away from the line in an arc, with the smallest values far to the left of it.')]);
-  if(isFinite(ku)&&Math.abs(ku)>=1) f.push(['',(ku>0?'Heavy tails':'Light tails')+' (excess kurtosis '+ku.toFixed(2)+'): the points form an S around the line, '+(ku>0?'steeper in the middle and flattening at both ends.':'flatter in the middle and steep at both ends.')]);
+  if(isFinite(ku)&&Math.abs(ku)>=1&&!(Math.abs(sk)>=0.5)) f.push(['',(ku>0?'Heavy tails':'Light tails')+' (excess kurtosis '+ku.toFixed(2)+'): the points form an S around the line, '+(ku>0?'steeper in the middle and flattening at both ends.':'flatter in the middle and steep at both ends.')]);
   if(n<20) f.push(['','With '+n+' values the plot and the test have little power. Even data from a normal process wander around the line.']);
   f.push(['','A point well off the line at either end, with the rest straight, is an outlier rather than a non-normal process. Find out what happened to it before deciding.']);
  } else { ST.innerHTML=''; PP.innerHTML=''; f.push(['warn','All the values are the same; there is no spread to plot.']); }
@@ -108,7 +109,7 @@ update:function(root,api){
  var cmax=Math.max.apply(null,fr); fr.forEach(function(q,j){ var h=q/cmax*(b0-t0)*0.45; g2+='<rect x="'+(X2(c0+j*cw)+1)+'" y="'+(b0-h)+'" width="'+Math.max(1,X2(c0+cw)-X2(c0)-2)+'" height="'+h+'" fill="#E3E8EE"/>'; });
  for(var p=0;p<=100;p+=25) g2+='<line x1="'+l0+'" x2="'+(W-r0)+'" y1="'+Y2(p)+'" y2="'+Y2(p)+'" stroke="#EEF0F2"/><text x="'+(l0-6)+'" y="'+(Y2(p)+4)+'" text-anchor="end">'+p+'%</text>';
  var step=Math.max(1,Math.ceil((nc+1)/10)); for(c=0;c<=nc;c+=step) g2+='<text x="'+X2(c0+c*cw)+'" y="'+(b0+16)+'" text-anchor="middle">'+api.fmt(c0+c*cw,cd)+'</text>';
- if(isFinite(gm)) g2+='<path d="M'+l0+' '+Y2(50)+' H'+X2(gm)+' V'+b0+'" fill="none" stroke="#9C7C1F" stroke-dasharray="4 3"/><text class="l" x="'+(X2(gm)+5)+'" y="'+(Y2(50)-6)+'" style="fill:#9C7C1F">median &asymp; '+api.fmt(gm,cd+1)+'</text>';
+ if(isFinite(gm)) g2+='<path d="M'+l0+' '+Y2(50)+' H'+X2(gm)+' V'+b0+'" fill="none" stroke="#9C7C1F" stroke-dasharray="4 3"/><text class="l" x="'+(X2(gm)-6)+'" y="'+(Y2(50)-6)+'" text-anchor="end" style="fill:#9C7C1F">median &asymp; '+api.fmt(gm,cd+1)+'</text>';
  g2+='<polyline points="'+pts.map(function(q){ return X2(q[0]).toFixed(1)+','+Y2(q[1]).toFixed(1); }).join(' ')+'" fill="none" stroke="#0F3E68" stroke-width="2.5"/>'+pts.map(function(q){ return '<circle cx="'+X2(q[0]).toFixed(1)+'" cy="'+Y2(q[1]).toFixed(1)+'" r="3.5" fill="#0F3E68"/>'; }).join('');
  g2+='<text x="'+((l0+W-r0)/2)+'" y="'+(H2-8)+'" text-anchor="middle">UPPER CLASS BOUNDARY (bars: class frequency)</text>';
  OG.innerHTML=g2+'</svg>';

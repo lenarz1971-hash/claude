@@ -52,7 +52,7 @@ sections:[
   {id:'inc',label:'Increment (for the third mode)',ph:'e.g. 0.02'},
   {id:'rule',label:'Rule',type:'select',opts:['Round half up (away from zero)','Round half to even (ASTM E29, ISO 80000-1)','Truncate (toward zero)']}]},
  {type:'grid',id:'r',title:'Values to round',rows:5,hint:'Type the values exactly as recorded, trailing zeros included: 12.50 has four significant figures, 12.5 has three. Your chosen rule is in bold.',cols:[
-  {id:'v',label:'Value as recorded',w:140,ph:'2.345'},
+  {id:'v',label:'Value as recorded',w:100,ph:'2.345'},
   {id:'sf',label:'Sig figs',calc:function(r,api){ var x=window.TOOL.h.parse(r.v); if(!x) return ''; return x.sf==null?'—':(x.sf===x.sfMax?x.sf:x.sf+' to '+x.sfMax); }},
   {id:'ls',label:'Least significant digit',calc:function(r,api){ var h=window.TOOL.h, x=h.parse(r.v); if(!x) return ''; return h.place(x.lsd)+(x.sf!=null&&x.sf!==x.sfMax?' ?':''); }},
   {id:'hu',label:'Half up',calc:function(r,api){ return window.TOOL.h.cell(r,api,0); }},

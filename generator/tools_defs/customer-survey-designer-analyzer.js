@@ -132,7 +132,7 @@ update:function(root,api){
  }
  if(NP.length){ var segs=NP.filter(function(x){return !x.all;});
   if(npsAll) f.push(['','NPS '+(npsAll.nps>0?'+':'')+api.fmt(npsAll.nps,1)+', with a '+(F.conf||'95%')+' interval of '+api.fmt(Math.max(-100,npsAll.nps-npsAll.moe),1)+' to '+api.fmt(Math.min(100,npsAll.nps+npsAll.moe),1)+'. The margin on NPS is wider than on a single percentage because it is the difference of two.']);
-  if(segs.length>1){ var hi=segs.slice().sort(function(a,c){return c.s.nps-a.s.nps;}), x1=hi[0], x2=hi[hi.length-1], d=x1.s.nps-x2.s.nps, sed=Math.sqrt(x1.s.se*x1.s.se+x2.s.se*x2.s.se), zz=sed>0?d/sed:0;
+  if(segs.length>1){ var hi=segs.slice().sort(function(a,c){return c.s.nps-a.s.nps;}), x1=hi[0], x2=hi[hi.length-1], d=x1.s.nps-x2.s.nps, sed=Math.sqrt(x1.s.se*x1.s.se+x2.s.se*x2.s.se), zz=sed>0?d/sed:(d>0?Infinity:0);
    f.push([zz>z?'warn':'','Highest segment <b>'+esc(x1.r.seg||'?')+'</b> ('+api.fmt(x1.s.nps,1)+') against lowest <b>'+esc(x2.r.seg||'?')+'</b> ('+api.fmt(x2.s.nps,1)+'): a gap of '+api.fmt(d,1)+' points, z = '+api.fmt(zz,2)+'. '+(zz>z?'The gap is larger than chance would explain at '+(F.conf||'95%')+' confidence.':'The gap could be chance at '+(F.conf||'95%')+' confidence; collect more responses before acting on it.')]); }
   segs.forEach(function(x){ if(x.s.n<50) f.push(['','<b>'+esc(x.r.seg||'?')+'</b> has '+x.s.n+' answers; its NPS is uncertain by ± '+api.fmt(x.s.moe,1)+' points.']); });
  }

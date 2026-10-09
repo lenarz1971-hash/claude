@@ -1,3 +1,4 @@
 .gm-key{font:600 11px var(--mono);letter-spacing:.04em;color:var(--ink-3);margin:0 0 6px}
 .gm-pre{font:500 15px/1.45 var(--mono);background:#fff;border:1px solid var(--line);padding:12px 14px;margin:0;overflow-x:auto;white-space:pre;color:var(--ink)}
 @media print{.gm-pre{font-size:10.5px;padding:6px 8px;break-inside:avoid}}
+table.gm-tab td{vertical-align:middle;padding-top:5px;padding-bottom:5px}

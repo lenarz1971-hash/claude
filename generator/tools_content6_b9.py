@@ -41,7 +41,7 @@ h1="Complaint handling and reportability decision guide",
 lede="Take a medical device complaint through the questions an auditor expects: is it a complaint, was there a death or serious injury, did the device malfunction, is it reportable and by when. The path is drawn as you answer. A study aid, not regulatory advice.",
 content="""
 <h2>What counts as a complaint</h2>
-<p>ISO 13485 defines a complaint as a written, electronic or oral communication that alleges deficiencies in the identity, quality, durability, reliability, usability, safety or performance of a medical device that has left the organization's control, or in a service that affects its performance. The source does not matter. A phone call to a sales representative, a remark in a service report and a post on social media can all be complaints. The most common audit finding is a communication that was logged as an "inquiry" and never evaluated.</p>
+<p>ISO 13485 defines a complaint as a written, electronic or oral communication that alleges deficiencies in the identity, quality, durability, reliability, usability, safety or performance of a medical device that has left the organization's control, or in a service that affects its performance. The source does not matter. A phone call to a sales representative, a remark in a service report and a post on social media can all be complaints.</p>
 
 <h2>The complaint process</h2>
 <ol>
@@ -66,7 +66,7 @@ content="""
 <p>Under the EU MDR, manufacturers report <b>serious incidents</b> to the competent authority of the country where they happened, and report <b>field safety corrective actions</b>. A serious incident is one that directly or indirectly led, might have led or might lead to a death, a serious deterioration in health or a serious public health threat. The deadlines are counted from awareness and are shorter for deaths, unanticipated serious deterioration and serious public health threats. The EU also requires <b>trend reporting</b>: a statistically significant increase in incidents that are not serious, or in expected side effects, is reported even when no single event is. Check the current regulation and guidance for the exact terms.</p>
 
 <h2>Reading the result</h2>
-<p>The tool follows the US questions in order and shows the path taken. A gold outline marks the question still open; an open question does not stop the clock. The trend section compares the rate of similar complaints per 1,000 units with the year before, a simple first look; a formal trend analysis would use the methods in your procedures. Use it with the <a href="/tools/corrective-action-capa.html">CAPA tool</a> and the <a href="/tools/lot-traceability-genealogy.html">lot traceability record</a> when a complaint points to a lot.</p>
+<p>The tool follows the US questions in order. A gold outline marks the question still open; an open question does not stop the clock. The trend section compares the rate of similar complaints per 1,000 units with the year before, a simple first look; a formal trend analysis would use the methods in your procedures. Use it with the <a href="/tools/corrective-action-capa.html">CAPA tool</a> and the <a href="/tools/lot-traceability-genealogy.html">lot traceability record</a> when a complaint points to a lot.</p>
 
 <h2>On the exam</h2>
 <p>CMDA III.D.11 asks you to evaluate complaint handling procedures, including investigation and the determination of medical device reporting and incident reporting. III.D.12 adds service reports that must reach the complaint process, and III.E covers post-market surveillance: vigilance, MDR, adverse event reporting, trend reporting, recalls, corrections and removals. CQE VII.C.4 lists complaint tracking, trending and post-market surveillance as risk monitoring techniques. Expect scenarios that ask whether an event is reportable, which report applies, and what the auditor should look for in a complaint file.</p>
@@ -107,7 +107,7 @@ content="""
 dict(slug="alert-action-levels", name="Alert and action levels",
 covers="CMDA V.A, III.D.6",
 title="Alert and Action Levels Calculator — Environmental Monitoring | SC Quality Guild",
-desc="Free alert and action level calculator. Set levels from monitoring history by percentile, mean + k SD, Poisson or negative binomial; chart new results and flag trends.",
+desc="Free alert and action level calculator: percentile, mean + k SD, Poisson or negative binomial levels from monitoring history; charts new results, flags trends.",
 h1="Alert and action levels",
 lede="Paste the history of a monitored count or measurement, such as cleanroom settle plates. Get alert and action levels four ways, then chart new results against them and see the excursions and adverse trends flagged.",
 content="""

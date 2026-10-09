@@ -63,9 +63,10 @@ update:function(root,api){
  var all=y.concat(fc.map(function(q){ return q.y; })).concat(ma.filter(isFinite)), lo=Math.min.apply(null,all), hi=Math.max.apply(null,all), pd=(hi-lo)*0.08||1; lo-=pd; hi+=pd;
  var W=800, Ht=340, L0=64, R0=16, T0=14, B0=Ht-62, NT=N+H, X=function(t){ return L0+(NT>1?(t-1)/(NT-1):0.5)*(W-L0-R0); }, Y=function(v){ return B0-(v-lo)/(hi-lo)*(B0-T0); };
  var g='<svg viewBox="0 0 '+W+' '+Ht+'" role="img" aria-label="Time series with moving average and trend"><style>text{font:11px \'IBM Plex Mono\',monospace;fill:#4A5D71}.l{font:600 11px \'IBM Plex Mono\',monospace}</style><rect x="'+L0+'" y="'+T0+'" width="'+(W-L0-R0)+'" height="'+(B0-T0)+'" fill="#fff" stroke="#DDE1E4"/>';
- for(i=0;i<=5;i++){ var v=lo+(hi-lo)*i/5; g+='<line x1="'+L0+'" x2="'+(W-R0)+'" y1="'+Y(v)+'" y2="'+Y(v)+'" stroke="#F0F2F4"/><text x="'+(L0-6)+'" y="'+(Y(v)+4)+'" text-anchor="end">'+api.fmt(v,Math.abs(hi-lo)<10?2:0)+'</text>'; }
+ var rw=(hi-lo)/5, p10=Math.pow(10,Math.floor(Math.log(rw)/Math.LN10)), mm=rw/p10, stp=(mm<1.5?1:mm<3?2:mm<7?5:10)*p10, td=Math.max(0,-Math.floor(Math.log(stp)/Math.LN10+1e-9));
+ for(var v=Math.ceil(lo/stp-1e-9)*stp;v<=hi+1e-9*stp;v+=stp){ var vv=Math.round(v/stp)*stp+0; g+='<line x1="'+L0+'" x2="'+(W-R0)+'" y1="'+Y(vv)+'" y2="'+Y(vv)+'" stroke="#F0F2F4"/><text x="'+(L0-6)+'" y="'+(Y(vv)+4)+'" text-anchor="end">'+api.fmt(vv,td)+'</text>'; }
  var every=Math.max(1,Math.ceil(NT/14));
- for(i=1;i<=NT;i+=every){ var lab=i<=N?(P[i-1].lab||String(i)):'+'+(i-N); if(lab.length>9) lab=lab.slice(0,8)+'…'; g+='<text transform="translate('+X(i)+' '+(B0+12)+') rotate(-35)" text-anchor="end">'+api.esc(lab)+'</text>'; }
+ for(i=1;i<=NT;i+=every){ var lab=i<=N?(P[i-1].lab||String(i)):(seas?sname[pos(i-1)]+' ':'')+'+'+(i-N); if(lab.length>9) lab=lab.slice(0,8)+'…'; g+='<text transform="translate('+X(i)+' '+(B0+12)+') rotate(-35)" text-anchor="end">'+api.esc(lab)+'</text>'; }
  if(H) g+='<rect x="'+X(N+0.5)+'" y="'+T0+'" width="'+(W-R0-X(N+0.5))+'" height="'+(B0-T0)+'" fill="#FBF6E6"/><text class="l" x="'+(X(N+0.5)+5)+'" y="'+(T0+13)+'" style="fill:#9C7C1F">FORECAST</text>';
  g+='<line x1="'+X(1)+'" y1="'+Y(fit(1))+'" x2="'+X(NT)+'" y2="'+Y(fit(NT))+'" stroke="#C0392B" stroke-width="1.6" stroke-dasharray="6 4"/>';
  function poly(arr,off){ var d='', pen=false; arr.forEach(function(v,t){ if(!isFinite(v)){ pen=false; return; } d+=(pen?' L':'M')+X(t+off).toFixed(1)+' '+Y(v).toFixed(1); pen=true; }); return d; }

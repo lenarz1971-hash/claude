@@ -21,8 +21,10 @@
 .a3 table.a3t td.k{white-space:nowrap;font:600 12px var(--mono);color:var(--navy)}
 .a3-kpi{display:flex;flex-wrap:wrap;gap:4px 16px;font:600 11px var(--mono);color:var(--ink-2);margin:4px 0}
 .a3-kpi b{color:var(--navy);font-size:13px}
-@media (max-width:760px){.a3-cols{grid-template-columns:1fr}.a3-col+.a3-col{border-left:0;border-top:2px solid var(--navy)}}
+.a3tw{overflow-x:auto}
+@media (max-width:760px){.a3 table.a3t{min-width:420px}.a3 table.a3t td{overflow-wrap:normal}.a3-cols{grid-template-columns:1fr}.a3-col+.a3-col{border-left:0;border-top:2px solid var(--navy)}}
 @media print{
+  .a3tw{overflow:visible}.a3 table.a3t{min-width:0}
   @page{size:letter landscape;margin:8mm}
   h1{font-size:15px;margin:0 0 2px}
   .printonly{margin:0 0 4px}

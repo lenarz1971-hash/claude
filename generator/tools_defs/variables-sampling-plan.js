@@ -49,11 +49,12 @@ update:function(root,api){
  function P(v){ return isFinite(v)?(v>0&&v<0.0001?'&lt;0.01%':api.fmt(100*v,v<0.01?3:2)+'%'):'—'; }
  /* OC curve: needs n and k only */
  if(n>=3&&n%1===0&&k>=0){
-  var p95=solve(0.95,n,k,known), p50=solve(0.5,n,k,known), p10=solve(0.10,n,k,known), pmax=Math.min(0.6,solve(0.01,n,k,known)*1.05);
+  var p95=solve(0.95,n,k,known), p50=solve(0.5,n,k,known), p10=solve(0.10,n,k,known), pmax=Math.min(0.6,solve(0.03,n,k,known)*1.08), tk=(function(){ var raw=pmax/5, p=Math.pow(10,Math.floor(Math.log(raw)/Math.LN10)), m=raw/p, st=(m<1.5?1:m<3?2:m<7?5:10)*p; pmax=Math.ceil(pmax/st-1e-9)*st; var t=[]; for(var v=0;v<=pmax+st*1e-9;v+=st) t.push(v); return {t:t,d:Math.max(0,-Math.floor(Math.log(100*st)/Math.LN10+1e-9))}; })();
   OS.innerHTML='<div><b>'+P(p95)+'</b><span>Beyond the limit, 95% chance to accept</span></div><div><b>'+P(p50)+'</b><span>50% chance to accept (indifference)</span></div><div><b>'+P(p10)+'</b><span>Beyond the limit, 10% chance to accept</span></div>';
   var W=800, H=300, L0=60, R0=16, T0=14, B0=H-42, X=function(p){ return L0+p/pmax*(W-L0-R0); }, Y=function(a){ return B0-a*(B0-T0); };
   var g='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Operating characteristic curve"><style>text{font:11px \'IBM Plex Mono\',monospace;fill:#4A5D71}.l{font:600 11px \'IBM Plex Mono\',monospace}</style><rect x="'+L0+'" y="'+T0+'" width="'+(W-L0-R0)+'" height="'+(B0-T0)+'" fill="#fff" stroke="#DDE1E4"/>';
-  for(var i=0;i<=5;i++){ g+='<line x1="'+L0+'" x2="'+(W-R0)+'" y1="'+Y(i/5)+'" y2="'+Y(i/5)+'" stroke="#F0F2F4"/><text x="'+(L0-6)+'" y="'+(Y(i/5)+4)+'" text-anchor="end">'+(i*20)+'%</text>'; var pv=pmax*i/5; g+='<text x="'+X(pv)+'" y="'+(B0+16)+'" text-anchor="'+(i===0?'start':i===5?'end':'middle')+'">'+api.fmt(100*pv,pmax<0.05?2:1)+'%</text>'; }
+  for(var i=0;i<=5;i++) g+='<line x1="'+L0+'" x2="'+(W-R0)+'" y1="'+Y(i/5)+'" y2="'+Y(i/5)+'" stroke="#F0F2F4"/><text x="'+(L0-6)+'" y="'+(Y(i/5)+4)+'" text-anchor="end">'+(i*20)+'%</text>';
+  tk.t.forEach(function(pv){ g+='<line x1="'+X(pv)+'" x2="'+X(pv)+'" y1="'+T0+'" y2="'+B0+'" stroke="#F4F5F6"/><text x="'+X(pv)+'" y="'+(B0+16)+'" text-anchor="middle">'+api.fmt(100*pv,tk.d)+'%</text>'; });
   var pth=''; for(i=0;i<=120;i++){ var pp=Math.max(1e-7,pmax*i/120); pth+=(i?' L':'M')+X(pmax*i/120).toFixed(1)+' '+Y(pa(pp,n,k,known)).toFixed(1); }
   g+='<path d="'+pth+'" fill="none" stroke="#0F3E68" stroke-width="2.5"/>';
   [[p95,0.95,'#1F8C55'],[p10,0.10,'#C0392B']].forEach(function(m){ g+='<line x1="'+X(m[0])+'" x2="'+X(m[0])+'" y1="'+Y(m[1])+'" y2="'+B0+'" stroke="'+m[2]+'" stroke-dasharray="4 3"/><circle cx="'+X(m[0])+'" cy="'+Y(m[1])+'" r="4.5" fill="'+m[2]+'"/><text class="l" x="'+(X(m[0])+7)+'" y="'+(Y(m[1])-6)+'" style="fill:'+m[2]+'">'+P(m[0])+'</text>'; });
@@ -80,11 +81,11 @@ update:function(root,api){
  var g2='<svg viewBox="0 0 '+W2+' '+H2+'" role="img" aria-label="Sample against the specification limits"><style>text{font:11px \'IBM Plex Mono\',monospace;fill:#4A5D71}.l{font:700 11px \'IBM Plex Mono\',monospace}</style>';
  if(isFinite(k)&&aU>aL) g2+='<rect x="'+Xs(Math.max(lo,aL))+'" y="'+(y0-46)+'" width="'+(Xs(Math.min(hi,aU))-Xs(Math.max(lo,aL)))+'" height="62" fill="#E7F4EC"/><text x="'+((Xs(Math.max(lo,aL))+Xs(Math.min(hi,aU)))/2)+'" y="'+(y0-32)+'" text-anchor="middle" style="fill:#1F8C55" class="l">x&#772; HERE ACCEPTS</text>';
  g2+='<line x1="'+l0+'" x2="'+(W2-r0)+'" y1="'+(y0+16)+'" y2="'+(y0+16)+'" stroke="#C6CDD3"/>';
- [[hasL,L,'L'],[hasU,U,'U']].forEach(function(z){ if(!z[0]) return; g2+='<line x1="'+Xs(z[1])+'" x2="'+Xs(z[1])+'" y1="'+(y0-58)+'" y2="'+(y0+24)+'" stroke="#C0392B" stroke-width="2"/><text class="l" x="'+Xs(z[1])+'" y="'+(y0-62)+'" text-anchor="middle" style="fill:#C0392B">'+z[2]+' = '+api.fmt(z[1],4)+'</text>'; });
- if(isFinite(k)){ if(hasL) g2+='<line x1="'+Xs(aL)+'" x2="'+Xs(aL)+'" y1="'+(y0-46)+'" y2="'+(y0+16)+'" stroke="#1F8C55" stroke-dasharray="4 3"/><text x="'+Xs(aL)+'" y="'+(y0+40)+'" text-anchor="middle" style="fill:#1F8C55">L + k'+(known?'&sigma;':'s')+'</text>';
-  if(hasU) g2+='<line x1="'+Xs(aU)+'" x2="'+Xs(aU)+'" y1="'+(y0-46)+'" y2="'+(y0+16)+'" stroke="#1F8C55" stroke-dasharray="4 3"/><text x="'+Xs(aU)+'" y="'+(y0+40)+'" text-anchor="middle" style="fill:#1F8C55">U &minus; k'+(known?'&sigma;':'s')+'</text>'; }
+ [[hasL,L,'L'],[hasU,U,'U']].forEach(function(z){ if(!z[0]) return; g2+='<line x1="'+Xs(z[1])+'" x2="'+Xs(z[1])+'" y1="'+(y0-58)+'" y2="'+(y0+24)+'" stroke="#C0392B" stroke-width="2"/><text class="l" x="'+Xs(z[1])+'" y="'+(y0-62)+'" text-anchor="middle" style="fill:#C0392B">'+z[2]+' = '+Number(z[1].toPrecision(7))+'</text>'; });
+ if(isFinite(k)){ if(hasL) g2+='<line x1="'+Xs(aL)+'" x2="'+Xs(aL)+'" y1="'+(y0-46)+'" y2="'+(y0+16)+'" stroke="#1F8C55" stroke-dasharray="4 3"/><text x="'+(Xs(aL)+5)+'" y="'+(y0-14)+'" text-anchor="start" style="fill:#1F8C55">L + k'+(known?'&sigma;':'s')+'</text>';
+  if(hasU) g2+='<line x1="'+Xs(aU)+'" x2="'+Xs(aU)+'" y1="'+(y0-46)+'" y2="'+(y0+16)+'" stroke="#1F8C55" stroke-dasharray="4 3"/><text x="'+(Xs(aU)-5)+'" y="'+(y0-14)+'" text-anchor="end" style="fill:#1F8C55">U &minus; k'+(known?'&sigma;':'s')+'</text>'; }
  var stack={}; x.slice().sort(function(a,b){ return a-b; }).forEach(function(v){ var b=Math.round(Xs(v)/7); stack[b]=(stack[b]||0)+1; g2+='<circle cx="'+Xs(v).toFixed(1)+'" cy="'+(y0+10-(stack[b]-1)*8)+'" r="3.6" fill="#0F3E68" fill-opacity=".75"/>'; });
- g2+='<path d="M'+Xs(m)+' '+(y0+18)+' l-7 12 h14 z" fill="'+(ok1||!isFinite(k)?'#D8B147':'#C0392B')+'"/><text class="l" x="'+Xs(m)+'" y="'+(y0+60)+'" text-anchor="middle" style="fill:#0F3E68">x&#772; = '+api.fmt(m,4)+'</text></svg>';
+ g2+='<path d="M'+Xs(m)+' '+(y0+18)+' l-7 12 h14 z" fill="'+(ok1||!isFinite(k)?'#D8B147':'#C0392B')+'"/><text class="l" x="'+Xs(m)+'" y="'+(y0+60)+'" text-anchor="middle" style="fill:#0F3E68">x&#772; = '+Number(m.toPrecision(6))+'</text></svg>';
  SV.innerHTML=g2;
  /* Form 2 */
  var pU=hasU&&N>=3?phat(QU,N,known):NaN, pL=hasL&&N>=3?phat(QL,N,known):NaN, pT=(isFinite(pU)?pU:0)+(isFinite(pL)?pL:0);
