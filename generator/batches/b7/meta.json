@@ -1,0 +1,9 @@
+{"tools":[
+ {"slug":"engineering-change-impact-checklist","tags":["cqpa","cqe"],"future_tags":["csqp","cmda"],"group_hint":"process-risk (or a new 'problem solving and change control' group)"},
+ {"slug":"8d-report","tags":["cqpa","cqe"],"future_tags":["csqp","cmda"],"group_hint":"process-risk (or a new 'problem solving and change control' group)"},
+ {"slug":"is-is-not-problem-specification","tags":["cqe","cssbb"],"future_tags":["cmda"],"group_hint":"process-risk (or a new 'problem solving and change control' group)"},
+ {"slug":"a3-problem-solving-report","tags":["cssbb","cqpa","cqe"],"future_tags":[],"group_hint":"process-risk (or a new 'problem solving and change control' group)"},
+ {"slug":"out-of-control-action-plan","tags":["cqpa","cqe","cssbb","gb"],"future_tags":["cmda"],"group_hint":"process-risk (or a new 'problem solving and change control' group)"},
+ {"slug":"benchmarking-gap-analysis","tags":["cqpa","cqe","cssbb","cmqoe"],"future_tags":["csqp"],"group_hint":"quality-manager"}
+],
+"not_built":[]}

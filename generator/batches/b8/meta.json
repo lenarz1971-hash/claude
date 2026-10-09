@@ -1,0 +1,7 @@
+{"tools":[
+ {"slug":"hazard-analysis-risk-control","tags":["cqe"],"future_tags":["cmda"],"group_hint":"regulated"},
+ {"slug":"iq-oq-pq-validation-protocol","tags":["cqe","cqpa"],"future_tags":["cmda","csqp","cct"],"group_hint":"regulated"},
+ {"slug":"requirements-traceability-matrix","tags":["cqe"],"future_tags":["cmda"],"group_hint":"regulated"},
+ {"slug":"alcoa-plus-data-integrity-checklist","tags":["cqpa"],"future_tags":["cmda","cct"],"group_hint":"regulated"}
+],
+"not_built":[]}

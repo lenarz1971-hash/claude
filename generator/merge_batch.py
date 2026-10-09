@@ -12,7 +12,7 @@ import os, sys, json, re
 HERE = os.path.dirname(os.path.abspath(__file__))
 GROUP_ORDER = {"six-sigma": "ORDER", "green-belt": "ORDER_GB", "auditor": "ORDER_QA", "inspection": "ORDER_IN",
                "quality-manager": "ORDER_MQ", "process-risk": "ORDER_PR", "lean": "ORDER_LN", "supplier": "ORDER_SQ",
-               "regulated": "ORDER_RG"}
+               "regulated": "ORDER_RG", "problem-solving": "ORDER_PS"}
 b, grp = sys.argv[1], sys.argv[2]; B = b.upper()
 meta = json.load(open(os.path.join(HERE, "batches", b, "meta.json")))
 slugs = [t["slug"] for t in meta["tools"]]

@@ -289,6 +289,9 @@ problem, after enough time or volume that a recurrence would have shown up. Writ
 actions are taken, so the result cannot be talked into a pass afterwards. The form will not count a CAPA as
 effective without a result and a date, and flags one closed before its effectiveness check.</p>
 
+<h2>CAPA form or 8D report?</h2>
+<p>This form follows the corrective action process in general terms. Many customers, especially in automotive and supplier quality, ask for the same work in the eight-discipline format, with a named team, containment verification, an escape point and recognition. For that, use the <a href="/tools/8d-report.html">8D report</a>.</p>
+
 <h2>On the Yellow Belt exam</h2>
 <p>Corrective action (IV.C) and preventive action (IV.D) are separate topics in the 2022 CSSYB Body of
 Knowledge. Expect to be asked to tell the two apart, and to distinguish them from correction or
@@ -354,7 +357,7 @@ from tools_content3_a import PAGES3A
 from tools_content3_b import PAGES3B
 from tools_content3_c import PAGES3C
 from tools_content3_d import PAGES3D
-ORDER_MQ = ['change-management-plan', 'ethics-compliance-decision-guide', 'strategic-plan-builder', 'swot-pestle-analysis', 'hoshin-x-matrix', 'balanced-scorecard', 'financial-analysis-npv-irr', 'lessons-learned-register', 'management-review', 'cost-of-quality', 'constraints-oee', 'customer-value-segmentation', 'qfd-house-of-quality', 'supplier-scorecard', 'training-needs-skills-matrix', 'training-plan-kirkpatrick']
+ORDER_MQ = ["change-management-plan", "ethics-compliance-decision-guide", "strategic-plan-builder", "swot-pestle-analysis", "hoshin-x-matrix", "balanced-scorecard", "financial-analysis-npv-irr", "lessons-learned-register", "management-review", "cost-of-quality", "constraints-oee", "customer-value-segmentation", "qfd-house-of-quality", "supplier-scorecard", "training-needs-skills-matrix", "training-plan-kirkpatrick", "meeting-agenda-action-log", "customer-survey-designer-analyzer", "gemba-walk-daily-huddle-board", "design-review-dfx-checklist", "kpi-dashboard-builder"]
 from tools_content4_e import PAGES4E
 from tools_content4_e2 import PAGES4E2
 from tools_content4_f import PAGES4F
@@ -364,23 +367,28 @@ from tools_content4_g import PAGES4G
 from tools_content4_h import PAGES4H
 from tools_content4_h2 import PAGES4H2
 from tools_content5_a import PAGES5A
+from tools_content6_b10 import PAGES6B10
+from tools_content6_b9 import PAGES6B9
+from tools_content6_b8 import PAGES6B8
+from tools_content6_b7 import PAGES6B7
 from tools_content6_b4 import PAGES6B4
 from tools_content6_b3 import PAGES6B3
 from tools_content6_b2 import PAGES6B2
 ORDER_GB = ["value-stream-map-takt","kano-model","confidence-interval-calculator","attribute-capability","multi-vari-chart",
  "t-test-calculator","chi-square-proportions-test","one-way-anova","full-factorial-doe","smed-setup-reduction"]
 ORDER_QA = ["audit-plan-schedule","process-audit-turtle-diagram","audit-checklist-working-papers","audit-sampling-plan",
- "audit-nonconformity-report","audit-car-verification-tracker","auditor-competence-evaluation","audit-program-risk-schedule","audit-program-metrics"]
+ "audit-nonconformity-report","audit-car-verification-tracker", "audit-opening-closing-meeting","auditor-competence-evaluation","audit-program-risk-schedule","audit-program-metrics"]
 ORDER_IN = ["drawing-title-block-tolerance-reader","gdt-position-tolerance","tolerance-stack-up","gauge-resolution-10-to-1",
  "cqt-measurement-uncertainty-budget","sine-bar-height-gauge-record","cqt-calibration-oot-impact","calibration-interval-adjustment",
  "first-article-inspection","attribute-inspection-defect-classification","cqt-nonconforming-material-disposition","cqt-reliability-mtbf-calculator"]
 # Process analyst, engineer and supplier quality tools (CQPA, CQE, CSSBB, CSQP, CMDA), from Oct 2026.
 ORDER_LN = ["kanban-sizing-calculator", "five-s-audit-scorecard", "error-proofing-poka-yoke", "standardized-work-combination-sheet", "heijunka-leveling", "spaghetti-diagram"]
 ORDER_SQ = ["supplier-selection-matrix", "ppap-qualification-plan", "supplier-classification-lifecycle", "kraljic-portfolio-matrix"]
-ORDER_RG = []
+ORDER_RG = ["hazard-analysis-risk-control", "iq-oq-pq-validation-protocol", "requirements-traceability-matrix", "alcoa-plus-data-integrity-checklist", "lot-traceability-genealogy", "complaint-reportability-decision-guide", "shelf-life-accelerated-aging", "alert-action-levels"]
+ORDER_PS = ["engineering-change-impact-checklist", "8d-report", "is-is-not-problem-specification", "a3-problem-solving-report", "out-of-control-action-plan", "benchmarking-gap-analysis"]
 ORDER_PR = ["flowchart-swimlane", "activity-network-critical-path", "risk-register-heat-map", "fault-tree-analysis", "probability-calculator", "affinity-diagram", "interrelationship-digraph", "process-decision-program-chart", "matrix-diagram", "force-field-analysis"]
-_all = {p["slug"]: p for p in PAGES + PAGES2 + PAGES3A + PAGES3B + PAGES3C + PAGES3D + PAGES4E + PAGES4E2 + PAGES4F + PAGES4F2 + PAGES4F3 + PAGES4G + PAGES4H + PAGES4H2 + PAGES5A + PAGES6B2 + PAGES6B3 + PAGES6B4}
-_ord = ORDER + ORDER_MQ + ORDER_GB + ORDER_QA + ORDER_IN + ORDER_PR + ORDER_LN + ORDER_SQ + ORDER_RG
+_all = {p["slug"]: p for p in PAGES + PAGES2 + PAGES3A + PAGES3B + PAGES3C + PAGES3D + PAGES4E + PAGES4E2 + PAGES4F + PAGES4F2 + PAGES4F3 + PAGES4G + PAGES4H + PAGES4H2 + PAGES5A + PAGES6B2 + PAGES6B3 + PAGES6B4 + PAGES6B7 + PAGES6B8 + PAGES6B9 + PAGES6B10}
+_ord = ORDER + ORDER_MQ + ORDER_GB + ORDER_QA + ORDER_IN + ORDER_PR + ORDER_LN + ORDER_SQ + ORDER_RG + ORDER_PS
 assert sorted(_all) == sorted(_ord), set(_all) ^ set(_ord)
 PAGES_YB = [_all[s] for s in ORDER]
 PAGES_MQ = [_all[s] for s in ORDER_MQ]
@@ -391,6 +399,7 @@ PAGES_PR = [_all[s] for s in ORDER_PR]
 PAGES_LN = [_all[s] for s in ORDER_LN]
 PAGES_SQ = [_all[s] for s in ORDER_SQ]
 PAGES_RG = [_all[s] for s in ORDER_RG]
+PAGES_PS = [_all[s] for s in ORDER_PS]
 # hub groups: id, heading, subhead, pages
 GROUPS = [
  ("six-sigma", "Six Sigma project tools", "{n} tools that follow a DMAIC project and cover the Six Sigma Yellow Belt Body of Knowledge.", PAGES_YB),
@@ -401,6 +410,7 @@ GROUPS = [
  ("process-risk", "Process, planning and risk tools", "{n} tools for mapping processes, planning projects and analyzing risk and probability, written for the Quality Process Analyst (CQPA), Quality Engineer (CQE) and Six Sigma Black Belt (CSSBB) Bodies of Knowledge, and useful for supplier quality and medical device auditing.", PAGES_PR),
  ("lean", "Lean and daily management tools", "{n} tools for pull, flow, standard work, 5S and error-proofing, written for the lean topics of the CQPA, CQE and CSSBB Bodies of Knowledge.", PAGES_LN),
  ("supplier", "Supplier quality tools", "{n} tools for selecting, qualifying, classifying and managing suppliers, written for the Supplier Quality Professional (CSQP) Body of Knowledge and the supplier topics of CQPA and CQE.", PAGES_SQ),
- ("regulated", "Validation, design control and regulated-industry tools", "{n} tools for risk management, validation, design control, data integrity and complaint handling, written for the Medical Device Auditor (CMDA) Body of Knowledge and the related CQE topics.", PAGES_RG)]
+ ("regulated", "Validation, design control and regulated-industry tools", "{n} tools for risk management, validation, design control, data integrity and complaint handling, written for the Medical Device Auditor (CMDA) Body of Knowledge and the related CQE topics.", PAGES_RG),
+ ("problem-solving", "Problem solving and change control tools", "{n} tools for structured problem solving, reacting to out-of-control signals, benchmarking and controlling engineering changes, written for the CQPA, CQE and CSSBB Bodies of Knowledge.", PAGES_PS)]
 GROUPS = [g for g in GROUPS if g[3]]
 PAGES = [p for g in GROUPS for p in g[3]]

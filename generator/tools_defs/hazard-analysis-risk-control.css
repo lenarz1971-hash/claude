@@ -16,7 +16,7 @@
 #tool .hz-chain svg{min-width:720px}
 #tool table.tg[data-grid="h"] select{min-width:140px}
 @media (max-width:700px){#tool .hz-maps{grid-template-columns:1fr}#tool button.hz-btn{font-size:11px;height:34px}#tool table.hz-mt td{width:60px}#tool table.hz-mt tr:last-child th{width:60px}#tool .hz-nm{display:none}}
-@media print{@page{size:landscape}#tool .hz-chain svg{min-width:0}#tool button.hz-btn{height:26px}}
+@media print{@page{size:landscape}#tool table.tg[data-grid="h"] th{white-space:normal}#tool table.tg[data-grid="h"] td.calc{font-size:8px;white-space:normal}#tool .tg .hz-k{font-size:0;padding:1px 3px;margin:1px 0}#tool .tg .hz-k::after{content:attr(data-k);font-size:8px}#tool .hz-chain svg{min-width:0}#tool button.hz-btn{height:26px}}
 #tool .hz-sh{display:none}
 #tool .hz-key{display:none;margin:4px 0}
 @media (max-width:700px){#tool .hz-sh{display:inline}#tool .hz-key{display:block}}

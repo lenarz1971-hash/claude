@@ -121,7 +121,27 @@ const TOOL_EX={
  'supplier-selection-matrix':['cqpa','cqe','cmqoe'],
  'ppap-qualification-plan':['cqpa','cqe'],
  'supplier-classification-lifecycle':['cqpa','cqe','cmqoe'],
- 'kraljic-portfolio-matrix':[]
+ 'kraljic-portfolio-matrix':[],
+ 'engineering-change-impact-checklist':['cqpa','cqe'],
+ '8d-report':['cqpa','cqe'],
+ 'is-is-not-problem-specification':['cqe','cssbb'],
+ 'a3-problem-solving-report':['cssbb','cqpa','cqe'],
+ 'out-of-control-action-plan':['cqpa','cqe','cssbb','gb'],
+ 'benchmarking-gap-analysis':['cqpa','cqe','cssbb','cmqoe'],
+ 'hazard-analysis-risk-control':['cqe'],
+ 'iq-oq-pq-validation-protocol':['cqe','cqpa'],
+ 'requirements-traceability-matrix':['cqe'],
+ 'alcoa-plus-data-integrity-checklist':['cqpa'],
+ 'lot-traceability-genealogy':['cqpa','cqe'],
+ 'complaint-reportability-decision-guide':['cqe'],
+ 'shelf-life-accelerated-aging':[],
+ 'alert-action-levels':[],
+ 'meeting-agenda-action-log':['cqpa','cssbb','cqe','cqia'],
+ 'customer-survey-designer-analyzer':['cqpa','cqe','cssbb','cqia','cmqoe'],
+ 'gemba-walk-daily-huddle-board':['cssbb','cqe'],
+ 'design-review-dfx-checklist':['cqe','cssbb'],
+ 'kpi-dashboard-builder':['cqe','cssbb','cmqoe'],
+ 'audit-opening-closing-meeting':['cqa','cqpa','cqe']
 };
 /* Tools beyond the Yellow Belt set, in hub order (filled in by build_resources.py from tools_content.GROUPS). */
 const MQ_TOOLS=EXTRA_SLUGS;

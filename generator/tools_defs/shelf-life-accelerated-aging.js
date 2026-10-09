@@ -65,7 +65,7 @@ update:function(root,api){
   if(isFinite(tmax)&&tmax<=hi&&tmax>=lo){ g+='<line x1="'+X(tmax)+'" x2="'+X(tmax)+'" y1="'+mt+'" y2="'+(H-mb)+'" stroke="#9C7C1F" stroke-dasharray="2 3" stroke-width="1.4"/><text class="lb" x="'+(X(tmax)-4)+'" y="'+(mt+26)+'" text-anchor="end" style="fill:#9C7C1F">Material limit</text>'; }
   g+='<path d="'+pts.map(function(p,i){ return (i?'L':'M')+X(p[0]).toFixed(1)+' '+Y(p[1]).toFixed(1); }).join(' ')+'" fill="none" stroke="#0F3E68" stroke-width="2.2"/>';
   if(isFinite(aat)&&taa>=lo&&taa<=hi) g+='<circle cx="'+X(taa)+'" cy="'+Y(aat)+'" r="5.5" fill="#D8B147" stroke="#0F3E68" stroke-width="1.6"/><text class="lb" x="'+(X(taa)+9)+'" y="'+(Y(aat)-8)+'">'+F1(taa,0)+' &deg;C: '+days(aat)+'</text>';
-  if(isFinite(t2)&&t2>=lo&&t2<=hi) g+='<circle cx="'+X(t2)+'" cy="'+Y(avail)+'" r="4.5" fill="#fff" stroke="#9C7C1F" stroke-width="2"/><text class="lb" x="'+(X(t2)+8)+'" y="'+(Y(avail)+18)+'" style="fill:#9C7C1F">'+F1(avail,0)+' d: '+F1(t2,1)+' &deg;C</text>';
+  if(isFinite(t2)&&t2>=lo&&t2<=hi) g+='<circle cx="'+X(t2)+'" cy="'+Y(avail)+'" r="4.5" fill="#fff" stroke="#9C7C1F" stroke-width="2"/><text class="lb" x="'+(X(t2)-10)+'" y="'+(Y(avail)+22)+'" text-anchor="end" style="fill:#9C7C1F">'+F1(avail,0)+' d: '+F1(t2,1)+' &deg;C</text>';
   svg.innerHTML=g+'</svg>';
   var rows=[40,45,50,55,60].filter(function(t){ return t>trt; });
   tab.innerHTML='<thead><tr><th>Chamber &deg;C</th><th>AAF</th><th>Days</th><th>Weeks</th></tr></thead><tbody>'+rows.map(function(t){ var a=T.aaf(model,q10,ea,trt,t); return '<tr'+(t===taa?' class="hi-row"':'')+'><td class="calc">'+t+'</td><td class="calc">'+F1(a,3)+'</td><td class="calc">'+F1(rt/a,1)+'</td><td class="calc">'+F1(rt/a/7,1)+'</td></tr>'; }).join('')+'</tbody>';

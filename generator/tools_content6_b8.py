@@ -10,34 +10,33 @@ h1="Hazard analysis and risk control",
 lede="Trace each hazard through a sequence of events to a hazardous situation and a harm. Estimate the probability of harm as P1 &times; P2, rate the severity, judge the risk against a matrix you define, then record the controls and the risk that remains.",
 content="""
 <h2>Hazard, hazardous situation, harm</h2>
-<p>Medical device risk management keeps three ideas apart that everyday speech runs together:</p>
+<p>Medical device risk management keeps three ideas apart:</p>
 <ul>
-<li>A <b>hazard</b> is a potential source of harm: heat, mains voltage, a sharp edge, bacteria in standing water, a confusing screen.</li>
+<li>A <b>hazard</b> is a potential source of harm: heat, mains voltage, bacteria in standing water, a confusing screen.</li>
 <li>A <b>hazardous situation</b> is a circumstance in which a person is exposed to the hazard. A hot heater plate inside a closed housing harms nobody; a patient breathing gas that the plate has overheated is exposed.</li>
 <li><b>Harm</b> is the injury or damage to health that can follow.</li>
 </ul>
-<p>A <b>sequence of events</b> links the hazard to the hazardous situation: a part fails, a user makes a slip, a cleaning step is skipped. Writing the chain out in full is the best guard against vague entries such as "overheating", which say neither how it happens nor who is hurt.</p>
+<p>A <b>sequence of events</b> links the hazard to the hazardous situation: a part fails, a user slips, a cleaning step is skipped. Writing the chain out guards against vague entries such as "overheating".</p>
 
 <h2>P1, P2 and the probability of harm</h2>
-<p>The probability of harm is often split in two. <b>P1</b> is the probability that the sequence of events leads to the hazardous situation. <b>P2</b> is the probability that the hazardous situation leads to the harm. The probability of harm is P = P1 &times; P2. Splitting it helps, because the two halves draw on different evidence: P1 on reliability data, test results and use studies; P2 on clinical knowledge. Where no sound estimate exists, for example for software faults, many teams estimate on severity alone and assume the worst case for probability.</p>
-<p>The probability levels here are set by P. Each level has a lower bound you choose in the risk management plan, so a P of exactly 1&times;10<sup>&minus;4</sup> with the default bounds falls in P4.</p>
+<p>The probability of harm is often split in two. <b>P1</b> is the probability that the sequence of events leads to the hazardous situation. <b>P2</b> is the probability that the hazardous situation leads to the harm. The probability of harm is P = P1 &times; P2. The two halves draw on different evidence: P1 on reliability data, tests and use studies; P2 on clinical knowledge. Where no sound estimate exists, as for software faults, many teams assume the worst-case probability and judge on severity.</p>
 
 <h2>Risk evaluation</h2>
-<p>Risk is the combination of the probability of harm and its severity. The manufacturer sets its own criteria for risk acceptability, in its risk management plan, before the analysis starts. The matrix above is that policy in picture form: click a cell to change it. Three regions are common: acceptable; a middle region where risk must be reduced as far as practicable and the reason for stopping recorded; and unacceptable. A matrix where a worse cell is easier to accept than a better one is flagged.</p>
+<p>Risk is the combination of the probability of harm and its severity. The manufacturer sets its own criteria for risk acceptability, in its risk management plan, before the analysis starts. The matrix above is that policy in picture form: click a cell to change it. Three regions are common: acceptable; a middle region where risk is reduced as far as practicable and the reason for stopping recorded; and unacceptable.</p>
 
 <h2>Risk control, in order of priority</h2>
 <ol>
-<li><b>Inherent safety by design and manufacture:</b> remove the hazard or reduce its energy. A low-voltage supply, a heater that cannot reach a harmful temperature.</li>
-<li><b>Protective measures</b> in the device or the manufacturing process: cutoffs, interlocks, alarms, guards.</li>
+<li><b>Inherent safety by design and manufacture:</b> remove the hazard or reduce its energy, as with a low-voltage supply.</li>
+<li><b>Protective measures</b> in the device or the manufacturing process: cutoffs, interlocks, alarms.</li>
 <li><b>Information for safety</b> and, where appropriate, training: warnings, instructions for use, labels.</li>
 </ol>
-<p>The order matters. A warning depends on someone reading it and acting on it every time, so it is the weakest of the three. Using it alone on a risk that was unacceptable needs a written reason why design and protective measures were not practicable. Each control then needs <b>verification</b> twice over: that it was implemented, and that it actually reduces the risk. Controls can create new hazards (an alarm that wakes a patient at night, a cutoff that stops therapy), so each one is checked for that too.</p>
+<p>The order matters. A warning works only if someone reads it and acts on it every time, so using it alone on an unacceptable risk needs a written reason why design and protective measures were not practicable. Each control is <b>verified</b> twice: that it was implemented, and that it reduces the risk. Controls can create new hazards, such as a cutoff that stops therapy, so each one is checked for that too.</p>
 
 <h2>Residual risk and benefit-risk</h2>
-<p>Residual risk is what remains after control. If a risk is still not acceptable and no further control is practicable, the manufacturer may go ahead only if a <b>benefit-risk analysis</b> shows that the medical benefit of the intended use outweighs it. Finally the residual risks are judged together, as an overall residual risk, and the significant ones are disclosed to users. The risk management file is kept up to date with production and post-production information, such as complaints and service data, which can show that an estimate was wrong.</p>
+<p>Residual risk is what remains after control. If a risk is still not acceptable and no further control is practicable, the manufacturer may go ahead only if a <b>benefit-risk analysis</b> shows that the medical benefit of the intended use outweighs it. Finally the residual risks are judged together, as an overall residual risk, and the significant ones are disclosed to users. Production and post-production information, such as complaints and service data, is fed back into the file; it can show that an estimate was wrong.</p>
 
 <h2>Hazard analysis, FMEA or risk register?</h2>
-<p>An <a href="/tools/fmea.html">FMEA</a> works bottom up, from each failure mode to its effect, and misses hazards that occur with nothing failing, such as use errors in normal use. A hazard analysis works from the hazards and harms and covers normal use, fault conditions and foreseeable misuse. Many device makers use both and link them. A <a href="/tools/risk-register-heat-map.html">risk register</a> covers business and project risk rather than harm to patients. A <a href="/tools/fault-tree-analysis.html">fault tree</a> can supply P1 for a complex sequence of events.</p>
+<p>An <a href="/tools/fmea.html">FMEA</a> works bottom up, from each failure mode to its effect, and misses hazards that occur with nothing failing, such as use errors in normal use. A hazard analysis works from the hazards and harms and covers normal use, fault conditions and foreseeable misuse. Many device makers use both. A <a href="/tools/risk-register-heat-map.html">risk register</a> covers business and project risk; a <a href="/tools/fault-tree-analysis.html">fault tree</a> can supply P1 for a complex sequence of events.</p>
 
 <h2>On the exam</h2>
 <p>CMDA IV.A.1 asks you to describe risk analysis, evaluation, control, benefit-risk analysis and the use of production and post-production information, and IV.A.2 to judge whether hazards are identified in normal and fault conditions, including use, and whether risk controls are implemented in design and production. CQE III.E.4 lists hazard analysis with FMEA and FMECA, VII.A.1 the risk terms (severity, occurrence), VII.B.2 risk matrices and acceptability criteria, and VII.C.1 documenting risks and controls. Expect to tell a hazard from a hazardous situation, multiply P1 by P2, and put the control options in priority order.</p>
@@ -46,7 +45,7 @@ content="""
 dict(slug="iq-oq-pq-validation-protocol", name="IQ/OQ/PQ validation protocol",
 covers="CQE III.D, CMDA IV.H, III.D.6, CQPA IV.C, CSQP III.C.3, CCT III.F",
 title="IQ OQ PQ Validation Protocol Template — Free Online Builder | SC Quality Guild",
-desc="Free IQ/OQ/PQ protocol builder. Scope, test cases with acceptance criteria, worst-case OQ, PQ runs, deviations and approvals, with a status check for the report.",
+desc="Free IQ/OQ/PQ protocol builder. Scope, test cases with acceptance criteria, worst-case OQ, PQ runs, deviations and approvals, with a report status check.",
 h1="IQ/OQ/PQ validation protocol",
 lede="Write the protocol: scope, system, and the installation, operational and performance qualification tests with their acceptance criteria. Record the results and deviations, and see what still stands between you and an approved validation report.",
 content="""
@@ -81,7 +80,7 @@ content="""
 dict(slug="requirements-traceability-matrix", name="Requirements traceability matrix (design control)",
 covers="CQE III.B.1, III.B.2, III.D, CMDA III.D.2, IV.A.2",
 title="Requirements Traceability Matrix — Design Control Template | SC Quality Guild",
-desc="Free design control traceability matrix. Link user needs, design inputs, outputs, verification and validation; find orphans, untested inputs and unvalidated needs.",
+desc="Free design control traceability matrix. Link user needs, design inputs, outputs, verification and validation; find orphans and untested requirements.",
 h1="Requirements traceability matrix",
 lede="List the user needs, design inputs, design outputs, verification tests and validation studies, and link each to the one before it. The matrix builds itself and shows every gap: inputs without verification, needs without validation, and orphans on both sides.",
 content="""
@@ -120,9 +119,9 @@ content="""
 """),
 
 dict(slug="alcoa-plus-data-integrity-checklist", name="ALCOA+ data integrity checklist",
-covers="CMDA I.B.3, III.A.1, III.D.3, CQPA III.B.4, CCT III.G",
+covers="CMDA II.B.3, III.A.1, III.D.3, CQPA III.B.4, CCT III.G",
 title="ALCOA+ Data Integrity Checklist — Audit Records, Score, Findings | SC Quality Guild",
-desc="Free ALCOA+ data integrity checklist. Assess a sample of paper and electronic records against the nine attributes; get a score per attribute and per record, and findings.",
+desc="Free ALCOA+ data integrity checklist. Assess paper and electronic records against the nine attributes; get scores by attribute and record, and findings.",
 h1="ALCOA+ data integrity checklist",
 lede="Take a sample of records, paper or electronic, and judge each against the nine ALCOA+ attributes. Get a score for each record and each attribute, a chart of where the weaknesses are, and a findings list that ties each gap to its evidence.",
 content="""
@@ -157,6 +156,6 @@ content="""
 <p>The <a href="/tools/audit-checklist-working-papers.html">audit checklist and working papers</a> hold the wider audit; this tool is the data integrity part of it. Findings go into an <a href="/tools/audit-nonconformity-report.html">audit nonconformity report</a>. The <a href="/tools/data-collection-plan.html">data collection plan</a> is where integrity is designed in, before any data are collected.</p>
 
 <h2>On the exam</h2>
-<p>CMDA I.B.3 asks you to examine record-keeping for data acquisition systems and evaluate audit data against ALCOA+. CMDA III.A.1 includes 21 CFR Part 11 on electronic records and signatures, and III.D.3 document and record control. CQPA III.B.4 covers data quality attributes and the methods that prevent and detect data integrity problems, such as audit trails and record management training, and CCT III.G the integrity of calibration records. Expect to name the attribute a described lapse breaks.</p>
+<p>CMDA II.B.3 asks you to examine record-keeping for data acquisition systems and evaluate audit data against ALCOA+. CMDA III.A.1 includes 21 CFR Part 11 on electronic records and signatures, and III.D.3 document and record control. CQPA III.B.4 covers data quality attributes and the methods that prevent and detect data integrity problems, such as audit trails and record management training, and CCT III.G the integrity of calibration records. Expect to name the attribute a described lapse breaks.</p>
 """),
 ]

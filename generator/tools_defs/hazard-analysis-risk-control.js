@@ -17,7 +17,7 @@ h:{
  risk:function(S,P,s){ if(isNaN(P)||isNaN(s)) return ''; return (S.x.m||'')[(P-1)*5+(s-1)]||'A'; },
  row:function(r,S){ var h=this, b=h.bounds(S), p0=h.p(r.p1)*h.p(r.p2), p1=h.p(r.p1b)*h.p(r.p2b), s0=h.sev(r.s), s1=h.sev(r.sb); if(isNaN(s1)&&!isNaN(p1)) s1=s0;
   var L0=h.lvl(p0,b), L1=h.lvl(p1,b); return {p0:p0,p1:p1,L0:L0,L1:L1,s0:s0,s1:s1,r0:h.risk(S,L0,s0),r1:h.risk(S,L1,s1)}; },
- cell:function(k){ return k?'<span class="hz-k hz-'+k+'">'+this.NAME[k]+'</span>':''; }
+ cell:function(k){ return k?'<span class="hz-k hz-'+k+'" data-k="'+k+'">'+this.NAME[k]+'</span>':''; }
 },
 sections:[
  {type:'fields',title:'Device and scope of the analysis',cols:3,hint:'Risk management covers the whole life of the device: design, production, use, servicing and disposal. State the intended use first; reasonably foreseeable misuse is analyzed against it.',fields:[
@@ -51,16 +51,16 @@ sections:[
   {id:'p2',label:'P2',w:70,tip:'Probability the hazardous situation leads to harm'},
   {id:'p',label:'P = P1×P2',calc:function(r,api){ var h=window.TOOL.h; return h.sci(h.p(r.p1)*h.p(r.p2)); }},
   {id:'s',label:'S',type:'number',min:1,max:5,tip:'Severity 1-5'},
-  {id:'r0',label:'Risk before',calc:function(r,api){ var h=window.TOOL.h, x=h.row(r,api.state()); return isNaN(x.L0)||isNaN(x.s0)?'':'P'+x.L0+' S'+x.s0+'<br>'+h.cell(x.r0); }},
+  {id:'r0',label:'Risk before',calc:function(r,api){ var h=window.TOOL.h, x=h.row(r,api.state()); return isNaN(x.L0)||isNaN(x.s0)?'':'P'+x.L0+' S'+x.s0+' <br>'+h.cell(x.r0); }},
   {id:'ctl',label:'Risk control measures',w:220,type:'textarea',rows:2},
   {id:'ct',label:'Control type',type:'select',opts:['1 Design','2 Protective','3 Information','1 + 2','1 + 3','2 + 3','1 + 2 + 3']},
-  {id:'ver',label:'Verification of implementation and effectiveness',w:180,type:'textarea',rows:2},
+  {id:'ver',label:'Verification',tip:'Evidence the control is implemented and effective',w:180,type:'textarea',rows:2},
   {id:'p1b',label:'P1 after',w:70},
   {id:'p2b',label:'P2 after',w:70},
   {id:'pb',label:'P after',calc:function(r,api){ var h=window.TOOL.h; return h.sci(h.p(r.p1b)*h.p(r.p2b)); }},
   {id:'sb',label:'S after',type:'number',min:1,max:5},
-  {id:'r1',label:'Risk after',calc:function(r,api){ var h=window.TOOL.h, x=h.row(r,api.state()); return isNaN(x.L1)||isNaN(x.s1)?'':'P'+x.L1+' S'+x.s1+'<br>'+h.cell(x.r1); }},
-  {id:'nh',label:'New hazards from the controls?',type:'select',opts:['No','Yes, added as new rows','Not yet assessed']},
+  {id:'r1',label:'Risk after',calc:function(r,api){ var h=window.TOOL.h, x=h.row(r,api.state()); return isNaN(x.L1)||isNaN(x.s1)?'':'P'+x.L1+' S'+x.s1+' <br>'+h.cell(x.r1); }},
+  {id:'nh',label:'New hazards?',tip:'Do the controls introduce new hazards?',type:'select',opts:['No','Yes, added as new rows','Not yet assessed']},
   {id:'br',label:'Benefit-risk note',w:200,type:'textarea',rows:2}]},
  {type:'custom',id:'chain',title:'From hazard to harm',hint:'The chain for one row. Pick the row to draw.',html:'<label class="tf hz-pick noprint"><span>Row</span><select data-f="pick" aria-label="Row to draw"></select></label><div class="svgw hz-chain"></div>'},
  {type:'custom',id:'maps',title:'Risk before and after control',hint:'Each ID sits in the cell for its probability level and severity, colored by your matrix.',html:'<div class="hz-maps"><div class="svgw hz-before"></div><div class="svgw hz-after"></div></div>'},

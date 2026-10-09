@@ -1,0 +1,8 @@
+{"tools":[
+ {"slug":"meeting-agenda-action-log","tags":["cqpa","cssbb","cqe","cqia"],"future_tags":["csqp"],"group_hint":"Teams and facilitation (with six-sigma-roles-raci, team-development-stages, communication-plan)"},
+ {"slug":"customer-survey-designer-analyzer","tags":["cqpa","cqe","cssbb","cqia","cmqoe"],"future_tags":[],"group_hint":"Voice of the customer (with kano-model, voc-ctq-tree, qfd-house-of-quality)"},
+ {"slug":"gemba-walk-daily-huddle-board","tags":["cssbb","cqe"],"future_tags":["cmda"],"group_hint":"Lean (with eight-wastes-waste-walk, value-stream-map-takt)"},
+ {"slug":"design-review-dfx-checklist","tags":["cqe","cssbb"],"future_tags":["csqp","cmda"],"group_hint":"Product and design (with fmea, qfd-house-of-quality, tolerance-stack-up)"},
+ {"slug":"kpi-dashboard-builder","tags":["cqe","cssbb","cmqoe"],"future_tags":["csqp","cmda"],"group_hint":"Strategy and measures (with balanced-scorecard, hoshin-x-matrix)"},
+ {"slug":"audit-opening-closing-meeting","tags":["cqa","cqpa","cqe"],"future_tags":["cmda","csqp"],"group_hint":"Auditing (after audit-plan-schedule, before audit-nonconformity-report)"}],
+ "not_built":[]}
