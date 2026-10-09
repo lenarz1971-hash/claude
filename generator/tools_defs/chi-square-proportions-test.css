@@ -1,0 +1,11 @@
+table.mv{table-layout:auto;margin:6px 0;font-size:14.5px;min-width:100%}
+table.mv th{font:700 9px var(--mono);letter-spacing:.08em;color:var(--ink-3);text-transform:uppercase;padding:0 6px 7px;text-align:center}
+table.mv th:first-child{text-align:left}
+table.mv td{padding:4px 6px;border-bottom:1px solid var(--line);vertical-align:middle;width:auto;text-align:center;font-variant-numeric:tabular-nums}
+table.mv td.mo{text-align:left;color:var(--ink);min-width:150px;padding-right:12px}
+table.mv td.lo{background:#FBEDEB}
+table.mv td b{color:var(--navy)}
+table.mv tfoot td{border-top:2px solid var(--line);font-weight:700}
+.cs-st .stat b{font-size:17px}
+table.mv th,table.mv td{white-space:nowrap}
+table.mv td.mo{white-space:normal}

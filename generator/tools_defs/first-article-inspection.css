@@ -1,0 +1,11 @@
+#tool .fa-ok{color:var(--green);font-weight:700}
+#tool .fa-mid{color:#9C7C1F;font-weight:700}
+#tool .fa-bad,#tool .stat b.fa-bad{color:#C0392B;font-weight:700}
+#tool table.tg td.calc{font-size:13px}
+#tool table[data-grid="ch"] input[data-col="b"]{width:54px;min-width:54px}
+#tool table[data-grid="ch"] input[type=number]{width:76px;min-width:76px}
+#tool table[data-grid="ch"] input[data-col="meas"],#tool table[data-grid="ch"] input[data-col="tool"]{min-width:96px;width:96px}
+#tool table[data-grid="cert"] select{min-width:118px}
+@media print{@page{size:landscape}#tool table.tg td.calc{font-size:11px}}
+#tool table.tg input[type=number]::-webkit-inner-spin-button,#tool table.tg input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+#tool table.tg input[type=number]{-moz-appearance:textfield;appearance:textfield}

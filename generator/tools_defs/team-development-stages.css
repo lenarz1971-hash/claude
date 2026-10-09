@@ -1,0 +1,14 @@
+.ts-q{display:grid;gap:0}
+.ts-r{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line)}
+.ts-r span{font-size:15px;color:var(--ink)}
+.ts-s{display:flex;gap:4px}
+.ts-s label{cursor:pointer}
+.ts-s input{position:absolute;opacity:0;width:1px!important;height:1px}
+.ts-s b{display:inline-flex;width:34px;height:34px;align-items:center;justify-content:center;border:1px solid var(--line-2);border-radius:3px;font:700 13px var(--mono);color:var(--ink-2)}
+.ts-s input:checked+b{background:var(--navy);border-color:var(--navy);color:#fff}
+.ts-s input:focus-visible+b{outline:2px solid var(--gold);outline-offset:1px}
+@media (max-width:600px){.ts-r{grid-template-columns:1fr}}
+.ts-b div{display:grid;grid-template-columns:110px minmax(0,1fr) 40px;gap:10px;align-items:center;margin:6px 0}
+.ts-b span{font:700 13px var(--disp);color:var(--navy)}
+.ts-b i{display:block;height:16px;background:var(--navy)}
+.ts-b b{font:600 12px var(--mono);color:var(--ink-2)}

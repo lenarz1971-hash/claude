@@ -1,0 +1,932 @@
+CQE
+
+THE ASQ CERTIFIED
+QUALITY ENGINEER
+
+Quality excellence to enhance your career
+and boost your organization’s bottom line
+asq.org/cert
+
+Certification from ASQ is considered a mark of
+quality excellence in many industries. It helps you advance
+your career and boosts your organization’s bottom line through
+your mastery of quality skills. Becoming certified as a Quality
+Engineer confirms
+your commitment to quality and the positive impact
+it will have on your organization.
+
+Examination
+Each certification candidate
+is required to pass an
+examination that consists of
+multiple-choice questions that
+measure comprehension of
+the body of knowledge.
+
+2
+
+Certified Quality Engineer
+
+INFORMATION
+The ASQ Certified Quality Engineer
+The Certified Quality Engineer (CQE) is a professional who understands the
+principles of product and service quality evaluation and control. This body of
+knowledge and applied technologies include, but are not limited to, development
+and operation of quality control systems, application and analysis of testing
+and inspection procedures, the ability to use metrology and statistical methods
+to diagnose and correct improper quality control practices, an understanding of
+human factors and motivation, familiarity with quality cost concepts and techniques,
+and the knowledge and ability to develop and administer management information
+systems and to audit quality systems for deficiency identification and correction.
+
+CQE
+Computer Delivered - The CQE
+examination is a one-part, multiple
+choice 175-question exam and is
+offered in English only. 160 multiple
+choice questions are scored and 15
+are unscored. Total appointment time
+is five-and-a-half hours, exam time
+is 5 hours and 18 minutes.
+
+Paper and Pencil – The CQE
+examination is a one-part,
+160-question, five-hour exam and is
+offered in Mandarin and Korean in
+certain locations.
+
+For comprehensive exam information on the Quality Engineer certification,
+visit asq.org/cert.
+Certified Quality Engineer
+
+3
+
+Education
+and/or Experience
+
+4
+
+If you were ever certified by ASQ as:
+
+You must have eight years of on-thejob experience in one or more of the
+areas of the Certified Quality Engineer
+Body of Knowledge.
+
+• Quality Auditor (CQA)
+
+A minimum of three years of
+this experience must be in a
+decision-making position. “Decision
+making” is defined as the authority
+to define, execute, or control projects/
+processes and to be responsible for the
+outcome. This may or may not include
+management or supervisory positions.
+
+• Manager of Quality/Organizational
+Excellence (CMQ/OE)
+
+Certified Quality Engineer
+
+• Reliability Engineer (CRE)
+• Software Quality Engineer (CSQE)
+
+• Supplier Quality Professional
+(CSQP)
+Experience used to qualify for
+certification in these fields applies to
+certification as a Quality Engineer
+(CQE).
+
+If you have completed a degree* from
+a college, university, or technical school
+with accreditation accepted by ASQ, part
+of the eight-year experience requirement
+will be waived, as follows (only one of
+these waivers may be claimed):
+
+*Degrees or diplomas from
+	educational institutions outside
+the United States must be
+equivalent to degrees from
+U.S. educational institutions.
+
+• Diploma from a technical or trade
+school–one year will be waived.
+• Associate’s degree–
+two years waived.
+• Bachelor’s degree–
+four years waived.
+• Master’s or doctorate–
+five years waived
+
+Certified Quality Engineer
+
+5
+
+BODY OF KNOWLEDGE
+The ASQ Certified Quality Engineer (CQE)
+Topics in this body of knowledge (BoK) include subtext explanations and the
+cognitive level at which the questions will be written. This information will
+provide useful guidance for both the Exam Development Committee and the
+candidate preparing to take the exam. The subtext is not intended to limit
+the subject matter or be all-inclusive of that material that will be covered
+in the exam. It is meant to clarify the type of content that will be included on
+the exam. The descriptor in parentheses at the end of each entry refers
+to the maximum cognitive level at which the topic will be tested. A complete
+description of cognitive levels is provided at the end of this document.
+
+I. Management and
+Leadership (17 Questions)
+A. Quality Philosophies
+and Foundations
+Describe continuous improvement tools,
+including lean, Six Sigma, statistical
+process control (SPC), and total quality
+management. Understand how modern
+quality has evolved from quality control
+through statistical process control
+(SPC) to total quality management and
+leadership principles (including Deming’s
+14 points). (Understand)
+
+B. The Quality Management
+System (QMS)
+1. Strategic planning
+Identify and define top management’s
+responsibility for the QMS, including
+establishing policies, and objectives,
+setting organization-wide goals, and
+supporting quality initiatives. (Apply)
+2. Deployment techniques
+Define, describe, and use various
+deployment tools in support of the
+QMS such as:
+
+6
+
+Certified Quality Engineer
+
+a. Benchmarking
+Define the concept of
+benchmarking and why it
+may be used. (Remember)
+b. Stakeholder
+Define, describe, and use
+stakeholder identification
+and analysis. (Apply)
+c. Performance
+Define, describe, and use
+performance measurement tools
+such as cost-benefit analysis.
+(Apply)
+d. Project management
+Define, describe, and use project
+management tools, including
+Gantt charts and the responsible,
+accountable, consulted and
+informed matrix (RACI). (Apply)
+3. Quality information system (QIS)
+Identify and describe the basic
+elements of a QIS, including who will
+contribute data, the kind of data to be
+managed, who will have access to
+the data, the level of flexibility for future
+information needs, and data analysis.
+(Understand)
+
+I. Barriers to Quality Improvement
+C. ASQ Code of Ethics
+for Professional Conduct
+Determine appropriate behavior in
+situations requiring ethical decisions.
+(Evaluate)
+
+D. Leadership Principles
+and Techniques
+Analyze various principles and
+techniques for developing and
+organizing teams and leading
+quality initiatives. (Analyze)
+
+E. Facilitation Principles
+and Techniques
+1. Roles and responsibilities
+Describe the facilitator’s roles
+and responsibilities on a team.
+(Understand)
+2. Facilitation tools
+Apply various tools used with teams,
+including brainstorming, nominal group
+technique, conflict resolution, and
+force-field analysis. (Apply)
+
+F. Communication Skills
+Identify and distinguish between specific
+communication methods that are used for
+delivering information and messages in a
+variety of situations across all levels of the
+organization. (Analyze)
+
+G. Customer Relations
+Define, apply, and analyze the results of
+customer relation tools such as customer
+satisfaction surveys. (Analyze)
+
+H. Supplier Management
+1. Techniques
+Apply various supplier management
+techniques, including supplier
+qualification, certification, and
+evaluation. (Apply)
+2. Improvement
+Analyze supplier ratings and
+performance improvement results.
+(Analyze)
+
+Identify barriers to quality improvement,
+analyze their causes and impact, and
+implement methods for improvement.
+(Analyze)
+
+II. The Quality System
+(18 Questions)
+A. Elements of the Quality System
+1. Basic elements
+Interpret the basic elements of a quality
+system, including planning, control,
+and improvement, from product and
+process design through quality cost
+systems
+and audit programs. (Evaluate)
+2. Design
+Analyze the design and alignment of
+interrelated processes to the strategic
+plan and core processes. (Analyze)
+
+B. Documentation of
+the Quality System
+1. Document components
+Identify and describe quality system
+documentation components, including
+quality policies and procedures to
+support the system. (Understand)
+2. Document control
+Evaluate configuration management,
+maintenance, and document control to
+manage work instructions and quality
+records. (Evaluate)
+
+C. Quality Standards
+and Other Guidelines
+Apply national and international standards
+and other requirements
+and guidelines, including the Malcolm
+Baldrige National Quality Award
+(MBNQA), and describe key points of
+the ISO 9000 series of standards. (Note:
+Industry-specific standards will not be
+tested.) (Apply)
+
+3. Risk
+Understand business continuity,
+resiliency, and contingency planning.
+(Understand)
+Certified Quality Engineer
+
+7
+
+D. Quality Audits
+1. Types of audits
+Describe and classify the various types
+of quality audits such as product,
+process, management (system),
+registration (certification), compliance
+(regulatory), first, second, and third
+party. (Apply)
+2. Roles and responsibilities in audits
+Identify and define roles
+and responsibilities for audit
+participants such as audit team (leader
+and members), client, and auditee.
+(Understand)
+3. Audit planning
+and implementation
+Describe and apply the stages of a
+quality audit, from audit planning,
+including assessing risks through
+conducting an audit. (Apply)
+4. Audit reporting and follow-up
+Apply the steps of audit reporting and
+follow-up, including the need to verify
+corrective action. (Apply)
+
+E. Cost of Quality (COQ)
+Identify and apply COQ concepts,
+including cost categorization, data
+collection, reporting, and interpreting
+results. (Analyze)
+
+F. Quality Training
+Identify and apply key elements of a
+training program, including conducting a
+needs analysis, preparing curricula and
+materials, and determining the program’s
+effectiveness. (Apply)
+
+III. Product, Process,
+and Service Design
+(21 Questions)
+A. Classification of
+Quality Characteristics
+Define, interpret, assess, and classify
+quality characteristics for new and
+existing products, processes, and
+services. (Note: The classification of
+defects
+is covered in IV.B.3.) (Evaluate)
+
+8
+
+Certified Quality Engineer
+
+B. Design Inputs, Techniques, and
+Review
+1. Inputs
+Classify design inputs such as customer
+needs, regulatory requirements, critical
+to quality, and risk assessment into
+robust design using techniques such
+as failure mode and effects analysis
+(FMEA). (Analyze)
+2. Techniques
+Apply Design for X (DFX), Design for Six
+Sigma (DFSS), and requirements 		
+traceability. (Apply)
+3. Review
+Identify and apply common elements of
+the design review process, including
+roles and responsibilities
+of participants. (Apply)
+
+C. Technical Drawings
+and Specifications
+Interpret specification requirements
+in relation to product and process
+characteristics and technical drawings,
+including characteristics such as
+views, title blocks, dimensioning
+and tolerancing, and geometric
+dimensioning and tolerance
+symbols (GD&T). (Evaluate)
+
+D. Verification and Validation
+Interpret the results of evaluations and tests
+used to verify and validate the design of
+products, processes and services, such as
+installation qualification (IQ), operational
+qualification (OQ), and process
+qualification (PQ). (Evaluate)
+
+E. Reliability and Maintainability
+1. Predictive and preventive
+maintenance tools
+Describe and apply the tools and
+techniques used to maintain and
+improve process and product
+reliability. (Apply)
+2. Reliability and
+maintainability indices
+Apply indices such as mean time to
+failure (MTTF), mean time between
+failure (MTBF), mean time to repair
+(MTTR), availability, and failure rate.
+(Apply)
+
+3. Reliability models
+Classify and apply the basic
+elements of reliability models such
+as exponential, Weibull, and bathtub
+curve. (Apply)
+4. Reliability/Safety/
+Hazard Assessment Tools
+Define, construct, and interpret the
+results of failure mode and effects
+analysis (FMEA), design FMEA
+(dFMEA), process FMEA (pFMEA),
+use FMEA (uFMEA), failure mode,
+effects, and criticality analysis
+(FMECA), and hazard analysis.
+(Analyze)
+
+IV. Product and Process
+Control (23 Questions)
+A. Methods
+Implement product and process
+control methods such as control plan
+development, critical control point
+identification, and work instruction
+development and validation. (Analyze)
+
+B. Material Control
+1. Material identification,
+status, and traceability
+Define and distinguish between these
+concepts, and describe methods for
+applying them in various situations.
+(Analyze)
+2. Material segregation
+Describe material segregation and its
+importance, and evaluate appropriate
+methods for applying it in various
+situations. (Evaluate)
+3. Material classification
+Assess and classify product and
+process defects and nonconformities.
+(Evaluate)
+4. Material review board (MRB)
+Describe the purpose and function of
+an MRB, and evaluate nonconforming
+product or material to make a
+disposition decision in various
+situations. (Evaluate)
+
+C. Acceptance Sampling
+1. Sampling concepts
+Apply the concepts of producer and
+consumer risk, and related terms,
+including operating characteristic
+(OC) curves, acceptable quality limit
+(AQL), and lot tolerance percent
+defective (LTPD). (Apply)
+2. Sampling standards and plans
+Identify, interpret, and apply ANSI/
+ASQ Z1.4 and Z1.9 standards for
+attributes and variables sampling.
+(Analyze)
+3. Sample integrity
+Identify and apply techniques for
+establishing and maintaining sample
+integrity. (Apply)
+
+D. Measurement and Test
+1. Measurement tools
+Select and describe appropriate
+uses of inspection tools such as
+gage blocks, calipers, micrometers,
+optical comparators, and coordinate
+measuring machines (CMM).
+(Analyze)
+2. Destructive and
+nondestructive tests
+Identify when destructive and
+nondestructive measurement test
+methods should be used and apply
+the methods appropriately. (Apply)
+
+E. Metrology
+Apply metrology techniques such as
+calibration, traceability to calibration
+standards, measurement error and its
+sources, and control and maintenance
+of measurement standards and devices.
+(Apply)
+
+F. Measurement System
+Analysis (MSA)
+Calculate, analyze, and interpret
+repeatability and reproducibility (gage
+R&R) studies, measurement correlation,
+capability, bias, linearity, precision, stability
+and accuracy, using MSA quantitative and
+graphical methods. (Evaluate)
+
+Certified Quality Engineer
+
+9
+
+V. Continuous Improvement
+(26 Questions)
+A. Quality Control Tools
+Select, construct, apply, and interpret the
+following quality control tools:
+1. Flowcharts
+2. Pareto charts
+3. Cause and effect diagrams
+4. Control charts
+5. Check sheets
+6. Scatter diagrams
+7. Histograms (Analyze)
+
+B. Quality Management
+and Planning Tools
+Select, construct, apply, and interpret
+the following quality management and
+planning tools:
+1. Affinity diagrams
+and force field analysis
+2. Tree diagrams
+3. Process decision
+program charts (PDPC)
+4. Matrix diagrams
+5. Interrelationship digraphs
+6. Prioritization matrices
+7. Activity network diagrams
+(Analyze)
+
+C. Continuous Improvement
+Methodologies
+Define, describe, and apply the following
+continuous improvement methodologies:
+1. Total quality management (TQM)
+2. Kaizen
+3. Plan-do-check-act (PDCA)
+4. Six Sigma
+(Analyze)
+
+10 Certified Quality Engineer
+
+D. Lean tools
+Define, describe, and apply the following
+lean tools:
+1. 5S
+2. Value stream mapping
+3. Kanban
+4. Visual control
+5. 8 Wastes
+6. Standardized work
+7. Takt time
+8. Single minute exchange
+of die (SMED)
+9. Overall equipment effectiveness
+(OEE) (Evaluate)
+
+E. Corrective Action
+Identify, describe, and apply elements of
+the corrective action process, including
+problem identification, failure analysis,
+root cause analysis, 5 Whys, problem
+correction, recurrence control, and
+verification of effectiveness. (Evaluate)
+
+F. Preventive Action
+Identify, describe, and apply various
+preventive action tools such as error
+proofing/poka-yoke, and robust design,
+and analyze their effectiveness. (Evaluate)
+
+VI. Quantitative Methods
+and Tools (34 Questions)
+A. Collecting and Summarizing Data
+1. Types of data
+Define, classify, and compare
+discrete (attributes) and continuous
+(variables) data. (Apply)
+2. Measurement scales
+Define and describe nominal,
+ordinal, interval, and ratio scales.
+(Understand)
+3. Data collection methods
+Describe various methods for
+collecting data, including tally or
+check sheets, data coding, automatic
+gaging, data automation, database
+integration, and identify the strengths
+and weaknesses of the methods.
+(Apply)
+
+4. Data accuracy and integrity
+Identify factors that can influence
+data accuracy such as source/
+resource issues, flexibility, versatility,
+inconsistency, inappropriate
+interpretation of data values, and
+redundancy to ensure data accuracy
+and integrity. (Apply)
+5. Data visualization techniques
+Apply and interpret data visualization
+techniques using dashboards, and
+select the appropriate metrics for
+dashboards. (Apply)
+6. Descriptive statistics
+Describe, calculate, and interpret
+measures of central tendency and
+dispersion, apply the central limit
+theorem, and construct and interpret
+frequency distributions, including
+simple, categorical, grouped,
+ungrouped, and cumulative. (Evaluate)
+7. Graphical methods for
+depicting distributions
+Apply and interpret diagrams such
+as probability plots for normal and
+other distributions. (Note: Histograms
+are covered in V.A.) (Analyze)
+
+B. Quantitative Concepts
+1. Terminology
+Define and apply quantitative terms,
+including population, parameter,
+sample, statistic, random sampling,
+and expected value. (Analyze)
+2. Drawing statistical conclusions
+Distinguish between numeric
+and analytical studies. Assess the
+validity of statistical conclusions by
+analyzing the assumptions used and
+the robustness of the technique used.
+(Evaluate)
+3. Probability terms and concepts
+Describe concepts such as
+independence, mutual exclusivity,
+multiplication rules, complementary
+probability, and joint occurrence
+of events. (Apply)
+
+C. Probability Distributions
+1. Continuous distributions
+Define and distinguish between these
+distributions such as normal, uniform,
+exponential, lognormal, Weibull,
+Student’s t, and F. (Analyze)
+
+2. Discrete distributions
+Define and distinguish between these
+distributions such as binomial, Poisson,
+hypergeometric, and multinomial.
+(Analyze)
+
+D. Statistical Decision-Making
+1. Point estimates and
+confidence intervals
+Define, describe, and assess the bias
+of estimators. Calculate and interpret
+standard error, tolerance intervals, and
+confidence intervals. (Evaluate)
+2. Hypothesis testing
+Define, interpret, and apply
+hypothesis tests for means, variances,
+and proportions. Apply and interpret
+the concepts of significance level,
+power, type I, and type II errors.
+Define and distinguish between
+statistical and practical significance.
+(Evaluate)
+3. Paired-comparison tests
+Define and use paired-comparison
+(parametric) hypothesis tests and
+interpret the results. (Apply)
+4. Goodness-of-fit tests
+Define and use chi square and other
+goodness-of-fit tests and understand
+the results. (Apply)
+5. Analysis of variance (ANOVA)
+Define, use, and interpret ANOVA and
+interpret the results. (Analyze)
+6. Contingency tables
+Define and use contingency tables
+to evaluate statistical significance.
+(Apply)
+
+E. Relationships Between Variables
+1. Linear regression
+Calculate simple linear regression
+models. Illustrate hypothesis tests
+for regression statistics. Use linear
+regression models for estimation and
+prediction. (Apply)
+
+2. Simple linear correlation
+Calculate the correlation coefficient and
+its confidence interval and illustrate
+a hypothesis for correlation statistics.
+(Apply)
+3. Time-series analysis
+Define, describe, and use time- series
+analysis, including moving average to
+identify trends and seasonal or cyclical
+variation. (Apply)
+
+F. Statistical Process Control (SPC)
+1. Objectives and benefits
+Identify and explain the objectives and
+benefits of SPC. (Understand)
+2. Common and special causes
+Describe, identify, and distinguish
+between these types of causes.
+(Analyze)
+3. Selection of variable
+Identify and select variable
+characteristics for monitoring by control
+charts. (Analyze)
+4. Rational subgrouping
+Define and apply the principles of
+rational subgrouping. (Apply)
+5. Control charts
+Identify, select, construct,
+and use various control charts,
+including X-R, X-s, individuals and
+moving range (ImR or XmR), moving
+average and moving range (MamR),
+p, np, c, and u. (Analyze)
+6. Control chart analysis
+Read and interpret control charts and
+use rules for determining statistical
+control. (Evaluate)
+7. Short-run SPC
+Identify and define short-run
+SPC rules. (Understand)
+
+Certified Quality Engineer 13
+
+G. Process and
+Performance Capability
+1. Process capability studies
+Define, describe, calculate, and
+use process capability studies,
+including identifying characteristics,
+specifications and tolerances,
+developing sampling plans for such
+studies, and establishing statistical
+control. (Analyze)
+2. Process performance
+vs. specifications
+Distinguish between natural process
+limits and specification limits, and
+calculate percent defective, defects
+per million opportunities (DPMO), and
+parts per million (PPM). (Analyze)
+3. Process capability indices
+Define, select, and calculate Cp, Cpk,
+Cpm, and Cr, and evaluate process
+capability. (Evaluate)
+4. Process performance indices
+Define, select, and calculate Pp
+and Ppk, and evaluate process
+performance. (Evaluate)
+
+H. Design and Analysis
+of Experiments
+1. Terminology
+Define terms such as dependent
+and independent variables, factors,
+levels, response, treatment, error, and
+replication. (Understand)
+2. Planning and
+organizing experiments
+Identify the basic elements of designed
+experiments, including determining
+the experiment objective, selecting
+factors, responses, and measurement
+methods, and choosing the
+appropriate design. (Analyze)
+3. Design principles
+Define and apply the principles of
+power and sample size, balance,
+replication, order, efficiency,
+randomization, blocking, interaction,
+and confounding. (Apply)
+
+14 Certified Quality Engineer
+
+4. Full-factorial experiments
+Construct full-factorial designs and
+use computational and graphical
+methods to analyze the significance of
+results. (Analyze)
+5. Two-level fractional
+factorial experiments
+Construct two-level fractional
+factorial designs and apply
+computational and graphical
+methods to analyze the significance of
+results. (Analyze)
+
+VII. Risk Management
+(21 Questions)
+A. Risk Fundamentals
+1. Risk terminology
+Define, describe, and apply risk
+terminology such as risk, risk
+management, severity, occurrence,
+detection, and risk-based thinking.
+(Analyze)
+2. Types of risk management
+Understand and apply various types
+of enterprise (strategic, software,
+business, regulatory, medical, audit),
+operational (supplier, supply chain,
+safety, project, manufacturing,
+operations, service, quality system),
+and product (design, process, use,
+safety) risk management. (Apply)
+
+B. Risk Planning and Assessment
+1. Risk management plan
+Analyze and interpret a risk
+management plan and its components
+(objectives, risk criteria, stakeholder
+identification, and team member
+roles/responsibilities) to identify and
+prioritize risks. (Analyze)
+2. Risk assessment
+Apply categorization methods and
+evaluation tools to assess risk such
+as failure mode and effects analysis.
+Identify and apply evaluation metrics
+including the use of risk matrices, risk
+priority numbers, and acceptability
+criteria. (Analyze)
+
+C. Risk Treatment, Control, and 		
+Monitoring
+1. Identification and documentation
+Identify risks, gaps, and controls and
+document with tools such as a risk
+register. (Analyze)
+2. Risk management system 		
+evaluation
+Apply auditing techniques and
+testing of controls to evaluate a risk
+management system. (Apply)
+3. Risk treatment strategies
+Understand and apply risk treatment
+strategies, such as avoid, mitigate,
+transfer, and accept. (Analyze)
+4. Risk monitoring
+Apply risk monitoring techniques such
+as, complaint tracking, trending, and
+post-market surveillance. (Analyze)
+5. Mitigation planning
+Apply and interpret risk mitigation plan.
+(Analyze)
+
+15 Certified Quality Engineer
+
+LEVELS OF COGNITION
+
+Based on Bloom’s Taxonomy—Revised (2001)
+In addition to content specifics, the subtext for each topic in this BoK also
+indicates the intended complexity level of the test questions for that topic.
+These levels are based on “Levels of Cognition” (from Bloom’s Taxonomy—
+Revised, 2001) and are presented below in rank order, from least complex
+to most complex.
+REMEMBER | Recall or recognize terms,
+definitions, facts, ideas, materials, patterns,
+sequences, methods, principles, etc.
+UNDERSTAND | Read and understand
+descriptions, communications, reports, tables,
+diagrams, directions, regulations, etc.
+APPLY | Know when and how to use ideas,
+procedures, methods, formulas, principles,
+theories, etc.
+
+EVALUATE | Make judgments about the
+value of proposed ideas, solutions, etc., by
+comparing the proposal to specific criteria
+or standards.
+CREATE | Put parts or elements together in
+such a way as to reveal a pattern or structure
+not clearly there before; identify which data or
+information from a complex set is appropriate
+to examine further or from which supported
+conclusions can be drawn.
+
+ANALYZE | Break down information into
+its constituent parts and recognize their
+relationship to one another and how they are
+organized; identify sublevel factors or salient
+data from a complex scenario.
+
+Visit asq.org/cert for comprehensive exam information.
+
+Enhance your career
+with ASQ certification today!
+Visit asq.org/cert for additional
+certification information including:
+•
+
+Exam Dates - asq.org/cert/dates
+
+•
+
+Additional CQE Details - asq.org/cert/quality-engineer
+
+•
+
+Reference materials - asq.org/cert/quality-engineer/references
+
+•
+
+Exam Preparation Resources - asq.org/cert/prepare
+
+•
+
+Apply for the Exam - asq.org/cert/apply-certification
+
+•
+Computer-Based Testing Information - asq.org/cert/computer		 based-testing
+
+2022 CQE BoK
+
+

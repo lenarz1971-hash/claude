@@ -1,0 +1,4 @@
+.fb-in{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.fb-cat{display:flex;flex-direction:column;gap:6px;min-width:0}
+.fb-cat input{font:700 14px var(--disp)!important;color:var(--navy)!important;border-color:var(--gold)!important}
+@media (max-width:700px){.fb-in{grid-template-columns:1fr}}

@@ -1,0 +1,12 @@
+#tool .cc-ok{color:var(--green);font-weight:700}
+#tool .cc-mid{color:#9C7C1F;font-weight:700}
+#tool .cc-bad{color:#C0392B;font-weight:700}
+#tool .cc-na{color:var(--ink-3)}
+#tool table.tg td.calc{white-space:nowrap;font-size:13.5px}
+@media print{@page{size:landscape}}
+#tool table.tg input[type=number]{min-width:84px;width:84px}
+#tool table.tg td.calc{font-size:13px}
+#tool table.tg input[type=date]{min-width:128px}
+#tool table.tg input[type=number]{min-width:78px;width:78px}
+#tool table.tg input[data-col="af"]{min-width:90px;width:90px}
+@media print{#tool table.tg td.calc{font-size:11px}}

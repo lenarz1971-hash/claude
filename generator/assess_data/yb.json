@@ -1,0 +1,3870 @@
+{
+"sections": [
+[
+"I",
+"Six Sigma Fundamentals",
+20
+],
+[
+"II",
+"Define Phase",
+14
+],
+[
+"III",
+"Measure Phase",
+15
+],
+[
+"IV",
+"Analyze Phase",
+17
+],
+[
+"V",
+"Improve and Control Phases",
+14
+]
+],
+"reqs": [
+[
+"I.A",
+"Six Sigma foundations and principles",
+"Explain what Six Sigma aims at, how DMAIC is organized, and what each phase produces.",
+[
+[
+"/tools/dmaic-roadmap.html",
+"DMAIC roadmap"
+]
+]
+],
+[
+"I.B",
+"Lean foundations and principles",
+"Explain what lean attacks, the eight wastes, value-added work and flow.",
+[
+[
+"/tools/eight-wastes-waste-walk.html",
+"Eight wastes waste walk"
+]
+]
+],
+[
+"I.C",
+"Six Sigma roles and responsibilities",
+"Name the project roles, from sponsor and champion to each belt, and what each is accountable for.",
+[
+[
+"/tools/six-sigma-roles-raci.html",
+"Roles and RACI"
+]
+]
+],
+[
+"I.D.1",
+"Types of teams",
+"Distinguish improvement, cross-functional, self-directed and virtual teams and when each fits.",
+[
+[
+"/tools/team-development-stages.html",
+"Team development stages"
+]
+]
+],
+[
+"I.D.2",
+"Stages of team development",
+"Recognize forming, storming, norming, performing and adjourning, and what a team needs at each.",
+[
+[
+"/tools/team-development-stages.html",
+"Team development stages"
+]
+]
+],
+[
+"I.D.3",
+"Decision-making tools",
+"Use brainstorming, multivoting and nominal group technique to reach a decision.",
+[
+[
+"/tools/multivoting-nominal-group-technique.html",
+"Multivoting and NGT"
+]
+]
+],
+[
+"I.D.4",
+"Communication methods",
+"Choose how and how often to communicate with team members and stakeholders.",
+[
+[
+"/tools/communication-plan.html",
+"Communication plan"
+]
+]
+],
+[
+"I.E.1",
+"Quality tools",
+"Choose and read the basic quality tools: Pareto, histogram, check sheet, cause and effect, scatter, run chart, flowchart.",
+[
+[
+"/calculators/pareto-chart.html",
+"Pareto chart calculator"
+],
+[
+"/tools/fishbone-5-whys.html",
+"Fishbone and 5 whys"
+]
+]
+],
+[
+"I.E.2",
+"Six Sigma metrics",
+"Calculate and interpret DPU, DPMO, RTY, sigma level and the cost of poor quality.",
+[
+[
+"/calculators/sigma-level-dpmo.html",
+"Sigma level and DPMO"
+],
+[
+"/calculators/rolled-throughput-yield.html",
+"Rolled throughput yield"
+]
+]
+],
+[
+"II.A.1",
+"Voice of the customer",
+"Gather customer needs and turn them into measurable critical-to-quality requirements.",
+[
+[
+"/tools/voc-ctq-tree.html",
+"VOC to CTQ tree"
+]
+]
+],
+[
+"II.A.2",
+"Project selection",
+"Judge which candidate projects are worth doing and scope them so they can be finished.",
+[
+[
+"/tools/project-selection-matrix.html",
+"Project selection matrix"
+]
+]
+],
+[
+"II.A.3",
+"Stakeholder analysis",
+"Identify stakeholders, their influence and stance, and how to engage each.",
+[
+[
+"/tools/stakeholder-analysis.html",
+"Stakeholder analysis"
+]
+]
+],
+[
+"II.A.4",
+"Process inputs and outputs",
+"Build a SIPOC and map a process at the right level of detail.",
+[
+[
+"/tools/sipoc.html",
+"SIPOC builder"
+]
+]
+],
+[
+"II.A.5",
+"Supply chain management",
+"Explain how suppliers and customers along the chain affect the process and its quality.",
+[
+[
+"/tools/sipoc.html",
+"SIPOC builder"
+]
+]
+],
+[
+"II.B.1",
+"Project charter",
+"Write a charter: problem statement, scope, baseline, goal, team and sponsor sign-off.",
+[
+[
+"/tools/project-charter.html",
+"Project charter"
+]
+]
+],
+[
+"II.B.2",
+"Communication plan",
+"Plan who hears what, by which channel and how often, through the project.",
+[
+[
+"/tools/communication-plan.html",
+"Communication plan"
+]
+]
+],
+[
+"II.B.3",
+"Project planning",
+"Break the work down, sequence it and set milestones.",
+[
+[
+"/tools/wbs-gantt-chart.html",
+"WBS and Gantt planner"
+]
+]
+],
+[
+"II.B.4",
+"Project management tools",
+"Read and use a Gantt chart, work breakdown structure and critical path.",
+[
+[
+"/tools/wbs-gantt-chart.html",
+"WBS and Gantt planner"
+]
+]
+],
+[
+"II.B.5",
+"Phase reviews",
+"Explain what a tollgate review checks before a project moves to the next phase.",
+[
+[
+"/tools/dmaic-phase-review-checklist.html",
+"Phase review checklist"
+]
+]
+],
+[
+"III.A",
+"Basic statistics",
+"Calculate and interpret mean, median, mode, range and standard deviation.",
+[
+[
+"/tools/basic-statistics.html",
+"Basic statistics"
+]
+]
+],
+[
+"III.B.1",
+"Data collection plans",
+"Write a data collection plan with operational definitions, sources and frequency.",
+[
+[
+"/tools/data-collection-plan.html",
+"Data collection plan"
+]
+]
+],
+[
+"III.B.2",
+"Qualitative and quantitative data",
+"Tell attribute from variable data, and the nominal, ordinal, interval and ratio scales apart.",
+[
+[
+"/tools/data-collection-plan.html",
+"Data collection plan"
+]
+]
+],
+[
+"III.B.3",
+"Data collection techniques",
+"Choose sampling and collection methods such as check sheets, surveys and random or stratified samples.",
+[
+[
+"/tools/data-collection-plan.html",
+"Data collection plan"
+]
+]
+],
+[
+"III.C.1",
+"Measurement system analysis terms",
+"Define accuracy, precision, bias, linearity, stability, repeatability and reproducibility.",
+[
+[
+"/tools/msa-accuracy-precision.html",
+"MSA accuracy and precision"
+]
+]
+],
+[
+"III.C.2",
+"Gauge R&R",
+"Read a gauge R&R result and judge whether the measurement system is adequate.",
+[
+[
+"/calculators/gage-r-and-r.html",
+"Gage R&R calculator"
+]
+]
+],
+[
+"IV.A.1",
+"Lean tools",
+"Apply 5S, value stream mapping, poka-yoke, SMED, kanban and the other lean tools.",
+[
+[
+"/tools/eight-wastes-waste-walk.html",
+"Eight wastes waste walk"
+]
+]
+],
+[
+"IV.A.2",
+"Failure mode and effects analysis",
+"Complete an FMEA and use severity, occurrence, detection and RPN to set priorities.",
+[
+[
+"/tools/fmea.html",
+"FMEA worksheet"
+]
+]
+],
+[
+"IV.B",
+"Root cause analysis",
+"Use 5 whys, cause and effect diagrams and verification to reach a true root cause.",
+[
+[
+"/tools/fishbone-5-whys.html",
+"Fishbone and 5 whys"
+]
+]
+],
+[
+"IV.C",
+"Corrective action",
+"Contain a problem, correct its root cause and confirm the fix worked.",
+[
+[
+"/tools/corrective-action-capa.html",
+"Corrective action (CAPA)"
+]
+]
+],
+[
+"IV.D",
+"Preventive action",
+"Act on potential problems before they occur, and tell this apart from correction.",
+[
+[
+"/tools/corrective-action-capa.html",
+"Corrective action (CAPA)"
+]
+]
+],
+[
+"IV.E.1",
+"Basic distribution types",
+"Recognize normal, binomial, Poisson and other common distributions and when each applies.",
+[
+[
+"/tools/distribution-explorer.html",
+"Distribution explorer"
+]
+]
+],
+[
+"IV.E.2",
+"Common and special cause variation",
+"Tell common cause from special cause variation and know how each should be handled.",
+[
+[
+"/calculators/control-chart.html",
+"Control chart calculator"
+]
+]
+],
+[
+"IV.F.1",
+"Correlation",
+"Read a scatter diagram and correlation coefficient, and know what correlation does not prove.",
+[
+[
+"/tools/correlation-regression.html",
+"Correlation and regression"
+]
+]
+],
+[
+"IV.F.2",
+"Regression",
+"Interpret a simple linear regression line, its slope and R-squared.",
+[
+[
+"/tools/correlation-regression.html",
+"Correlation and regression"
+]
+]
+],
+[
+"IV.G",
+"Hypothesis testing",
+"Explain null and alternative hypotheses, p-values, and type I and type II errors.",
+[
+[
+"/calculators/hypothesis-test-selector.html",
+"Hypothesis test selector"
+]
+]
+],
+[
+"V.A.1",
+"Kaizen and kaizen blitz",
+"Explain how kaizen and a kaizen event are run and what they deliver.",
+[
+[
+"/tools/kaizen-pdca-planner.html",
+"Kaizen and PDCA planner"
+]
+]
+],
+[
+"V.A.2",
+"Plan-Do-Check-Act",
+"Use the PDCA cycle, including piloting and checking a change.",
+[
+[
+"/tools/kaizen-pdca-planner.html",
+"Kaizen and PDCA planner"
+]
+]
+],
+[
+"V.A.3",
+"Cost-benefit analysis",
+"Weigh the costs and savings of a solution, including payback.",
+[
+[
+"/tools/cost-benefit-payback.html",
+"Cost-benefit and payback"
+]
+]
+],
+[
+"V.B.1",
+"Control plan",
+"Build a control plan that keeps the gain: what is checked, how, how often and the reaction.",
+[
+[
+"/tools/control-plan.html",
+"Control plan"
+]
+]
+],
+[
+"V.B.2",
+"Control charts",
+"Read a control chart, its limits and out-of-control signals, and choose a suitable chart.",
+[
+[
+"/calculators/control-chart.html",
+"Control chart calculator"
+]
+]
+],
+[
+"V.B.3",
+"Document control",
+"Keep procedures and records current, approved and available where they are used.",
+[
+[
+"/tools/work-instruction-sop.html",
+"Work instruction / SOP"
+]
+]
+],
+[
+"V.B.4",
+"Work instructions and SOPs",
+"Write and maintain clear work instructions and standard operating procedures.",
+[
+[
+"/tools/work-instruction-sop.html",
+"Work instruction / SOP"
+]
+]
+]
+],
+"bank": [
+[
+"I.A",
+"The primary aim of Six Sigma is to reduce:",
+[
+"Cycle time",
+"Variation",
+"Inspection",
+"Inventory"
+],
+1,
+"Six Sigma attacks variation: output differing from unit to unit and over time. Shorter cycle time, less inventory and less inspection can all follow from a more consistent process, but they are consequences rather than the target; cycle time and inventory are lean’s primary concerns.",
+"std"
+],
+[
+"I.A",
+"DMAIC stands for:",
+[
+"Design, model, assess, implement, check",
+"Define, model, apply, inspect, correct",
+"Detect, measure, act, improve, close",
+"Define, measure, analyze, improve, control"
+],
+3,
+"The five phases run in that order for a reason: measurement precedes analysis so the cause is found from data rather than decided in advance, and control follows improvement so the gain holds.",
+"std"
+],
+[
+"II.B.1",
+"A project charter should state all of the following except:",
+[
+"The measure of success",
+"The scope",
+"The root cause",
+"The problem"
+],
+2,
+"The cause is what the project will establish, and a charter that names it has decided the answer before the measure phase. Problem, scope and success measure all have to exist at the start for the project to be assessable.",
+"std"
+],
+[
+"I.C",
+"The role of a Green Belt typically differs from that of a Black Belt in that a Green Belt:",
+[
+"Is not expected to use any statistical tools",
+"Reports project results directly to the customer",
+"Works projects part time alongside a normal job",
+"Owns the quality management system for the site"
+],
+2,
+"Green Belts run improvement projects alongside their operational role, which is what makes them numerous and close to the work. Both roles use statistical tools; the difference is depth and time available.",
+"std"
+],
+[
+"I.E.2",
+"Scrap and rework found before the product ships are classed as which cost of quality category?",
+[
+"Appraisal",
+"External failure",
+"Internal failure",
+"Prevention"
+],
+2,
+"Failures found before the product reaches the customer are internal failure costs; those found after are external failure. Together they are the cost of poor quality. Appraisal is the cost of checking and prevention the cost of stopping defects happening.",
+"std"
+],
+[
+"II.A.2",
+"A project whose scope is \"improve the plant\" should be:",
+[
+"Narrowed until the problem is measurable",
+"Approved, as improvement is always valuable",
+"Split among several belts",
+"Escalated to management"
+],
+0,
+"A scope that cannot be measured cannot be shown to have succeeded, and it will expand indefinitely. Narrowing to a specific problem with a baseline is what makes a project completable.",
+"std"
+],
+[
+"I.C",
+"The sponsor of a Six Sigma project is principally responsible for:",
+[
+"Removing obstacles and releasing resources",
+"Facilitating the team’s weekly meetings",
+"Writing and maintaining the control plan",
+"Collecting and analyzing the project data"
+],
+0,
+"A sponsor supplies what the team cannot get for itself: time, access and decisions above the team’s authority. A sponsor who cannot release people has not sponsored anything, whatever the charter says.",
+"std"
+],
+[
+"I.B",
+"Lean and Six Sigma differ in that lean primarily attacks:",
+[
+"Waste",
+"Cost",
+"Variation",
+"Defects"
+],
+0,
+"Lean attacks waste — waiting, transport, inventory, motion, overproduction, overprocessing, defects. Six Sigma attacks variation. Applying the wrong one works hard and improves nothing, and applying lean to an unstable process makes it worse.",
+"std"
+],
+[
+"I.E.2",
+"Allowing for the conventional 1.5 sigma shift, a process operating at six sigma produces approximately:",
+[
+"340 defects per million opportunities",
+"34 defects per million opportunities",
+"3.4 defects per million opportunities",
+"3.4 percent of units defective"
+],
+2,
+"The conventional figure assumes a 1.5 sigma long-term shift in the mean, which is why it is 3.4 rather than the two-per-billion a static normal distribution would give. The shift allowance is part of the convention rather than an error.",
+"std"
+],
+[
+"IV.E.2",
+"A process is described as \"stable but not capable\". This means:",
+[
+"It is out of statistical control most of the time",
+"Its measurement system is not adequate for the job",
+"It is predictable but out of specification",
+"It meets the specification, but unpredictably"
+],
+2,
+"Stability and capability are separate questions. A stable process is predictable and may predictably produce nonconforming output; the response is a process change rather than tighter control, because it is already doing its best.",
+"std"
+],
+[
+"I.E.2",
+"A defect and a defective differ in that:",
+[
+"A defect applies only to attribute-type data",
+"A defect is found only at final inspection",
+"A defective is simply a more serious defect",
+"A defective unit has at least one defect"
+],
+3,
+"A defect is one nonconformity; a defective is a unit that fails because it has one or more of them. A unit can have several defects and still be counted once as defective.",
+"std"
+],
+[
+"II.A.4",
+"A SIPOC diagram is used to:",
+[
+"Scope a process at a high level",
+"Rank causes by how often they occur",
+"Compute capability",
+"Confirm the root cause of a problem"
+],
+0,
+"SIPOC names suppliers, inputs, process, outputs and customers so that a mapping exercise has a boundary before the detail starts. Without it, mapping expands until it is abandoned.",
+"std"
+],
+[
+"II.A.1",
+"Rather than asking customers for a specification, voice of the customer interviews should focus on:",
+[
+"The price they would be willing to pay",
+"Only the complaints they have made before",
+"The problem the product solves for them",
+"What competitors are offering them now"
+],
+2,
+"Customers describe solutions more readily than needs, so a request for a specification returns their guess at an answer. Asking about the problem produces the need, which may have a cheaper or better solution than the one they proposed.",
+"std"
+],
+[
+"II.A.1",
+"A critical-to-quality characteristic is:",
+[
+"A measurable feature tied to a customer need",
+"A feature named in the governing industry standard",
+"The tightest tolerance shown on the drawing",
+"Any feature of the product that can be measured"
+],
+0,
+"CTQ links a customer requirement to something the process can measure and control. A tight tolerance that no requirement depends on is a cost rather than a CTQ, and it is one of the commoner sources of unnecessary expense.",
+"std"
+],
+[
+"II.A.1",
+"Kano classifies an attribute customers do not notice when present but complain about when absent as:",
+[
+"Must-be",
+"One-dimensional",
+"Indifferent",
+"Attractive"
+],
+0,
+"Must-be attributes produce no satisfaction when met and severe dissatisfaction when missed, which is why improving them beyond adequate returns nothing. Investment there is the classic misallocation.",
+"std"
+],
+[
+"II.A.1",
+"A customer states a need for \"faster delivery\". The team should first:",
+[
+"Establish what faster would enable for them",
+"Add finished stock so orders ship sooner",
+"Benchmark the delivery times of competitors",
+"Set a goal to cut the lead time by half"
+],
+0,
+"The stated need is a solution. Understanding what it enables — predictability, less stock, a shorter cycle of their own — frequently reveals that reliability matters more than speed, which is a different and often cheaper project.",
+"std"
+],
+[
+"II.B.1",
+"A project baseline is needed principally to:",
+[
+"Meet the format the charter requires",
+"Compare performance against competitors",
+"Fix the project’s budget for the year",
+"Show whether the change worked"
+],
+3,
+"Without a measurement taken before the change, the comparison afterwards is against a memory. It is the single most common omission in improvement projects and it is unrecoverable once the change is made.",
+"std"
+],
+[
+"II.B.1",
+"A project charter is best signed by:",
+[
+"The customer",
+"The quality manager",
+"The sponsor",
+"The team"
+],
+2,
+"The sponsor is the one committing resources and authority, and their signature is what makes the charter more than a statement of intent. Team agreement matters but does not release anybody’s time.",
+"std"
+],
+[
+"II.A.4",
+"A high-level process map at define stage should show:",
+[
+"Every step and decision point in full detail",
+"The cycle time and wait time for every step",
+"Only the steps that add value for the customer",
+"Major steps and where the problem occurs"
+],
+3,
+"The define map exists to locate the problem, not to document the process. Detailed mapping belongs in measure and analyze, once the team knows which part of the process to examine.",
+"std"
+],
+[
+"II.B.1",
+"Which scope statement in a project charter is clearest?",
+[
+"Everything the shipping department does",
+"Every product made",
+"From order receipt to shipment",
+"All shipping work during the coming year"
+],
+2,
+"A scope bounded by a process start and end point says exactly where the project begins and ends. A department, a time period or a whole product range leaves the process boundaries open, which invites scope creep.",
+"std"
+],
+[
+"II.B.1",
+"A problem statement should not contain:",
+[
+"A quantity",
+"A time period",
+"A location",
+"A proposed cause"
+],
+3,
+"A statement containing a cause has ended the investigation before the measure phase. What, where, when and how much are all legitimate; why is what the project exists to establish.",
+"std"
+],
+[
+"III.C.2",
+"A gauge R&R study assesses:",
+[
+"The share of variation due to measurement",
+"How capable the process is against its limits",
+"Whether the drawing tolerance is wide enough",
+"Whether the gauge is calibrated to a standard"
+],
+0,
+"Calibration establishes that a gauge reads correctly against a standard; it says nothing about whether two operators get the same answer. A fully calibrated gauge can contribute half the observed variation.",
+"std"
+],
+[
+"III.C.2",
+"A gauge R&R result of 35 percent of total variation is:",
+[
+"Acceptable for non-critical characteristics",
+"Acceptable if the gauge is calibrated",
+"Acceptable",
+"Not acceptable"
+],
+3,
+"The usual AIAG guideline is under 10 percent acceptable, 10 to 30 percent conditionally acceptable depending on the application, and over 30 percent unacceptable. At 35 percent the measurement system needs improving before capability figures or control chart signals computed from its data can be trusted, whether or not the gauge is calibrated.",
+"std"
+],
+[
+"III.B.2",
+"Data collected as pass or fail is:",
+[
+"Attribute data",
+"Continuous data",
+"Variable data",
+"Ordinal data"
+],
+0,
+"Attribute data is counted; variable data is measured on a scale. Variable data carries far more information per observation, which is why a variables chart detects a shift much sooner than an attributes chart on the same process.",
+"std"
+],
+[
+"I.E.1",
+"A histogram that stops abruptly at a specification limit most likely indicates:",
+[
+"A capable process",
+"Two populations",
+"Measurement error",
+"Sorted output"
+],
+3,
+"A truncated shape usually means the tail was removed by inspection, so the histogram shows what survived rather than what was made. Any capability index computed from it describes the sorting rather than the process.",
+"std"
+],
+[
+"I.E.2",
+"Using the defects-per-million method, process sigma is found from:",
+[
+"The control limits",
+"The specification limits and the nominal",
+"Defects, units and opportunities",
+"The sample size and the confidence level"
+],
+2,
+"Sigma level is derived from defects per million opportunities, which is why counting opportunities consistently matters. Changing the opportunity count changes the sigma level without changing the process at all.",
+"std"
+],
+[
+"III.C.1",
+"Repeatability refers to variation:",
+[
+"Between different operators measuring one part",
+"In the readings over a long period of time",
+"Across the measurement range of the gauge",
+"Within one operator measuring repeatedly"
+],
+3,
+"Repeatability is the gauge itself — one operator, one part, repeated measurements. Reproducibility is the variation between operators, which points at method rather than equipment and is fixed by a written method rather than a new gauge.",
+"std"
+],
+[
+"V.B.2",
+"A run chart is preferable to a control chart when:",
+[
+"The data is attribute rather than variable",
+"You only want to see the data in time order",
+"The sample size is large enough for limits",
+"You need to know if a point is a special cause"
+],
+1,
+"A run chart plots the data in time order, usually against the median, and needs no control limits, so it is a quick way to see trends, shifts and cycles. Judging whether a point is a special cause needs the calculated limits of a control chart, and control charts exist for attribute data as well as variable data.",
+"std"
+],
+[
+"III.B.3",
+"Which sampling method risks systematic bias on a five-station machine?",
+[
+"Stratified sampling",
+"Sampling by shift",
+"Every fifth part",
+"Random sampling"
+],
+2,
+"Every fifth part on a five-station machine samples one station forever, so the shop looks consistent while one station drifts unmeasured. Systematic sampling fails whenever the interval coincides with a cycle in the process.",
+"std"
+],
+[
+"IV.E.2",
+"Before computing capability, the first check should be:",
+[
+"Process stability",
+"Operator training",
+"Specification width",
+"Sample size"
+],
+0,
+"Capability predicts future output, and prediction requires the process to keep doing what it was doing. An index computed across a period containing a tool change and two operators describes a mixture and will not predict next week.",
+"std"
+],
+[
+"I.E.1",
+"A Pareto chart ranked by count rather than cost may mislead when:",
+[
+"The data covers too short a period of time",
+"The categories were defined before collection",
+"All of the defect types cost about the same",
+"A few expensive defects are outnumbered by cheap ones"
+],
+3,
+"Forty small defects and three expensive ones rank differently by count and by cost, and the chart drawn decides where the effort goes. Where the costs differ materially, ranking by count sends the project to the wrong place.",
+"std"
+],
+[
+"IV.B",
+"Five whys should continue until:",
+[
+"Exactly five rounds of the question have been asked",
+"A person to blame for the problem has been identified",
+"Everyone on the team agrees with the answer",
+"The answer is something the organization can change"
+],
+3,
+"There is nothing magic about five. Stopping at \"the operator misread the gauge\" gives a cause the organization cannot change; \"the gauge displays in millimeters and the drawing is in inches\" is fixable and would prevent recurrence.",
+"std"
+],
+[
+"I.E.1",
+"Stratifying defect data by shift, machine and operator is worth doing because:",
+[
+"A total can hide one shift or machine that is failing",
+"It increases the sample size available",
+"It is required by most of the quality standards in use",
+"It makes the Pareto chart simpler and faster to draw"
+],
+0,
+"A defect rate of two percent across three shifts may be half a percent on two and five percent on the third, and the aggregate hides the only useful fact. Stratifying takes minutes when each record carries the shift, machine and operator, which is why those fields belong on the check sheet from the start.",
+"std"
+],
+[
+"IV.E.2",
+"A multi-vari study is used to establish:",
+[
+"The single root cause of the defect",
+"Whether variation is within-piece, piece-to-piece or over time",
+"The capability index of the process",
+"The share of variation due to the gauge"
+],
+1,
+"Naming which family of variation dominates directs everything afterwards. Time-to-time variation is what control charts detect; within-piece variation points at the operation itself, and the two lead to entirely different projects.",
+"stretch"
+],
+[
+"IV.B",
+"A cause and effect diagram:",
+[
+"Confirms the root cause",
+"Ranks causes by frequency",
+"Tests a hypothesis",
+"Generates candidate causes"
+],
+3,
+"A fishbone produces candidates and confirms nothing. It requires no data at all, which is exactly why it appears in meetings that have none — and the step that matters is asking what evidence would distinguish the candidates.",
+"std"
+],
+[
+"IV.F.1",
+"A scatter diagram showing no linear pattern:",
+[
+"Means the sample is too small",
+"Suggests no linear link; a curved one may still exist",
+"Proves the variables are unrelated",
+"Indicates measurement error"
+],
+1,
+"A strong curved relationship can show a correlation coefficient near zero, which is why plotting comes before computing. The plot also exposes an outlier driving an apparent correlation, which the coefficient conceals.",
+"std"
+],
+[
+"IV.F.1",
+"Areas with the heaviest inspection also have the highest defect rates. Inspection there was increased after defects rose. The correlation most likely reflects:",
+[
+"Inspection causing the defects",
+"A purely random association",
+"An error in the measurement system",
+"Defects prompting inspection"
+],
+3,
+"The causal direction runs the other way: processes known to produce defects get inspected more. Reading the correlation forward would suggest reducing inspection improves quality, which is the kind of conclusion that reaches production.",
+"std"
+],
+[
+"IV.G",
+"A p-value of 0.03 means:",
+[
+"There is a 3 percent chance the null is true",
+"The result will replicate 97 percent of the time",
+"The effect is large",
+"Data this extreme would be unlikely if there were no effect"
+],
+3,
+"The p-value is the probability of data at least this extreme given the null, not the probability of the null given the data. It says nothing about the size of the effect, which is the number that decides whether anything is worth doing.",
+"std"
+],
+[
+"IV.G",
+"A study reporting \"no significant difference\" from a sample of twenty:",
+[
+"Establishes that there is no real difference",
+"Cannot rule out a small real effect",
+"Should be repeated with a smaller sample",
+"Proves the two groups are equivalent"
+],
+1,
+"Without a power calculation, a null result from a small sample establishes nothing. An organization concluding a change did nothing, on a study that could not have detected it, has learned nothing and believes it has.",
+"std"
+],
+[
+"IV.G",
+"A hypothesis test comparing four group means should use:",
+[
+"Six pairwise t-tests",
+"Analysis of variance",
+"Four t-tests",
+"A chi-square test"
+],
+1,
+"Six pairwise comparisons at five percent each give roughly a 26 percent chance of at least one false positive. ANOVA asks the question once and controls the overall error rate; pairwise comparison follows only if it says yes.",
+"stretch"
+],
+[
+"IV.F.2",
+"A regression shows a significant coefficient and an R-squared of 0.04. This most likely indicates:",
+[
+"A real but nearly useless relationship",
+"A strong, useful predictor of y",
+"An impossible result from a valid analysis",
+"An error in the regression model"
+],
+0,
+"With enough data a trivial relationship becomes statistically detectable. R-squared says how much variation the model accounts for, and four percent means the factor is real and explains almost nothing worth acting on.",
+"std"
+],
+[
+"IV.G",
+"Design of experiments is preferred to one-factor-at-a-time testing because it:",
+[
+"Is simpler",
+"Uses fewer runs and detects interactions",
+"Avoids the need for a stable process",
+"Requires no statistics"
+],
+1,
+"Two factors that each do little alone but matter together are invisible to sequential testing, because the first is tested at the wrong level of the second. Factorial designs also test each factor several times over within the same runs.",
+"stretch"
+],
+[
+"V.A.2",
+"A piloted improvement should be evaluated:",
+[
+"Whenever the sponsor asks for an update",
+"Once enough time and volume have passed",
+"Immediately after the change is implemented",
+"At the next scheduled internal audit"
+],
+1,
+"Measured immediately, results are inflated by attention. The novelty and the extra supervision both wear off, and what survives that is what the change actually produced.",
+"std"
+],
+[
+"IV.A.1",
+"Poka-yoke that prevents an error is preferable to one that detects it because:",
+[
+"It is cheaper",
+"It satisfies the standard",
+"It requires no training",
+"The error cannot occur at all"
+],
+3,
+"A preventive device makes the mistake impossible; a detective one catches it after it has happened. Prevention removes the defect and the cost of dealing with it, and neither depends on attention, which fails.",
+"std"
+],
+[
+"V.A.2",
+"A solution that works in a pilot but not at scale most often failed because:",
+[
+"Conditions differed outside the pilot",
+"The operators were trained too thoroughly",
+"The control plan was written too early",
+"The measure changed"
+],
+0,
+"A pilot runs with attention, chosen people and a controlled environment. What did not transfer is usually a condition the pilot supplied without anybody noticing, and finding it is more useful than repeating the pilot.",
+"std"
+],
+[
+"IV.A.1",
+"SMED reduces batch size by:",
+[
+"Reducing setup time so smaller batches are economic",
+"Adding capacity at the bottleneck step",
+"Automating the process so that it runs at a higher speed",
+"Holding more inventory between operations to smooth flow"
+],
+0,
+"Long setups force large batches because the setup cost must be spread across many parts. Cutting setup time makes smaller batches economic, and the main benefit is less inventory and a shorter feedback loop rather than the hour saved.",
+"std"
+],
+[
+"V.A.2",
+"The purpose of a pilot is principally to:",
+[
+"Lock the solution in so that nobody can change it later",
+"Give the sponsor a result to report upward",
+"Find problems at small scale before rollout",
+"Train every operator in the final method"
+],
+2,
+"A pilot tries the solution on a small scale so problems surface while they are still cheap to fix. Treating it as a formality, rather than a test, sends an undiscovered fault into the full rollout.",
+"std"
+],
+[
+"IV.A.1",
+"A line is limited by one constraint step. Making a different, non-constraint step faster will most likely:",
+[
+"Reduce the work in process ahead of the constraint",
+"Leave line output unchanged",
+"Raise line output by about half the gain",
+"Raise line output in proportion to the gain"
+],
+1,
+"Output is set by the constraint, so speeding up any other step leaves line output where it was. A faster step upstream of the constraint tends to build more work in process in front of it, not less. Effort pays off at the constraint first.",
+"std"
+],
+[
+"IV.A.1",
+"Before removing buffer stock from a process, the team should establish that the process is:",
+[
+"Documented",
+"Automated",
+"Certified",
+"Stable"
+],
+3,
+"Buffer exists because the process is unreliable. Removing it from an unstable process exposes the instability as line stoppages, and the organization concludes lean does not work. Stabilize, then flow.",
+"std"
+],
+[
+"IV.G",
+"A designed experiment run on an unstable process is likely to:",
+[
+"Detect interactions between the factors more easily",
+"Produce more precise estimates of the effects",
+"Require fewer runs to reach a conclusion",
+"Attribute special cause variation to the factors"
+],
+3,
+"Variation from a shift the experiment did not control gets assigned to whichever factor happened to change alongside it. Stability comes first, which is the same reason capability requires it.",
+"stretch"
+],
+[
+"I.A",
+"In DMAIC, root causes are verified with data in which phase?",
+[
+"Define",
+"Measure",
+"Improve",
+"Analyze"
+],
+3,
+"Analyze is where candidate causes are tested against data until the real ones are confirmed. Measure establishes the baseline and checks the measurement system; Improve acts on causes that Analyze has already verified.",
+"std"
+],
+[
+"I.A",
+"Six Sigma describes an output as Y = f(X). The practical meaning is that:",
+[
+"Inspecting the output closely is the main way to improve it",
+"Improving the output means controlling its inputs",
+"Every input must be measured before any change can be made",
+"The output is fixed by the specification and cannot move"
+],
+1,
+"Y = f(X) says the output is the result of its inputs, so lasting improvement comes from identifying the few X’s that matter and controlling them. Inspecting Y finds problems after they happen; it does not change the result.",
+"std"
+],
+[
+"I.B",
+"Which is an example of the waste of motion?",
+[
+"Parts waiting in a queue between two operations",
+"A worker walking to fetch a tool",
+"Producing more parts than the customer ordered",
+"Trucking parts between buildings"
+],
+1,
+"Motion is unnecessary movement of people. Waiting parts are the waste of waiting, producing ahead of demand is overproduction, and moving material between locations is transportation.",
+"std"
+],
+[
+"I.B",
+"In lean thinking, value is defined by:",
+[
+"The quality standard the process meets",
+"The process engineer’s design and drawings for the product",
+"The cost accountant’s standard cost",
+"The customer: what they are willing to pay for"
+],
+3,
+"Lean starts from the customer. A step adds value only if it changes the product in a way the customer wants and will pay for; everything else is a candidate for removal.",
+"std"
+],
+[
+"I.B",
+"In a pull system, work on a part starts when:",
+[
+"The machine becomes free to start the next job",
+"The raw material for the part arrives on site",
+"A downstream step or customer signals a need",
+"A forecast predicts the demand for next month"
+],
+2,
+"Pull means downstream demand authorizes upstream work, often through a kanban signal. Starting because a forecast says so, or because a machine or material is available, is push.",
+"std"
+],
+[
+"I.C",
+"The person who runs the process day to day, and must keep the gain after the project closes, is the:",
+[
+"Team facilitator",
+"Process owner",
+"Master Black Belt",
+"Black Belt"
+],
+1,
+"The process owner runs the process day to day and takes over the control plan at handover. The belts lead and coach the project, but they move on when it closes.",
+"std"
+],
+[
+"I.D.1",
+"A team of people from purchasing, production and engineering, formed to solve a supplier problem, is best described as:",
+[
+"A virtual team",
+"A natural work group",
+"A cross-functional team",
+"A self-directed team"
+],
+2,
+"Members drawn from several functions to work on one problem make a cross-functional team. A natural work group is people from the same area; self-directed and virtual describe how a team is run and where it meets.",
+"std"
+],
+[
+"I.D.1",
+"A self-directed work team differs from other teams mainly in that it:",
+[
+"Meets only electronically and never in the same room",
+"Disbands as soon as its single improvement project ends",
+"Runs its own daily work with little supervision",
+"Is always led by a trained Black Belt"
+],
+2,
+"A self-directed team plans, assigns and controls its own work. A team that disbands at the end of a project is a project team, and one that meets electronically is a virtual team.",
+"std"
+],
+[
+"I.D.1",
+"Compared with a team that works in one location, the main added risk for a virtual team is:",
+[
+"No sponsor available to remove its obstacles",
+"A smaller pool of people to choose members from",
+"Weaker communication and trust between members",
+"Lower technical skill among its members overall"
+],
+2,
+"Virtual teams lose the informal contact that builds trust and clears up misunderstandings, so they need more deliberate communication. They often have a wider pool of members, not a smaller one.",
+"std"
+],
+[
+"I.D.2",
+"Team members argue about goals and roles and challenge the leader. The team is most likely in the stage of:",
+[
+"Performing",
+"Storming",
+"Norming",
+"Forming"
+],
+1,
+"Conflict over direction, roles and leadership is the mark of storming. Forming is polite and uncertain, norming is when rules and roles settle, and performing is productive work.",
+"std"
+],
+[
+"I.D.2",
+"While a team is forming, the leader helps most by:",
+[
+"Pressing for quick results",
+"Keeping members from raising concerns that slow the team down",
+"Giving clear direction on purpose, roles and ground rules",
+"Stepping back and letting the team manage itself from the start"
+],
+2,
+"A forming team is uncertain and looks to the leader for direction. Stepping back suits a performing team; pressing for results or stifling concerns stores up conflict for later.",
+"std"
+],
+[
+"I.D.2",
+"A team has agreed on its ground rules and roles, and members have begun to cooperate. It has reached:",
+[
+"Norming",
+"Storming",
+"Performing",
+"Adjourning"
+],
+0,
+"Agreeing how to work together is norming. Performing comes next, when the team works with high productivity and little need for direction; adjourning is the close.",
+"std"
+],
+[
+"I.D.3",
+"Multivoting is used to:",
+[
+"Reach a decision that every member fully agrees with",
+"Cut a long list to the few the team favors",
+"Assign the action items to individual team members",
+"Rank causes by how often each one actually occurs"
+],
+1,
+"Multivoting gives each member several votes to spread across a list, which quickly cuts a brainstormed list to a shortlist. Ranking by frequency needs data, as in a Pareto chart.",
+"std"
+],
+[
+"I.D.3",
+"Nominal group technique is especially useful when:",
+[
+"A decision is needed with no discussion at all",
+"Data is already available to decide",
+"A few strong voices could dominate the discussion",
+"The decision belongs to the leader alone, after the meeting"
+],
+2,
+"Members generate ideas silently and then rank them individually, so quieter people have equal weight. It still includes clarifying discussion, so it is not a no-discussion method.",
+"std"
+],
+[
+"I.D.3",
+"A decision reached by consensus means that:",
+[
+"More than half of the members voted for it",
+"The leader decided after hearing everyone’s views",
+"It was the first choice of every team member",
+"All members can support it, first choice or not"
+],
+3,
+"Consensus is agreement to support the decision, not unanimity of first choices. A majority vote leaves a losing minority, and a leader deciding after consultation is a consultative decision.",
+"std"
+],
+[
+"I.D.4",
+"To deliver a sensitive message to one stakeholder who strongly opposes the project, the best channel is usually:",
+[
+"The project newsletter",
+"A notice board posting",
+"A face-to-face conversation",
+"An email to the distribution list"
+],
+2,
+"Sensitive messages to one person need a rich, two-way channel where reactions can be seen and answered. Broadcast channels suit routine updates to many people.",
+"std"
+],
+[
+"I.D.4",
+"Two-way communication is preferred over one-way when:",
+[
+"Speed matters more than understanding",
+"Understanding and buy-in must be confirmed",
+"The audience is very large",
+"The message is a routine weekly status update for the team"
+],
+1,
+"Two-way communication lets the receiver ask questions and the sender check understanding, which is what gaining buy-in needs. One-way is faster and suits routine messages to large audiences.",
+"std"
+],
+[
+"I.D.4",
+"Active listening includes:",
+[
+"Planning your reply while the other person talks",
+"Interrupting to correct mistakes",
+"Paraphrasing to confirm understanding",
+"Avoiding questions so as not to slow the speaker"
+],
+2,
+"Active listening means attending to the speaker and checking understanding, for example by restating their point. Planning a reply or interrupting means you are not listening.",
+"std"
+],
+[
+"I.E.1",
+"A check sheet is used mainly to:",
+[
+"Rank the defect types in order of their importance to the customer",
+"Collect tallied data consistently as it occurs",
+"Show the relationship between two variables",
+"Draw the steps and decisions of a process"
+],
+1,
+"A check sheet is a simple form for recording events as they happen, so data is consistent and easy to summarize. Ranking is the Pareto chart’s job, relationships the scatter diagram’s, and process steps the flowchart’s.",
+"std"
+],
+[
+"I.E.2",
+"A process has three steps with first-pass yields of 98%, 95% and 90%. Its rolled throughput yield is about:",
+[
+"94.3%",
+"90.0%",
+"83.8%",
+"98.0%"
+],
+2,
+"Rolled throughput yield is the product of the step yields: 0.98 × 0.95 × 0.90 = 0.838. Averaging the yields (94.3%) or taking the worst step (90%) overstates how many units get through every step right first time.",
+"std"
+],
+[
+"II.A.2",
+"Which candidate is the best fit for a DMAIC project?",
+[
+"Installing software that has already been chosen",
+"A recurring, costly defect with no known cause",
+"A one-off complaint that has already been resolved",
+"A known fix that is only waiting for budget approval"
+],
+1,
+"DMAIC suits a problem that keeps happening, whose cause is not known, and whose cost can be measured. A known fix is a just-do-it action, and an implementation or a one-off has nothing to analyze.",
+"std"
+],
+[
+"II.A.2",
+"A project selection matrix scores candidate projects mainly on:",
+[
+"How many process steps each has",
+"Benefit, effort and fit with business goals",
+"Who proposed each project and how senior they are",
+"How quickly each could be announced as a success"
+],
+1,
+"Selection weighs what a project would deliver against what it would take, and how well it serves the organization’s priorities. Who suggested it says nothing about whether it is worth doing.",
+"std"
+],
+[
+"II.A.3",
+"A stakeholder with high influence over the project who currently opposes it should be:",
+[
+"Taken off the distribution list to avoid conflict",
+"Engaged early, directly and in person",
+"Left alone until the project has results to show",
+"Kept informed through the general project newsletter"
+],
+1,
+"A powerful opponent can stop a project, so they need early, personal engagement. Waiting or relying on broadcast updates leaves their objections to grow unanswered.",
+"std"
+],
+[
+"II.A.3",
+"Stakeholder analysis is done mainly to:",
+[
+"Assign roles and responsibilities within the team",
+"Plan how to win and keep support",
+"Estimate the savings the project will deliver",
+"Map the steps of the process being improved"
+],
+1,
+"Stakeholder analysis identifies who can affect or is affected by the project, how much influence they have and where they stand, so the team can plan how to engage each one.",
+"std"
+],
+[
+"II.A.3",
+"A project will change how products are packed. Who counts as a stakeholder?",
+[
+"Only the members of the project team and their manager",
+"Only the customer who receives the product",
+"Anyone affected by it or able to affect it",
+"Only the managers who approve the project"
+],
+2,
+"A stakeholder is anyone with an interest in the outcome or the power to influence it. Limiting the list to the team, the customer or management misses the people whose cooperation the change depends on.",
+"std"
+],
+[
+"II.A.4",
+"In a SIPOC, the process (P) column is usually drawn as:",
+[
+"A value stream map with cycle times",
+"A single box with no steps",
+"About four to seven high-level steps",
+"Every task and decision in detail"
+],
+2,
+"SIPOC is a high-level scoping tool, so the process is shown in a handful of major steps. Detailed maps and value stream maps come later, once the scope is agreed.",
+"std"
+],
+[
+"II.A.5",
+"An internal customer is:",
+[
+"The end user who buys the finished product",
+"A customer who also buys from a competitor",
+"A customer who complained",
+"The person or department receiving your work"
+],
+3,
+"Internal customers are the people inside the organization who receive your output. The supply chain runs through the organization as well as outside it, and each step has requirements of the one before.",
+"std"
+],
+[
+"II.A.5",
+"Small changes in end-customer demand that cause ever larger swings in orders further up the supply chain are called:",
+[
+"The bullwhip effect",
+"Demand leveling (heijunka)",
+"Takt time variation",
+"Kanban signaling"
+],
+0,
+"The bullwhip effect is demand variation amplifying as it travels upstream, as each stage reacts to the orders it sees. Heijunka is production leveling, which is one way to damp it.",
+"std"
+],
+[
+"II.A.5",
+"The most effective way to improve the quality of a purchased part is usually to:",
+[
+"Work with the supplier on their process",
+"Order in larger batches to reduce variation",
+"Increase incoming inspection of every shipment",
+"Switch to the lowest-price supplier available"
+],
+0,
+"Quality is built in the supplier’s process, so clear requirements and joint work on that process prevent defects. Incoming inspection only sorts them, and price or batch size does not address the cause.",
+"std"
+],
+[
+"II.B.2",
+"A project communication plan typically sets out:",
+[
+"The control limits for each key measure",
+"The verified root causes and their evidence",
+"Audience, message, channel, frequency and owner",
+"The project budget and the spending to date against it"
+],
+2,
+"The plan answers who needs to hear what, how, how often and from whom. The other items are project content, not communication planning.",
+"std"
+],
+[
+"II.B.2",
+"Status reports to the project sponsor should focus on:",
+[
+"Every task the team completed that week",
+"The full set of raw data collected so far",
+"The hours worked by each team member",
+"Milestones, risks and decisions needed"
+],
+3,
+"A sponsor needs to know whether the project is on track, what could derail it and where their help is needed. Task-level detail and raw data bury those points.",
+"std"
+],
+[
+"II.B.2",
+"A communication plan is best built from:",
+[
+"The cost-benefit analysis",
+"The stakeholder analysis",
+"The control chart",
+"The FMEA"
+],
+1,
+"The stakeholder analysis says who matters to the project and what each needs, which is exactly what the communication plan turns into messages, channels and timing.",
+"std"
+],
+[
+"II.B.3",
+"A milestone in a project plan is:",
+[
+"The single task that takes the longest time to complete",
+"The project end date and nothing else",
+"A key event in the schedule, with no duration",
+"A line item in the approved project budget"
+],
+2,
+"A milestone marks a point, such as a completed deliverable or a tollgate, so it has zero duration. Projects have many milestones, not only the end date.",
+"std"
+],
+[
+"II.B.3",
+"Scope creep is best prevented by:",
+[
+"Limiting contact with demanding stakeholders",
+"Shortening the schedule to leave less time",
+"Adding team members as the work grows",
+"Agreed scope plus change approval"
+],
+3,
+"Creep happens when work is added without anyone deciding to add it. A clear scope and a change-approval step make every addition a deliberate decision.",
+"std"
+],
+[
+"II.B.3",
+"Dependencies between tasks matter in planning because:",
+[
+"They determine the sample size for the data",
+"Some tasks must wait for others’ output",
+"They set the budget for each of the tasks",
+"They decide who the project sponsor will be"
+],
+1,
+"Dependencies fix the order of work, and so the earliest each task can start and the length of the whole project.",
+"std"
+],
+[
+"II.B.4",
+"The critical path of a project is:",
+[
+"The costliest tasks",
+"The tasks assigned directly to the project leader",
+"The shortest chain of tasks through the project",
+"The longest chain of dependent tasks"
+],
+3,
+"The project cannot finish sooner than its longest chain of dependent tasks. Any delay on that chain delays the end date, which is why it is called critical.",
+"std"
+],
+[
+"II.B.4",
+"Task A takes 3 days and task B takes 5 days; both can start on day 0. Task C takes 2 days and cannot start until both A and B are finished. The shortest project duration is:",
+[
+"7 days",
+"8 days",
+"5 days",
+"10 days"
+],
+0,
+"A and B run in parallel, so C can start when the longer one, B, ends on day 5. C then takes 2 days, finishing on day 7. Adding all three (10) wrongly assumes A and B run one after the other.",
+"std"
+],
+[
+"II.B.4",
+"A task has 4 days of slack (float). This means:",
+[
+"It can slip 4 days without delaying the end",
+"It needs 4 more days of work before it is done",
+"It must finish 4 days ahead of its planned date",
+"It sits on the critical path of the project"
+],
+0,
+"Slack is how far a task can slip before it delays the project. Tasks on the critical path have zero slack.",
+"std"
+],
+[
+"II.B.5",
+"A tollgate (phase) review is held to:",
+[
+"Celebrate the end of the project with the team",
+"Confirm the phase is done before moving on",
+"Collect the data needed for the next phase",
+"Train the team in the next phase’s tools"
+],
+1,
+"A tollgate is a checkpoint between DMAIC phases: the sponsor and team confirm the phase’s work is done and sound before committing to the next one.",
+"std"
+],
+[
+"II.B.5",
+"At the Measure tollgate, the review should expect to see:",
+[
+"The root causes, verified with data",
+"The control plan for the improved process, ready for handover",
+"The solution implemented and running",
+"A trusted measurement system and a baseline"
+],
+3,
+"Measure ends with data the team can trust and a baseline to improve against. Verified causes belong to Analyze, the solution to Improve and the control plan to Control.",
+"std"
+],
+[
+"II.B.5",
+"At a tollgate review, the decision makers can usually:",
+[
+"Approve the phase, with no other option",
+"Proceed, rework the phase, or stop the project",
+"Replace the sponsor with a new one",
+"Skip straight ahead to the Control phase"
+],
+1,
+"A tollgate is a real decision point. A project can move on, go back and finish the phase properly, or be stopped if it no longer makes sense.",
+"std"
+],
+[
+"III.A",
+"The mean of 4, 6, 6, 8 and 11 is:",
+[
+"6.5",
+"8",
+"6",
+"7"
+],
+3,
+"Add the values (35) and divide by how many there are (5): 35 / 5 = 7. Six is both the median and the mode of this set, which is why it is a tempting wrong answer.",
+"std"
+],
+[
+"III.A",
+"The median of 3, 9, 4, 12, 7 and 5 is:",
+[
+"6",
+"6.7",
+"7",
+"5"
+],
+0,
+"Sort the values: 3, 4, 5, 7, 9, 12. With an even count the median is the average of the middle two: (5 + 7) / 2 = 6. The mean is about 6.7.",
+"std"
+],
+[
+"III.A",
+"Which measure of central tendency is least affected by one extreme value?",
+[
+"Median",
+"Weighted mean",
+"Midrange",
+"Mean"
+],
+0,
+"The median depends only on the middle of the sorted data, so one extreme value barely moves it. The mean, the weighted mean and the midrange all use the extreme value directly and are pulled toward it.",
+"std"
+],
+[
+"III.A",
+"Two processes have the same mean. Process A has a standard deviation of 2 and process B of 5. This means:",
+[
+"Process B’s mean is wrong",
+"Process B is more accurate",
+"Process B’s values are more spread out",
+"Process A produces more defects"
+],
+2,
+"Standard deviation measures spread around the mean, so B varies more. Accuracy is about the center, and whether either makes defects depends on the specification, which is not given.",
+"std"
+],
+[
+"III.A",
+"The range of 12, 15, 9, 20 and 14 is:",
+[
+"14",
+"11",
+"8",
+"20"
+],
+1,
+"The range is the largest value minus the smallest: 20 − 9 = 11. Fourteen is the median and 20 the maximum.",
+"std"
+],
+[
+"III.B.1",
+"An operational definition:",
+[
+"Is the same thing as the specification",
+"States the project’s goal and its deadline",
+"States exactly what is measured and how",
+"Lists who will collect the data and when"
+],
+2,
+"An operational definition removes ambiguity: what counts, how it is measured and with what. Without one, two people measuring the same thing record different data.",
+"std"
+],
+[
+"III.B.1",
+"A data collection plan should be written:",
+[
+"After collection, to record what was actually done",
+"Only when the data collection is automated",
+"Before any data is collected",
+"By the sponsor rather than by the team itself"
+],
+2,
+"Planning first makes sure the data answers the question and is collected consistently. Writing it afterwards cannot fix data that was gathered badly.",
+"std"
+],
+[
+"III.B.1",
+"Two inspectors count scratches on the same parts and get very different totals. The first thing to fix is:",
+[
+"An agreed definition of a scratch, with examples",
+"Averaging the two inspectors’ counts together",
+"Collecting more data to average out the error",
+"Replacing one of the two inspectors"
+],
+0,
+"Different counts on the same parts usually mean the inspectors judge a scratch differently. Agreeing on the definition, ideally with boundary samples, fixes the cause; more data or averaging just carries the confusion forward.",
+"std"
+],
+[
+"III.B.2",
+"Customer satisfaction ratings from 1 (poor) to 5 (excellent) are on which scale?",
+[
+"Nominal",
+"Ratio",
+"Ordinal",
+"Interval"
+],
+2,
+"The ratings have a meaningful order, but the gaps between them are not known to be equal, which makes them ordinal. Nominal data has no order at all.",
+"std"
+],
+[
+"III.B.2",
+"Which of these is continuous (variable) data?",
+[
+"Pass or fail result",
+"Shaft diameter in millimeters",
+"Number of defects per unit",
+"Machine number"
+],
+1,
+"A diameter can take any value within a range, so it is continuous. Defect counts are discrete, pass/fail is attribute data and a machine number is only a label.",
+"std"
+],
+[
+"III.B.3",
+"Stratified sampling means:",
+[
+"Taking every nth item from the production line",
+"Taking whichever items are easiest for the inspector to reach",
+"Grouping the population and sampling each group",
+"Sampling only during the first hour of the shift"
+],
+2,
+"Stratifying makes sure each group, such as each shift or machine, is represented. Every nth item is systematic sampling, and the easiest items is convenience sampling.",
+"std"
+],
+[
+"III.B.3",
+"Recording data directly from sensors instead of by hand mainly reduces:",
+[
+"The need for an operational definition",
+"The process variation",
+"The sample size needed",
+"Transcription errors"
+],
+3,
+"Automatic capture removes the copying step where hand-recorded data goes wrong. It does not change the process itself, and the system still needs a clear definition of what it records.",
+"std"
+],
+[
+"III.C.1",
+"Bias in a measurement system is:",
+[
+"The smallest increment the gauge can show",
+"The variation between different operators",
+"The variation in readings taken over a long period of time",
+"Offset of the average reading from the true value"
+],
+3,
+"Bias is a systematic offset from the true value. Operator-to-operator variation is reproducibility, drift over time is stability, and the smallest increment is resolution.",
+"std"
+],
+[
+"III.C.1",
+"A gauge reads close to true at the low end of its range but has a large bias at the high end. This is a problem with:",
+[
+"Stability",
+"Repeatability",
+"Reproducibility",
+"Linearity"
+],
+3,
+"Linearity is how bias changes across the operating range. Stability is change over time; repeatability and reproducibility are about precision, not offset.",
+"std"
+],
+[
+"III.C.2",
+"In a gauge R&R study, reproducibility variation is high and repeatability variation is low. The most likely cause is:",
+[
+"Parts that change size during the study",
+"Too few parts included in the study",
+"Differences in how the operators use the gauge",
+"A worn gauge that gives inconsistent readings"
+],
+2,
+"Reproducibility is variation between operators, so a high value points to differences in method or technique. A worn gauge usually shows up as poor repeatability.",
+"std"
+],
+[
+"IV.A.2",
+"An FMEA line has severity 8, occurrence 3 and detection 5. Its risk priority number is:",
+[
+"24",
+"120",
+"40",
+"16"
+],
+1,
+"RPN is severity × occurrence × detection: 8 × 3 × 5 = 120. Adding the ratings gives 16, and multiplying only two of them gives 40 or 24.",
+"std"
+],
+[
+"IV.A.2",
+"In an FMEA, a detection rating of 9 or 10 means:",
+[
+"The failure is easy to catch with current checks",
+"The failure has a very severe effect",
+"It is unlikely to be caught before the customer",
+"The failure happens often in the process"
+],
+2,
+"Detection runs the opposite way to what the word suggests: a high number means poor detection. Severity and occurrence have ratings of their own.",
+"std"
+],
+[
+"IV.A.2",
+"Two failure modes both have an RPN of 90. One has severity 9 and the other severity 3. The team should usually:",
+[
+"Address the severity 9 failure mode first",
+"Address the severity 3 failure mode first",
+"Treat the two as equal priority",
+"Drop both, since 90 is below the usual threshold"
+],
+0,
+"An RPN alone can hide a severe failure. Most FMEA practice looks at high-severity modes first whatever their RPN, because those are the ones that hurt people or customers.",
+"std"
+],
+[
+"IV.B",
+"A suspected root cause is confirmed when:",
+[
+"Data shows the problem changes when that cause changes",
+"It is the first answer given to “why?”",
+"It appears on the cause and effect diagram",
+"The team votes for it as the most likely cause"
+],
+0,
+"A cause is verified by evidence, such as turning the problem on and off by changing the cause. Votes, diagrams and first answers only produce candidates to test.",
+"std"
+],
+[
+"IV.C",
+"Containment differs from corrective action in that containment:",
+[
+"Protects the customer now; corrective action removes the cause",
+"Is done only after the root cause has been confirmed",
+"Is optional whenever the cause is already clear",
+"Is the permanent fix, while corrective action is temporary"
+],
+0,
+"Containment, such as quarantining suspect stock, stops bad product reaching the customer while the cause is found. Corrective action removes the cause so the problem does not come back.",
+"std"
+],
+[
+"IV.C",
+"A corrective action is complete when:",
+[
+"The report has been filed and signed",
+"Its effectiveness is verified over time",
+"The action has been assigned to an owner",
+"The action has been put in place"
+],
+1,
+"Implementing an action is not proof that it worked. Closure needs evidence over time that the problem has not recurred.",
+"std"
+],
+[
+"IV.C",
+"Retraining the operator is often a weak corrective action because:",
+[
+"It seldom fixes why the process allowed the error",
+"It takes too long to arrange for each shift",
+"Operators tend to dislike repeated training",
+"Training is too expensive for most companies"
+],
+0,
+"If the process made the error easy to make, it will happen again with someone else. Stronger actions change the process, for example with error-proofing.",
+"std"
+],
+[
+"IV.D",
+"Preventive action is taken on:",
+[
+"A nonconformity that has already occurred",
+"Customer complaints only",
+"Audit findings only",
+"A potential nonconformity that has not yet occurred"
+],
+3,
+"Correction and corrective action respond to problems that have happened. Preventive action deals with risks before they turn into problems.",
+"std"
+],
+[
+"IV.D",
+"Before a new process starts up, the team adds an error-proofing device for a failure that has never happened. This is:",
+[
+"Containment",
+"Corrective action",
+"Correction",
+"Preventive action"
+],
+3,
+"Nothing has gone wrong yet, so acting on the risk is preventive. Containment, correction and corrective action all respond to a nonconformity that has already occurred.",
+"std"
+],
+[
+"IV.D",
+"Which tool is most closely associated with preventive action?",
+[
+"FMEA",
+"A run chart of last month’s scrap",
+"A Pareto chart of past complaints",
+"A check sheet of defects found"
+],
+0,
+"An FMEA looks forward at how a product or process could fail and acts before it does. The other tools summarize problems that have already happened.",
+"std"
+],
+[
+"IV.E.1",
+"The number of defective parts in samples of 50 follows which distribution?",
+[
+"Binomial",
+"Uniform",
+"Poisson",
+"Normal"
+],
+0,
+"Each part is either defective or not, with a fixed number of trials (50), which is the binomial case. Poisson suits counts of events with no fixed upper limit.",
+"std"
+],
+[
+"IV.E.1",
+"Counts of scratches per panel, where any number of scratches is possible, are usually modeled by which distribution?",
+[
+"Exponential",
+"Binomial",
+"Poisson",
+"Normal"
+],
+2,
+"Poisson describes counts of events in a unit of area, time or product with no set maximum. Binomial needs a fixed number of yes-or-no trials.",
+"std"
+],
+[
+"IV.E.1",
+"In a normal distribution, about what share of values lie within one standard deviation either side of the mean?",
+[
+"68%",
+"99.7%",
+"50%",
+"95%"
+],
+0,
+"The empirical rule gives about 68% within ±1 standard deviation, 95% within ±2 and 99.7% within ±3.",
+"std"
+],
+[
+"IV.E.2",
+"Common cause variation is best reduced by:",
+[
+"Holding the operators accountable",
+"Adjusting the machine after each part",
+"Changing the system, usually a management job",
+"Investigating each point near the limits as a special event"
+],
+2,
+"Common cause variation is built into the system, so only changing the system reduces it. Treating it as special causes, or adjusting after each part, usually makes variation worse.",
+"std"
+],
+[
+"IV.F.1",
+"A correlation coefficient of r = −0.9 indicates:",
+[
+"A strong negative relationship",
+"No relationship",
+"That one of the variables causes the other",
+"A weak relationship that may be chance"
+],
+0,
+"The sign gives the direction and the size gives the strength; −0.9 is strong and negative. Correlation, however strong, does not show cause.",
+"std"
+],
+[
+"IV.F.2",
+"A regression equation is y = 20 + 3x. When x = 5, the predicted value of y is:",
+[
+"23",
+"28",
+"115",
+"35"
+],
+3,
+"Substitute x = 5: 20 + 3 × 5 = 35. Twenty-three ignores x, 28 adds x instead of multiplying by it, and 115 adds 20 and 3 before multiplying by 5.",
+"std"
+],
+[
+"IV.F.2",
+"The slope of a regression line tells you:",
+[
+"How much y changes on average per unit change in x",
+"The value of y at the point where x is zero",
+"How well the line fits the data points",
+"Whether changes in x cause changes in y"
+],
+0,
+"The slope is the rate of change. The value of y at x = 0 is the intercept, fit is described by R-squared, and regression alone cannot show cause.",
+"std"
+],
+[
+"IV.G",
+"A type I error is:",
+[
+"Failing to reject a null hypothesis that is false",
+"Rejecting the null hypothesis when it is actually true",
+"Choosing the wrong test",
+"An error in the measurement system"
+],
+1,
+"A type I error is a false alarm, and its probability is alpha. Failing to reject a false null hypothesis is a type II error, a missed effect.",
+"std"
+],
+[
+"V.A.1",
+"A kaizen event (kaizen blitz) is typically:",
+[
+"A short, focused event on one process",
+"An assessment led by an outside auditor",
+"A program that runs over several months",
+"A study limited to analyzing existing data"
+],
+0,
+"A kaizen event is short and intense: a cross-functional team studies one process and makes changes during the event itself, with follow-up items tracked afterwards.",
+"std"
+],
+[
+"V.A.1",
+"The core idea of kaizen is:",
+[
+"Continuous, small improvement involving everyone",
+"Large investments that produce breakthroughs",
+"Inspection to catch defects before shipping",
+"Replacing manual work with automation"
+],
+0,
+"Kaizen means continuous improvement through many small changes by the people who do the work. Large breakthrough changes are a different approach, sometimes called kaikaku.",
+"std"
+],
+[
+"V.A.1",
+"Gains from kaizen events are most often lost because:",
+[
+"The team was too small to cover the process",
+"Too much data was collected during the event",
+"The event was too short",
+"Follow-up and the new standard lapse"
+],
+3,
+"Events are short by design, so what lasts depends on finishing the open actions and holding the new standard. Without that follow-through, the process drifts back.",
+"std"
+],
+[
+"V.A.2",
+"In the PDCA cycle, the Check step is where you:",
+[
+"Roll the change out across the whole organization",
+"Compare the trial’s results with what was expected",
+"Decide which change to try and predict its effect",
+"Run the trial on a small scale"
+],
+1,
+"Plan decides the change and predicts its effect, Do runs it, Check compares the results with the prediction, and Act adopts, adapts or abandons the change.",
+"std"
+],
+[
+"V.A.3",
+"A change costs $30,000 and saves $2,500 a month. Its simple payback period is:",
+[
+"12 months",
+"10 months",
+"15 months",
+"6 months"
+],
+0,
+"Payback is the cost divided by the saving per period: $30,000 / $2,500 = 12 months.",
+"std"
+],
+[
+"V.A.3",
+"A cost-benefit analysis for a project should count:",
+[
+"The purchase price of new equipment only",
+"All one-time and ongoing costs against savings",
+"The labor costs of the project team only",
+"Hard savings only, leaving the costs aside"
+],
+1,
+"A fair comparison includes everything the solution costs, up front and over time, against everything it saves. Leaving out ongoing costs overstates the benefit.",
+"std"
+],
+[
+"V.A.3",
+"Which of these is a soft (intangible) benefit?",
+[
+"Lower scrap and rework cost",
+"Improved employee morale",
+"Less raw material used per unit",
+"Less overtime paid each month"
+],
+1,
+"Soft benefits are real but hard to put a reliable dollar figure on. Scrap, overtime and material savings show up directly in the accounts, so they are hard savings.",
+"std"
+],
+[
+"V.B.1",
+"For each characteristic it covers, a control plan states:",
+[
+"The root cause of the original problem",
+"The names and roles of the project team",
+"What is checked, how, how often, by whom, and the reaction",
+"The project savings and how they were calculated"
+],
+2,
+"The control plan is the instruction for keeping the process where the project left it: the method, the frequency, the owner and the reaction for each control point.",
+"std"
+],
+[
+"V.B.1",
+"The reaction plan column of a control plan tells the operator:",
+[
+"How to calibrate the gauge",
+"How the sample size for the check was set",
+"Who the project sponsor and process owner are",
+"What to do when a check shows a problem"
+],
+3,
+"The reaction plan turns a bad check into immediate action: contain, correct, notify. Without one, problems get noticed but not acted on.",
+"std"
+],
+[
+"V.B.1",
+"At project close, the control plan is handed over to:",
+[
+"The customer, who receives the output",
+"The process owner, who runs it day to day",
+"The Black Belt, who led the project",
+"The sponsor’s manager, who funded the work"
+],
+1,
+"The process owner runs the process after the project ends, so the controls must sit with them. The belts move on to other work.",
+"std"
+],
+[
+"V.B.2",
+"A point outside the control limits on a control chart indicates:",
+[
+"A part that is outside the specification",
+"Normal variation that needs no action",
+"That the specification limits have changed",
+"A likely special cause to investigate"
+],
+3,
+"Control limits describe what the process does on its own, so a point outside them signals something unusual. Control limits are not specification limits, so the point may or may not be a bad part.",
+"std"
+],
+[
+"V.B.2",
+"Control limits are calculated from:",
+[
+"The process’s own data",
+"Management targets",
+"The specification limits",
+"The customer’s requirements"
+],
+0,
+"Control limits describe the voice of the process. Specifications and targets are the voice of the customer or the business, and must not be used as control limits.",
+"std"
+],
+[
+"V.B.3",
+"The main purpose of document control is to make sure that:",
+[
+"Documents are as detailed as they can be",
+"Only current, approved versions are in use",
+"All documents are held electronically",
+"Old records are destroyed promptly"
+],
+1,
+"Document control is about using the right version: approved before use, available at the point of use, and obsolete copies removed or marked.",
+"std"
+],
+[
+"V.B.3",
+"An operator finds two different versions of a procedure at the same workstation. This is a failure of:",
+[
+"Sampling",
+"Operator training",
+"Gauge calibration",
+"Document control"
+],
+3,
+"Two versions at the point of use means the obsolete one was not withdrawn when the new one was issued, which is a document control failure.",
+"std"
+],
+[
+"V.B.3",
+"A record differs from a procedure in that a record:",
+[
+"Explains step by step how to do a task",
+"Shows what was done and is not revised",
+"Does not need to be kept for any set time",
+"Is always held electronically, never on paper"
+],
+1,
+"Procedures say how work should be done and are revised as the process changes. Records show what actually happened, so they are kept unchanged for a set retention period.",
+"std"
+],
+[
+"V.B.4",
+"A good work instruction:",
+[
+"Leaves out pictures to keep the text short",
+"Explains company policy in general terms",
+"Uses ordered steps, key points and pictures",
+"Is written once and then never changed"
+],
+2,
+"A work instruction is for the person doing the task, so it needs the right steps, in order, with the key points that make the job right and visuals where they help.",
+"std"
+],
+[
+"V.B.4",
+"Work instructions are best written:",
+[
+"By the quality manager, working alone",
+"After the next audit, to match its findings",
+"With the people who do the work",
+"By an outside consultant working alone"
+],
+2,
+"The people who do the job know the real steps, and a trial by someone else shows where the instruction is unclear.",
+"std"
+],
+[
+"V.B.4",
+"Standard work supports improvement because:",
+[
+"It sets a baseline that improvements build on",
+"It removes the need for control charts",
+"It replaces the need for operator training",
+"It prevents any change to the process"
+],
+0,
+"Without a standard, nobody can tell whether a change helped, and gains are not kept. Standard work is the starting point the next improvement builds on.",
+"std"
+],
+[
+"V.B.2",
+"Which control chart suits the number of defective units found in samples of varying size?",
+[
+"X-bar and R chart",
+"p chart",
+"Individuals chart",
+"c chart"
+],
+1,
+"A p chart plots the proportion defective and handles samples of different sizes. X-bar and R and individuals charts are for measured data, and a c chart counts defects in a constant-sized unit.",
+"std"
+],
+[
+"I.A",
+"A team writes the project charter, names the customers and their requirements, and draws a high-level map of the process. Which DMAIC phase is the team in?",
+[
+"Measure",
+"Define",
+"Analyze",
+"Control"
+],
+1,
+"Define sets up the project: the charter, the customers and their needs, and a high-level process map. Measure comes next, when the team collects baseline data on the current process.",
+"std"
+],
+[
+"I.A",
+"The main output of the Measure phase is:",
+[
+"A list of root causes verified with data",
+"A signed charter with scope and goal",
+"A reliable baseline of current performance",
+"A control plan handed to the process owner"
+],
+2,
+"Measure checks that the data can be trusted and establishes how the process performs today. Verifying root causes is the work of Analyze, which builds on that baseline.",
+"std"
+],
+[
+"I.A",
+"A hospital team has confirmed the root causes of long discharge times and now runs a small pilot of a new discharge checklist on one ward. Which DMAIC phase is this?",
+[
+"Improve",
+"Analyze",
+"Control",
+"Measure"
+],
+0,
+"Developing solutions and pilot testing them before full rollout is the Improve phase. Analyze is already finished, because the root causes have been confirmed.",
+"std"
+],
+[
+"I.A",
+"The main purpose of the Control phase is to:",
+[
+"Find the vital few inputs that drive the output",
+"Run a small pilot to test the proposed solution",
+"Agree on the problem statement with the sponsor",
+"Hold the gains so the process does not slip"
+],
+3,
+"Control sustains the improvement with tools such as a control plan, standard work and monitoring, then hands the process to its owner. Piloting a solution happens earlier, in Improve.",
+"std"
+],
+[
+"I.A",
+"Which statement best describes how Six Sigma evolved from earlier quality work?",
+[
+"It began as a military standard for inspecting supplier parts",
+"It replaced statistical tools with simple visual management",
+"It built on SPC and TQM, adding results-driven projects",
+"It was written as a guide to certifying a quality system"
+],
+2,
+"Six Sigma, developed at Motorola in the 1980s, drew on statistical process control and total quality management and added a disciplined project method tied to measurable business results. It is not an inspection standard or a management system certification scheme.",
+"std"
+],
+[
+"I.A",
+"A finance director asks what Six Sigma offers the organization as a whole. The best answer is:",
+[
+"Fewer defects and lower costs from data-driven projects",
+"A guaranteed pass at the next ISO 9001 audit",
+"Less need for process owners and supervisors",
+"A faster way to sort out defects before shipping"
+],
+0,
+"Six Sigma's value is better quality, lower cost and happier customers through projects that use data and are tied to business goals. It is not a certification guarantee, and it aims to prevent defects rather than sort them out.",
+"std"
+],
+[
+"I.B",
+"A fixture is shaped so a part can be loaded only in the correct orientation. This is an example of:",
+[
+"Kanban",
+"Takt time",
+"Poka-yoke",
+"Value stream mapping"
+],
+2,
+"Poka-yoke, or error proofing, designs the process so a mistake cannot be made or is caught right away. Kanban is a signal for replenishment, not a way to prevent errors.",
+"std"
+],
+[
+"I.B",
+"In a kanban system, a card returned to the upstream cell is used to:",
+[
+"Record a defect for later root cause analysis",
+"Authorize making or moving a set quantity of parts",
+"Schedule production from the monthly sales forecast",
+"Show a worker which tools belong at a workstation"
+],
+1,
+"A kanban is a pull signal: it authorizes production or movement of a fixed amount only when the downstream step uses it. Scheduling from a forecast is push, the opposite of what kanban does.",
+"std"
+],
+[
+"I.B",
+"A value stream map differs from a basic flowchart mainly in that it:",
+[
+"Shows only the steps that add value for the customer",
+"Is drawn for the setup steps on a single machine",
+"Lists the root cause of each defect found in the process",
+"Shows material and information flow, with times and waits"
+],
+3,
+"A value stream map follows a product end to end, showing material and information flow with process times, inventory and waiting, so waste stands out. It shows non-value-added steps too, because those are what the team wants to remove.",
+"std"
+],
+[
+"I.B",
+"The main value of lean to the organization as a whole is:",
+[
+"Shorter lead times and lower cost by cutting waste",
+"Higher output from keeping every machine busy all day",
+"Lower variation from statistical analysis of the inputs",
+"Less need to ask customers what they value most in a product"
+],
+0,
+"Lean improves flow and cuts lead time and cost by removing work the customer does not pay for. Keeping every machine busy regardless of demand causes overproduction, which is itself a waste.",
+"std"
+],
+[
+"I.C",
+"An individual team member on a Six Sigma project is mainly expected to:",
+[
+"Approve the project budget and release resources",
+"Share process knowledge and finish assigned actions",
+"Mentor the Black Belts on advanced statistical tools",
+"Select which projects support the business strategy"
+],
+1,
+"Team members bring knowledge of how the work is really done and complete the action items they are given. Releasing resources is the sponsor's job, and mentoring Black Belts belongs to the Master Black Belt.",
+"std"
+],
+[
+"I.C",
+"A Yellow Belt on a project team typically:",
+[
+"Leads complex projects full time across several sites",
+"Trains and certifies the Green Belts in the business",
+"Owns the process and signs off the control plan",
+"Helps collect data and supports the project leader"
+],
+3,
+"A Yellow Belt has basic Six Sigma knowledge and supports projects, for example by collecting data and taking part in improvements, and may lead small local efforts. Leading complex projects full time is a Black Belt role.",
+"std"
+],
+[
+"I.C",
+"Which role usually leads complex Six Sigma projects full time and coaches Green Belts?",
+[
+"Black Belt",
+"Yellow Belt",
+"Process owner",
+"Sponsor"
+],
+0,
+"A Black Belt is a full-time improvement specialist who leads larger projects and coaches Green Belts. A sponsor supports the project from leadership but does not lead the analysis.",
+"std"
+],
+[
+"I.C",
+"A Master Black Belt in an organization is mainly responsible for:",
+[
+"Running the process day to day once the project has ended",
+"Coaching Black Belts and advising on advanced methods",
+"Collecting the shift data for the project team",
+"Funding the project and approving its scope"
+],
+1,
+"The Master Black Belt is the expert who trains and mentors Black Belts and Green Belts and advises on difficult statistical problems. Running the process after the project is the process owner's job.",
+"std"
+],
+[
+"I.C",
+"A senior manager links Six Sigma projects to business strategy, helps choose which projects to run and clears barriers across departments. This role is usually called the:",
+[
+"Process owner",
+"Master Black Belt",
+"Champion",
+"Team member"
+],
+2,
+"The champion is a senior leader who connects projects to strategy, helps select them and removes cross-functional barriers. A Master Black Belt advises on methods but is a technical expert, not the senior manager who sets direction.",
+"std"
+],
+[
+"I.D.1",
+"Operators from one work area, who still report to their supervisor for daily work assignments, meet each week to find and fix problems in their own process. This is best described as a:",
+[
+"Cross-functional project team",
+"Virtual team",
+"Self-directed team",
+"Continuous improvement team"
+],
+3,
+"A group from one area that meets regularly to improve its own work is a continuous improvement team, sometimes called a quality circle. It is not self-directed, because a supervisor still assigns the daily work, and it is not cross-functional, because all members come from the same area.",
+"std"
+],
+[
+"I.D.1",
+"The main value of using a team, rather than one person, on a problem that crosses departments is that a team:",
+[
+"Brings wider knowledge and builds support for the change",
+"Usually reaches a decision faster than one person working alone",
+"Removes the need for a sponsor to approve the work",
+"Lets the project skip the formal phase reviews"
+],
+0,
+"A team pools knowledge from each area the problem touches and builds the buy-in needed to make the change stick. Teams often take longer to decide than one person, so speed is not their main value.",
+"std"
+],
+[
+"I.D.2",
+"A team works with little supervision, handles disagreements calmly and makes steady progress toward its goal. The team is most likely in the stage of:",
+[
+"Norming",
+"Performing",
+"Storming",
+"Adjourning"
+],
+1,
+"In performing, the team is productive and largely manages itself. In norming, members have only just agreed on how to work together and are not yet at full productivity.",
+"std"
+],
+[
+"I.D.2",
+"A project has met its goal and the team is about to disband. In this adjourning stage, the leader should:",
+[
+"Assign new goals to keep the same team together",
+"Celebrate results, capture lessons and release members",
+"Restart the ground rules so the team can begin again",
+"Hold off on recognition until the next project ends"
+],
+1,
+"Adjourning wraps the project up: recognize the work, record lessons learned and release members back to their jobs. Reopening ground rules belongs to a new team that is forming.",
+"std"
+],
+[
+"I.D.3",
+"During a brainstorming session, the facilitator should:",
+[
+"Record every idea without judging it",
+"Ask members to rank each idea as it is offered",
+"Accept only ideas that are backed by data",
+"Let the most senior member speak first"
+],
+0,
+"Brainstorming aims for many ideas, so they are recorded without criticism and judged later. Ranking ideas as they come stops the flow of new ones.",
+"std"
+],
+[
+"I.D.4",
+"Sending an agenda before a team meeting mainly helps because it:",
+[
+"Records which decisions were made and who owns them",
+"Lets members prepare and keeps the meeting on topic",
+"Reports the project's progress against its schedule",
+"Replaces the need to take minutes during the meeting"
+],
+1,
+"An agenda tells members what will be covered, who leads each item and how long it takes, so they come prepared and the meeting stays focused. Recording decisions and owners is the job of the minutes.",
+"std"
+],
+[
+"I.D.4",
+"Meeting minutes are most useful to a project team because they:",
+[
+"Set the topics and time limits before the meeting",
+"Show the sponsor a summary of the project budget",
+"Record decisions and action items with owners and dates",
+"Explain the team's ground rules to new members"
+],
+2,
+"Minutes capture what was decided and who will do what by when, so actions are followed up. Setting topics and time limits beforehand is the purpose of an agenda.",
+"std"
+],
+[
+"I.D.4",
+"A sponsor wants a short monthly update on whether a project is on track. The team should send:",
+[
+"The full meeting minutes",
+"The original project charter",
+"A project status report",
+"The cause and effect diagram"
+],
+2,
+"A status report summarizes progress against plan, issues, risks and help needed, which is what a sponsor needs to act. Full minutes have too much detail and do not show overall progress.",
+"std"
+],
+[
+"I.E.1",
+"A team wants to list possible causes of late deliveries, grouped under people, methods, materials and machines. The best tool is a:",
+[
+"Scatter diagram",
+"Run chart",
+"Cause and effect diagram",
+"Pareto chart"
+],
+2,
+"A cause and effect (fishbone) diagram organizes possible causes into categories for discussion. A Pareto chart ranks causes once data on their frequency exists, rather than generating them.",
+"std"
+],
+[
+"I.E.1",
+"Before changing an order-entry process, a team wants to see each step and decision point and where rework loops back. Which tool fits best?",
+[
+"Flowchart",
+"Histogram",
+"Check sheet",
+"Scatter diagram"
+],
+0,
+"A flowchart shows the sequence of steps and decisions, making rework loops and handoffs visible. A check sheet collects tally data but does not show how the steps connect.",
+"std"
+],
+[
+"I.E.1",
+"A run chart of daily clinic wait times shows eight points in a row above the median. This most likely suggests:",
+[
+"Only random, everyday variation in the waits",
+"A data entry error in the median",
+"The data were plotted out of order",
+"A shift in the process worth checking"
+],
+3,
+"A long run of points on one side of the median is unlikely by chance and signals that something in the process may have shifted. Random variation would scatter the points above and below the median.",
+"std"
+],
+[
+"I.E.1",
+"A scatter diagram of oven temperature against coating thickness shows points rising from lower left to upper right in a tight band. This suggests:",
+[
+"A strong negative relationship between the two",
+"Temperature changes are proven to cause the thickness",
+"No relationship between the two variables at all",
+"A strong positive relationship between the two"
+],
+3,
+"Points rising together in a tight band show a strong positive correlation. Correlation alone does not prove cause; that needs further study, such as a controlled experiment.",
+"std"
+],
+[
+"I.E.2",
+"Inspectors find 30 defects on 120 units. What is the defects per unit (DPU)?",
+[
+"4.0",
+"2.5",
+"0.025",
+"0.25"
+],
+3,
+"DPU = defects / units = 30 / 120 = 0.25. Dividing units by defects gives 4.0, which is the inverse.",
+"std"
+],
+[
+"I.E.2",
+"A clerk checks 200 forms, each with 5 opportunities for error, and finds 20 defects. What is the DPMO?",
+[
+"100,000",
+"20,000",
+"500,000",
+"2,000"
+],
+1,
+"DPMO = defects / (units x opportunities) x 1,000,000 = 20 / 1,000 x 1,000,000 = 20,000. Ignoring the opportunities gives 20 / 200 x 1,000,000 = 100,000.",
+"std"
+],
+[
+"I.E.2",
+"An operator works without a break and finishes 60 units in 4 hours. The average cycle time is:",
+[
+"15 minutes per unit",
+"15 units per hour",
+"4 minutes per unit",
+"0.25 minutes per unit"
+],
+2,
+"Cycle time = time / units = 240 minutes / 60 = 4 minutes per unit. Fifteen units per hour is the output rate, not the time per unit.",
+"std"
+],
+[
+"II.A.1",
+"A hospital patient says, “I don't want to wait long in the emergency room.” Which is the best CTQ drawn from this need?",
+[
+"Patients feel that the wait was reasonable",
+"Door-to-doctor time of 30 minutes or less",
+"Staff move patients through as fast as they can",
+"A waiting room with more comfortable seating"
+],
+1,
+"A CTQ turns the need into something measurable with a target, here a time limit the process can be tracked against. A patient's feeling about the wait is a useful survey result, but it does not tell the process what to achieve.",
+"std"
+],
+[
+"II.A.2",
+"Which source is most useful for identifying candidate Six Sigma projects?",
+[
+"A list of tools the team would like to try",
+"The equipment the plant would like to buy",
+"Cost of poor quality and complaint data",
+"Ideas from whoever is free that month"
+],
+2,
+"Good projects start from measured pain: defects, rework costs and customer complaints show where improvement pays off. Starting from tools or equipment wish lists picks a solution before there is a problem.",
+"std"
+],
+[
+"II.A.3",
+"The end users of a new order-entry screen are the clerks who will use it every day. How can they most influence the project?",
+[
+"They approve the budget and release resources",
+"They are accountable for the process results",
+"They supply expert knowledge of the software",
+"Their acceptance decides if the screen is used"
+],
+3,
+"End users determine whether a change is actually adopted, so their needs and concerns shape success. Approving the budget is the sponsor's role, and accountability for results belongs to the process owner.",
+"std"
+],
+[
+"II.A.3",
+"A team improving a heat-treat process asks an experienced metallurgist to advise at a few meetings without joining the team. The metallurgist is best described as:",
+[
+"A subject matter expert",
+"The process owner",
+"An end user of the process",
+"The project sponsor"
+],
+0,
+"A subject matter expert lends specialist knowledge that can shape the analysis and the solution, even without being a team member. The process owner is the manager accountable for running the process, not an outside advisor.",
+"std"
+],
+[
+"II.A.3",
+"Why should the process owner be involved early in a Six Sigma project?",
+[
+"They choose the statistical tools for the project",
+"They will run the process after the team disbands",
+"They are the customer who buys the final output",
+"They are the only person allowed to collect data"
+],
+1,
+"The process owner is accountable for the process and must sustain the improvement once the project closes, so their early buy-in is essential. Choosing tools is the belt's job, not the owner's.",
+"std"
+],
+[
+"II.A.4",
+"A team builds a SIPOC for a hospital lab's blood testing process. Which belongs in the Suppliers column?",
+[
+"The test result report sent back to the doctor",
+"Running the sample on the analyzer",
+"The accuracy of the reported result",
+"The nurse who draws and sends the sample"
+],
+3,
+"Suppliers are whoever provides the inputs; the nurse provides the sample the lab works on. The test result report is an output, and running the analyzer is a process step.",
+"std"
+],
+[
+"II.A.4",
+"In a SIPOC for an invoice payment process, which item is an input?",
+[
+"The supplier's invoice",
+"The payment sent to the supplier",
+"The clerk's approval of the invoice",
+"The supplier who is paid"
+],
+0,
+"Inputs are what the process uses or works on, and the invoice is what triggers and feeds the payment process. The payment is the output, and approving the invoice is a step in the process itself.",
+"std"
+],
+[
+"II.A.4",
+"A SIPOC is drawn for a restaurant's order-taking process. Which is an output of this process?",
+[
+"The menu the server uses",
+"The guest who places the order at the table",
+"An order ticket sent to the kitchen",
+"Writing down the guest's choices"
+],
+2,
+"An output is what the process produces for its customer, here the ticket the kitchen works from. The menu is an input the server uses, and writing down the choices is a process step.",
+"std"
+],
+[
+"II.A.4",
+"In a SIPOC for a company's payroll process, which is a customer?",
+[
+"The timesheets sent by supervisors",
+"The vendor of the payroll software",
+"Calculating hours and deductions",
+"The employees who are paid"
+],
+3,
+"Customers receive the process outputs, and employees receive the paychecks. The software vendor supplies a tool to the process, which makes it a supplier rather than a customer.",
+"std"
+],
+[
+"II.A.5",
+"Supply chain management is best described as:",
+[
+"Choosing the lowest-priced supplier for each purchased part",
+"Coordinating flow from suppliers through to end customers",
+"Managing the stockroom and inventory records of one plant",
+"Negotiating long-term contracts with major customers only"
+],
+1,
+"Supply chain management coordinates the flow of materials, information and money across every link, from raw material suppliers to the end customer. Buying on lowest price looks at one link and often raises total cost.",
+"std"
+],
+[
+"II.A.5",
+"A team's solution needs a new fixture from an outside supplier with a 10-week lead time. What should the project leader do?",
+[
+"Leave the supplier out of the plan until delivery",
+"Shorten the Control phase to make up the lost time",
+"Build the lead time into the schedule and risk plan",
+"Order from the cheapest supplier to save on cost"
+],
+2,
+"Supplier lead times and reliability are project dependencies, so they belong in the schedule and risk planning from the start. Cutting the Control phase trades a schedule problem for an improvement that may not last.",
+"std"
+],
+[
+"II.B.1",
+"The main purpose of a project charter is to:",
+[
+"Authorize the project and agree on its aim and limits",
+"Record the root causes the team has verified",
+"Document the control plan for the new process",
+"List every task with its start and finish dates"
+],
+0,
+"The charter is the agreement between sponsor and team that launches the project: why it matters, what is in scope and what success looks like. Verified causes and the control plan come later, and dated task lists belong in the project schedule.",
+"std"
+],
+[
+"II.B.1",
+"A packing line's scrap rate is 8%. Which is the best-written project goal?",
+[
+"Reduce scrap as much as is practical",
+"Improve the scrap rate over the year",
+"Eliminate the causes of scrap on the line",
+"Cut scrap from 8% to 4% by June 30"
+],
+3,
+"A good goal is specific and measurable, with a target and a date, so everyone can tell whether it was met. “Eliminate the causes” sounds ambitious but gives no target to measure against.",
+"std"
+],
+[
+"II.B.2",
+"Midway through a project, operators resist a new procedure because they heard about it secondhand. What would most likely have prevented this?",
+[
+"A plan to tell operators early and directly",
+"A larger sample size during the Measure phase",
+"A more detailed process map of the line",
+"A longer schedule for the Improve phase"
+],
+0,
+"A communication plan makes sure each group hears the right message from the right person at the right time, which builds support and avoids rumor-driven resistance. More data or more detailed maps do not change how people learn about the change.",
+"std"
+],
+[
+"II.B.3",
+"A work breakdown structure (WBS) is used to:",
+[
+"Show each task as a bar across a calendar timeline",
+"Rank the project risks by likelihood and impact",
+"Split the deliverables into manageable pieces of work",
+"Map the steps of the process being improved"
+],
+2,
+"A WBS breaks the project's deliverables down level by level until each piece of work can be assigned, estimated and tracked. Bars on a timeline describe a Gantt chart, which is usually built from the WBS.",
+"std"
+],
+[
+"II.B.3",
+"A Gantt chart shows project tasks as:",
+[
+"Branches broken down from deliverables",
+"Bars set against a calendar timeline",
+"Nodes and arrows with no time scale",
+"Points plotted between control limits"
+],
+1,
+"A Gantt chart draws each task as a bar whose position and length show when it starts and how long it lasts. Branches broken down from deliverables describe a WBS, which lists the work but not its timing.",
+"std"
+],
+[
+"II.B.3",
+"On a Gantt chart, today's date line falls halfway through a task's bar, but the shading shows the task is only 20% complete. The project leader should conclude that the task:",
+[
+"Is ahead of schedule and can be left alone",
+"Is on the project's critical path",
+"Has finished and can now be closed out",
+"Is behind schedule and needs attention"
+],
+3,
+"Halfway through its planned time the task should be about half done, so 20% shows it is running late. A Gantt bar alone does not show whether the task is on the critical path.",
+"std"
+],
+[
+"II.B.4",
+"After brainstorming, a team has 60 sticky notes of ideas about late deliveries. Which tool helps them sort the ideas into natural groups?",
+[
+"Affinity diagram",
+"Tree diagram",
+"Matrix chart",
+"Activity network diagram"
+],
+0,
+"An affinity diagram groups a large number of ideas into themes based on how they relate. A tree diagram breaks one goal down into finer detail rather than sorting many loose ideas.",
+"std"
+],
+[
+"II.B.4",
+"A team wants to show how strongly each of five customer requirements relates to each of four process steps. Which tool fits best?",
+[
+"Affinity diagram",
+"Relations chart",
+"Matrix chart",
+"Tree diagram"
+],
+2,
+"A matrix chart sets two lists against each other and marks the strength of each pairing in the cells. A relations chart maps cause and effect among issues within one set, not between two lists.",
+"std"
+],
+[
+"II.B.4",
+"A relations chart (interrelationship digraph) helps a team to:",
+[
+"Sort many ideas into a few themes",
+"Find which issues drive the others",
+"Break a goal into detailed actions",
+"Schedule tasks along a critical path"
+],
+1,
+"Arrows drawn between issues show what causes what; issues with the most outgoing arrows are likely drivers. Sorting ideas into themes is the job of an affinity diagram.",
+"std"
+],
+[
+"II.B.4",
+"A team breaks the goal “reduce billing errors” into sub-goals, then into specific actions under each sub-goal. Which tool are they using?",
+[
+"Affinity diagram",
+"Relations chart",
+"Activity network diagram",
+"Tree diagram"
+],
+3,
+"A tree diagram breaks a broad goal down level by level into the specific actions needed to reach it. An affinity diagram works the other way, grouping many loose ideas into a few themes.",
+"std"
+],
+[
+"III.A",
+"The numbers of late orders on seven days were 2, 8, 3, 8, 6, 10 and 1. The mode is:",
+[
+"6",
+"5.4",
+"8",
+"9"
+],
+2,
+"The mode is the value that occurs most often, and 8 appears twice. Six is the median (the middle of the sorted values), 5.4 the mean and 9 the range.",
+"std"
+],
+[
+"III.A",
+"The variance of a set of shaft lengths is 25 square millimeters. The standard deviation is:",
+[
+"12.5 mm",
+"25 mm",
+"625 mm",
+"5 mm"
+],
+3,
+"The standard deviation is the square root of the variance, which puts it back in the original units: the square root of 25 is 5 mm. Halving the variance (12.5) is a common slip, but variance and standard deviation are linked by squaring, not by a factor of two.",
+"std"
+],
+[
+"III.B.1",
+"A team studying late invoice payments drafts its data collection plan. Which entry belongs under data source?",
+[
+"Any payment made after the invoice due date",
+"The invoice log in the accounts payable system",
+"Weekly, extracted each Friday by the analyst",
+"Days from invoice receipt to the payment date"
+],
+1,
+"The data source says where the data comes from, here the accounts payable system. The other entries are the operational definition of late, the collection frequency and the measure itself.",
+"std"
+],
+[
+"III.B.1",
+"In a data collection plan, the method element describes:",
+[
+"How often the data will be gathered and for how long",
+"Where the data comes from, such as a machine or a database",
+"How the data will be gathered, such as a check sheet or report",
+"Exactly what counts as a defect and how it is measured"
+],
+2,
+"The method is how the data is gathered: a check sheet, a system report, a survey or a gauge reading. Where it comes from is the data source, and how often is the frequency.",
+"std"
+],
+[
+"III.B.1",
+"A team suspects a filling machine drifts during each eight-hour shift. Its plan takes one sample at the start of each shift. The main problem is:",
+[
+"The fill weight lacks an operational definition",
+"Samples should come from a different data source",
+"Start-of-shift samples are the least accurate ones",
+"Sampling is too infrequent to show drift in a shift"
+],
+3,
+"If the drift happens within a shift, one reading at the start of every shift never sees it, so the frequency must match how fast the process changes. Nothing in the scenario suggests the definition or the source is the problem.",
+"std"
+],
+[
+"III.B.2",
+"A help desk logs the reason for each call (password, printer or software) and the minutes taken to resolve it. Which statement is correct?",
+[
+"The reason is qualitative and the minutes are quantitative",
+"Both are quantitative because every call can be counted",
+"The reason is quantitative and the minutes are qualitative",
+"Both are qualitative because they describe the same call"
+],
+0,
+"The reason is a category with no numeric value, so it is qualitative; the resolution time is a number measured on a scale, so it is quantitative. Being able to count the calls does not turn a category into a measurement.",
+"std"
+],
+[
+"III.B.2",
+"The number of patients who miss their appointments each week is:",
+[
+"Continuous data",
+"Ordinal data",
+"Discrete data",
+"Nominal data"
+],
+2,
+"A count can only take whole values (12 or 13 patients, never 12.4), which makes it discrete. Continuous data such as time or weight can take any value within a range.",
+"std"
+],
+[
+"III.B.2",
+"Recording which of four suppliers delivered each lot uses which measurement scale?",
+[
+"Ratio",
+"Interval",
+"Ordinal",
+"Nominal"
+],
+3,
+"Supplier names are labels with no order, which is the nominal scale. Ordinal data, such as a 1-to-5 rating, has a meaningful order.",
+"std"
+],
+[
+"III.B.2",
+"Temperature in degrees Celsius is on an interval scale rather than a ratio scale because:",
+[
+"Zero degrees does not mean there is no temperature",
+"Its values can be ranked from colder to hotter",
+"The gaps between the degrees are not equal",
+"Temperatures can only be recorded in whole degrees"
+],
+0,
+"An interval scale has equal gaps but no true zero, so 20 °C is not twice as hot as 10 °C. Being able to rank values is true of ordinal data too, and the gaps on the Celsius scale are equal.",
+"std"
+],
+[
+"III.B.2",
+"Which of these is measured on a ratio scale?",
+[
+"Oven temperature in degrees Fahrenheit",
+"Weight of a casting in kilograms",
+"Customer rating from one to five stars",
+"Part number stamped on the casting"
+],
+1,
+"Weight has equal intervals and a true zero, so a 20 kg casting really is twice as heavy as a 10 kg one. Fahrenheit has no true zero (interval), a star rating is ordinal and a part number is nominal.",
+"std"
+],
+[
+"III.B.3",
+"A hospital wants the views of 2,000 recent patients on its discharge instructions, at low cost. The most suitable technique is:",
+[
+"A short written or online survey",
+"One-on-one interviews with each patient",
+"A check sheet kept at the discharge desk",
+"A checklist for the discharging nurses"
+],
+0,
+"A survey reaches many people cheaply with the same questions. Interviews give depth but cost far too much for 2,000 people, and check sheets and checklists record events or steps, not patient opinions.",
+"std"
+],
+[
+"III.B.3",
+"A team wants to learn why experienced operators skip a setup step. Compared with a survey, interviews are better here because they:",
+[
+"Reach more people at a lower cost per answer",
+"Let the team ask follow-up questions on reasons",
+"Give numeric results that are easier to analyze",
+"Remove any influence of the interviewer on answers"
+],
+1,
+"Interviews allow probing, which suits a why question. Surveys are the cheaper way to reach many people, and an interviewer can influence answers rather than removing that influence.",
+"std"
+],
+[
+"III.B.3",
+"An inspector makes a tally mark beside the defect type each time she finds a defect on a door panel. She is using:",
+[
+"A checklist",
+"A control chart",
+"A check sheet",
+"A Pareto chart"
+],
+2,
+"A check sheet is a form for tallying how often each event occurs as it happens. A checklist confirms that required steps were done; a Pareto chart could later be drawn from the tallies.",
+"std"
+],
+[
+"III.B.3",
+"A technician ticks off each of the 12 steps of a machine changeover as he finishes it, so that none is missed. He is using:",
+[
+"A check sheet",
+"A process map",
+"A control chart",
+"A checklist"
+],
+3,
+"A checklist makes sure each required step or item is done. A check sheet tallies how often things occur, and a process map shows the steps but does not record that they were completed.",
+"std"
+],
+[
+"III.B.3",
+"A clerk needs a simple random sample of 30 invoices from 600 in a file. She should:",
+[
+"Number all invoices and pick 30 by random number",
+"Take the 30 invoices at the top of the file",
+"Pick the 30 that look most likely to have errors",
+"Take every 20th invoice, starting with the first"
+],
+0,
+"In a simple random sample every invoice has the same chance of selection, which numbering and random numbers achieve. Every 20th invoice is systematic sampling, and the top of the file or the likely errors are convenience and judgment samples that can be biased.",
+"std"
+],
+[
+"III.C.1",
+"Precision in a measurement system describes:",
+[
+"How close the average reading is to the true value",
+"How closely repeated readings agree with each other",
+"How the readings change as the gauge ages over time",
+"How the bias changes across the range of the gauge"
+],
+1,
+"Precision is the spread of repeated readings, regardless of whether they center on the true value. Closeness of the average to the true value is accuracy, change over time is stability and change across the range is linearity.",
+"std"
+],
+[
+"III.C.1",
+"A gauge block certified at 10.00 mm is measured ten times. Every reading falls between 10.21 and 10.22 mm. The gauge is:",
+[
+"Accurate but not precise",
+"Neither accurate nor precise",
+"Both accurate and precise",
+"Precise but not accurate"
+],
+3,
+"The readings agree closely with one another, so the gauge is precise, but they sit about 0.21 mm above the true value, so it is not accurate. A tight cluster in the wrong place is the classic sign of bias.",
+"std"
+],
+[
+"III.C.1",
+"A team measures the same master part every morning for a month, and the average reading slowly creeps upward. This points to a problem with:",
+[
+"Linearity",
+"Stability",
+"Reproducibility",
+"Repeatability"
+],
+1,
+"Stability is the change in bias over time, which a steady creep in readings of one part shows. Linearity is change across the gauge's range, not over time.",
+"std"
+],
+[
+"III.C.1",
+"Why does a Six Sigma team check its measurement system early in the Measure phase?",
+[
+"To skip collecting baseline data on the process",
+"To set the specification limits for the product",
+"To know the data reflects the process, not the gauge",
+"To prove that the process is in statistical control"
+],
+2,
+"If the gauge is biased, unstable or imprecise, the baseline and every later analysis describe the measurement system as much as the process. Checking it first is what makes the baseline trustworthy; it does not set specifications or show control.",
+"std"
+],
+[
+"III.C.2",
+"In a typical gauge R&R study:",
+[
+"One operator measures each of many different parts just once",
+"Several operators each measure the same parts more than once",
+"Each operator measures a different set of parts more than once",
+"The gauge is checked against a master standard after calibration"
+],
+1,
+"Repeat readings by the same operator show repeatability, and different operators measuring the same parts show reproducibility, so both are needed. Giving each operator different parts would confuse operator differences with part differences.",
+"std"
+],
+[
+"IV.A.1",
+"During a 5S event, a team red-tags tools and supplies that have not been used in months and moves them out of the work area. Which 5S step is this?",
+[
+"Sort",
+"Shine",
+"Sustain",
+"Set in order"
+],
+0,
+"Sort removes what is not needed for the current work, and red-tagging is the usual way to do it. Set in order comes next and gives each remaining item a marked place.",
+"std"
+],
+[
+"IV.A.1",
+"In 5S, the main purpose of the set in order step is to:",
+[
+"Remove all of the items that are not needed for the current work",
+"Give each needed item a marked home at its point of use",
+"Clean the equipment so that leaks and wear are easy to spot early",
+"Check each month that the area still meets the agreed standard"
+],
+1,
+"Set in order puts needed items where they are used and marks their places, so time is not lost searching. Removing unneeded items is sort, which comes before it.",
+"std"
+],
+[
+"IV.A.1",
+"An operator wiping down a machine during the daily 5S shine notices a small oil leak that had been hidden under grime. This shows that shine also works as a form of:",
+[
+"Sorting",
+"Setup reduction",
+"Inspection",
+"Kanban"
+],
+2,
+"Cleaning puts hands and eyes on the equipment, so leaks, loose parts and wear get found early; this is why shine is often called cleaning as inspection. Sorting is a separate step that removes unneeded items.",
+"std"
+],
+[
+"IV.A.1",
+"A team has sorted, organized and cleaned a work cell. To stop each shift from doing these things its own way, the next 5S step is to:",
+[
+"Red-tag any items that have not been used in the last month",
+"Run a kaizen blitz to redesign the whole layout of the cell",
+"Audit the cell every month and post the scores on a board",
+"Agree common rules, checklists and visual standards"
+],
+3,
+"Standardize, the fourth S, turns the first three steps into shared rules so every shift works the same way. Regular audits belong to sustain, the step that follows.",
+"std"
+],
+[
+"IV.A.1",
+"Six months after a 5S event, an office has slipped back to cluttered desks and unlabeled shelves. Which 5S step was weakest?",
+[
+"Sustain",
+"Sort",
+"Shine",
+"Set in order"
+],
+0,
+"Sustain is the discipline of keeping the gains through habits, audits and leadership attention; without it, areas drift back. The earlier steps were clearly done once, since the office was organized for a time.",
+"std"
+],
+[
+"IV.A.1",
+"In value analysis, an activity counts as value-added when it:",
+[
+"Is required by the company's own internal procedures and policies",
+"Changes the product or service in a way the customer values",
+"Is done at a step that is staffed by skilled, well-paid workers",
+"Is done quickly, correctly and without any errors or rework"
+],
+1,
+"Value is defined by the customer: a value-added step changes the product or service in a way the customer wants and will pay for. A step required only by internal procedure may be necessary, but it is not value-added.",
+"std"
+],
+[
+"IV.A.1",
+"A hospital lab must log every sample into a tracking system to meet regulations. Patients do not value this step. In value analysis it is best classed as:",
+[
+"Value-added, because it is required by the health regulations",
+"Pure waste that should be removed from the process right away",
+"Non-value-added but necessary, so keep it to a minimum",
+"Value-added, because trained lab staff are the ones who do it"
+],
+2,
+"Some steps add no value for the customer but cannot be dropped, often because of regulations. They are kept and minimized. Being required by law does not make a step value-added.",
+"std"
+],
+[
+"IV.A.1",
+"Claims clerks sit idle for 20 minutes each morning until the computer system finishes its overnight update. Which type of waste is this?",
+[
+"Motion",
+"Transportation",
+"Overproduction",
+"Waiting"
+],
+3,
+"People or equipment standing idle until something is ready is the waste of waiting. Motion is unneeded movement by people, and transportation is unneeded movement of materials or information.",
+"std"
+],
+[
+"IV.A.2",
+"In an FMEA, the occurrence rating describes:",
+[
+"How likely the cause or failure mode is to happen",
+"How serious the effect is for the customer or user",
+"How likely current controls are to catch the failure",
+"How many process steps the failure mode will affect"
+],
+0,
+"Occurrence rates how often the cause or failure is expected to happen; a higher number means more often. Seriousness of the effect is severity, and the chance of catching it is detection.",
+"std"
+],
+[
+"IV.A.2",
+"A team is starting a process FMEA for a new filling line. For each process step, what do they list first?",
+[
+"The defects found at final inspection last year",
+"The ways that step could fail to do its job",
+"The operators who will run that step on each shift",
+"The cost of the equipment that is used at that step"
+],
+1,
+"A process FMEA asks how each step could fail (the failure modes), then the effects, causes and current controls. Past inspection defects can inform the list, but an FMEA looks forward at potential failures, including ones not yet seen.",
+"std"
+],
+[
+"IV.B",
+"How does a process map help a team look for the root cause of a problem?",
+[
+"It proves which cause is responsible by timing each of the steps",
+"It ranks the causes of the problem from the most to the least common",
+"It shows where in the flow the problem starts and what feeds into it",
+"It removes the need to collect any further data about the problem"
+],
+2,
+"Mapping the process as it really runs shows where the problem enters, plus handoffs, loops and missing steps worth investigating. It points to where to look; it does not prove a cause or rank causes by frequency.",
+"std"
+],
+[
+"IV.B",
+"In the 8D problem-solving method, which step comes just before the team identifies the root cause?",
+[
+"Choose and verify permanent corrective actions",
+"Recognize the team and close out the problem",
+"Change systems to prevent the problem recurring",
+"Put interim containment actions in place"
+],
+3,
+"8D runs: form the team, describe the problem, contain it, find the root cause, choose permanent actions, implement and validate them, prevent recurrence, and recognize the team. Containment protects the customer while the cause is found; permanent actions come after the cause is known.",
+"std"
+],
+[
+"IV.B",
+"A team uses force-field analysis while studying why a new procedure is not being followed. The tool helps the team to:",
+[
+"List the forces that drive the change and those that resist it",
+"Rank the root causes by how often each one has occurred in the past",
+"Measure how strongly two of the process variables are related",
+"Draw each step of the procedure in the order in which it is done"
+],
+0,
+"Force-field analysis sets driving forces against restraining forces, so the team can see what is holding the change back and work to weaken it. Ranking causes by frequency is a Pareto chart, and measuring a relationship is correlation.",
+"std"
+],
+[
+"IV.B",
+"A team builds a matrix chart with four candidate causes as rows and three defect types as columns, marking each strong relationship with a filled circle. One cause has filled circles under all three defect types. What should the team conclude?",
+[
+"That cause is a likely root cause to investigate first",
+"That cause has been proven to cause all three defects",
+"The other three causes can be dropped from the study",
+"The chart should be redrawn as a Pareto chart"
+],
+0,
+"A matrix chart sets two lists against each other, so a cause strongly linked to several defect types stands out as a priority for root cause investigation. The chart records the team's judgment of each relationship; it does not prove cause, and the other causes still need data before they are ruled out.",
+"std"
+],
+[
+"IV.C",
+"A customer complains of “bad parts”. In the corrective action process, the first step is to:",
+[
+"Retrain the operators who made the most recent batch of parts",
+"Replace the machine that produced all of the rejected parts",
+"Describe the problem clearly: what, where, when and how many",
+"Write the closure report and send a copy to the customer"
+],
+2,
+"The process starts by identifying the problem in specific, measurable terms; a vague complaint cannot be contained or solved well. Retraining or replacing equipment before the problem is defined is acting on a guess.",
+"std"
+],
+[
+"IV.C",
+"To stop frequent jams, a team wants to buy a new sensor before finding out why the jams happen. The main risk of this approach is that:",
+[
+"The sensor may cost more than the team's budget allows",
+"Containment will be delayed until the sensor is delivered",
+"The customer may not be told about the new sensor",
+"The sensor may miss the real cause, so the jams come back"
+],
+3,
+"Corrective action determines the cause before choosing a solution, so the fix acts on the cause rather than a guess. Cost and communication matter, but the core risk is spending money on a fix that does not work.",
+"std"
+],
+[
+"IV.C",
+"A corrective action adds a torque check at assembly. Two weeks later an auditor visits the line and sees that the check is being done and recorded. This step is:",
+[
+"Verifying that the action was implemented",
+"Confirming that the action was effective",
+"Containing the problem at the line",
+"Identifying the root cause of the problem"
+],
+0,
+"Seeing the check in use shows the action was put in place. Confirming effectiveness takes more: evidence over time that the original problem has not come back.",
+"std"
+],
+[
+"IV.D",
+"A process review finds that two shifts set up a machine in different ways, though no defects have been found yet. A suitable preventive action is to:",
+[
+"Quarantine all product from both shifts until it is tested",
+"Write one setup procedure and train both shifts to use it",
+"Wait for a defect to appear before changing anything",
+"Let each shift keep using the setup method it prefers"
+],
+1,
+"A procedural change removes the risk before it causes defects, which is the point of preventive action. Quarantine is containment, a response to a nonconformity that has not occurred here.",
+"std"
+],
+[
+"IV.D",
+"Six months after adding a check to prevent a possible labeling error, how can the team best show the preventive action was effective?",
+[
+"The check has been added to the work instruction",
+"Operators have signed the training record for the check",
+"Records show the check is done and the error has not occurred",
+"The action was closed in the system by its due date"
+],
+2,
+"Effectiveness means the risk has actually been controlled, shown by evidence over time. Updated instructions, training sign-offs and on-time closure show the action was carried out, not that it worked.",
+"std"
+],
+[
+"IV.E.1",
+"Hospital wait times have a long tail to the right: most patients wait a short time, but a few wait for hours. Compared with the median, the mean will most likely be:",
+[
+"Lower, pulled down by the many short waits",
+"About the same, as in any normal distribution",
+"Impossible to judge from the shape of the data",
+"Higher, pulled up by the few very long waits"
+],
+3,
+"In right-skewed data the long tail pulls the mean above the median, so the median better describes a typical wait. Treating skewed data as normal can mislead, for example when setting limits or targets.",
+"std"
+],
+[
+"IV.E.1",
+"A histogram of shaft diameters from one production area shows two clearly separate peaks. The most likely explanation is:",
+[
+"Data from two sources, such as two machines, mixed together",
+"A normal process sampled with an unusually small sample",
+"A measurement gauge that reads a little too high",
+"A process that is running exactly on its target"
+],
+0,
+"A bimodal shape usually means two different processes, machines, shifts or materials are mixed in one data set; they should be split and studied separately. A biased gauge shifts the whole distribution but does not create a second peak.",
+"std"
+],
+[
+"IV.E.2",
+"A control chart of fill weights has been stable for months. One morning, just after a new lot of material is used, a point falls far above the upper control limit. This is most likely:",
+[
+"Common cause variation that needs no action",
+"Special cause variation that should be investigated",
+"A reason to recalculate the control limits at once",
+"A sign that the control limits were set too wide"
+],
+1,
+"A point beyond a control limit, tied to a change such as a new material lot, signals a special (assignable) cause to find and remove. Recalculating limits around it would hide the signal instead of fixing the cause.",
+"std"
+],
+[
+"IV.F.2",
+"A regression of cure time on oven temperature was built from data between 150 and 200 degrees. Using it to predict cure time at 300 degrees is risky because:",
+[
+"Regression can only predict values below the mean of x",
+"The intercept cannot be used once x is above 200 degrees",
+"The relationship may not hold outside the range of the data",
+"A prediction requires a correlation coefficient of 1"
+],
+2,
+"A regression equation describes the data it was built from; predicting far outside that range (extrapolation) assumes the same straight-line pattern continues, which may be false. Regression can predict anywhere within the data range, not only below the mean.",
+"std"
+],
+[
+"IV.G",
+"A team tests whether a new supplier's resin changes the mean tensile strength of a part. The null hypothesis is that:",
+[
+"The new resin raises the mean strength of the part",
+"The new resin changes the mean strength in some way",
+"The sample will show a significant difference",
+"The mean strength is the same with both resins"
+],
+3,
+"The null hypothesis is the statement of no difference, assumed true until the data give strong evidence against it. A change in either direction is the alternative hypothesis the team hopes to find evidence for.",
+"std"
+],
+[
+"IV.G",
+"In a hypothesis test, the alternative hypothesis is:",
+[
+"The claim of no difference that is assumed to be true at the start",
+"The probability of rejecting the null when it is true",
+"The claim of a difference or effect that the test seeks evidence for",
+"The critical value that the test statistic is compared against"
+],
+2,
+"The alternative hypothesis states the difference or effect, and it is accepted only when the data give enough evidence to reject the null. The claim of no difference is the null, and the probability of wrongly rejecting it is alpha.",
+"std"
+],
+[
+"IV.G",
+"A new gauge truly reads differently from the old one, but a test concludes there is no significant difference. This is a:",
+[
+"Type I error",
+"Correct decision",
+"Alpha risk",
+"Type II error"
+],
+3,
+"Failing to reject a null hypothesis that is false is a type II error, a missed real effect; its probability is beta. A type I error, whose risk is alpha, is the reverse: finding a difference that is not there.",
+"std"
+],
+[
+"V.A.1",
+"How does a kaizen blitz differ from everyday kaizen?",
+[
+"A blitz makes rapid changes in days; kaizen runs every day",
+"A blitz uses suggestion boxes; kaizen uses a dedicated team",
+"A blitz targets small tweaks; kaizen targets major redesigns",
+"A blitz is led by auditors; kaizen is led by consultants"
+],
+0,
+"A kaizen blitz (kaizen event) is a short, intensive team effort on one process, while kaizen is the ongoing habit of small daily improvements by everyone. The idea that kaizen means major redesigns reverses the two.",
+"std"
+],
+[
+"V.A.1",
+"A hospital billing office wants to cut the time it takes to send invoices. Can a kaizen event help?",
+[
+"No, kaizen applies only to manufacturing assembly lines",
+"Yes, kaizen works on office and service processes too",
+"Only after the office installs new billing software",
+"Only if a Black Belt first runs a designed experiment"
+],
+1,
+"Kaizen and kaizen events can improve any process with waste in it, including administrative and service work. Its roots in manufacturing do not limit it to the shop floor.",
+"std"
+],
+[
+"V.A.2",
+"A team has chosen a change to shorten clinic wait times. In the Plan step, the team should also:",
+[
+"Roll the change out to every clinic at once",
+"Compare the trial results with the baseline data",
+"Predict the result and decide how to measure it",
+"Make the change the new standard for all staff"
+],
+2,
+"Plan defines the change, predicts its effect and sets how success will be measured. Comparing trial results with the baseline happens later, in Check.",
+"std"
+],
+[
+"V.A.2",
+"A trial of a new setup method met its goal. In the Act step, the team should:",
+[
+"Write down the effect they expect the method to have",
+"Compare the trial results with the earlier prediction",
+"Try the new method on one machine for a week",
+"Adopt it as the standard and plan the next cycle"
+],
+3,
+"Act decides what to do with what was learned: adopt, adapt or abandon the change. Comparing results with the prediction is the Check step, which comes just before Act.",
+"std"
+],
+[
+"V.A.2",
+"After the Act step of a PDCA cycle, the team usually:",
+[
+"Begins another cycle to improve further",
+"Closes the process to any further change",
+"Returns to Do and repeats the same trial",
+"Hands the results to an auditor to approve"
+],
+0,
+"PDCA is a repeating cycle: each turn sets a new baseline that the next Plan builds on. Repeating the same trial adds nothing once the change has been adopted.",
+"std"
+],
+[
+"V.A.3",
+"Why is a cost-benefit analysis done before a solution is put in place?",
+[
+"To find the root cause of the original problem",
+"To show the expected gains justify the cost",
+"To set control limits for the improved process",
+"To decide who on the team will run the pilot"
+],
+1,
+"Cost-benefit analysis checks that a solution is worth doing and helps win approval and resources for it. Finding the root cause is earlier Analyze work, not the purpose of this analysis.",
+"std"
+],
+[
+"V.A.3",
+"Solution A costs $20,000 and saves $10,000 a year. Solution B costs $6,000 and saves $4,000 a year. Over three years, which gives the larger net benefit (savings minus cost)?",
+[
+"Solution A, by $18,000",
+"Solution B, by $4,000",
+"Solution A, by $4,000",
+"Solution B, by $14,000"
+],
+2,
+"Net benefit over three years is $30,000 - $20,000 = $10,000 for A and $12,000 - $6,000 = $6,000 for B, so A is ahead by $4,000. Comparing savings alone ($30,000 vs $12,000) overstates the gap as $18,000.",
+"std"
+],
+[
+"V.B.1",
+"Why should a control plan be in place before a project is closed?",
+[
+"So the root cause can be confirmed by testing",
+"So the project charter can be signed off",
+"So the baseline data can be collected",
+"So the gains hold after the team moves on"
+],
+3,
+"Without defined checks and reactions, a process tends to drift back to its old performance once the project team leaves. Confirming the root cause belongs to Analyze, long before the control plan.",
+"std"
+],
+[
+"V.B.2",
+"On an X-bar and R chart, the X-bar chart monitors:",
+[
+"Changes in the process average between subgroups",
+"The spread of readings within each subgroup",
+"The share of parts that fall outside specification",
+"The number of defects found on each unit"
+],
+0,
+"The X-bar chart plots each subgroup's average, so it shows whether the process center is shifting. The spread within subgroups is what the R chart tracks.",
+"std"
+],
+[
+"V.B.2",
+"A process's R chart shows a point above its upper control limit while its X-bar chart is in control. This means:",
+[
+"The process average has shifted upward",
+"Variation within that subgroup was unusually large",
+"The parts in that subgroup are out of specification",
+"The control limits need to be widened"
+],
+1,
+"The R chart plots each subgroup's range, so a high point means the readings in that subgroup were unusually spread out. A shift in the average would show on the X-bar chart, which is in control.",
+"std"
+],
+[
+"V.B.2",
+"Data for an X-bar and R chart is usually collected as:",
+[
+"Counts of defective units found in each daily lot",
+"One pass or fail result for each finished unit",
+"Small subgroups of measurements, such as five parts",
+"Customer complaints added up for each month"
+],
+2,
+"X-bar and R charts need measured (variables) data taken in small subgroups, commonly four or five consecutive parts. Counts of defectives are attribute data and call for a p or np chart.",
+"std"
+],
+[
+"V.B.2",
+"All points on a control chart are inside the limits, but the last eight in a row are above the center line. This most likely indicates:",
+[
+"Normal common cause variation",
+"The limits were calculated wrongly",
+"That the process now meets specification",
+"A process shift worth investigating"
+],
+3,
+"A long run on one side of the center line is very unlikely from common cause variation alone, so it signals a probable shift even with no point outside the limits. Treating it as normal variation ignores this nonrandom pattern.",
+"std"
+],
+[
+"V.B.2",
+"An improvement clearly reduced a process's variation. How should the team update its X-bar and R chart?",
+[
+"Recalculate the limits from data collected after the change",
+"Keep the old limits so the chart stays consistent",
+"Set the control limits equal to the specification limits",
+"Narrow the limits to match the team's target values"
+],
+0,
+"Control limits must reflect how the process runs now, so once the change is confirmed they are recalculated from new data. Keeping the old, wider limits would hide a return to the old level of variation.",
+"std"
+],
+[
+"V.B.2",
+"Why does a process owner keep an X-bar and R chart running after an improvement project closes?",
+[
+"To prove that every part shipped meets specification",
+"To see quickly if the process drifts back",
+"To replace the reaction plan in the control plan",
+"To measure the savings the project produced"
+],
+1,
+"Ongoing charting shows a shift or rise in variation as soon as it happens, so the gain can be protected before much harm is done. A control chart cannot prove every part is within specification, because control limits are not specification limits.",
+"std"
+],
+[
+"V.B.3",
+"An improvement changes an oven's temperature setting. What should happen to the related procedure?",
+[
+"Leave it alone, since the operators already know the change",
+"Add an unsigned handwritten note to the current copy",
+"Revise it, record the change and approve the new version",
+"Wait until the next annual review to bring it up to date"
+],
+2,
+"When a process changes, its documents must be revised, the change recorded and the new version approved and issued. Relying on what operators remember leaves the procedure wrong and the change easy to lose.",
+"std"
+],
+[
+"V.B.3",
+"A procedure has been revised after an improvement. Which step best ensures the change is followed on every shift?",
+[
+"Post the new version on the company intranet site",
+"Email the new version to the process owner only",
+"File the old version away in the document archive",
+"Tell and train the affected people on all shifts"
+],
+3,
+"A change only takes hold when the people doing the work know about it and can do it, so it must be communicated and trained on every shift. Posting the document online does not make sure anyone reads or understands it.",
+"std"
+],
+[
+"V.B.3",
+"A process change will alter the packaging a client receives. Besides the operators, who should be told before the change takes effect?",
+[
+"The customer and other affected groups",
+"Nobody outside the team, to protect the change",
+"Only the sponsor who approved the change",
+"Only the auditors at the next scheduled audit"
+],
+0,
+"Stakeholders affected by a change, inside and outside the company, should hear about it before it happens so they are not surprised. Keeping the change within the team leaves the customer to find it on arrival.",
+"std"
+],
+[
+"V.B.4",
+"How does a standard operating procedure (SOP) usually differ from a work instruction?",
+[
+"An SOP is for operators; a work instruction is for managers",
+"An SOP covers a process; a work instruction details one task",
+"An SOP is a record; a work instruction is a controlled document",
+"An SOP is updated yearly; a work instruction is updated daily"
+],
+1,
+"An SOP describes how a process runs, who is involved and in what order, while a work instruction gives the step-by-step detail for doing one task. Both are controlled documents, not records.",
+"std"
+],
+[
+"V.B.4",
+"Two shifts do the same task in different ways and get different results. The main purpose of a work instruction here is to:",
+[
+"Record who worked on each shift and at what time",
+"Remove the need for any supervision of the task",
+"Have everyone do the task the same correct way",
+"Set the control limits used to monitor the task"
+],
+2,
+"A work instruction sets one best known method so results do not depend on who does the job or when. Recording who worked when is a record, not the purpose of an instruction.",
+"std"
+]
+]
+}

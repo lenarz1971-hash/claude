@@ -1,0 +1,16 @@
+table.mv{table-layout:auto;margin:6px 0;font-size:14.5px;min-width:100%}
+table.mv th{font:700 9px var(--mono);letter-spacing:.08em;color:var(--ink-3);text-transform:uppercase;padding:0 6px 7px;text-align:center}
+table.mv th:first-child{text-align:left}
+table.mv td{padding:4px 6px;border-bottom:1px solid var(--line);vertical-align:middle;width:auto;text-align:center;font-variant-numeric:tabular-nums}
+table.mv td.mo{text-align:left;color:var(--ink);min-width:150px;padding-right:12px}
+table.mv td b{color:var(--navy)}
+table.mv th,table.mv td{white-space:nowrap}
+table.kn-in td.mo{min-width:44px}
+.kc{display:inline-flex;align-items:center;gap:4px}
+#tool .kc input{width:46px;text-align:center;padding:4px 2px}
+.kc i{font:700 12px var(--mono);font-style:normal;width:14px;text-align:left;color:var(--ink-3)}
+.kA{color:#1F8C55!important}.kO{color:#0F3E68!important}.kM{color:#9C7C1F!important}.kI{color:#7C8B99!important}.kR{color:#C0392B!important}.kQ{color:#C0392B!important}
+table.mv td.kA,table.mv td.kO,table.mv td.kM,table.mv td.kI,table.mv td.kR,table.mv td.kQ{font-weight:700;background:#F6F7F4}
+table.kn-ev td b{color:inherit}
+@media print{#tool .kc input{width:auto}.kc .pv{min-width:22px}table.kn-in{font-size:11px}table.kn-in td{padding:1px 4px}}
+.kn-svg svg{max-width:680px;margin:0 auto}

@@ -1,0 +1,10 @@
+table.mv{table-layout:auto;margin:6px 0;font-size:14.5px;min-width:100%}
+table.mv th{font:700 9px var(--mono);letter-spacing:.08em;color:var(--ink-3);text-transform:uppercase;padding:0 6px 7px;text-align:center}
+table.mv th:first-child{text-align:left}
+table.mv td{padding:3px;border-bottom:1px solid var(--line);vertical-align:middle;width:auto;text-align:center}
+table.mv td.mo{text-align:left;color:var(--ink);min-width:140px;padding-right:12px}
+table.mv td.mt,table.mv td.mu{font:700 13px var(--mono);color:var(--navy);white-space:nowrap;overflow-wrap:normal}
+.ap-key{font-size:13px;color:var(--ink-3);margin:4px 10px 8px}
+.ap-key span{display:inline-block;width:11px;height:11px;border-radius:50%;margin:0 5px 0 12px;vertical-align:-1px}
+.ap-key span:first-child{margin-left:0}
+table.mv th{overflow-wrap:normal;word-break:normal}

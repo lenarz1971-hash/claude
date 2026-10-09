@@ -1,0 +1,12 @@
+#tool .ci-ok{color:var(--green);font-weight:700}
+#tool .ci-mid{color:#9C7C1F;font-weight:700}
+#tool .ci-bad{color:#C0392B;font-weight:700}
+#tool table[data-grid="g"] input[data-col="hist"]{font-family:var(--mono);letter-spacing:.08em}
+#tool table[data-grid="g"] input[type=number]{width:72px;min-width:72px}
+#tool table.tg td.calc{font-size:13px}
+@media print{@page{size:landscape}#tool table.tg td.calc{font-size:11px}}
+#tool table[data-grid="g"] td.calc small{display:block;font-size:11px;color:var(--ink-3)}
+#tool table[data-grid="g"] td.calc{padding-top:8px}
+#tool table.tg input[type=number]::-webkit-inner-spin-button,#tool table.tg input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+#tool table.tg input[type=number]{-moz-appearance:textfield;appearance:textfield}
+#tool table[data-grid="g"] input[type=date]{min-width:136px}

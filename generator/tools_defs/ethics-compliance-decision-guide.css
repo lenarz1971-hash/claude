@@ -1,0 +1,24 @@
+table.mv{table-layout:auto;margin:6px 0;font-size:14.5px;min-width:100%}
+table.mv th{font:700 9px var(--mono);letter-spacing:.08em;color:var(--ink-3);text-transform:uppercase;padding:0 6px 7px;text-align:center}
+table.mv th:first-child{text-align:left}
+table.mv td{padding:3px;border-bottom:1px solid var(--line);vertical-align:middle;width:auto;text-align:center}
+table.mv td.mo{text-align:left;color:var(--ink);min-width:200px;padding-right:12px}
+table.mv td,table.mv th{overflow-wrap:normal;word-break:normal}
+table.ec{min-width:680px;border-collapse:collapse;margin-bottom:14px}
+table.ec td.mo{min-width:260px;font-size:14.5px;padding-left:10px}
+#tool table.ec select{width:170px;font-size:14px;padding:5px 6px}
+#tool table.ec textarea{min-width:220px;font-size:14px;padding:5px 8px;resize:vertical}
+table.ec th:last-child,table.ec td:last-child{text-align:left;width:40%}
+table.ec tr.op td.mo{box-shadow:inset 4px 0 0 #C0392B}
+table.ec tr.ad td.mo{box-shadow:inset 4px 0 0 #1F8C55}
+.ec-no{color:#C0392B;font-weight:700}.ec-ok{color:#1F8C55;font-weight:700}.ec-q{color:#9C7C1F;font-weight:700}
+@media print{
+ table.ec{min-width:0;font-size:11px;margin-bottom:8px}
+ table.ec td.mo{min-width:0;font-size:11px}
+ #tool table.ec td .pv{border-bottom:0;font-size:11px;padding:2px 4px;text-align:left}
+}
+
+#tool .tgw{overflow-x:auto}
+#tool table.mv th,#tool table.mv td:not(.mo),#tool table.hx th,#tool table.hx td:not(.hx-r){overflow-wrap:normal;word-break:normal}
+#tool table.mv td.mt,#tool table.mv td.mu,#tool table.mv tfoot td{white-space:nowrap}
+@media print{#tool .tgw{overflow:visible}#tool .tsec>h3,#tool .tsec>.th{break-after:avoid;page-break-after:avoid;break-inside:avoid}#tool .tsec>.th::after,#tool .tsec>h3:not(:has(+.th))::after{content:"";display:block;flex:none;align-self:flex-start;width:0;height:140px;margin-bottom:-140px}}

@@ -1,0 +1,278 @@
+[
+ {
+  "file": "calculators/gage-rr-impact-on-cpk.html",
+  "old": "<tr><th>True Cpk</th><th class=\"n\">%GRR</th>",
+  "new": "<tr><th>True Cpk</th><th class=\"n\">%GRR (of tolerance)</th>",
+  "id": 261
+ },
+ {
+  "file": "calculators/gage-rr-impact-on-cpk.html",
+  "old": "With %GRR expressed against total variation, observed Cpk works\n          out to exactly",
+  "new": "With %GRR expressed against total variation (the slider above; the table below uses %GRR against tolerance, which is why its numbers differ), observed Cpk works\n          out to exactly",
+  "id": 262
+ },
+ {
+  "file": "calculators/gage-rr-impact-on-cpk.html",
+  "old": "<tr><td>1.67</td><td class=\"n\">10</td><td class=\"n\">1.65</td><td class=\"n\">0.00%</td><td class=\"n ok\">0.0%</td></tr>",
+  "new": "<tr><td>1.67</td><td class=\"n\">10</td><td class=\"n\">1.65</td><td class=\"n\">0.00%</td><td class=\"n ok\">~0 (under 1 ppm)</td></tr>",
+  "id": 263
+ },
+ {
+  "file": "calculators/gage-rr-impact-on-cpk.html",
+  "old": "<tr><td>1.33</td><td class=\"n\">30</td><td class=\"n\">1.24</td><td class=\"n\">0.02%</td><td class=\"n hi\">27.1%</td></tr>",
+  "new": "<tr><td>1.33</td><td class=\"n\">30</td><td class=\"n\">1.24</td><td class=\"n\">0.02%</td><td class=\"n hi\">31%</td></tr>",
+  "id": 264
+ },
+ {
+  "file": "calculators/gage-rr-impact-on-cpk.html",
+  "old": "is reporting a fiction, in either direction.",
+  "new": "is reporting a fiction — almost certainly an understatement of the process, and an unknown escape rate.",
+  "id": 265
+ },
+ {
+  "file": "calculators/gage-rr-impact-on-cpk.html",
+  "old": "Measuring three times and averaging cuts the measurement\n    standard deviation by a factor of &radic;3.",
+  "new": "Measuring three times and averaging cuts the repeatability\n    standard deviation by a factor of &radic;3 (reproducibility between appraisers is not reduced).",
+  "id": 266
+ },
+ {
+  "file": "calculators/control-chart.html",
+  "old": "eight consecutive points on one side of the centre line, six in a row steadily rising or falling, fourteen alternating up and down, two of three beyond two sigma on the same side.",
+  "new": "eight consecutive points on one side of the center line, six in a row steadily rising or falling, two of three beyond two sigma on the same side, and four of five beyond one sigma on the same side.",
+  "id": 268
+ },
+ {
+  "file": "calculators/control-chart.html",
+  "old": "Free X-bar and R chart builder with the Western Electric rules applied.",
+  "new": "Free X-bar and R chart builder with Western Electric and Nelson run rules applied.",
+  "id": 269
+ },
+ {
+  "file": "calculators/control-chart.html",
+  "old": "Needs at least six subgroups, one per line. Two to ten readings on each line.",
+  "new": "Needs at least six subgroups, one per line. Two to five readings on each line.",
+  "id": 270
+ },
+ {
+  "file": "calculators/control-chart.html",
+  "old": "Eight points below the centre line",
+  "new": "Eight points below the center line",
+  "id": 271
+ },
+ {
+  "file": "calculators/process-capability.html",
+  "old": "produces a figure that will not reproduce next month, which is the whole point of calculating it.",
+  "new": "produces a figure that will not reproduce next month, when predicting next month is the whole point of calculating it.",
+  "id": 272
+ },
+ {
+  "file": "calculators/process-capability.html",
+  "old": "' means the variation alone will not fit inside the specification, so centering will not rescue it. '",
+  "new": "(Cp<1 ? ' means the variation alone will not fit inside the specification, so centering will not rescue it. ' : ' leaves little room even when centered, so centering alone will not get Cpk to 1.33. ')",
+  "id": 273
+ },
+ {
+  "file": "calculators/process-capability.html",
+  "old": "basis = 'overall standard deviation (no subgroups declared)'",
+  "new": "basis = 'overall standard deviation (no subgroups declared) — Cp/Cpk equal Pp/Ppk here; for individuals use MR\\u0304/d\\u2082 for within-subgroup sigma'",
+  "id": 274
+ },
+ {
+  "file": "calculators/process-capability.html",
+  "old": "It measures the distance from the process centre to the nearer specification limit, so it falls as the process drifts off centre",
+  "new": "It measures the distance from the process center to the nearer specification limit, so it falls as the process drifts off center",
+  "id": 275
+ },
+ {
+  "file": "calculators/process-capability.html",
+  "old": "A process can be capable and off centre, which shows as a good Cp and a poor Cpk. The gap between the two numbers is the centring,",
+  "new": "A process can be capable and off center, which shows as a good Cp and a poor Cpk. The gap between the two numbers is the centering,",
+  "id": 276
+ },
+ {
+  "file": "calculators/gage-r-and-r.html",
+  "old": "const kOp = ccConst(ops.length);",
+  "new": "const kOp = {d2: ({2:1.41421,3:1.91155})[ops.length] || ccConst(ops.length).d2};  /* AIAG d2* (one range): K2 = 0.7071 / 0.5231 */",
+  "id": 277
+ },
+ {
+  "file": "calculators/gage-r-and-r.html",
+  "old": "%GRR is the share of total variation attributable to measurement rather than to the parts.",
+  "new": "%GRR is measurement-system variation expressed as a percentage of total variation (a ratio of standard deviations, so %EV, %AV and %PV do not add to 100).",
+  "id": 278
+ },
+ {
+  "file": "calculators/gage-r-and-r.html",
+  "old": "<div class=\"tool-h\"><h3>Gauge R&amp;R</h3>",
+  "new": "<div class=\"tool-h\"><h3>Gage R&amp;R</h3>",
+  "id": 279
+ },
+ {
+  "file": "calculators/linearity-study.html",
+  "old": "%EV at each and pooled against the tightest tolerance, then whether that accuracy holds end to end.",
+  "new": "%EV at each and pooled against the tightest tolerance, then whether bias stays constant end to end.",
+  "id": 280
+ },
+ {
+  "file": "calculators/linearity-study.html",
+  "old": "The linearity test below asks a second question: whether that\n          accuracy holds from one end of the range to the other.",
+  "new": "The linearity test below asks a second question: whether the\n          bias stays the same from one end of the range to the other.",
+  "id": 281
+ },
+ {
+  "file": "calculators/rolled-throughput-yield.html",
+  "old": "const dpu = rty>0 ? -Math.log(rty) : Infinity;",
+  "new": "const dpu = totalDef / rows[0].units;   /* defects per unit started; -ln(RTY) is only the Poisson estimate */",
+  "id": 282
+ },
+ {
+  "file": "calculators/rolled-throughput-yield.html",
+  "old": "' percent, and the gap between those two numbers is the hidden factory. '",
+  "new": "' percent, and the gap between those two numbers is why averaging step yields flatters the line. '",
+  "id": 283
+ },
+ {
+  "file": "calculators/rolled-throughput-yield.html",
+  "old": "<th class=\"n\">Hidden factory</th>",
+  "new": "<th class=\"n\">Units touched (1 &minus; RTY)</th>",
+  "id": 284
+ },
+ {
+  "file": "calculators/rolled-throughput-yield.html",
+  "old": "\"Saw, 12000, 96\\nMill, 11904, 148",
+  "new": "\"Saw, 12000, 96\\nMill, 12000, 148",
+  "id": 285
+ },
+ {
+  "file": "calculators/rolled-throughput-yield.html",
+  "old": "<h1>Yield, DPMO and sigma</h1>",
+  "new": "<h1>Rolled throughput yield</h1>",
+  "id": 286
+ },
+ {
+  "file": "calculators/rolled-throughput-yield.html",
+  "old": "normalised yield",
+  "new": "normalized yield",
+  "id": 287
+ },
+ {
+  "file": "calculators/rolled-throughput-yield.html",
+  "old": "It consumes labour, floor space",
+  "new": "It consumes labor, floor space",
+  "id": 288
+ },
+ {
+  "file": "calculators/sigma-level-dpmo.html",
+  "old": "The two columns differ by more than four orders of magnitude at six sigma.",
+  "new": "The two columns differ by more than three orders of magnitude at six sigma.",
+  "id": 289
+ },
+ {
+  "file": "calculators/sigma-level-dpmo.html",
+  "old": "Six sigma from the mean to the nearest limit gives about two defects per billion.",
+  "new": "Six sigma from the mean to each limit gives about two defects per billion (one in each tail).",
+  "id": 290
+ },
+ {
+  "file": "calculators/sigma-level-dpmo.html",
+  "old": "<th class=\"n\">DPMO centred</th>",
+  "new": "<th class=\"n\">DPMO centered (both tails)</th>",
+  "id": 291
+ },
+ {
+  "file": "calculators/sigma-level-dpmo.html",
+  "old": "which moves the sigma level by roughly two full points.",
+  "new": "which moves the sigma level by roughly one and a half to two full points.",
+  "id": 292
+ },
+ {
+  "file": "calculators/sigma-level-dpmo.html",
+  "old": "NOTES.forEach(n=>{ if(Math.abs(n[0]-sigma)<Math.abs(best[0]-sigma)) best=n; });",
+  "new": "NOTES.forEach(n=>{ if(n[0]<=sigma+1e-9) best=n; });",
+  "id": 293
+ },
+ {
+  "file": "calculators/sample-size.html",
+  "old": "the one most worth internalising.",
+  "new": "the one most worth internalizing.",
+  "id": 294
+ },
+ {
+  "file": "calculators/pareto-chart.html",
+  "old": "categorised two different ways:",
+  "new": "categorized two different ways:",
+  "id": 295
+ },
+ {
+  "file": "calculators/pareto-chart.html",
+  "old": "an artefact of how you cut the categories",
+  "new": "an artifact of how you cut the categories",
+  "id": 296
+ },
+ {
+  "file": "calculators/hypothesis-test-selector.html",
+  "old": "['Spread rather than centre','cv']",
+  "new": "['Spread rather than center','cv']",
+  "id": 297
+ },
+ {
+  "file": "calculators/hypothesis-test-selector.html",
+  "old": "Check the variances first with an F or Levene test; use the unequal-variance form when they differ.",
+  "new": "Welch's unequal-variance form is the safer default; it loses little when the variances are in fact equal.",
+  "id": 298
+ },
+ {
+  "file": "calculators/hypothesis-test-selector.html",
+  "old": "COMPUTED — PAIRWISE t-TESTS AT &alpha; = 0.05",
+  "new": "COMPUTED — PAIRWISE t-TESTS AT &alpha; = 0.05, TREATING THE TESTS AS INDEPENDENT",
+  "id": 299
+ },
+ {
+  "file": "calculators/control-chart.html",
+  "old": "Every resource on this site computes in your browser. Nothing you type is sent anywhere or stored.",
+  "new": "Every resource on this site computes in your browser. Nothing you type is sent anywhere; your work is kept only in your own browser.",
+  "id": 312
+ },
+ {
+  "file": "calculators/gage-rr-impact-on-cpk.html",
+  "old": "CENTRED PROCESS",
+  "new": "CENTERED PROCESS",
+  "id": 313
+ },
+ {
+  "file": "calculators/index.html",
+  "old": "Also in Resources: <a href=\"/tools/\">25 tools and templates</a> for running an improvement project",
+  "new": "Also in Resources: <a href=\"/tools/\">72 tools and templates</a> for improvement projects, audits, inspection and quality management",
+  "id": 576
+ },
+ {
+  "file": "calculators/index.html",
+  "old": "<p>25 working tools for an improvement project, from the DMAIC roadmap and project charter to the FMEA, control plan and work instruction. Each one runs in your browser; fill it in, print it or save it to a file. <a href=\"/tools/\">See all 25 tools and templates</a>.</p>",
+  "new": "<p>72 working tools, from the DMAIC roadmap and project charter to audit plans, GD&amp;T position, calibration records and the hoshin X-matrix. Each one runs in your browser; fill it in, print it or save it to a file. <a href=\"/tools/\">See all 72 tools and templates</a>.</p>",
+  "id": 577
+ },
+ {
+  "file": "calculators/index.html",
+  "old": "Free X-bar and R chart builder with the Western Electric rules applied.",
+  "new": "Free X-bar and R or I-MR chart builder with run rules applied.",
+  "id": 578
+ },
+ {
+  "file": "calculators/index.html",
+  "old": "<a href=\"/calculators/rolled-throughput-yield.html\">Yield, DPMO and sigma</a>",
+  "new": "<a href=\"/calculators/rolled-throughput-yield.html\">Rolled throughput yield</a>",
+  "id": 579
+ },
+ {
+  "file": "calculators/index.html",
+  "old": "normalised yield",
+  "new": "normalized yield",
+  "id": 580
+ },
+ {
+  "file": "calculators/index.html",
+  "old": "an artefact of how you cut",
+  "new": "an artifact of how you cut",
+  "id": 582
+ }
+]

@@ -1,0 +1,4 @@
+.gp-ok{color:var(--green)}
+.gp-bad{color:#C0392B}
+.gp-svg svg{max-width:760px;display:block}
+.gp-svg{margin-bottom:10px}

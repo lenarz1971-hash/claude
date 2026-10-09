@@ -1,0 +1,9 @@
+#tool .sb-ok{color:var(--green);font-weight:700}
+#tool .sb-bad{color:#C0392B;font-weight:700}
+#tool .sb-stat .wide2{grid-column:span 2}
+@media (max-width:500px){#tool .sb-stat .wide2{grid-column:auto}}
+#tool .sb-svg svg{max-width:640px;margin:0 auto}
+#tool table[data-grid="h"] input[type=number]{width:80px;min-width:80px}
+@media print{#tool table.tg td.calc{font-size:11px}}
+#tool table.tg input[type=number]::-webkit-inner-spin-button,#tool table.tg input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+#tool table.tg input[type=number]{-moz-appearance:textfield;appearance:textfield}

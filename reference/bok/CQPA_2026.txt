@@ -1,0 +1,332 @@
+                   BODY OF KNOWLEDGE for the
+       ASQ CERTIFIED QUALITY PROCESS ANALYST (CQPA) – 2026
+  Included in this Body of Knowledge (BoK) are explanations (subtext) and cognitive levels for
+  each topic or subtopic in the test. These details will be used by the Examination Development
+  Committee as guidelines for writing test questions and are designed to help candidates prepare
+  for the exam by identifying specific content within each topic that can be tested. Except where
+  specified, the subtext is not intended to limit the subject or be all-inclusive of what might be
+  covered in an exam but is intended to clarify how topics are related to the role of the Certified
+  Quality Process Analyst (CQPA). The descriptor in parentheses at the end of each subtext entry
+  refers to the highest cognitive level at which the topic will be tested. A complete description of
+  cognitive levels is provided at the end of this document.
+
+
+I. Quality Concepts and Team Dynamics (22 Questions)
+   A. Professional Conduct and Ethics
+      Identify and apply behaviors that are aligned with the ASQ Code of Ethics. (Apply)
+   B. Quality Concepts
+      1. Quality
+         Describe how using quality techniques to improve processes, products, and services can
+         benefit all parts of an organization. Describe what quality means to various stakeholders
+         (e.g., employees, organization, customers, suppliers, community) and how each can
+         benefit from quality. (Understand)
+       2. Leadership commitment
+          Understand why leadership commitment is critical to quality success, including
+          providing resources, reinforcing continuous improvement, and fostering communication
+          with all stakeholders. (Understand)
+       3. Communicating quality
+          Understand how to communicate the importance of quality to the organization and how
+          to translate quality outcomes, such as data trends and process performance, into clear
+          actionable items. (Apply)
+       4. Quality planning
+          Define a quality plan, describe its purpose for the organization, and know who has
+          responsibility for contributing to its development. (Understand)
+       5. Quality standards, requirements, and specifications
+          Define and distinguish between national or international standards, customer
+          requirements, and product or process specifications. (Understand)
+       6. Quality documentation
+          Identify and describe common elements of various document control systems, including
+          configuration management. Describe the relationship between quality manuals,
+          procedures, and work instructions. (Understand)
+
+
+
+
+                                            Page 1 of 8
+   7. Cost of quality (COQ)
+      Define and describe the four cost of quality categories: prevention, appraisal, internal
+      failure, and external failure. (Apply)
+C. Quality Audits
+   1. Audit types
+      Define and distinguish between basic audit types, such as internal and external audits;
+      product, process, and systems audits; and first-, second-, and third-party audits.
+      (Understand)
+   2. Audit components
+      Identify various elements of the audit process, including audit purpose and scope, the
+      standard to audit against, audit planning (preparation) and performance, opening and
+      closing meetings, final audit report, and verification of corrective actions. (Understand)
+   3. Audit roles and responsibilities
+      Identify and describe the roles and responsibilities of key audit participants, including
+      lead auditor, audit team member, client, and auditee. (Understand)
+D. Team Dynamics and Processes
+   1. Types of teams
+      Distinguish between various types of teams, including process improvement teams,
+      work groups/work cells, self-managed teams, temporary/ad hoc project teams, cross-
+      functional teams, and remote teams. (Analyze)
+   2. Team development
+      Identify various elements in team building, such as inviting team members to share
+      information about themselves during the initial meeting, using ice-breaker activities to
+      enhance team membership, and developing a common vision and agreement on team
+      objectives. (Apply)
+   3. Team stages
+      Describe the classic stages of team evolution: forming, storming, norming, performing,
+      and adjourning. (Understand)
+   4. Team roles and responsibilities
+      Describe the roles and responsibilities of various team stakeholders, including sponsor,
+      champion, facilitator, team leader, and team member. (Understand)
+   5. Effective team meetings
+      Identify and apply elements of effective meetings, including agendas, meeting minutes,
+      action items, and due dates. (Apply)
+   6. Team conflict
+      Identify common group challenges, including groupthink, members with hidden and/or
+      competing agendas, intentional distractions, and other disruptive behaviors. Describe
+      ways of resolving these issues and keeping team members on task. (Understand)
+
+
+
+
+                                       Page 2 of 8
+    E. Training and Evaluation
+       Describe various elements of training, including linking the training to organizational
+       goals, identifying training needs, adapting information to meet adult learning styles, and
+       using coaching and peer training methods. Describe various tools to measure the
+       effectiveness of the training, including post-training feedback, end-of-course tests, and
+       individual and department performance improvement measures. (Understand)
+
+
+II. Quality Tools and Process Improvement Techniques (29 Questions)
+    A. Process Improvement Concepts and Approaches
+       Define and explain elements of Plan-Do-Check-Act (PDCA), kaizen activities, incremental
+       and breakthrough improvement, and DMAIC phases (define, measure, analyze, improve,
+       control). (Apply)
+    B. Basic Quality Tools
+       Select, construct, apply, and interpret the seven basic quality tools: 1) cause and effect
+       diagrams, 2) flowcharts (process maps), 3) check sheets, 4) Pareto charts, 5) scatter
+       diagrams, 6) run charts and control charts, and 7) histograms. (Evaluate)
+    C. Process Improvement Techniques
+       1. Lean
+          Identify and apply lean concepts and tools, including set-up reduction (SUR), pull
+          (including just-in-time (JIT) and kanban), 5S, continuous flow manufacturing (CFM),
+          value-added analysis, value stream mapping, theory of constraints (TOC), poka-yoke,
+          and total productive/predictive maintenance (TPM) to reduce waste in areas of cost,
+          inventory, labor, and distance. (Apply)
+       2. Six Sigma
+          Identify key Six Sigma concepts, including variation reduction, voice of the customer
+          (VOC), and the roles and responsibilities of the belt levels (yellow belt, green belt, black
+          belt, and master black belt). (Apply)
+       3. Benchmarking
+          Define benchmarking and describe how it can be used to develop and support best
+          practices. (Understand)
+       4. Risk management
+          Recognize the types of risk that can occur throughout the organization, such as
+          scheduling, shipping/receiving, financials, operations and supply chain, employee and
+          user safety, and regulatory compliance and changes. Describe risk control and mitigation
+          methods, including avoidance, reduction, prevention, segregation, and transfer.
+          (Understand)
+       5. Business process management (BPM)
+          Define and describe business process management, including the business process
+          lifecycle phases (Design, Modeling, Execution, Monitoring, and Optimization).
+          (Understand)
+
+
+
+
+                                            Page 3 of 8
+     D. Management and Planning
+        1. Quality management tools
+           Select and apply quality management tools, including affinity diagrams, tree diagrams,
+           process decision program charts, matrix diagrams, interrelationship digraphs,
+           prioritization matrices, and activity network diagrams. (Apply)
+         2. Project management tools
+            Select and interpret project management tools, such as Gantt charts, program evaluation
+            and review technique (PERT), work breakdown structure (WBS), and critical path
+            method (CPM). (Apply)
+         3. Project management approaches
+            Understand traditional and agile project management approaches and when each is
+            appropriate. (Understand)
+         4. Change management
+            Understand basic change management concepts, including the importance of
+            communication, employee involvement, leadership support, and strategies to reduce
+            resistance and sustain improvements. (Understand)
+
+
+III. Data Analysis (33 Questions)
+     A. Basic Concepts
+        1. Basic statistics
+           Define, calculate, and interpret measures of central tendency (mean, median, mode) and
+           measures of dispersion (standard deviation, range, variance). (Analyze)
+         2. Basic distributions
+            Define and explain frequency distributions (normal, binomial, Poisson, and Weibull)
+            and the characteristics of skewed and bimodal distributions. (Understand)
+         3. Probability concepts
+            Describe and use probability concepts, such as independent and mutually exclusive
+            events, combinations, permutations, additive and multiplicative rules, and conditional
+            probability. Perform basic probability calculations. (Apply)
+         4. Reliability concepts
+            Define basic reliability concepts, such as mean time to failure (MTTF), mean time
+            between failures (MTBF), mean time between maintenance (MTBM), and mean time to
+            repair (MTTR). Identify elements of the bathtub curve model and how they are used to
+            predict failure patterns. (Remember)
+     B. Data Types, Collection, and Integrity
+        1. Measurement scales
+           Define and use nominal, ordinal, interval, and ratio measurement scales. (Apply)
+         2. Data types
+            Identify, define, and classify data in terms of continuous (variables) and discrete
+            (attributes or counts). Determine when it is appropriate to convert attributes data to
+            variables measures. (Apply)
+
+
+
+                                            Page 4 of 8
+   3. Data collection and analysis
+      Identify and describe the advantages of collecting and analyzing real-time data.
+      (Understand)
+   4. Data quality and integrity
+      Understand data quality attributes, such as accuracy, completeness, consistency,
+      timeliness, and relevance. Recognize methods that verify data validity and reliability
+      from source through data analysis using various techniques, such as auditing trails,
+      vendor qualification, error detection software, training for record management etc., to
+      prevent and detect data integrity issues. (Apply)
+   5. Data plotting
+      Identify the advantages and limitations of using data plotting to analyze data visually.
+      (Understand)
+C. Sampling
+   1. Sampling methods
+      Define and distinguish between various sampling methods, such as random, sequential,
+      stratified, systemic/fixed sampling, rational subgroup sampling, and attributes and
+      variables sampling. (Understand)
+   2. Acceptance sampling
+      Identify and define sampling characteristics, such as lot size, sample size, acceptance
+      number, and operating characteristic (OC) curve. Understand when to use the
+      probability approach to acceptance sampling. (Understand)
+D. Measurement System Analysis
+   Define and distinguish between accuracy, precision, repeatability and reproducibility
+   (gage R&R) studies, bias, and linearity. (Apply)
+E. Statistical Process Control (SPC)
+   1. Fundamental concepts
+      Distinguish between control limits and specification limits, and between process
+      stability and process capability. (Apply)
+   2. Rational subgroups
+      Explain and apply the principles of rational subgroups. (Apply)
+   3. Control charts for attributes data
+      Identify, select, and interpret control charts (p, np, c, and u) for data that is measured as
+      discrete attributes or discrete counts. (Analyze)
+   4. Control charts for variables data
+      Identify, select, and interpret control charts (X̅ – R, X̅ – s, and XmR) for data that is
+      measured on a continuous scale. (Analyze)
+   5. Common and special cause variation
+      Interpret various control chart patterns (e.g., runs, hugging, and trends) to determine
+      process control and use SPC rules to distinguish between common cause and special
+      cause variation. (Analyze)
+
+
+
+
+                                        Page 5 of 8
+        6. Process capability measures
+           Describe the conditions that must be met to measure capability. Calculate Cp, Cpk, Pp,
+           and Ppk measures and interpret their results. (Analyze)
+     F. Advanced Statistical Analysis
+        1. Regression and correlation models
+           Describe how these models are used for estimation and prediction. (Apply)
+        2. Hypothesis testing
+           Calculate confidence intervals using t tests and the z statistic and determine whether the
+           result is significant. (Analyze)
+        3. Design of experiments (DOE)
+           Define and explain basic DOE terms, such as response, factors, levels, treatment,
+           interaction effects, randomization, error, and blocking. (Understand)
+        4. Taguchi concepts and methods
+           Identify and describe Taguchi concepts, such as quality loss function, robustness,
+           controllable and uncontrollable factors, and signal to noise ratio. (Understand)
+
+
+IV. Customer-Supplier Relations (10 Questions)
+     A. Internal and External Customers and Suppliers
+        Define and distinguish between internal and external customers and suppliers. Describe
+        their impact on products, services, and processes, and identify strategies for collaborating
+        with them to make improvements. (Apply)
+     B. Customer Satisfaction Methods
+        Describe the different types of tools used to gather customer feedback, such as surveys,
+        focus groups, complaint forms, and warranty analysis. Explain key elements of quality
+        function deployment (QFD) for understanding and translating the voice of the customer.
+        (Understand)
+     C. Product and Process Approval Systems
+        Describe how validation and qualification methods, including beta testing, first-article, in-
+        process, and final inspection are used to approve new or updated products, processes, and
+        services. (Apply)
+     D. Supplier Management
+        1. Supplier selection
+           Describe and outline criteria for selecting, approving, and classifying suppliers,
+           including internal rating programs, external certification standard requirements, and
+           environmental/social responsibility. (Understand)
+        2. Supplier performance
+           Describe supplier performance in terms of measures, such as quality (e.g., defect rates,
+           functional performance), price, delivery speed, delivery reliability, level of service, and
+           technical support. Understand performance monitoring and improvement tools, such as
+           supplier audits and supplier corrective action requests (SCARs). (Understand)
+
+
+
+
+                                            Page 6 of 8
+    E. Material Identification, Status, and Traceability
+       Describe the importance of identifying material by lot, batch, source, and conformance
+       status, including impact for recalls. Describe key requirements for preserving the identity
+       of a product and its origin. Use various methods to segregate nonconforming material and
+       process it according to procedures. (Apply)
+
+
+V. Corrective and Preventive Action (CAPA) (6 Questions)
+    A. Corrective Action
+       Demonstrate key elements of the corrective action process: identify the problem, contain
+       the problem, determine the root causes, propose solutions to eliminate and prevent their
+       recurrence, verify that the solutions are implemented, and confirm their effectiveness.
+       (Apply)
+    B. Preventive Action
+       Demonstrate key elements of a preventive action process: track data trends and patterns,
+       use failure mode and effects analysis (FMEA), review product and process monitoring
+       reports, and study the process to identify potential failures, defects, or deficiencies.
+       Improve the process by developing error/mistake-proofing methods and procedural
+       changes, verify that the changes are made, and confirm their effectiveness. (Apply)
+
+
+
+
+                                          Page 7 of 8
+                                    Levels of Cognition
+                        Based on Bloom’s Taxonomy – Revised (2001)
+
+In addition to content specifics, the subtext for each topic in this BOK also indicates the
+intended complexity level of the test questions for that topic. These levels are based on “Levels
+of Cognition” (from Bloom’s Taxonomy – Revised, 2001) and are presented below in rank order,
+from least complex to most complex.
+
+Remember
+Recall or recognize terms, definitions, facts, ideas, materials, patterns, sequences, methods,
+principles, etc.
+
+Understand
+Read and understand descriptions, communications, reports, tables, diagrams, directions,
+regulations, etc.
+
+Apply
+Know when and how to use ideas, procedures, methods, formulas, principles, theories, etc.
+
+Analyze
+Break down information into its constituent parts and recognize their relationship to one another
+and how they are organized; identify sublevel factors or salient data from a complex scenario.
+
+Evaluate
+Make judgments about the value of proposed ideas, solutions, etc., by comparing the proposal to
+specific criteria or standards.
+
+Create
+Put parts or elements together in such a way as to reveal a pattern or structure not clearly there
+before; identify which data or information from a complex set is appropriate to examine further
+or from which supported conclusions can be drawn.
+
+
+
+
+                                          Page 8 of 8
+

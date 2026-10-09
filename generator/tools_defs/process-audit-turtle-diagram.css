@@ -1,0 +1,14 @@
+table.mv{table-layout:auto;margin:6px 0;font-size:14px;min-width:100%}
+table.mv th{font:700 9px var(--mono);letter-spacing:.08em;color:var(--ink-3);text-transform:uppercase;padding:0 6px 7px;text-align:left}
+table.mv td{padding:5px 6px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+table.mv td.mo{font-weight:700;color:var(--navy);white-space:nowrap}
+table.mv td.mi{min-width:150px;max-width:220px;color:var(--ink)}
+table.mv td.mq{min-width:300px;color:var(--ink)}
+table.mv td.mt{font:600 12px var(--mono);color:var(--ink-3);white-space:nowrap}
+@media print{
+ table.mv{font-size:11.5px}
+ table.mv td{padding:2px 5px;line-height:1.25}
+ table.mv td.mq{min-width:0}
+ table.mv td.mi{min-width:0;max-width:170px}
+ table.mv td.mt{font-size:9.5px}
+}

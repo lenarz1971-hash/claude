@@ -1,0 +1,7 @@
+.ww-ref{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.ww-ref div{border:1px solid var(--line);padding:10px 12px;background:var(--bg-2)}
+.ww-ref b{font:900 26px/1 var(--disp);color:var(--gold-d);margin-right:8px}
+.ww-ref span{font:800 14px var(--disp);color:var(--navy)}
+.ww-ref p{font-size:13.5px;line-height:1.4;margin:6px 0 0}
+@media (max-width:800px){.ww-ref{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.ww-ref{grid-template-columns:1fr}}

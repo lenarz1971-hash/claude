@@ -1,0 +1,977 @@
+CSSBB
+
+THE ASQ CERTIFIED
+SIX SIGMA BLACK BELT
+
+Quality excellence to enhance your career
+and boost your organization’s bottom line
+asq.org/cert
+
+Certification from ASQ is considered a mark of quality
+excellence in many industries. It helps you advance your
+career and boosts your organization’s bottom line through
+your mastery of quality skills. Becoming certified as a
+Six Sigma Black Belt confirms your commitment to quality
+and the positive impact it will have on your organization.
+
+Examination
+Each certification candidate
+is required to pass a written
+examination that consists of
+multiple-choice questions that
+measure comprehension of
+the body of knowledge.
+
+2
+
+Certified Six Sigma Black Belt
+
+INFORMATION
+The ASQ Certified Six Sigma Black Belt
+The Certified Six Sigma Black Belt (CSSBB) is a professional who can explain
+Six Sigma philosophies and principles, including supporting systems and tools.
+A Black Belt should demonstrate team leadership, understand team dynamics,
+and assign team member roles and responsibilities. Black Belts have a thorough
+understanding of all aspects of the DMAIC model in accordance with Six Sigma
+principles. They have basic knowledge of lean enterprise concepts, are able to
+identify nonvalue-added elements and activities, and are able to use specific tools.
+
+CSSBB
+
+Experience Required
+
+Computer Delivered - The CSSBB
+examination is a one-part, 165-question
+exam and is offered in English only.
+150 questions are scored and 15 are
+unscored. Total appointment time is
+four-and-a-half hours, exam time is
+4 hours and 18 minutes.
+
+Six Sigma Black Belt requires two
+completed projects with signed
+affidavits, or one completed project
+with a signed affidavit and three
+years of work experience, in one
+or more areas of the Six Sigma
+Black Belt Body of Knowledge.
+
+Paper and Pencil - The CSSBB
+examination is a one-part,
+150-question, four-hour exam and
+is offered in Mandarin in certain
+locations.
+For comprehensive exam information on Six Sigma Black Belt certification,
+visit asq.org/cert.
+Certified Six Sigma Black Belt
+
+3
+
+BODY OF KNOWLEDGE
+The ASQ Certified Six Sigma Black Belt (CSSBB)
+Topics in this body of knowledge (BoK) include additional detail
+in the form of subtext explanations and the cognitive level at which
+test questions will be written. This information will provide guidance
+for the candidate preparing to take the exam. The subtext is not
+intended to limit the subject matter or be all-inclusive of what might
+be covered in an exam. It is meant to clarify the type of content to
+be included in the exam. The descriptor in parentheses at the end
+of each entry refers to the maximum cognitive level at which the
+topic will be tested. A complete description of cognitive levels is
+provided at the end of this document.
+
+I. Organization-Wide
+Planning and Deployment
+(12 Questions)
+A. Organization-wide Considerations
+1.	Fundamentals of Six Sigma
+and lean methodologies
+Define and describe the value
+and goals of these approaches,
+and describe the integration and
+complementary relationship
+between them. Identify and
+understand an organization’s
+lean six sigma maturity model.
+(Understand)
+2.	Six Sigma, lean, and continuous
+improvement methodologies
+Describe when to use Six Sigma
+instead of other problem-solving
+approaches, and describe the
+importance of aligning Six Sigma
+objectives with organizational
+goals. Describe screening criteria
+and how such criteria can be
+used for the selection of Six Sigma
+projects, lean initiatives, and other
+continuous improvement methods.
+(Apply)
+
+4
+
+Certified Six Sigma Black Belt
+
+3.	Relationships among
+business systems and processes
+Describe the interactive
+relationships among business
+systems, processes, and internal
+and external stakeholders, and the
+impact those relationships have on
+business systems. (Understand)
+4. Strategic planning and
+deployment for initiatives
+Define the importance of
+identification and strategic
+planning of Six Sigma projects
+and lean initiatives as part of the
+business planning process taking
+into consideration outcomes such as
+return on investment and measured
+intangibles. Use strengths,
+weaknesses, opportunities,
+and threats analysis (SWOT),
+contingency planning,
+and business continuity planning
+to enhance strategic planning
+and deployment. (Apply)
+
+Certified Six Sigma Black Belt
+
+5
+
+B. Leadership
+1.	Roles and responsibilities
+Describe the roles and
+responsibilities of executive
+leadership, champions, sponsors,
+process owners, Master Black
+Belts, Black Belts, and Green
+Belts in driving Six Sigma and
+lean initiatives. Understand the
+importance of coaching multiple
+levels of leadership and belts
+on appropriate six sigma tools
+and techniques. Understand
+the importance of finance and
+its role supporting a project
+and confirming its outcome.
+Describe how each group
+influences project deployment in
+terms of providing or managing
+resources, enabling changes in
+organizational structure, and
+supporting communications about
+the purpose and deployment of
+the initiatives. (Understand)
+2.	Organizational barriers
+Describe how an organization’s
+structure and culture can impact
+Six Sigma projects. Identify
+common causes of Six Sigma
+failures, including lack of
+management support and lack of
+resources. (Apply)
+3.	Change Management
+Apply and facilitate change
+management techniques, including
+stakeholder analysis, readiness
+assessments, proactive change
+management, and communication
+plans to overcome barriers and
+drive organization-wide change.
+(Apply)
+
+II. O
+ rganizational Process
+Management and
+Measures (12 Questions)
+A. Impact on Stakeholders
+
+Describe the impact Six Sigma projects
+can have on customers, suppliers, and
+other stakeholders. (Understand)
+
+6
+
+Certified Six Sigma Black Belt
+
+B. Benchmarking
+
+Define and distinguish between
+various types of benchmarking,
+e.g., best practices, competitive,
+collaborative, and breakthrough.
+Select measures and performance
+goals for projects resulting from
+benchmarking activities. (Apply)
+
+C. Business Measures
+1. Performance measures
+Define and describe balanced
+scorecard, key performance
+indicators (KPIs), key behavior
+indicators (KBIs), objectives and
+key results (OKRs), customer loyalty
+metrics, and leading and lagging
+indicators. Explain how to create
+a line of sight from performance
+measures to organizational
+strategies. (Analyze)
+2.	Financial measures
+Define and use revenue growth,
+market share, margin, net present
+value (NPV), return on investment
+(ROI), and cost benefit analysis
+(CBA). Explain the difference
+between hard cost measures
+(from profit and loss statements)
+and soft cost benefits of cost
+avoidance and reduction. (Apply)
+
+III. T eam Management
+(15 Questions)
+A. Team Formation
+1.	Team types and constraints
+Define and describe various
+teams, including virtual, crossfunctional, and self-directed.
+Determine what team type will
+work best for a given a set of
+constraints, e.g., geography,
+technology availability, staff
+schedules, time zones. (Apply)
+2.	Team roles and responsibilities
+Define and describe various
+team roles and responsibilities for
+the leader, facilitator, coach, and
+individual member. (Understand)
+
+3.	Team member selection criteria
+Describe various factors that
+influence the selection of team
+members, including the ability to
+influence, openness to change,
+required skill sets, subject matter
+expertise, and availability. (Apply)
+4. Team success factors
+Identify and describe the elements
+necessary for successful teams,
+e.g., management support,
+clear goals, ground rules, and
+timelines. (Apply)
+
+B. Team Facilitation
+1. Motivational techniques
+Describe and apply techniques to
+motivate team members. Identify
+factors that can demotivate team
+members and describe techniques
+to overcome them. (Apply)
+2. Team stages of development
+Identify and describe the classic
+stages of team development:
+forming, storming, norming,
+performing, and adjourning.
+(Apply)
+3. Team communication
+Describe and explain the elements
+of an effective communication
+plan, e.g., audience identification,
+message type, medium, and
+frequency. (Apply)
+4. Team leadership models
+Describe and select appropriate
+leadership approaches (e.g.,
+direct, coach, support, and
+delegate) to ensure team success.
+(Apply)
+
+C. Team Dynamics
+1. Group behaviors
+Identify and use various
+conflict resolution techniques
+(e.g., coaching, mentoring,
+and intervention) to overcome
+negative group dynamics,
+including dominant and reluctant
+participants, groupthink, rushing to
+finish, and digressions. (Evaluate)
+
+2. Meeting management
+Select and use various meeting
+management techniques, including
+using agendas, starting on time,
+requiring pre-work by attendees,
+and ensuring that the right people
+and resources are available.
+(Apply)
+3. Team decision-making methods
+Define, select, and use various
+tools (e.g., consensus, nominal
+group technique, and multi-voting)
+for decision making. (Apply)
+
+D. Team Training
+1. Needs assessment
+Identify the steps involved to
+implement an effective training
+curriculum: identify skills gaps,
+develop learning objectives,
+prepare a training plan, and
+develop training materials.
+(Understand)
+2. Delivery
+Describe various techniques
+used to deliver effective training,
+including adult learning theory,
+soft skills, and modes of learning.
+(Understand)
+3. Evaluation
+Describe various techniques
+to evaluate training, including
+evaluation planning, feedback
+surveys, pre-training and posttraining testing. (Understand)
+
+IV. Define (20 Questions)
+A. Voice of the Customer
+1. Customer Identification
+Identify and segment customers and
+show how a project will impact
+both internal and external customers.
+(Apply)
+2. Customer data collection
+Identify and select appropriate
+data collection methods (e.g.,
+surveys, focus groups, interviews,
+and observations) to gather voice
+of the customer data. Ensure the
+data collection methods used are
+reviewed for validity and reliability.
+(Analyze)
+Certified Six Sigma Black Belt
+
+7
+
+3. Customer requirements
+Define, select, and apply
+appropriate tools to determine
+customer needs and requirements,
+including critical-to-X (CTX when
+“X” can be quality, cost, safety,
+etc.), CTQ tree, quality function
+deployment (QFD), supplier, input,
+process, output, customer (SIPOC),
+and Kano model. (Analyze)
+
+B. Business Case
+and Project Charter
+1. Business case
+Describe business case justification
+used to support projects.
+(Understand)
+2. Problem statement
+Develop a project problem
+statement and evaluate it in
+relation to baseline performance
+and improvement goals. (Evaluate)
+3. Project scope
+Develop and review project
+boundaries to ensure that the
+project has value to the customer.
+(Analyze)
+4. Goals and objectives
+Identify SMART (specific,
+measurable, actionable, relevant,
+and timebound) goals and
+objectives on the basis of the
+project’s problem statement and
+scope. (Analyze)
+5. Project performance measurements
+Identify and evaluate performance
+measurements (e.g., cost, revenue,
+delivery, schedule, and customer
+8
+
+Certified Six Sigma Black Belt
+
+satisfaction) that connect critical
+elements of the process to key
+outputs. (Analyze)
+6. Project charter review
+Explain the importance of having
+periodic project charter reviews
+with stakeholders. (Understand)
+
+C. Project Management (PM) Tools
+
+Identify and use the following PM tools
+to track projects and document their
+progress. (Evaluate)
+1. Gantt charts
+2. Toll-gate reviews
+3. Work breakdown
+structure (WBS)
+4. RACI model (responsible,
+accountable, consulted,
+and informed)
+
+D. Analytical Tools
+
+Identify and use the following
+analytical tools throughout the DMAIC
+cycle. (Apply)
+1. Affinity diagrams
+2. Tree diagrams
+3. Matrix diagrams
+4. Prioritization matrices
+5. Activity network diagrams
+6. Process decision program chart
+(PDPC)
+7. Interrelationship digraph (ID)
+
+V. Measure (25 Questions)
+A. Process Characteristics
+1. Process flow metrics
+Identify and use process flow
+metrics (e.g., work in progress
+(WIP), work in queue (WIQ),
+touch time, takt time, cycle time,
+and throughput) to determine
+constraints. Describe the impact
+that “hidden factories” can have
+on process flow metrics. (Analyze)
+2. Process analysis tools
+Select, use, and evaluate various
+tools, e.g., value stream maps,
+process maps, work instructions,
+flowcharts, spaghetti diagrams,
+and gemba walk. (Evaluate)
+
+B. Data Collection
+1. Types of data
+Define, classify, and distinguish
+between qualitative and quantitative
+data, and continuous and discrete
+data. (Evaluate)
+2. Measurement scales
+Define and use nominal, ordinal,
+interval, and ratio measurement
+scales. (Apply)
+3. Sampling
+Define and describe sampling
+concepts, including representative
+selection, homogeneity, bias,
+accuracy, and precision. Determine
+the appropriate sampling method
+(e.g., random, stratified, systematic,
+subgroup, and block) to obtain
+valid representation in various
+situations. (Evaluate)
+4. Data collection plans and methods
+Develop and implement data
+collection plans that include
+data integrity, accuracy, and
+processing tools, e.g., check
+sheets, and data normalization.
+Avoid data collection pitfalls
+by defining the metrics to be
+used or collected, ensuring that
+collectors are trained in the tools
+and understand how the data
+will be used, and checking for
+seasonality effects. (Analyze)
+
+C. Measurement Systems
+1. Measurement system
+analysis (MSA)
+Use gauge repeatability and
+reproducibility (R&R) studies
+and other MSA tools (e.g., bias,
+correlation, linearity, precision to
+tolerance, and percent agreement)
+to analyze variable measurement
+system capability. Use audit MSA
+for attribute measurement system.
+(Evaluate)
+2. Measurement systems
+across the organization
+Identify how measurement
+systems can be applied across
+all functional areas of the
+organization (e.g., marketing,
+sales, engineering, research and
+development (R&D), supply chain
+management, operations, and
+customer experience). (Understand)
+3. Metrology
+Define and describe elements of
+metrology, including calibration
+systems, traceability to reference
+standards, and the control and
+integrity of measurement devices
+and standards. (Understand)
+
+D. Basic Statistics
+1. Basic statistical terms
+Define and distinguish between
+population parameters and sample
+statistics, e.g., proportion, mean,
+and standard deviation. (Apply)
+2. Central limit theorem
+Explain the central limit theorem and
+its significance in the application of
+inferential statistics for confidence
+intervals, hypothesis tests, and
+control charts. (Understand)
+3. Descriptive statistics
+Calculate and interpret measures
+of dispersion and central tendency.
+(Evaluate)
+
+Certified Six Sigma Black Belt
+
+9
+
+4. Graphical methods
+Construct and interpret diagrams
+and charts, e.g., box-and-whisker
+plots, scatter diagrams, histograms,
+normal probability plots, frequency
+distributions, and cumulative
+frequency distributions. (Evaluate)
+5. Valid statistical conclusions
+Distinguish between descriptive
+and inferential statistical studies.
+Evaluate how the results of
+statistical studies are used to
+draw valid conclusions. (Evaluate)
+
+E. Probability
+1. Basic concepts
+Describe and interpret probability
+concepts, e.g., independence,
+mutually exclusive events,
+addition and multiplication
+rules, conditional probability,
+complementary probability,
+and joint occurrence of events.
+(Understand)
+2. Common distributions
+Describe, interpret, and use
+normal, Poisson, binomial,
+chi square, Student’s t, and F
+distributions. (Evaluate)
+3. Additional distributions
+Identify hypergeometric, bivariate,
+exponential, lognormal, and
+Weibull distributions. (Understand)
+10 Certified Six Sigma Black Belt
+
+F. Process Capability
+1. Process capability indices
+Define, select, and calculate
+Cp and Cpk. (Evaluate)
+2. Process performance indices
+Define, select, and calculate Pp,
+Ppk, Cpm, and process sigma.
+(Evaluate)
+3. General process capability studies
+Describe and apply elements
+of designing and conducting
+process capability studies relative
+to characteristics, specifications,
+sampling plans, stability, and
+normality. (Evaluate)
+4. Process capability
+for attributes data
+Calculate the process capability
+and process sigma level for
+attributes data. (Apply)
+5. Process capability
+for non-normal data
+Identify non-normal data and
+determine when it is appropriate
+to use Box-Cox or other
+transformation techniques. (Apply)
+
+6. Process performance
+vs. specification
+Distinguish between natural
+process limits and specification
+limits. Calculate process
+performance metrics, e.g.,
+percent defective, parts per
+million (PPM), defects per million
+opportunities (DPMO), defects per
+unit (DPU), first pass yield, and
+rolled throughput yield (RTY).
+(Evaluate)
+7. Short-term and
+long-term capability
+Describe and use appropriate
+assumptions and conventions when
+only short-term data or only longterm data are available. Interpret
+the relationship between short-term
+and long-term capability. (Evaluate)
+
+VI. A
+ nalyze (22 Questions)
+A. Measuring and Modeling
+Relationships Between Variables
+1. Correlation coefficient
+Calculate and interpret the
+correlation coefficient and its
+confidence interval and describe
+the difference between correlation
+and causation. (Evaluate)
+
+2. Linear regression
+Calculate and interpret
+regression analysis and apply
+and interpret hypothesis tests
+for regression statistics. Use the
+regression model for estimation
+and prediction, analyze the
+uncertainty in the estimate, and
+perform a residuals analysis to
+validate the model. (Evaluate)
+3. Multivariate tools
+Understand sources of variation
+through multivariate tools (e.g.,
+factor analysis, discriminant
+analysis, and multiple analysis of
+variance (MANOVA). (Understand)
+
+B. Hypothesis Testing
+1. Terminology
+Define and interpret the significance
+level, power, type I, and type II
+errors of statistical tests. (Evaluate)
+2. Statistical vs. practical significance
+Define, compare, and interpret
+statistical and practical significance.
+(Evaluate)
+3. Sample size
+Calculate sample size for common
+hypothesis tests: equality of means
+and equality of proportions.
+(Apply)
+Certified Six Sigma Black Belt 11
+
+4. Point and interval estimates
+Define and distinguish between
+confidence and prediction intervals.
+Define and interpret the efficiency
+and bias of estimators. Calculate
+tolerance and confidence intervals.
+(Evaluate)
+5. Tests for means,
+variances, and proportions
+Use and interpret the results
+of hypothesis tests for means,
+variances, and proportions.
+(Evaluate)
+6. Analysis of variance (ANOVA)
+Select, calculate, and interpret the
+results of ANOVAs. (Evaluate)
+7. Goodness-of-fit (chi square) tests
+Define, select, and interpret the
+results of these tests. (Evaluate)
+
+C. Risk Analysis and Management
+1. Types of risk
+Identify, assess, and prioritize
+various types of risk such as,
+enterprise, operational, supplier,
+security, product, and cyber-security.
+(Analyze)
+2. Failure mode and effects analysis
+Describe, the purpose and
+elements of FMEA, including
+risk priority number (RPN),
+and evaluate FMEA results
+for processes, products, and
+services. Distinguish between
+design FMEA (DFMEA) and
+process FMEA (PFMEA), and
+interpret their results. (Evaluate)
+
+D. Additional Analysis Methods
+1. Gap analysis
+Analyze scenarios to identify
+performance gaps, and compare
+current and future states using
+predefined metrics. (Analyze)
+2. Root cause analysis
+Define and describe the purpose
+of root cause analysis, recognize
+the issues involved in identifying a
+root cause, and use various tools
+(e.g., 5 whys, Pareto charts, fault
+
+12 Certified Six Sigma Black Belt
+
+tree analysis, cause and effect
+diagrams, and A3) to resolve
+chronic problems. (Analyze)
+3. Waste analysis
+Identify and interpret the seven
+classic wastes (overproduction,
+inventory, defects, over-processing,
+waiting, motion, and transportation)
+and resource under-utilization.
+(Analyze)
+
+VII. Improve (21 Questions)
+A. Design of Experiments (DOE)
+1. Terminology
+Define basic DOE terms, e.g.,
+independent and dependent
+variables, factors and levels,
+response, treatment, error, and
+nested. (Understand)
+2. Design principles
+Define and apply DOE principles,
+e.g., power, sample size,
+balance, repetition, replication,
+order, efficiency, randomization,
+blocking, interaction, confounding,
+and resolution. (Apply)
+3. Planning experiments
+Plan and evaluate DOEs by
+determining the objective, selecting
+appropriate factors, responses,
+and measurement methods, and
+choosing the appropriate design.
+(Evaluate)
+4. One-factor experiments
+Understand when to use
+completely randomized,
+randomized block, and Latin
+square designs. (Understand)
+5. Two-level fractional
+factorial experiments
+Understand these types of
+experiments, and describe how
+confounding can affect their use.
+(Understand)
+6. Full factorial experiments
+Understand these types of
+experiments. (Understand)
+
+B. Lean Methods
+1. Waste elimination
+Select and apply tools and
+techniques for eliminating or
+preventing waste, e.g., pull
+systems, kanban, 5S, standard
+work, and poka-yoke. (Analyze)
+2. Cycle-time reduction
+Use various tools and techniques
+for reducing cycle time, e.g.,
+continuous flow, single-minute
+exchange of die (SMED), and
+heijunka (production leveling).
+(Analyze)
+3. Kaizen
+Define and distinguish between
+kaizen and kaizen blitz and
+describe when to use each
+method. (Apply)
+4. Other improvement
+tools and techniques
+Identify and describe how
+other process improvement
+methodologies are used, e.g.,
+theory of constraints (TOC), and
+overall equipment effectiveness
+(OEE). (Understand)
+
+C. Implementation
+
+Develop plans for implementing
+proposed improvements, including
+conducting pilot tests or simulations,
+and evaluate results to select the
+optimum solution. (Evaluate)
+
+VIII. Control (17 Questions)
+A. Statistical Process Control (SPC)
+1. Objectives
+Explain the objectives of SPC,
+including monitoring and controlling
+process performance, tracking
+trends, runs, and reducing variation
+within a process. (Understand)
+
+3. Rational subgrouping
+Define and apply the principle of
+rational subgrouping. (Apply)
+4. Control chart selection
+Select and use control charts
+in various situations: X-R, X-s,
+individual and moving range (ImR),
+p, np, c, u, short-run SPC, and
+moving average. (Apply)
+5. Control chart analysis
+Interpret control charts and
+distinguish between common
+and special causes using rules
+for determining statistical control.
+(Analyze)
+
+B. Other Controls
+1. Total productive maintenance (TPM)
+Define the elements of TPM and
+describe how it can be used to
+consistently control the improved
+process. (Understand)
+2. Visual controls
+Define the elements of visual
+controls (e.g., pictures of
+correct procedures, color-coded
+components, and indicator
+lights), and describe how they can
+help control the improved process.
+(Understand)
+
+C. Maintain Controls
+1. Measurement system reanalysis
+Review and evaluate measurement
+system capability as process
+capability improves, and ensure that
+measurement capability is sufficient
+for its intended use. (Evaluate)
+2. Control plan
+Develop a control plan to maintain
+the improved process performance,
+enable continuous improvement,
+and transfer responsibility from the
+project team to the process owner.
+(Apply)
+
+2. Selection of variables
+Identify and select critical process
+characteristics for control chart
+monitoring. (Apply)
+
+Certified Six Sigma Black Belt 13
+
+D. Sustain Improvements
+1. Lessons learned
+Document the lessons learned and
+benefits realized from all phases
+of a project and identify strategies
+for reinforcing and replicating
+improvements. (Apply)
+2. Documentation
+Develop or modify documents
+including standard operating
+procedures (SOPs), work
+instructions, and control plans to
+ensure that the improvements are
+sustained over time. (Apply)
+3. Training for process
+owners and staff
+Develop and implement training
+plans that are handed off to
+process owners to ensure consistent
+execution of revised process
+methods, KPIs to confirm sustained
+benefits, and standards to
+maintain process improvements.
+(Apply)
+4. Ongoing evaluation
+Identify and apply tools (e.g.,
+control charts, and control plans)
+for ongoing evaluation of the
+improved process, including
+monitoring leading indicators,
+lagging indicators, and
+additional opportunities for
+improvement. (Apply)
+
+IX. D
+ esign for Six Sigma
+(DFSS) Framework
+and Methodologies
+(6 Questions)
+A. Common DFSS Methodologies
+
+Identify and describe define,
+measure, analyze, design, and
+validate (DMADV) and define,
+measure, analyze, design, optimize,
+and validate (DMADOV). (Understand)
+
+B. Design for X (DFX)
+
+Describe design constraints,
+including design for cost, design
+for manufacturability (producibility),
+design for test, and design for
+maintainability. (Understand)
+
+14 Certified Six Sigma Black Belt
+
+C. Robust Designs
+
+Describe the elements of robust
+product design, tolerance design, and
+statistical tolerancing. (Understand)
+
+LEVELS OF COGNITION
+
+Based on Bloom’s Taxonomy—Revised (2001)
+In addition to content specifics, the subtext for each topic in this BoK also
+indicates the intended complexity level of the test questions for that topic.
+These levels are based on “Levels of Cognition” (from Bloom’s Taxonomy—
+Revised, 2001) and are presented below in rank order, from least complex
+to most complex.
+REMEMBER | Recall or recognize terms,
+definitions, facts, ideas, materials, patterns,
+sequences, methods, principles, etc.
+UNDERSTAND | Read and understand
+descriptions, communications, reports,
+tables, diagrams, directions, regulations, etc.
+APPLY | Know when and how to use
+ideas, procedures, methods, formulas,
+principles, theories, etc.
+ANALYZE | Break down information into
+its constituent parts and recognize their
+relationship to one another and how they
+are organized; identify sublevel factors or
+salient data from a complex scenario.
+
+EVALUATE | Make judgments about the
+value of proposed ideas, solutions, etc.,
+by comparing the proposal to specific
+criteria or standards.
+CREATE | Put parts or elements together
+in such a way as to reveal a pattern or
+structure not clearly there before; identify
+which data or information from a complex
+set is appropriate to examine further or
+from which supported conclusions can
+be drawn.
+
+Visit asq.org/cert for comprehensive exam information.
+
+Certified Six Sigma Black Belt 15
+
+Enhance your career
+with ASQ certification today!
+Visit asq.org/cert for additional
+certification information including:
+• Exam Dates - asq.org/cert/dates
+• Full CSSBB Details - asq.org/cert/six-sigma-black-belt
+• Reference materials - asq.org/cert/six-sigma-black-belt/
+references
+• Exam Preparation Resources - asq.org/cert/prepare
+• Apply for the Exam - asq.org/cert/apply-certification
+• Computer Based-Testing Information - asq.org/cert/computerbased-testing
+
+2022 CSSBB BoK
+
+

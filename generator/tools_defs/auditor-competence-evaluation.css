@@ -1,0 +1,10 @@
+table.mv{table-layout:auto;margin:10px 0 6px;font-size:14.5px;min-width:100%}
+table.mv th{font:700 9px var(--mono);letter-spacing:.08em;color:var(--ink-3);text-transform:uppercase;padding:0 6px 7px;text-align:center}
+table.mv th:first-child{text-align:left}
+table.mv td{padding:3px 6px;border-bottom:1px solid var(--line);vertical-align:middle;text-align:center}
+table.mv td.mo{text-align:left;color:var(--ink);min-width:220px}
+table.mv td.mt,table.mv td.mu{font:700 13px var(--mono);color:var(--navy)}
+table.mv td.mu.bad{color:#C0392B}
+#tool td.calc .bad{color:#C0392B;font-weight:700}
+#tool td.calc .good{color:#1F8C55;font-weight:700}
+#tool td.calc{text-align:center}

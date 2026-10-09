@@ -1,0 +1,13 @@
+#tool td.calc .bad{color:#C0392B;font-weight:700}
+#tool td.calc .good{color:#1F8C55;font-weight:700}
+#tool td.calc{min-width:150px;font-size:13px;line-height:1.3}
+@media print{
+ #tool table[data-grid="car"] .pv{font-size:8.5px!important;line-height:1.3}
+ #tool table[data-grid="car"] th{font-size:6px!important;letter-spacing:0!important;white-space:normal!important;padding:2px!important}
+ #tool table[data-grid="car"] td{padding:2px!important}
+ #tool table[data-grid="car"] td.calc{font-size:8px;white-space:normal!important;max-width:90px;min-width:70px;overflow-wrap:normal;word-break:normal;hyphens:manual}
+ #tool table[data-grid="car"] td.calc span{white-space:normal;overflow-wrap:normal;word-break:normal}
+ #tool table[data-grid="car"] th{overflow-wrap:normal!important;word-break:normal!important;hyphens:manual}
+ #tool table[data-grid="car"] td:nth-child(2),#tool table[data-grid="car"] td:nth-child(2) .pv{white-space:nowrap!important;overflow-wrap:normal!important;word-break:normal!important}
+ #tool table[data-grid="car"] td:nth-child(3){min-width:120px!important}
+}

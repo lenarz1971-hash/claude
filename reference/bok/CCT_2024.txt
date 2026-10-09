@@ -1,0 +1,282 @@
+                  CERTIFIED CALIBRATION TECHNICIAN (CCT)
+                           BODY OF KNOWLEDGE
+ The topics in this Body of Knowledge (BoK) include additional detail in the form of subtext explanations
+ and the cognitive level at which the questions will be written. This information will provide useful guidance
+ for both the Exam Development Committee and the candidate preparing to take the exam. The subtext is
+ not intended to limit the subject matter or be all-inclusive of what might be covered in an exam. It is meant
+ to clarify the type of content to be included in the exam. The descriptor in parentheses at the end of each
+ entry refers to the maximum cognitive level at which the topic will be tested. A more complete description
+ of cognitive levels is provided at the end of this document.
+
+   Note Regarding IM&TE (inspection, measurement, and test equipment)
+   The Test Specification Committee that created this BoK recognizes that different industries
+   and branches of the military use various descriptors and abbreviations to refer to the units
+   being calibrated. To avoid confusion, the committee decided to use the term IM&TE as the
+   most globally descriptive term. This term will be used in both the BoK and the CCT
+   examination itself.
+
+
+I. General Metrology (30 questions)
+     A. Base SI units
+        Describe and define the seven base units: 1) meter, 2) kilogram, 3) second, 4) ampere, 5) kelvin,
+        6) candela, and 7) mole. (Understand)
+         NOTE: The application of these units is covered in I.B., I.C., I.D, and I.E.
+     B. Derived SI units
+        Define, calculate, and convert various derived units, such as 1) degree, 2) ohm, 3) pascal, 4)
+        newton, 5) joule, 6) coulomb, 7) hertz, and 8) watt. (Apply)
+     C. SI multipliers and conversions
+        Define various multipliers, such as 1) kilo, 2) deci, 3) centi, and 4) milli. Calculate converted
+        values, such as mega to kilo and micro to milli. (Apply)
+     D. Fundamental constants
+        Identify the fundamental constants of 1) velocity or speed of light in a vacuum (c),
+        2) gravitational constant (g), 3) Planck’s constant (h), 4) Avogadro constant (NA), 5) Boltzmann
+        (kB), and 6) elementary charge (e), and their standard symbols and common applications.
+        (Understand)
+         NOTE: The values of these constants and the formulas for calculating them will not be tested.
+     E. Common measurements
+        Describe and apply IM&TE in measuring 1) temperature, 2) humidity, 3) pressure, 4) torque, 5)
+        force, 6) mass, 7) voltage / current / resistance, 8) time / frequency, 9) linear displacement, 10)
+        power, 11) dimensional, 12) viscosity, 13) volume, 14) luminosity, 15) flow, 16) energy, and 17)
+        density. (Apply)
+     F. Traceability standards and hierarchy
+        Identify various aspects of traceability, such as traceability through commercial laboratories,
+        national laboratories, international metrology organizations, and SI units. Understand the
+        realization and dissemination of SI units. (Apply)
+
+
+
+
+                                                                                                         Page 1 of 7
+      G. Measurement standards
+         Define and distinguish between various types of standards, such as 1) primary, 2) secondary, 3)
+         reference, 4) working, 5) intrinsic, 6) derived, 7) consensus, and 8) transfer, and identify when to
+         use them in various situations. (Analyze)
+      H. Substitution of standards
+         Assess when and how calibration standards can be substituted based on 1) measurement
+         requirements, 2) equipment availability, 3) equipment specifications, etc. (Evaluate)
+
+
+II. Measurement Systems (26 questions)
+      A. Measurement methods
+         Describe and employ various measurement methods, such as 1) direct (e.g., absolute and
+         fundamental), 2) indirect, 3) ratio, 4) transfer (e.g., comparison), 5) differential, and 6)
+         substitution by unit under test (UUT). (Evaluate)
+      B. Measurement characteristics
+         Define and distinguish various characteristics used for basic measurements, such as 1) variability,
+         2) sensitivity, 3) repeatability, 4) reproducibility, 5) bias, 6) linearity, 7) stability, and 8)
+         measurand. (Apply)
+          NOTE: The use of these characteristics in uncertainty measurements is covered in IV.
+      C. Measurement data considerations
+         Identify and analyze various aspects of measurement data, such as 1) format, 2) readability, 3)
+         resolution, 4) suitability for use, and 5) confidentiality. (Analyze)
+      D. IM&TE specification terms and characteristics
+         Demonstrate knowledge of common specification descriptions, such as 1) percent of full scale, 2)
+         percent of range, 3) percent of reading, and 4) number of counts. Describe and distinguish
+         between characteristics of specifications, such as 5) tolerance and specifications, 6) baseline
+         modifiers and qualifiers, 7) output, 8) scale, and 9) floor terms. (Analyze)
+      E. Error sources
+         Identify, mitigate, and correct error sources that can affect measurement results, such as 1) drift,
+         2) bias, 3) operator error, 4) measurement process, and 5) environment. (Evaluate)
+      F. Measurement assurance program (MAP)
+         Explain basic MAP concepts, such as 1) interlaboratory comparisons and testing schemes, 2)
+         proficiency tests, 3) gage R&R studies, and 4) statistical process control (SPC). (Understand)
+
+
+III. Calibration Systems (28 questions)
+      A. Calibration procedures
+         Identify and apply common elements of calibration procedures, such as 1) required equipment,
+         2) equipment listing, 3) environmental considerations and restraints, and 4) common procedures.
+         (Analyze)
+      B. Standardization and adjustment methods
+         Utilize methods, such as 1) spanning, 2) nulling, 3) zeroing, and 4) linearization, to adjust and
+         standardize IM&TE and analyze the outcomes. (Analyze)
+
+
+
+
+                                                                                                    Page 2 of 7
+C. Industry practices and regulations
+    1. Industry practices
+       Identify various sources of industry-accepted metrology and calibration practices, such as
+       published resources, national standards, and international standards. (Understand)
+    2. Regulations, mandates, and guidance
+       Define and distinguish between government regulations, traceability, and other legally
+       mandated metrology requirements, such as national or international guidance. Identify which
+       rules or conventions take precedence in various situations. (Apply)
+D. Environmental control
+   Recognize various environmental parameters for 1) humidity, 2) dust levels, 3) electrostatic
+   discharge (ESD), 4) temperature, 5) vibration, 6) pressure, etc., and explain their influence on
+   calibration activities. (Apply)
+E. Calibration processes for IM&TE
+    1. Process flow
+       Describe the basic flow of IM&TE through the calibration process. (Understand)
+    2. Logistical information
+       Explain IM&TE logistical information, such as 1) equipment identification, 2) ownership, 3)
+       service history, and 4) process tracking systems. (Understand)
+    3. Roles and responsibilities
+       Identify roles and responsibilities of calibration staff members, such as 1) laboratory
+       manager, 2) technical manager, 3) scheduler, 4) quality manager, and 5) technician.
+       (Understand)
+    4. Scheduling
+       Determine IM&TE scheduling considerations, such as 1) planned calibration intervals, 2)
+       material or equipment requests, 3) steps in the notification process, 4) overdue lists, and 5)
+       staff workloads, and analyze their impact. (Analyze)
+F. Validation processes
+   Determine issues related to validating manual and automated calibration systems and identify
+   unique validation considerations for software or firmware that is part of IM&TE or calibration
+   processes. Apply verification of standard methods and validation of self-developed processes.
+   (Apply)
+G. Records management
+   Define and describe document control in terms of maintaining the integrity and confidentiality of
+   various calibration records, such as 1) audit results, 2) staff training, 3) uncertainty budgets, 4)
+   customer data, 5) technical records, 6) documented processes, 7) requests, 8) contracts, and 9)
+   tenders. (Apply)
+H. Official reports
+   Describe and distinguish various types of formal results reporting, such as 1) calibration
+   certificates, 2) calibration labels, 3) nonconformance calibration reports, and 4) test reports.
+   (Apply)
+
+
+
+
+                                                                                               Page 3 of 7
+IV.   Measurement Uncertainty and Applied Math (25 questions)
+      A. Uncertainty terminology
+         Define and explain basic terms, such as 1) guard-banding, 2) probability for false rejection (PFR,
+         also known as Type I error), 3) probability for false acceptance (PFA, also known as Type II
+         error), 4) test uncertainty ratio (TUR), 5) test accuracy ratio (TAR), 6) bias, 7) percent of
+         tolerance, and 8) gage R&R. (Apply)
+      B. Uncertainty budget components
+         Define and identify various type A and type B uncertainty components, such as 1) environment,
+         2) methods, 3) unit under test, 4) materials, 5) resolution, and 6) the key elements and steps of
+         developing an uncertainty budget. (Apply)
+      C. Uncertainty determination and reporting
+         Define various methods to determine and report measurement uncertainty, such as
+         1) combined and expanded uncertainty, 2) coverage factors, 3) confidence levels, 4) effective
+         degrees of freedom, 5) distribution factors, 6) uncertainty calculation elements (e.g., mean,
+         standard deviation, root sum square (RSS), and variance), and 7) statement of conformity /
+         decision rule (e.g., simple acceptance). (Apply)
+      D. Technical and applied mathematics
+          1. Scientific and engineering notation
+             Express a floating-point number in scientific and engineering notation. (Apply)
+          2. English / Metric conversions
+             Convert various units of measurement between English / U.S. Customary Units and metric
+             units, such as 1) length, 2) area, 3) volume, 4) capacity, and 5) mass. (Apply)
+          3. Ratios
+             Express various terms, such as 1) percentage, 2) parts per million (ppm), and 3) decibels
+             (dB). (Apply)
+          4. Tables, graphs, and plots
+             Interpret tables and graphs to determine intermediate and extrapolated values. Illustrate the
+             aspects of slope, intercept, and linearity of data sets in relation to graphs and plots. (Analyze)
+          5. Rounding, truncation, and significant figures
+             Determine the resolution of calculations (e.g., number of digits and least significant digit).
+             Round and truncate to a specified number of digits. (Apply)
+          6. Order of mathematical operations
+             Identify the correct order for performing mathematical operations and solve equations that
+             contain multiple operations. (Apply)
+          7. Algebraic equations
+             Use basic algebra to solve for the unknown. (Apply)
+          8. Angular conversions
+             Convert various angular units, such as degrees, minutes, seconds, grads, and radians. (Apply)
+
+
+
+
+                                                                                                     Page 4 of 7
+V. Quality Systems and Standards (16 questions)
+    A. Quality management systems
+        1. System components
+            Define and distinguish between various components of a quality system, such as 1)
+            management and customer focus, 2) employee training and development, and 3) continuous
+            process improvement. (Apply)
+        2. Strategic and tactical processes
+            Identify various methods used to develop, improve, and review quality systems, such as 1)
+            mission and goals, 2) planning and deployment, and 3) cross-functional teams. (Understand)
+    B. Quality control tools
+       Understand the seven basic quality tools: 1) flowcharts / process maps, 2) check sheets,
+       3) Pareto chart, 4) cause and effect diagrams, 5) scatter diagrams, 6) control charts, and
+       7) histograms. (Understand)
+    C. Quality audits
+       Define and describe the following elements of quality audits. (Understand)
+        1. Types of audits, such as internal, external, product, and process.
+        2. Audit components, such as audit plan, audit purpose, and audit standard.
+    D. Corrective action for nonconformances
+        1. Nonconformance identification
+            Determine conformance status and compare methods with the standards. Apply various
+            methods of identifying and segregating nonconforming IM&TE. (Evaluate)
+        2. Impact assessment
+            Apply various tools for evidence (e.g., reverse traceability, customer notification, product
+            recall, calibration standard evaluation, and root-cause analysis) in response to out-of-
+            tolerance conditions for IM&TE and nonconforming work. (Apply)
+    E. Professional conduct and ethics
+       Demonstrate appropriate behaviors that are aligned with the ASQ Code of Ethics for various
+       situations. (Apply)
+    F. Occupational safety requirements
+        1. Hazards and safety equipment
+           Assess potential hazards in the work environment, such as 1) improper ventilation, 2)
+           soldering fumes, and 3) suboptimal workplace lighting. Identify appropriate personal
+           protective equipment (PPE) for various situations. (Apply)
+        2. Occupational health and safety
+           Understand when and how to use various elements of occupational health and safety, such as
+           1) safety data sheet terms, 2) material labeling requirements, and 3) workplace safety.
+           (Apply)
+        3. Housekeeping
+           Apply housekeeping methods in the calibration environment, such as 1) maintenance, 2) 6S,
+           3) IM&TE, and 4) cleaning. (Apply)
+        4. Pre and post calibration condition
+
+
+
+
+                                                                                                    Page 5 of 7
+       Describe proper set-up prior to calibration and how to return IM&TE to safe, operational set-
+       up upon completion. (Apply)
+G. Quality standards and guides
+   Explain the benefits and importance of the following documents and organizations in relation to
+   calibration. (Understand)
+   1. Quality standards and guides, including ISO 9001-2015, ISO / IEC 17025-2017, ISO 10012,
+       GUM (JCGM 100:2008), and VIM (JCGM 200:2012).
+   2. Accreditation bodies such as those recognized by IAF (International Accreditation Forum)
+       and ILAC (International Laboratory Accreditation Cooperation).
+
+
+
+
+                                                                                          Page 6 of 7
+                                 Levels of Cognition
+                     Based on Bloom’s Taxonomy – Revised (2001)
+
+In addition to content specifics, the subtext for each topic in this BOK also indicates the intended
+complexity level of the test questions for that topic. These levels are based on “Levels of
+Cognition” (from Bloom’s Taxonomy – Revised, 2001) and are presented below in rank order,
+from least complex to most complex.
+
+Remember
+Recall or recognize terms, definitions, facts, ideas, materials, patterns, sequences, methods,
+principles, etc.
+
+Understand
+Read and understand descriptions, communications, reports, tables, diagrams, directions,
+regulations, etc.
+
+Apply
+Know when and how to use ideas, procedures, methods, formulas, principles, theories, etc.
+
+Analyze
+Break down information into its constituent parts and recognize their relationship to one another
+and how they are organized; identify sublevel factors or salient data from a complex scenario.
+
+Evaluate
+Make judgments about the value of proposed ideas, solutions, etc., by comparing the proposal to
+specific criteria or standards.
+
+Create
+Put parts or elements together in such a way as to reveal a pattern or structure not clearly there
+before; identify which data or information from a complex set is appropriate to examine further or
+from which supported conclusions can be drawn.
+
+
+
+
+                                                                                          Page 7 of 7
+

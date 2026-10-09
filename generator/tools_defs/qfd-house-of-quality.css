@@ -1,0 +1,26 @@
+table.mv{table-layout:auto;margin:6px 0;font-size:14.5px;min-width:100%}
+table.mv th{font:700 9px var(--mono);letter-spacing:.08em;color:var(--ink-3);text-transform:uppercase;padding:0 6px 7px;text-align:center}
+table.mv th:first-child{text-align:left}
+table.mv td{padding:3px;border-bottom:1px solid var(--line);vertical-align:middle;width:auto;text-align:center}
+table.mv td.mo{text-align:left;color:var(--ink);min-width:200px;padding-right:12px}
+table.mv td.mt,table.mv td.mu{font:700 13px var(--mono);color:var(--navy)}
+table.mv tfoot td{border-top:2px solid var(--line);font:700 9px var(--mono);color:var(--ink-3)}
+#tool table.mv input{width:58px;text-align:center}
+#tool table.mv select{min-width:0;width:64px;padding:5px 4px;font-size:14px;text-align:center}
+table.mv th{white-space:normal;min-width:72px;vertical-align:bottom}
+table.qf-m td.mo{min-width:190px}
+table.qf-m tfoot td{text-align:center;font:700 12px var(--mono);color:var(--navy);border-bottom:1px solid var(--line)}
+table.qf-m tfoot td:first-child{text-align:left;font:700 9px var(--mono);color:var(--ink-3);letter-spacing:.06em;text-transform:uppercase}
+table.qf-t td{text-align:left;padding:5px 6px}
+table.qf-t td.mt{text-align:center}
+.qf-hn{display:block;font:800 11px var(--mono);color:#9C7C1F;margin-bottom:2px}
+table.mv td.mo .qf-hn{display:inline;margin-right:6px}
+.qf-key{margin:4px 0 0}
+.qf-chart svg{max-width:820px}
+@media print{table.mv{font-size:11px}table.mv td.mo,table.qf-m td.mo{min-width:110px}table.mv th{font-size:7px;min-width:44px}table.mv .pv{text-align:center;border:0}}
+@media (max-width:600px){table.mv td.mo,table.qf-m td.mo{min-width:130px}}
+
+#tool .tgw{overflow-x:auto}
+#tool table.mv th,#tool table.mv td:not(.mo),#tool table.hx th,#tool table.hx td:not(.hx-r){overflow-wrap:normal;word-break:normal}
+#tool table.mv td.mt,#tool table.mv td.mu,#tool table.mv tfoot td{white-space:nowrap}
+@media print{#tool .tgw{overflow:visible}#tool .tsec>h3,#tool .tsec>.th{break-after:avoid;page-break-after:avoid;break-inside:avoid}#tool .tsec>.th::after,#tool .tsec>h3:not(:has(+.th))::after{content:"";display:block;flex:none;align-self:flex-start;width:0;height:140px;margin-bottom:-140px}}

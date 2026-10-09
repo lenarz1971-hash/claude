@@ -1,0 +1,11 @@
+.kp-ok{color:#1F8C55}.kp-no{color:#C0392B}.kp-pd{color:#9C7C1F}
+#tool table.tg td.calc .kp-no,#tool table.tg td.calc .kp-ok,#tool table.tg td.calc .kp-pd{font-weight:700}
+@media print{@page{size:landscape}}
+.kp-chart svg{max-width:760px;margin:0 auto}
+@media print{.kp-chart svg{max-width:520px}}
+#tool table.tg input[data-col=cost],#tool table.tg input[data-col=ppl]{width:84px;min-width:84px}
+
+#tool .tgw{overflow-x:auto}
+#tool table.mv th,#tool table.mv td:not(.mo),#tool table.hx th,#tool table.hx td:not(.hx-r){overflow-wrap:normal;word-break:normal}
+#tool table.mv td.mt,#tool table.mv td.mu,#tool table.mv tfoot td{white-space:nowrap}
+@media print{#tool .tgw{overflow:visible}#tool .tsec>h3,#tool .tsec>.th{break-after:avoid;page-break-after:avoid;break-inside:avoid}#tool .tsec>.th::after,#tool .tsec>h3:not(:has(+.th))::after{content:"";display:block;flex:none;align-self:flex-start;width:0;height:140px;margin-bottom:-140px}}

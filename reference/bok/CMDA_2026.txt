@@ -1,0 +1,468 @@
+               CERTIFIED MEDICAL DEVICE AUDITOR (CMDA)
+                             BODY OF KNOWLEDGE – 2026
+
+ The topics in this body of knowledge (BoK) include additional detail in the form of subtext
+ explanations and cognitive level. These details will be used by the Exam Development Committee
+ as guidelines for writing test questions and are designed to help candidates prepare for the exam
+ by identifying specific content within each topic that may be tested. The subtext is not intended to
+ limit the subject matter or be all-inclusive of what might be covered in an exam but is intended to
+ clarify how the topics relate to a Medical Device Auditor’s role. The descriptor in parentheses at
+ the end of each entry refers to the maximum cognitive level at which the topic will be tested. A
+ more comprehensive description of cognitive levels is provided at the end of this document.
+
+
+
+I.   Auditing Fundamentals (15 Questions)
+     A. Types of audits
+        1.   Audits by purpose
+             Identify and distinguish between audits by purpose: organizational effectiveness,
+             system efficiency, business performance, process effectiveness, risk management,
+             regulatory compliance, supplier management, compliance with standards
+             (certification and surveillance), design and development, for-cause audit, and follow-
+             up audit. (Analyze)
+        2.   Audit types
+             Identify and distinguish between audit types: product, process, system, first-party,
+             second-party, third-party, internal, external, desk, management, department,
+             function, onsite, remote, and hybrid. (Analyze)
+     B. Audit roles and responsibilities
+        Explain key functions and responsibilities of various audit participants, including audit
+        team members, lead auditor, client, and auditee. (Understand)
+     C. Ethical, legal, and professional issues
+        1.   Professional conduct and responsibilities
+             Define and apply the ASQ Code of Ethics, concepts of due diligence and due care
+             with respect to confidentiality and conflict of interest, and various factors that
+             influence audit credibility, including auditor independence, objectivity, and
+             qualifications. (Apply)
+        2.   Legal consequences and liability
+             Identify potential legal and financial ramifications of improper auditor actions (e.g.,
+             carelessness and negligence) in various situations and anticipate the effect that
+             certain audit results can have on an auditee’s liability. (Apply)
+        3.   Data privacy
+             Demonstrate the importance of maintaining confidentiality of personal (e.g., HIPAA
+             and EU GDPR) and proprietary business information reviewed during audits.
+             (Apply)
+
+
+
+                                                                                         Page 1 of 11
+II.   Auditing and Inspection Processes (25 Questions)
+      A. Audit preparation and planning
+        1.   Elements of the audit planning process
+             Determine and implement steps in audit preparation and planning using a risk-based
+             approach, such as verifying audit authority, establishing the purpose, scope, and type
+             of audit, audit criteria, audit schedule and duration, and the resources necessary,
+             including the size and number of audit teams. (Evaluate)
+        2.   Auditor selection
+             Identify and examine various internal or outsourced auditor selection criteria, such as
+             education, experience, industry background, subject-matter expertise, absence of
+             conflict of interest, and the characteristics that make auditors effective, such as
+             interpersonal skills, problem-solving skills, attention to detail, cultural sensitivity,
+             and ability to work independently as well as in a group or on a team. (Evaluate)
+        3.   Audit-related documentation
+             Identify sources of pre-audit information and examine audit-related documentation,
+             such as reference materials and prior audits. (Evaluate)
+        4.   Auditing tools
+             Identify the sampling plan or method and procedural guidelines to be used for the
+             specific audit. Select and prepare working papers (e.g., checklists and log sheets) to
+             document the audit. (Create)
+        5.   Auditing strategies
+             Identify and use various tactical methods for conducting an audit, such as forward
+             and backward tracing, discovery, etc., using risk-based decisions. (Apply)
+        6.   Logistics
+             Identify and organize various audit-related logistics, such as travel, safety and
+             security considerations, the need for escorts, translators, confidentiality agreements,
+             communications, information transfer, and clear right of access. (Apply)
+      B. Audit performance
+        1.   Opening meeting
+             Manage the opening meeting of an audit, including identifying the audit’s purpose
+             and scope, describing any scoring, rating, or classification criteria for potential audit
+             findings, creating a record of the attendees, reviewing the audit schedule, and
+             answering questions as needed. (Apply)
+        2.   Data collection and analysis
+             Select and apply various data collection methods, such as observing work activities,
+             taking physical measurements, and examining paper and electronic documents.
+             Evaluate the results to determine their importance for providing audit evidence.
+             (Evaluate)
+        3.   Data integrity principles
+             Examine record-keeping requirements for data acquisition systems to ensure data
+             integrity. Evaluate the data collected during an audit to ensure it is attributable,
+             legible, contemporaneous, original, accurate, complete, consistent, enduring, and
+             available (ALCOA+). (Evaluate)
+
+
+
+
+                                                                                          Page 2 of 11
+  4.   Communication techniques
+       Define and apply appropriate interviewing techniques (e.g., when to use various
+       question types, the significance of pauses and their length, when and how to prompt
+       a response), in various situations, including when supervisors are present, when
+       conducting multiple interviews, and when using a translator. Identify typical conflict
+       situations and use appropriate techniques to resolve them. (Apply)
+  5.   Organization and analysis of objective evidence
+       Identify and differentiate sources of objective evidence, such as observed, measured,
+       confirmed, and documented. Classify evidence in terms of significance, severity,
+       frequency, and level of risk. Evaluate the evidence for its potential impact on
+       product, process, system, cost of quality, and regulatory compliance. Determine
+       whether additional investigation is required to meet the scope of the audit. (Evaluate)
+  6.   Onsite audit management
+       Interpret situations throughout audit performance to determine whether time is being
+       managed well and when changes need to be made, such as revising planned audit
+       team activities, reallocating resources, and adjusting the audit plan. Communicate
+       with the auditee about any changes or other events related to the audit. (Analyze)
+  7.   Exit/closing meeting
+       Formally manage exit/closing meetings by reiterating the audit’s purpose, scope,
+       scoring, rating, or classification criteria, and creating a record of the attendees.
+       Present the audit results and obtain concurrence on evidence that could lead to an
+       adverse conclusion. Discuss the next steps in the process (e.g., follow-up audit,
+       additional evidence-gathering) and clarify who is responsible for performing those
+       steps. (Apply)
+C. Audit report
+  1.   Basic elements
+       Define, plan, and apply the steps in generating an audit report, including reviewing
+       and finalizing results, organizing details, obtaining necessary approvals, and
+       distributing the report. (Create)
+  2.   Effective audit reports
+       Report observations and nonconformances accurately; cite objective evidence,
+       procedures, and requirements; and develop and evaluate various components, such
+       as executive summaries, prioritized data, graphic presentation, and the impact of
+       nonconformances. (Create)
+  3.   Record retention
+       Identify and apply record retention requirements, including the type of documents
+       and storage considerations. (Apply)
+D. Audit follow-up and closure
+  1.   Elements of corrective and preventive action (CAPA)
+       Identify and apply elements of CAPA, including problem identification, prioritizing
+       actions based on risk, assignment of responsibility, root cause analysis, and
+       establishing a plan to verify effectiveness of corrective actions to prevent recurrence.
+       (Analyze)
+
+
+
+
+                                                                                   Page 3 of 11
+         2.   Review of corrective action plan
+              Use various criteria to evaluate the acceptability of corrective action plans. Identify
+              and apply strategies for negotiating changes to unacceptable plans. (Apply)
+         3.   Conducting audit follow-up
+              Use various methods to verify and evaluate the effectiveness of corrective actions
+              taken, such as re-examining procedures, observing revised processes, and conducting
+              follow-up audits or re-audits. Develop strategies when corrective actions are not
+              implemented or are not effective, such as communicating to the next level of
+              management and re-issuing the corrective action request. (Evaluate)
+         4.   Audit closure
+              Identify and apply various elements of, and criteria for, audit closure. (Evaluate)
+       E. Audit procedural references
+         1.   International guidelines for auditing quality systems
+              Understand general auditing principles as described in ISO 19011 and the Medical
+              Device Single Audit Program (MDSAP) audit model. (Understand)
+         2.   FDA CPG 7382.850
+              Explain the purpose and scope of FDA inspection criteria for taking regulatory
+              action based on quality management system inspection results. (Understand)
+
+III.   Medical Device Quality Management System Requirements (38 Questions)
+       A. Regulatory laws and requirements
+         1.   FDA - Code of Federal Regulations (CFR) Title 21
+              Identify, define, and apply the following FDA requirement parts: 4 – Regulation of
+              combination products, 7 – Enforcement policy, 11 – Electronic records; signatures,
+              58 – Good laboratory practice for nonclinical laboratory studies, 801 – Labeling,
+              803 – Medical device reporting, 806 – Medical devices; reports of corrections and
+              removals, 807 – Establishment registration and device listing for manufacturers and
+              initial importers of devices, 820 – Quality management system regulation, 821 –
+              Medical device tracking requirements, and 830 – Unique device identification.
+              (Apply)
+         2.   U.S. requirements (FD&C Act, 201, 301-304, 501-502, 510, 518, 522)
+              Identify how the FD&C Act defines and differentiates between device classifications
+              and pre-market requirements. Recognize the implications of misbranding and
+              adulteration. (Apply)
+         3.   EU MDR 2017/745
+              Recognize requirements of EU MDR 2017/745 and the key differences between this
+              and U.S. regulations. (Apply)
+         4.   Health Canada
+              Recognize current requirements of the Canadian Medical Device Regulation
+              SOR/98-282 and the key differences between this and U.S. regulations. (Apply)
+         5.   Other international agencies
+              Recognize requirements enforced by international agencies, such as Therapeutic
+              Goods Administration (TGA), Japanese Pharmaceutical and Medical Device
+              Agency, China NMPA, and Brazil ANVISA. (Understand)
+
+
+
+                                                                                         Page 4 of 11
+B. Requirements for in vitro diagnostic (IVD) devices
+   Recognize the requirements of 21 CFR 809 and IVDR 2017/746 as they apply to in vitro
+   diagnostic (IVD) devices. (Understand)
+C. International standards for quality systems
+   Evaluate the selection and use of the following quality system standards: ISO 9001, ISO
+   13485, and ISO 17025. (Evaluate)
+D. Quality Management System Regulation (QMSR) requirements incorporating ISO
+   13485:2016
+  1.   Management responsibility (ISO 13485:2016: 4.1, 5.1–5.6, 6.1, 6.2, 7.1, 8.2.4)
+       Assess management’s responsibility in establishing and maintaining the quality
+       system: organizational structure and management representative, quality
+       planning/objectives, resources, management reviews, quality audits, and personnel
+       training and education. (Evaluate)
+  2.   Design and development (QMSR: 820.10(c) and ISO 13485:2016: 7.1-7.3)
+       Evaluate the scope, purpose, and implementation of controls and their elements,
+       including design and development planning, input, output, review, verification,
+       validation, transfer, changes, and design and development files. (Evaluate)
+  3.   Document and record control (QMSR: 820.35 and ISO 13485:2016: 4.2)
+       Describe and review elements of a document and change control system, including
+       document access and distribution control, approval processes, retention policies,
+       communication procedures and maintenance of medical device files (MDFs), device
+       records, and quality records. (Analyze)
+  4.   Purchasing controls and acceptance activities (ISO 13485:2016: 7.4)
+       Describe supplier qualification and purchasing control requirements for products,
+       components, and services, including risk-based classification of suppliers. Describe
+       appropriate identification and acceptance activities, including receiving and
+       evaluating supplier-provided data (e.g., Certificates of Analysis [CoA]), and
+       inspection, test, and verification processes used for incoming products. (Apply)
+  5.   Identification and traceability (QMSR: 820.10(b-d) and ISO 13485:2016: 7.5.8,
+       7.5.9)
+       Use appropriate methods for identifying and tracing products during all stages of
+       receipt, production, distribution, installation, and throughout the device lifecycle
+       (e.g., servicing and returns). (Apply)
+  6.   Production and process controls (QMSR: 820.45 and ISO 13485:2016: 6.3, 6.4, 7.1,
+       7.5)
+       Assess production and process controls, including process validation, monitoring,
+       control of materials, equipment, buildings, environment, contamination, and
+       software validation for automated processes. (Evaluate)
+  7.   Inspection, measuring, and test equipment (ISO 13485:2016: 7.6)
+       Determine the suitability and calibration of inspection equipment. Review
+       calibration records and ensure calibration is traceable to national or international
+       standards. (Evaluate)
+
+
+
+
+                                                                                Page 5 of 11
+        8.   Nonconforming product (QMSR: 820.10(b) and ISO 13485:2016: 8.3)
+             Determine the adequacy of procedures, processes, and records established for the
+             identification, control, evaluation, and disposition of nonconforming product.
+             (Evaluate)
+        9.   Analysis and improvement (ISO 13485:2016: 8.4, 8.5)
+             Assess analysis of quality data sources to determine the need for CAPA. Define and
+             distinguish between corrective action and preventive action. Review CAPA
+             procedures, processes, and records to evaluate the effectiveness of the system.
+             (Evaluate)
+        10. Product handling, storage, distribution, and installation (ISO 13485:2016: 7.5.3,
+            7.5.10, 7.5.11)
+            Determine the adequacy of procedures, processes, and records established for these
+            aspects of product control, including customer property, to ensure product integrity.
+            (Analyze)
+        11. Complaint files (QMSR: 820.35(a) and ISO 13485:2016: 8.2.1–8.2.3)
+            Determine the adequacy of complaint handling procedures, including investigation
+            and determination of medical device reporting and incident reporting. (Evaluate)
+        12. Servicing (QMSR: 820.35(b) and ISO 13485:2016: 7.5.1, 7.5.4, 8.2.2)
+            Determine the adequacy of procedures, processes, and records established for
+            products that require servicing activities, such as troubleshooting and repair.
+            Evaluate service reports for events that must be reported to the FDA to ensure that
+            they are included in the complaint handling process. (Analyze)
+        13. Statistical techniques (ISO 13485:2016: 5.6.2, 7.3.6, 7.3.7, 7.5.6, 7.5.7, 8.1, 8.2.5,
+            8.2.6, 8.4)
+            Determine the adequacy and validity of statistical techniques and sampling plans
+            used to measure process capability and acceptability of product characteristics.
+            Evaluate the rationale for statistical techniques used in quality systems, including
+            design verification and validation, and acceptance sampling. (Analyze)
+      E. Post-market surveillance
+         Determine the appropriateness of the procedures, processes, and records established for
+         the control of post-market surveillance activities. Define and describe vigilance, medical
+         device reporting (MDR), adverse event reporting (AER), and trend reporting (e.g., EU
+         MDR / IVDR) requirements. Review the adequacy of requirements and processes for
+         product recall, corrections, removals, and tracking. (Analyze)
+
+IV.   Technical Medical Device Knowledge (42 Questions)
+      A. Risk management
+         1. ISO 14971; ISO / TR 24971
+            Describe the principles of risk management, including risk analysis, evaluation,
+            control, benefit-risk analysis, and the incorporation of production and post-
+            production information. (Evaluate)
+
+
+
+
+                                                                                       Page 6 of 11
+   2. IEC 62366
+      Determine whether the processes used for identification of known or foreseeable
+      hazards are suitable in both normal and fault conditions, including hazards arising
+      from device use. Verify that risk control measures have been implemented in design
+      and production. (Evaluate)
+   3. ISO 13485
+      Describe and assess the risk-based controls for appropriate processes needed for the
+      quality management system. (Evaluate)
+B. Design control
+   1. Human factors and usability engineering
+      Evaluate human factors and usability studies performed during design and
+      development. (Evaluate)
+   2. Biological evaluation
+      Describe material characterization and the principles of biocompatibility test
+      selection rationale as described in ISO 10993-1 and FDA-related guidance.
+      Understand the differences between cytotoxicity, sensitization, and irritation.
+      (Understand)
+   3. Packaging
+      Interpret the appropriate standards for device packaging, including sterile and non-
+      sterile product packaging per ISO 11607, and referenced standards, including ASTM
+      D4169 (distribution) and ASTM F1980 (aging). (Understand)
+   4. Device shelf life
+      Explain how a device’s useful life / shelf life is determined and discuss the various
+      parameters that determine the length of time a device will remain within acceptable
+      specifications (e.g. sterility or package integrity). (Understand)
+   5. General safety and performance requirements (GSPR)
+      Identify the elements of GSPR, per EU MDR 2017/745. (Remember)
+C. Software development and maintenance for products
+   Identify principles of the software lifecycle for devices with software and Software as a
+   Medical Device (SaMD) in accordance with FDA General Principles of Software
+   Validation Guidance and IEC 62304. Describe the software development lifecycle
+   model, including V&V, cybersecurity considerations, change control methods, the risk
+   management process, and technologies, such as large language models (e.g., artificial
+   intelligence [AI]). (Understand)
+D. Labeling
+   Identify labeling requirements for devices, instructions for use (IFU), and promotional /
+   marketing material (per 21 CFR 801). Understand the use of symbols (per ISO 15223)
+   and UDI/GTIN/UPC (per 21 CFR 830). (Understand)
+E. Controlled environments and utility systems
+   1. Controlled environments
+      Identify and interpret controlled environment specifications (per ISO 14644),
+      qualifications, validations, and monitoring (e.g., bioburden, endotoxins, airborne
+      particulate, microbial contamination, temperature, and humidity). Review
+      contamination control measures, pest control, housekeeping, disinfection, and
+      sanitization processes in terms of controlled environment specifications and
+
+
+                                                                                 Page 7 of 11
+      classifications. Verify that appropriate training and personnel practices are used in
+      controlled environments. (Analyze)
+   2. Utility systems
+      Describe utility setups in medical device manufacturing facilities for water,
+      compressed gas, heating, ventilation, and air conditioning (HVAC) systems,
+      including whether they require qualification, validation, monitoring programs, or
+      maintenance. (Understand)
+F. Sterile medical devices
+   1. Definitions
+      Describe and distinguish between aseptically processed products and terminally
+      sterilized products; cleaning, disinfection, and sterilization; and chemical vs.
+      biological indicators. (Understand)
+   2. Methods
+      Identify basic elements of sterilization for dry heat, steam, ethylene oxide (EtO),
+      vaporized hydrogen peroxide, gamma irradiation, and electron beam irradiation.
+      (Remember)
+   3. Process controls and validation for ethylene oxide (EtO) and irradiation
+      Determine appropriate sterilization validation, process controls, and monitoring (e.g.
+      dose audits, parametric release, process challenge device [PCD], residuals) are
+      properly implemented to ensure sterility assurance level (SAL). Ensure the process is
+      documented in accordance with industry standards: ISO 11135, ISO 11137, and ISO
+      11737. (Apply)
+G. Laboratory testing and failure analysis
+   Assess procedures and records used for laboratory test methods and evaluate failure
+   analysis procedures and records to determine whether they are appropriate. (Evaluate)
+H. Validation
+   Define and evaluate elements of different types of validations, such as process
+   (IQ/OQ/PQ per GHTF/SG3/N99-10), cleanliness, test method, and rework. (Evaluate)
+I. Reprocessing/reuse and cleaning of medical devices
+   Identify elements of reprocessing and cleaning validations in accordance with the FDA
+   Guidance on Reprocessing of Reusable Devices. (Understand)
+J. Common medical device directives and standards
+   Define and describe elements of various standards and directives as they relate to
+   medical devices. (Understand)
+   1.   IEC 60601-1
+   2.   Restriction of Hazardous Substances (RoHS) directive
+   3.   Registration, Evaluation, Authorization and Restriction of Chemicals (REACH)
+   4.   Waste Electrical and Electronic Equipment (WEEE)
+
+
+
+
+                                                                                  Page 8 of 11
+     K. Sources for new and evolving standards
+        Describe the sources for standards and guidance documents that form the basis for
+        industry norms and standards, such as ANSI, ISO, ASTM, the FDA Recognized
+        Consensus Standards Database, the Harmonised Standards Listing, Medical Device
+        Coordination Group (MDCG), Notified Body Operating Group (NBOG), and Europa.
+        (Remember)
+V.   Quality Tools and Techniques (15 Questions)
+     A. Quality control and problem-solving tools
+        Identify, interpret, analyze, and draw conclusions based upon: 1) Pareto charts, 2) cause
+        and effect diagrams, 3) flowcharts, 4) statistical process control (SPC) charts, 5) check
+        sheets, 6) scatter diagrams, 7) histograms, 8) root cause analysis, 9) plan-do-check-act
+        (PDCA), 10) Setting Alert and Action Levels, 11) 5 Whys, 12) Is/Is Not (Kepner-
+        Tregoe), 13) failure mode and effects analysis (FMEA), 14) fault tree analysis (FTA),
+        and 15) affinity diagrams. (Analyze)
+     B. Process improvement techniques
+       1.   Process capability
+            Identify and interpret various process capability indices, such as Cp, Cpk, Pp, and Ppk.
+            Recognize how these metrics are used in relation to established requirements and the
+            effect on PPM. (Understand)
+       2.   Six sigma
+            Identify and define the six sigma DMAIC phases: define, measure, analyze,
+            improve, and control, and recognize key tools, such as design of experiments (DOE).
+            (Understand)
+       3.   Lean tools
+            Identify and define various lean tools, such as 5S, standard operations, kanban (pull),
+            error-proofing, value-stream mapping, kaizen, and daily management (e.g., Gemba
+            walk, dashboard, daily huddles). (Understand)
+       4.   Measurement system analysis (MSA)
+            Identify and define various MSA terms (e.g., bias, linearity, stability, accuracy,
+            precision, repeatability, and reproducibility), and describe how these elements affect
+            measurement systems. (Understand)
+       5.   Cost of quality (COQ)
+            Define and describe the four basic COQ categories: prevention, appraisal, internal
+            failure, and external failure. (Understand)
+     C. Data types and sampling
+       1.   Qualitative and quantitative analysis
+            Describe qualitative data in terms of the nature, type, or other characteristics of an
+            observation or condition. Describe how quantitative data is used to detect patterns or
+            trends. Identify how such analyses can indicate whether a problem is systemic or
+            isolated. (Analyze)
+       2.   Attributes and variables data
+            Determine whether to use an attributes sampling plan or variables sampling plan in
+            various situations, such as process monitoring and control, receiving inspection, and
+            auditing. (Analyze)
+
+
+
+                                                                                        Page 9 of 11
+3.   Sampling
+     Identify and interpret sampling plans. Determine if sampling plans are based on risk
+     and statistically valid rationale. (Evaluate)
+
+
+
+
+                                                                             Page 10 of 11
+                                    Levels of Cognition
+                        Based on Bloom’s Taxonomy – Revised (2001)
+
+In addition to content specifics, the subtext for each topic in this BOK also indicates the intended
+complexity level of the test questions for that topic. These levels are based on “Levels of
+Cognition” (from Bloom’s Taxonomy – Revised, 2001) and are presented below in rank order,
+from least complex to most complex.
+
+Remember
+Recall or recognize terms, definitions, facts, ideas, materials, patterns, sequences, methods,
+principles, etc.
+
+Understand
+Read and understand descriptions, communications, reports, tables, diagrams, directions,
+regulations, etc.
+
+Apply
+Know when and how to use ideas, procedures, methods, formulas, principles, theories, etc.
+
+Analyze
+Break down information into its constituent parts and recognize their relationship to one another
+and how they are organized; identify sublevel factors or salient data from a complex scenario.
+
+Evaluate
+Make judgments about the value of proposed ideas, solutions, etc., by comparing the proposal to
+specific criteria or standards.
+
+Create
+Put parts or elements together in such a way as to reveal a pattern or structure not clearly there
+before; identify which data or information from a complex set is appropriate to examine further
+or from which supported conclusions can be drawn.
+
+
+
+
+                                                                                       Page 11 of 11
+

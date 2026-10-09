@@ -1,0 +1,7 @@
+#tool .tb-bad{color:#C0392B;font-weight:700}
+#tool table[data-grid="d"] td.calc{font-size:13px;text-align:left}
+#tool table[data-grid="d"] td.calc b{color:var(--navy)}
+#tool table[data-grid="d"] input[data-col="dim"]{min-width:170px;font-family:var(--mono)}
+@media print{#tool table[data-grid="d"] td.calc{font-size:11px;white-space:normal}}
+#tool table[data-grid="d"] td[data-c="ty"],#tool table[data-grid="d"] td[data-c="src"]{white-space:normal;min-width:120px;max-width:170px}
+@media print{#tool table[data-grid="d"] td[data-c="lim"]{white-space:nowrap}}

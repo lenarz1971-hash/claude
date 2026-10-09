@@ -1,0 +1,21 @@
+table.mv{table-layout:auto;margin:6px 0;font-size:14.5px;min-width:100%}
+table.mv th{font:700 9px var(--mono);letter-spacing:.08em;color:var(--ink-3);text-transform:uppercase;padding:0 6px 7px;text-align:center}
+table.mv th:first-child{text-align:left}
+table.mv td{padding:3px;border-bottom:1px solid var(--line);vertical-align:middle;width:auto;text-align:center}
+table.mv td.mo{text-align:left;color:var(--ink);min-width:200px;padding-right:12px}
+table.mv td.mt,table.mv td.mu{font:700 13px var(--mono);color:var(--navy)}
+table.mv tfoot td{border-top:2px solid var(--line);font:700 9px var(--mono);color:var(--ink-3)}
+.bs-p{display:inline-block;padding:2px 7px;border-radius:2px;font:700 10.5px var(--mono);letter-spacing:.04em;white-space:nowrap;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.bs-p.on{background:#E3F2EA;color:var(--green)}.bs-p.near{background:var(--gold-xl);color:var(--gold-d)}.bs-p.off{background:var(--red-bg);color:#C0392B}
+table.mv.bs tr.bs-h td{text-align:left;font:700 10px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--navy);background:var(--bg-3);padding:6px 8px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+table.mv.bs td.mo{line-height:1.35;padding:5px 12px 5px 6px}
+.bs-m{font-size:13.5px;color:var(--ink-2)}
+table.mv.bs td{font-size:13.5px}
+.bs-map svg{max-width:900px}
+@media print{table.mv{font-size:11px}table.mv.bs td,.bs-m{font-size:11px}table.mv td.mt{font-size:10.5px}table.mv td{padding:2px 3px}.bs-p{font-size:9px;padding:1px 4px}table.mv.bs tr.bs-h td{font-size:8.5px;padding:3px 6px}}
+
+#tool .tgw{overflow-x:auto}
+#tool table.mv th,#tool table.mv td:not(.mo),#tool table.hx th,#tool table.hx td:not(.hx-r){overflow-wrap:normal;word-break:normal}
+#tool table.mv td.mt,#tool table.mv td.mu,#tool table.mv tfoot td{white-space:nowrap}
+@media print{#tool .tgw{overflow:visible}#tool .tsec>h3,#tool .tsec>.th{break-after:avoid;page-break-after:avoid;break-inside:avoid}#tool .tsec>.th::after,#tool .tsec>h3:not(:has(+.th))::after{content:"";display:block;flex:none;align-self:flex-start;width:0;height:140px;margin-bottom:-140px}}
+@media print{table.mv.bs tr.bs-h{break-after:avoid;page-break-after:avoid}}

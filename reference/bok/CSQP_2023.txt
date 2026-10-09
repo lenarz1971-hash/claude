@@ -1,0 +1,325 @@
+CSQP
+
+                       CERTIFIED SUPPLIER QUALITY PROFESSIONAL (CSQP)
+                                    BODY OF KNOWLEDGE
+
+The topics in this Body of Knowledge include subtext explanations and the cognitive level at which the
+questions will be written. This information will provide useful guidance for both the Exam Development
+Committee and the candidate preparing to take the exam. The subtext is not intended to limit the subject matter
+or be all-inclusive of that material that will be covered in the exam. It is meant to clarify the type of content that
+will be included on the exam. The descriptor in parentheses at the end of each entry refers to the maximum
+cognitive level at which the topic will be tested. A complete description of cognitive levels is provided at the
+end of this document.
+
+
+ I. Supplier Strategy (20 Questions)
+
+   A. Supply Chain Vision/Mission
+      Assist in the development and communication of the supply chain vision/mission statement. (Apply)
+
+   B. Supplier Lifecycle Management
+         1. Supplier Selection
+            Develop the process for supplier selection and qualification, including the identification of sub-
+            tier suppliers using tools such as SIPOC, decision analysis, and total risk factor analysis. (Create)
+         2. Performance Monitoring
+            Develop the supplier performance monitoring system, including expected levels of performance,
+            process reviews, performance evaluations, improvement plans, and exit strategies. (Create)
+         3. Supplier Classification System
+            Define and develop a supplier classification system (e.g., non-approved, conditionally approved,
+            approved, preferred, certified, partnership, and disqualified). (Create)
+         4. Partnerships and Alliances
+            Identify and analyze strategies for developing customer-supplier partnerships and alliances.
+            (Analyze)
+
+   C. Supply Chain Cost Analysis
+         1. Cost Reduction
+            Identify and apply relevant inputs to prioritize cost reduction opportunities. (Analyze)
+         2. Supply Chain Rationalization
+            Interpret and analyze the optimization of a supply base to improve spending and leverage
+            investments into supplier quality or risk reduction. (Analyze)
+         3. Make/Buy Decisions
+            Provide input on make/buy decisions using internal and external capability analysis. Apply tools
+            such as SWOT analysis and use historical performance to analyze requirements. (Analyze)
+
+   D. Supplier Agreements or Contracts
+         1. Terms and Conditions
+            Review and provide input for developing terms and conditions that govern supplier relationships
+            to ensure quality considerations are addressed. (Apply)
+         2. Supplier Agreements
+            Identify elements of supplier agreements (e.g., business and legal approach/requirements).
+            (Understand)
+                                                                                                                     1
+CSQP
+         3. Quality Agreements
+            Analyze the elements of quality agreements/requirements (e.g., other levels of approval/review).
+            (Analyze)
+         4. Finalization Controls
+            Describe controls used to finalize terms and conditions that govern supplier relationships (e.g.,
+            agreements, contracts, and purchase orders). (Understand)
+
+  E. Deployment of Strategy and Expectations
+     Communicate strategy internally and communicate expectations to suppliers externally. (Apply)
+
+
+II. Risk Management (19 Questions)
+
+   A. Strategy
+         1. System
+            Develop a risk-based approach to manage the supply base, including business continuity,
+            contingency planning, and supply chain resilience. (Create)
+         2. Product/Service Risk Mitigation
+            Develop and implement a risk mitigation plan for predicting, minimizing, monitoring, and/or
+            controlling risks. (Create)
+         3. Prevention Strategies
+            Identify and evaluate strategies and techniques such as supply chain mapping, avoidance,
+            detection, and mitigation used to prevent the introduction of counterfeit parts, materials, and
+            services. (Evaluate)
+         4. Supplier Risk Identification and Categorization
+            Identify supplier risks and develop categorization (e.g., organizational, business, security, and
+            product) using tools and models, such as the Kraljic portfolio segmentation model. (Create)
+
+   B. Analysis and Mitigation
+        1. Analysis
+           Identify, assess, and prioritize risks to supplier quality using tools such as decision analysis
+           (DA), failure mode and effects analysis (FMEA), fault tree analysis (FTA), and process auditing.
+           (Evaluate).
+        2. Mitigation Control
+           Develop and deploy controls such as inspection and test plans. Prioritize mitigation activities and
+           sustain a risk mitigation plan appropriate to the risk of the product/service. (Create)
+        3. Mitigation Effectiveness
+           Verify the effectiveness of the control plan and improve, if necessary, using continuous
+           improvement methods such as plan-do-check-act (PDCA), lean, and product auditing tools.
+           (Create)
+
+
+III. Supplier Selection and Part Qualification (27 Questions)
+
+   A. Product/Service Requirements Definition
+       1. Internal Design Reviews
+          Identify and apply common elements of the design review process, including roles and
+          responsibilities of the participants. (Apply)
+
+                                                                                                                2
+CSQP
+         2. Identifying Requirements
+            Identify and apply internal requirements (e.g., interrelated functional business units) for product
+            or service in collaboration with stakeholders, including the requirements for supply chain, sub-
+            tier suppliers, and manufacturability evaluation. (Evaluate)
+
+   B. Supplier Selection Planning
+       1. Supplier Comparison
+          Evaluate existing suppliers’ and distributors’ capabilities, capacities, past quality, delivery, price,
+          lead times, and responsiveness against identified requirements. (Evaluate)
+       2. Potential Suppliers Evaluation
+          Assess potential new suppliers against identified requirements using tools such as self-
+          assessments, audits, financial analysis, and quality function deployment. Verify third-party
+          certification status and regulatory compliance and analyze and report on results of assessments to
+          support the supplier selection process. (Evaluate)
+       3. Supplier Selection
+          Evaluate and select suppliers based on analysis of assessment reports and existing supplier
+          evaluations using decision analysis tools such as weighted decision matrices and selection
+          matrices. (Evaluate)
+
+   C. Part, Process, and Service Qualification
+       1. Technical Review
+           Interpret and evaluate technical specification requirements and characteristics such as views, title
+           blocks, dimensioning and tolerancing, and apply GD&T symbols as they relate to the product
+           and process. (Evaluate)
+       2. Supplier Relations
+           Collaborate with suppliers to define, interpret, and classify quality characteristics for the
+           part/process/service. (Evaluate)
+       3. Process and Service Qualification Planning
+           Develop a part/process/service (e.g., calibration, laboratory, software, and design) qualification
+           plan with supplier and internal team that includes service provider audit, calibration
+           requirements, sample size, first article inspection, measurement system analysis (MSA), process
+           flow diagram (PFD), failure mode and effects analysis (FMEA), control plans, critical to quality
+           (CTQ), inspection planning, capability studies, material and performance testing, appearance
+           approval, and internal process validation. (Analyze)
+       4. Part Approval
+           Understand production part approval process (PPAP) requirements and ensure suppliers
+           understand the processes required to produce parts with consistent quality during an actual
+           production run at production rates. (Understand)
+       5. Validate Requirements
+           Collaborate with internal team to interpret the results of the executed qualification plan for the
+           part/process/service, including reviewing Certificate of Compliance (CoC), Certificate of
+           Analysis (CoA), and production readiness reviews (PRR). (Evaluate)
+
+
+
+
+                                                                                                                  3
+CSQP
+IV. Supplier Performance Monitoring, and Improvement (29 Questions)
+   A. Supplier Performance Monitoring
+         1. Supplier Metrics
+             Define, implement, and monitor supplier performance metrics such as quality, delivery (e.g., on-
+             time delivery [OTD] and on-time in full delivery [OTIF]), cost, and responsiveness. (Evaluate)
+         2. Supplier Performance
+             Analyze supplier performance data (e.g., warranty analysis/field returns and defect rates) and
+             develop periodic reports (e.g., scorecard and dashboards). (Analyze)
+         3. Supplier Process Performance
+             Define and implement lean principles and applications such as 5S, kaizen, value stream mapping,
+             supplier process capabilities and controls, 8 wastes, single minute exchange of dies (SMED),
+             kanban, muda, standardized work, takt time, and error-proofing to reduce waste and increase
+             performance. (Evaluate)
+
+   B. Assess Nonconforming Product/Process/Service
+       Segregate, control, and evaluate nonconforming materials to determine whether a material review board
+       (MRB) requires disposition. Conduct risk assessments to prevent future discrepancies. (Evaluate)
+
+   C. Supplier Corrective and Preventive Action (CAPA)
+         1. Root Cause Analysis Tools and Methods
+             Evaluate the root cause analysis of a problem using tools such as cause and effect diagrams,
+             Pareto analysis, 5 Why’s, fault tree analysis, design of experiments (DOE), brainstorming, check
+             sheets, measurement system analysis (MSA), production records, and review of process flow.
+             (Evaluate)
+          2. Collaboration with Supplier
+             Evaluate and implement supplier corrective/preventive action and review its effectiveness and
+             robustness with supplier. Understand the process of updating failure mode and effects analysis
+             (FMEA) and process control plan, and understand statistical process control (SPC), 8D, and
+             product/process design change. (Evaluate)
+
+
+V. Supplier Quality Management (26 Questions)
+   A. Supplier Quality Monitoring
+         1. Supplier Audit
+            Apply the stages of a quality audit, including audit planning, conducting the initial audit, and
+            executing periodic reevaluation. Understand and apply the various types of quality audits (e.g.,
+            product, process, and management system) and audit methods (e.g., virtual, on-site, and
+            desktop). (Apply)
+         2. Audit Reporting and Follow-up
+            Apply and analyze audit reporting and follow up, including verification of the effectiveness of
+            corrective action. (Analyze)
+         3. Supplier Communication
+            Evaluate various communication techniques such as periodic reviews, metric and performance
+            indices, change management, notifications, recalls, change requests, and business updates.
+            Maintain active communication with suppliers to assess risk and take appropriate action.
+            (Evaluate)
+
+                                                                                                               4
+CSQP
+          4. Supplier Development and Remediation
+             Identify and analyze present and future training needs and gaps, using quality methods and tools
+             such as kaizen and benchmarking. Use process improvement tools such as DMAIC, cycle time
+             reduction, defect rate, and cost reduction. Evaluate supplier remediation to develop and manage
+             improvement plans. (Evaluate)
+          5. Project Management Basics
+             Understand and apply various types of project reviews, such as phase-end, management, and
+             retrospectives or post-project reviews to assess project performance and status, to review issues
+             and risks, and discover and capture lessons learned from the project. Apply forecasts, resources,
+             schedules, and task and cost estimates to develop and monitor project plans. (Apply)
+
+   B. Teams and Team Processes
+         1. Team Development
+             Identify and describe the various types of teams and the classic stages of team development:
+             forming, storming, norming, performing, and adjourning. (Apply)
+         2. Team Roles
+             Define and describe various team roles and responsibilities for leader, facilitator, coach, and
+             individual member. (Understand)
+         3. Performance and Evaluation
+             Describe various techniques to evaluate training, including evaluation planning, feedback
+             surveys, pre-training testing, and post-training testing. (Understand)
+   C. Compliance with Requirement and Supplier Categorization
+       Understand and evaluate compliance with regulations and industry standards (e.g., RoHS,
+       Governmental regulatory authorities, and ISO), specifications, contracts, agreements, and certification
+       authority. Evaluate and categorize suppliers based on risk and performance. (Evaluate)
+
+
+VI. Relationship Management (16 Questions)
+
+   A. Supplier Onboarding
+      Understand and apply processes for orientation of suppliers such as providing overview of company,
+      vision, mission, guiding principles, overall requirements, expectations, and criticality of product,
+      service, and delivery requirements. (Apply)
+   B. Communication
+         1. Techniques and Mediation
+            Identify and apply communication techniques (e.g., oral, written, and presentation) specifically
+            for internal stakeholders and suppliers to resolve issues. Apply different techniques when
+            working in multi-cultural environments. Identify and describe the impact that culture,
+            communications, and Diversity, Equity, and Inclusion (DEI) can have on an organization.
+            (Evaluate)
+         2. Reporting Using Quality Tools
+            Use appropriate technical and managerial reporting techniques for effective presentation and
+            reporting, including the seven classic quality tools: Pareto charts, cause and effect diagrams,
+            flowcharts, control charts, check sheets, scatter diagrams, and histograms. (Analyze)
+
+
+
+
+                                                                                                                 5
+CSQP
+    C.    Leadership and Collaboration
+          Understand and apply techniques for coaching suppliers through regular communications,
+          influencing without authority, negotiation techniques, conflict resolution techniques, and establish
+          clear roles and responsibilities of internal stakeholders and suppliers using tools such as a RACI
+          matrix (responsible, accountable, consulted, and informed). (Evaluate)
+
+
+VII. Business Governance, Ethics, and Compliance (13 Questions)
+
+     A.   ASQ Code of Ethics
+          Determine appropriate behavior in situations requiring ethical decisions, including identifying
+          conflicts of interest, and recognizing and resolving ethical issues. (Apply)
+
+     B.   Compliance and Sustainability
+          1. Compliance
+             Understand issues of compliance and their applicable policies, laws, and regulations (e.g.,
+             conflict of interest, confidentiality, and bribery). (Apply)
+          2. Sustainability
+             Understand and recognize the importance of environmental, social, and governance factors and
+             adhere to applicable sustainability policies. (Understand)
+
+     C.   Confidentiality
+           1. Organizational Policies
+              Apply organizational policies for executing appropriate agreements such as non-disclosure,
+              quality, and change notification agreements. (Apply)
+           2. Intellectual Property
+              Apply procedures for protecting the intellectual property of an organization and its suppliers.
+              (Apply)
+           3. Illegal Activity
+              Understand and interpret policies for reporting observations and deviations that could be
+              perceived as illegal activity. (Apply)
+
+
+
+
+                                                                                                                 6
+CSQP
+
+                                            Levels of Cognition
+                                Based on Bloom’s Taxonomy – Revised (2001)
+
+       In addition to content specifics, the subtext for each topic in this BOK also indicates the intended
+       complexity level of the test questions for that topic. These levels are based on “Levels of Cognition” (from
+       Bloom’s Taxonomy – Revised, 2001) and are presented below in rank order, from least complex to most
+       complex.
+
+       Remember
+       Recall or recognize terms, definitions, facts, ideas, materials, patterns, sequences, methods, principles,
+       etc.
+
+       Understand
+       Read and understand descriptions, communications, reports, tables, diagrams, directions, regulations,
+       etc.
+
+       Apply
+       Know when and how to use ideas, procedures, methods, formulas, principles, theories, etc.
+
+       Analyze
+       Break down information into its constituent parts and recognize their relationship to one another and
+       how they are organized; identify sublevel factors or salient data from a complex scenario.
+
+       Evaluate
+       Make judgments about the value of proposed ideas, solutions, etc., by comparing the proposal to specific
+       criteria or standards.
+
+       Create
+       Put parts or elements together in such a way as to reveal a pattern or structure not clearly there before;
+       identify which data or information from a complex set is appropriate to examine further or from which
+       supported conclusions can be drawn.
+
+
+
+
+                                                                                                                    7
+
