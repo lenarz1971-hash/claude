@@ -372,9 +372,12 @@ ORDER_IN = ["drawing-title-block-tolerance-reader","gdt-position-tolerance","tol
  "cqt-measurement-uncertainty-budget","sine-bar-height-gauge-record","cqt-calibration-oot-impact","calibration-interval-adjustment",
  "first-article-inspection","attribute-inspection-defect-classification","cqt-nonconforming-material-disposition","cqt-reliability-mtbf-calculator"]
 # Process analyst, engineer and supplier quality tools (CQPA, CQE, CSSBB, CSQP, CMDA), from Oct 2026.
+ORDER_LN = []
+ORDER_SQ = []
+ORDER_RG = []
 ORDER_PR = ["flowchart-swimlane","activity-network-critical-path","risk-register-heat-map","fault-tree-analysis","probability-calculator"]
 _all = {p["slug"]: p for p in PAGES + PAGES2 + PAGES3A + PAGES3B + PAGES3C + PAGES3D + PAGES4E + PAGES4E2 + PAGES4F + PAGES4F2 + PAGES4F3 + PAGES4G + PAGES4H + PAGES4H2 + PAGES5A}
-_ord = ORDER + ORDER_MQ + ORDER_GB + ORDER_QA + ORDER_IN + ORDER_PR
+_ord = ORDER + ORDER_MQ + ORDER_GB + ORDER_QA + ORDER_IN + ORDER_PR + ORDER_LN + ORDER_SQ + ORDER_RG
 assert sorted(_all) == sorted(_ord), set(_all) ^ set(_ord)
 PAGES_YB = [_all[s] for s in ORDER]
 PAGES_MQ = [_all[s] for s in ORDER_MQ]
@@ -382,6 +385,9 @@ PAGES_GB = [_all[s] for s in ORDER_GB]
 PAGES_QA = [_all[s] for s in ORDER_QA]
 PAGES_IN = [_all[s] for s in ORDER_IN]
 PAGES_PR = [_all[s] for s in ORDER_PR]
+PAGES_LN = [_all[s] for s in ORDER_LN]
+PAGES_SQ = [_all[s] for s in ORDER_SQ]
+PAGES_RG = [_all[s] for s in ORDER_RG]
 # hub groups: id, heading, subhead, pages
 GROUPS = [
  ("six-sigma", "Six Sigma project tools", "{n} tools that follow a DMAIC project and cover the Six Sigma Yellow Belt Body of Knowledge.", PAGES_YB),
@@ -389,5 +395,9 @@ GROUPS = [
  ("auditor", "Quality auditor tools", "{n} tools for planning, conducting and following up audits and running an audit program, written for the Quality Auditor (CQA) Body of Knowledge.", PAGES_QA),
  ("inspection", "Inspection, measurement and calibration tools", "{n} tools for drawings, GD&amp;T, measurement, calibration and inspection records, written for the Quality Inspector (CQI) and Quality Technician (CQT) Bodies of Knowledge, plus a reliability calculator for the Quality Engineer (CQE).", PAGES_IN),
  ("quality-manager", "Quality manager tools", "{n} tools for planning, running and improving a quality system, written for the Manager of Quality/Organizational Excellence (CMQ/OE) Body of Knowledge.", PAGES_MQ),
- ("process-risk", "Process, planning and risk tools", "{n} tools for mapping processes, planning projects and analyzing risk and probability, written for the Quality Process Analyst (CQPA), Quality Engineer (CQE) and Six Sigma Black Belt (CSSBB) Bodies of Knowledge, and useful for supplier quality and medical device auditing.", PAGES_PR)]
+ ("process-risk", "Process, planning and risk tools", "{n} tools for mapping processes, planning projects and analyzing risk and probability, written for the Quality Process Analyst (CQPA), Quality Engineer (CQE) and Six Sigma Black Belt (CSSBB) Bodies of Knowledge, and useful for supplier quality and medical device auditing.", PAGES_PR),
+ ("lean", "Lean and daily management tools", "{n} tools for pull, flow, standard work, 5S and error-proofing, written for the lean topics of the CQPA, CQE and CSSBB Bodies of Knowledge.", PAGES_LN),
+ ("supplier", "Supplier quality tools", "{n} tools for selecting, qualifying, classifying and managing suppliers, written for the Supplier Quality Professional (CSQP) Body of Knowledge and the supplier topics of CQPA and CQE.", PAGES_SQ),
+ ("regulated", "Validation, design control and regulated-industry tools", "{n} tools for risk management, validation, design control, data integrity and complaint handling, written for the Medical Device Auditor (CMDA) Body of Knowledge and the related CQE topics.", PAGES_RG)]
+GROUPS = [g for g in GROUPS if g[3]]
 PAGES = [p for g in GROUPS for p in g[3]]
