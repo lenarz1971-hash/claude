@@ -100,12 +100,12 @@ _runs:function(root,api,P){
  if(!R.length){ sv.innerHTML=''; so.innerHTML=api.flags([],P.gi===0?'Enter two or more replicates per run.':'Enter replicates for each run.'); return; }
  var best=R.reduce(function(a,b){ return b.q.sn>a.q.sn?b:a; }), mn=Math.min.apply(null,R.map(function(r){ return r.q.sn; })), mx=Math.max.apply(null,R.map(function(r){ return r.q.sn; })), pd=Math.max(0.5,(mx-mn)*0.15);
  mn=Math.floor(mn-pd); mx=Math.ceil(mx+pd);
- var W=800, rh=34, H=R.length*rh+56, L0=200, R0=70, X=function(v){ return L0+(v-mn)/(mx-mn)*(W-L0-R0); };
+ var W=800, rh=34, H=R.length*rh+64, L0=200, R0=70, X=function(v){ return L0+(v-mn)/(mx-mn)*(W-L0-R0); };
  var g='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Signal-to-noise ratio by run"><style>text{font:11px \'IBM Plex Mono\',monospace;fill:#4A5D71}.v{font:600 11px \'IBM Plex Mono\',monospace;fill:#0F3E68}</style>';
  R.forEach(function(r,i){ var y=14+i*rh, a=X(Math.min(0,r.q.sn)), b=X(Math.max(0,r.q.sn)), nm=r.nm.length>26?r.nm.slice(0,25)+'…':r.nm;
   g+='<text x="'+(L0-8)+'" y="'+(y+15)+'" text-anchor="end">'+api.esc(nm)+'</text><line x1="'+L0+'" x2="'+(W-R0)+'" y1="'+(y+11)+'" y2="'+(y+11)+'" stroke="#EEF0F2"/><line x1="'+L0+'" x2="'+X(r.q.sn)+'" y1="'+(y+11)+'" y2="'+(y+11)+'" stroke="'+(r===best?'#D8B147':'#0F3E68')+'" stroke-width="2"/><circle cx="'+X(r.q.sn)+'" cy="'+(y+11)+'" r="7" fill="'+(r===best?'#D8B147':'#0F3E68')+'"/><text class="v" x="'+(X(r.q.sn)+12)+'" y="'+(y+15)+'">'+api.fmt(r.q.sn,2)+'</text>'; });
- var stp=(mx-mn)<=6?1:(mx-mn)<=15?2:(mx-mn)<=40?5:10; for(var tv=Math.ceil(mn/stp)*stp;tv<=mx;tv+=stp) g+='<line x1="'+X(tv)+'" x2="'+X(tv)+'" y1="'+(H-30)+'" y2="'+(H-26)+'" stroke="#4A5D71"/><text x="'+X(tv)+'" y="'+(H-14)+'" text-anchor="middle">'+tv+'</text>';
- g+='<line x1="'+L0+'" x2="'+(W-R0)+'" y1="'+(H-30)+'" y2="'+(H-30)+'" stroke="#4A5D71"/><text x="'+(W-R0)+'" y="'+(H-2)+'" text-anchor="end">S/N ratio, dB ('+api.esc(P.g.toLowerCase())+'; larger is better)</text>';
+ var stp=(mx-mn)<=6?1:(mx-mn)<=15?2:(mx-mn)<=40?5:10; for(var tv=Math.ceil(mn/stp)*stp;tv<=mx;tv+=stp) g+='<line x1="'+X(tv)+'" x2="'+X(tv)+'" y1="'+(H-38)+'" y2="'+(H-34)+'" stroke="#4A5D71"/><text x="'+X(tv)+'" y="'+(H-22)+'" text-anchor="middle">'+tv+'</text>';
+ g+='<line x1="'+L0+'" x2="'+(W-R0)+'" y1="'+(H-38)+'" y2="'+(H-38)+'" stroke="#4A5D71"/><text x="'+((L0+W-R0)/2)+'" y="'+(H-4)+'" text-anchor="middle">S/N ratio, dB ('+api.esc(P.g.toLowerCase())+'; larger is better)</text>';
  sv.innerHTML=g+'</svg>';
  var fm=P.gi===0?'S/N = 10 log<sub>10</sub>(&#563;<sup>2</sup>/s<sup>2</sup>)':P.gi===1?'S/N = &minus;10 log<sub>10</sub>(mean of y<sup>2</sup>)':'S/N = &minus;10 log<sub>10</sub>(mean of 1/y<sup>2</sup>)';
  f.push(['ok','Highest S/N: <b>'+api.esc(best.nm)+'</b>, '+api.fmt(best.q.sn,2)+' dB. '+fm+'.']);

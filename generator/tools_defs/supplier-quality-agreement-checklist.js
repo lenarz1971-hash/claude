@@ -96,7 +96,7 @@ update:function(root,api){
  else {
   if(ready) f.push(['ok','Every critical element is fully covered and the weighted completeness is '+sc.toFixed(1)+'%, at or above the '+api.fmt(thr,0)+'% needed. The content is ready for signature.']);
   else if(!isNaN(sc)) f.push(['warn','Weighted completeness '+sc.toFixed(1)+'%'+(sc<thr?', below the '+api.fmt(thr,0)+'% needed to sign':'')+'.'+(critGap.length?' Critical gaps must be closed first, whatever the score.':'')]);
-  critGap.forEach(function(r){ f.push(['warn','Critical: <b>'+esc(r.el)+'</b> is '+(r.inc?(r.inc==='No'?'missing':'only partly covered'):'not yet reviewed')+'.'+(r.note?' '+esc(r.note):'')]); });
+  critGap.forEach(function(r){ f.push(['warn','Critical: <b>'+esc(r.el)+'</b> is '+(r.inc?(r.inc==='No'?'missing':'only partly covered'):'not yet reviewed')+'.'+(r.note?' '+esc(r.note).replace(/([^.!?])$/,'$1.'):'')]); });
   var imp=E.filter(function(r){return (r.crit||'Important')!=='Critical'&&r.inc==='No';}); if(imp.length) f.push(['','Also missing: '+imp.map(function(r){return esc(r.el);}).join('; ')+'.']);
   if(cnt['']) f.push(['warn',cnt['']+' element'+(cnt['']>1?'s have':' has')+' not been reviewed yet.']);
   var noRef=E.filter(function(r){return (r.inc==='Yes, fully'||r.inc==='Partly')&&!r.ref;}); if(noRef.length) f.push(['','Add the clause reference for '+noRef.length+' element'+(noRef.length>1?'s':'')+' marked included, so the next reviewer can find '+(noRef.length>1?'them':'it')+'.']);

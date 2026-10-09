@@ -10,7 +10,7 @@ h1="Make/buy analysis",
 lede="Compare making a part yourself with buying it: the full cost of each option, the volume where they break even, capability and capacity on each side, the strategic factors, and a SWOT summary of the in-house option.",
 content="""
 <h2>What the tool is for</h2>
-<p>A make/buy decision asks whether a part, assembly or service should be produced internally or bought from a supplier. It looks like a cost question, and the cost model is where most analyses start, but the decisions that go wrong usually go wrong on something else: capability that was assumed, capacity that was not there, or know-how that walked out of the door with the work. The tool puts the cost comparison next to capability, capacity and strategy so they are weighed together.</p>
+<p>A make/buy decision asks whether a part, assembly or service should be produced internally or bought from a supplier. It looks like a cost question, but the decisions that go wrong usually go wrong on something else: capability that was assumed, capacity that was not there, or know-how that left with the work. The tool puts the cost comparison next to capability, capacity and strategy so they are weighed together.</p>
 
 <h2>The cost model</h2>
 <p>Each cost element is entered once, as per unit, per year or one-time, under make, buy or both:</p>
@@ -20,7 +20,7 @@ content="""
 <li><b>One-time:</b> equipment, tooling and qualification. These are spread evenly over the horizon you choose.</li>
 </ul>
 <p>The annual cost of each option at volume <i>V</i> is fixed cost plus cost per unit &times; <i>V</i>. Making usually has the higher fixed cost and the lower cost per unit, so the two lines cross at the <b>break-even volume</b>: (fixed cost to make &minus; fixed cost to buy) &divide; (unit cost to buy &minus; unit cost to make). Above it, the option with the lower unit cost wins. If the planned volume sits close to break-even, a forecast error can reverse the answer, and the tool says so.</p>
-<p>Only <b>relevant</b> costs belong in the comparison: those that change with the decision. Plant overhead that is allocated to the part but stays whether you make it or not, and money already spent, are marked not relevant and left out. Including them is the classic make/buy error, and it makes buying look better than it is.</p>
+<p>Only <b>relevant</b> costs belong in the comparison: those that change with the decision. Plant overhead that is allocated to the part but stays whether you make it or not, and money already spent, are marked not relevant and left out. Including them is the classic make/buy error.</p>
 <p>The <b>risk premium</b> is the expected cost of a disruption: the chance of it in a year times what it would cost. A single source on another continent carries a larger one than an internal cell. For time value of money, take the cash flows to the <a href="/tools/financial-analysis-npv-irr.html">NPV and IRR tool</a>.</p>
 
 <h2>Capability, capacity and strategy</h2>
@@ -34,7 +34,7 @@ content="""
 
 <h2>The SWOT summary</h2>
 <p>The SWOT looks at the in-house option: strengths and weaknesses of your own operation, and opportunities and threats outside it, such as demand, the supply market and technology. For a full SWOT and PESTLE of a business, use the <a href="/tools/swot-pestle-analysis.html">SWOT and PESTLE tool</a>.</p>
-<p>Split volume is a common answer: make the base load and buy the peaks, which also gives a qualified second source. If you buy, the supplier still has to be selected, qualified and placed in the <a href="/tools/kraljic-portfolio-matrix.html">Kraljic portfolio</a>.</p>
+<p>Split volume is a common answer: make the base load and buy the rest, which also gives a qualified second source. If you buy, place the item in the <a href="/tools/kraljic-portfolio-matrix.html">Kraljic portfolio</a> to choose how to manage the supplier.</p>
 
 <h2>On the exam</h2>
 <p>Make/buy decisions are CSQP I.C.3: provide input using internal and external capability analysis, SWOT and historical performance. They sit under supply chain cost analysis (I.C), next to cost reduction (I.C.1). Expect to compute a break-even volume, pick out the relevant costs, and judge when a strategic factor should outweigh a cost advantage.</p>
