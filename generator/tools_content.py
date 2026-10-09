@@ -363,6 +363,7 @@ from tools_content4_f3 import PAGES4F3
 from tools_content4_g import PAGES4G
 from tools_content4_h import PAGES4H
 from tools_content4_h2 import PAGES4H2
+from tools_content5_a import PAGES5A
 ORDER_GB = ["value-stream-map-takt","kano-model","confidence-interval-calculator","attribute-capability","multi-vari-chart",
  "t-test-calculator","chi-square-proportions-test","one-way-anova","full-factorial-doe","smed-setup-reduction"]
 ORDER_QA = ["audit-plan-schedule","process-audit-turtle-diagram","audit-checklist-working-papers","audit-sampling-plan",
@@ -370,19 +371,23 @@ ORDER_QA = ["audit-plan-schedule","process-audit-turtle-diagram","audit-checklis
 ORDER_IN = ["drawing-title-block-tolerance-reader","gdt-position-tolerance","tolerance-stack-up","gauge-resolution-10-to-1",
  "cqt-measurement-uncertainty-budget","sine-bar-height-gauge-record","cqt-calibration-oot-impact","calibration-interval-adjustment",
  "first-article-inspection","attribute-inspection-defect-classification","cqt-nonconforming-material-disposition","cqt-reliability-mtbf-calculator"]
-_all = {p["slug"]: p for p in PAGES + PAGES2 + PAGES3A + PAGES3B + PAGES3C + PAGES3D + PAGES4E + PAGES4E2 + PAGES4F + PAGES4F2 + PAGES4F3 + PAGES4G + PAGES4H + PAGES4H2}
-_ord = ORDER + ORDER_MQ + ORDER_GB + ORDER_QA + ORDER_IN
+# Process analyst, engineer and supplier quality tools (CQPA, CQE, CSSBB, CSQP, CMDA), from Oct 2026.
+ORDER_PR = ["flowchart-swimlane","activity-network-critical-path","risk-register-heat-map","fault-tree-analysis","probability-calculator"]
+_all = {p["slug"]: p for p in PAGES + PAGES2 + PAGES3A + PAGES3B + PAGES3C + PAGES3D + PAGES4E + PAGES4E2 + PAGES4F + PAGES4F2 + PAGES4F3 + PAGES4G + PAGES4H + PAGES4H2 + PAGES5A}
+_ord = ORDER + ORDER_MQ + ORDER_GB + ORDER_QA + ORDER_IN + ORDER_PR
 assert sorted(_all) == sorted(_ord), set(_all) ^ set(_ord)
 PAGES_YB = [_all[s] for s in ORDER]
 PAGES_MQ = [_all[s] for s in ORDER_MQ]
 PAGES_GB = [_all[s] for s in ORDER_GB]
 PAGES_QA = [_all[s] for s in ORDER_QA]
 PAGES_IN = [_all[s] for s in ORDER_IN]
+PAGES_PR = [_all[s] for s in ORDER_PR]
 # hub groups: id, heading, subhead, pages
 GROUPS = [
  ("six-sigma", "Six Sigma project tools", "{n} tools that follow a DMAIC project and cover the Six Sigma Yellow Belt Body of Knowledge.", PAGES_YB),
  ("green-belt", "Green Belt statistics and lean tools", "{n} tools for the analysis and lean topics of the Six Sigma Green Belt Body of Knowledge: hypothesis tests, ANOVA, DOE, confidence intervals and value stream mapping.", PAGES_GB),
  ("auditor", "Quality auditor tools", "{n} tools for planning, conducting and following up audits and running an audit program, written for the Quality Auditor (CQA) Body of Knowledge.", PAGES_QA),
  ("inspection", "Inspection, measurement and calibration tools", "{n} tools for drawings, GD&amp;T, measurement, calibration and inspection records, written for the Quality Inspector (CQI) and Quality Technician (CQT) Bodies of Knowledge, plus a reliability calculator for the Quality Engineer (CQE).", PAGES_IN),
- ("quality-manager", "Quality manager tools", "{n} tools for planning, running and improving a quality system, written for the Manager of Quality/Organizational Excellence (CMQ/OE) Body of Knowledge.", PAGES_MQ)]
+ ("quality-manager", "Quality manager tools", "{n} tools for planning, running and improving a quality system, written for the Manager of Quality/Organizational Excellence (CMQ/OE) Body of Knowledge.", PAGES_MQ),
+ ("process-risk", "Process, planning and risk tools", "{n} tools for mapping processes, planning projects and analyzing risk and probability, written for the Quality Process Analyst (CQPA), Quality Engineer (CQE) and Six Sigma Black Belt (CSSBB) Bodies of Knowledge, and useful for supplier quality and medical device auditing.", PAGES_PR)]
 PAGES = [p for g in GROUPS for p in g[3]]

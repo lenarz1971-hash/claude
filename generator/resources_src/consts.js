@@ -101,7 +101,12 @@ const TOOL_EX={
  'first-article-inspection':['cqi','cqt','cqpa'],
  'attribute-inspection-defect-classification':['cqi','cqt'],
  'cqt-nonconforming-material-disposition':['cqt','cqi','cqpa'],
- 'cqt-reliability-mtbf-calculator':['cqe','cmqoe','cqpa']
+ 'cqt-reliability-mtbf-calculator':['cqe','cmqoe','cqpa'],
+ 'flowchart-swimlane':ALLX,
+ 'activity-network-critical-path':['cssbb','cqpa','cqe','cmqoe'],
+ 'risk-register-heat-map':['cssbb','cqpa','cqe','cmqoe'],
+ 'fault-tree-analysis':['cssbb','cqe'],
+ 'probability-calculator':['gb','cssbb','cqpa','cqe']
 };
 /* Tools beyond the Yellow Belt set, in hub order (filled in by build_resources.py from tools_content.GROUPS). */
 const MQ_TOOLS=EXTRA_SLUGS;
