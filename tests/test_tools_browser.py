@@ -12,7 +12,7 @@ socketserver.TCPServer.allow_reuse_address=True
 srv=socketserver.TCPServer(('127.0.0.1',0),H); port=srv.server_address[1]; threading.Thread(target=srv.serve_forever,daemon=True).start()
 B=f'http://127.0.0.1:{port}/tools/'; probs=[]
 with sync_playwright() as p:
-    b=p.chromium.launch(executable_path=os.environ.get('CHROMIUM','/opt/pw-browsers/chromium') if os.path.exists('/opt/pw-browsers/chromium') else None); ctx=b.new_context(viewport={'width':1280,'height':900},accept_downloads=True)
+    b=p.chromium.launch(executable_path=('/opt/pw-browsers/chromium' if os.path.exists('/opt/pw-browsers/chromium') else None)); ctx=b.new_context(viewport={'width':1280,'height':900},accept_downloads=True)
     ctx.route('**/*', lambda r: r.abort() if 'fonts.g' in r.request.url else r.continue_())
     for s in SLUGS:
         pg=ctx.new_page(); errs=[]; pg.on('pageerror',lambda e:errs.append(str(e)))
