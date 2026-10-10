@@ -387,7 +387,7 @@ def test_dc(pg):
 # ================================================================ run
 TESTS = [t for t in [test_de, test_ci, test_cr, test_ff, test_dc] if not ONLY or t.__name__ in ONLY]
 with sync_playwright() as p:
-    exe = "/opt/pw-browsers/chromium"
+    exe = "/opt/pw-browsers/chromium" if os.path.exists("/opt/pw-browsers/chromium") else None
     b = p.chromium.launch(executable_path=exe if os.path.exists(exe) else None)
     ctx = b.new_context(viewport={"width": 1280, "height": 900})
     ctx.route("**/*", lambda r: r.abort() if "fonts.g" in r.request.url else r.continue_())
