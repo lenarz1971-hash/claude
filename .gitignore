@@ -3,3 +3,4 @@ __pycache__/
 out/
 live/
 out_*/
+*.zip
